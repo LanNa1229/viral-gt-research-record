@@ -1,0 +1,345 @@
+---
+title: "Viral GT Computational Research Record"
+subtitle: "Analysis-level notebook"
+notebook_id: "NB-VGT-WPXX-YYYYMMDD-NNN"
+entry_id: "ENT-VGT-YYYYMMDD-NNN"
+project: "Viral Glycosyltransferase Discovery"
+work_package: "WPXX"
+date_created: "YYYY-MM-DD"
+date_updated: "YYYY-MM-DD"
+author: "Name"
+status: "draft"
+confidentiality: "Private unpublished UGA research"
+format:
+  html:
+    toc: true
+    code-fold: false
+    embed-resources: false
+jupyter: python3
+execute:
+  echo: true
+  warning: true
+  error: false
+  freeze: auto
+---
+
+# Record control
+
+| Field | Value |
+|---|---|
+| Notebook ID | `NB-VGT-WPXX-YYYYMMDD-NNN` |
+| Entry ID | `ENT-VGT-YYYYMMDD-NNN` |
+| Project | Viral Glycosyltransferase Discovery |
+| Work package | WPXX |
+| Date created | YYYY-MM-DD |
+| Date updated | YYYY-MM-DD |
+| Record type | Contemporaneous / Retrospective |
+| Prepared by | Name |
+| Review status | Draft / Reproduced / Reviewed / Superseded |
+| Repository path | `notebooks/active/<filename>.qmd` |
+| Git commit | `<commit hash after commit>` |
+| Related dataset IDs | `DS-VGT-...` |
+| Related claim IDs | `CLM-VGT-...` |
+| Related figures/tables | `FIG...` / `TABLE...` |
+
+# Retrospective status
+
+Complete this section only when the notebook reconstructs historical work.
+
+> Retrospective provenance entry created on [date]. This entry reconstructs work performed between [date range] using contemporaneous emails, presentation files, manuscript drafts, HPC job records, original file timestamps, and archived outputs.
+
+- Why this entry is retrospective:
+- Earliest contemporaneous evidence:
+- Uncertainties in the reconstruction:
+- What is known from contemporaneous evidence:
+- What is inferred during the present reconstruction:
+
+# Research question
+
+State one testable or decision-relevant scientific question.
+
+**Question:**  
+[Example: Does weighting Foldseek structure-network edges by global structural similarity separate CAZy-heterogeneous communities while retaining biologically meaningful viral placements?]
+
+# Scientific hypothesis
+
+State the hypothesis before interpreting the results.
+
+**Hypothesis:**  
+[Example: Weighted Leiden using min(qTM,tTM) will improve separation of structurally heterogeneous communities without eliminating recurrent viral GT placements.]
+
+# Intellectual rationale
+
+Explain the reasoning that led to this analysis.
+
+Include:
+
+- prior observation;
+- knowledge gap;
+- why the question matters biologically;
+- why the selected method is appropriate;
+- what result would support or weaken the hypothesis.
+
+# Why this analysis was initiated
+
+- Triggering observation, manuscript need, validation need, or meeting decision:
+- Date initiated:
+- Who initiated the question:
+- Who requested execution, if different:
+- Was the method supplied, adapted, or newly designed:
+- Related email, meeting note, presentation, or manuscript version:
+
+# Contributors at initiation
+
+| Contributor | Role at initiation | Specific action or decision | Evidence |
+|---|---|---|---|
+| Name | Originator / requester / method designer / analyst / reviewer | Specific statement | Path, email date, or record ID |
+
+# Input data
+
+| Dataset ID | File or collection | Data tier | Source | Acquisition or creation date | Version | SHA-256 manifest | Institutional storage location | Access classification |
+|---|---|---|---|---|---|---|---|---|
+| DS-VGT-... | ... | Raw / intermediate / curated | ... | YYYY-MM-DD | ... | `metadata/manifests/...sha256` | `uga-storage://...` | Internal / Sensitive / Public |
+
+## Input provenance notes
+
+- Original source:
+- Download or generation command:
+- Transformations performed before this notebook:
+- Inclusion criteria:
+- Exclusion criteria:
+- Known missing data:
+- Known metadata conflicts:
+- Data-use or sharing restrictions:
+
+# Software environment
+
+| Component | Version or identifier | Record location |
+|---|---|---|
+| Operating system | ... | `environment/system_*.txt` |
+| Python | ... | `environment/python_*.txt` |
+| Conda environment | ... | `environment/environment_*.yml` |
+| Foldseek | ... | command log |
+| Cytoscape | ... | analysis note |
+| igraph | ... | environment file |
+| leidenalg | ... | environment file |
+| Quarto | ... | environment file |
+| Git commit | ... | repository |
+
+Recommended capture commands:
+
+```bash
+date -u +"%Y-%m-%dT%H:%M:%SZ"
+git rev-parse HEAD
+git status --short
+git diff --stat
+uname -a
+python --version
+python -m pip freeze
+conda env export --from-history
+foldseek version
+quarto --version
+```
+
+# Code and workflow linkage
+
+| Item | Repository path | Commit | Purpose |
+|---|---|---|---|
+| Main script | `src/...py` | `<hash>` | ... |
+| Workflow | `workflows/...` | `<hash>` | ... |
+| Configuration | `configs/...yaml` | `<hash>` | ... |
+| Validation script | `src/...py` | `<hash>` | ... |
+
+# Parameters
+
+| Parameter | Value | Rationale | Sensitivity tested |
+|---|---|---|---|
+| Example | ... | Why selected | Yes / No; result |
+
+Record all thresholds, seeds, coverage modes, database versions, model choices, and manual exclusions.
+
+# Methods
+
+Describe the analytical method in enough detail that a trained researcher can reproduce it.
+
+Minimum requirements:
+
+1. input selection;
+2. preprocessing;
+3. algorithm or model;
+4. parameter values;
+5. random seeds;
+6. edge or distance definitions;
+7. quality-control steps;
+8. statistical tests;
+9. manual review criteria;
+10. output-generation procedure.
+
+# Analysis performed
+
+## Step 1 — [Name]
+
+Purpose:
+
+Command or code:
+
+```bash
+# exact command
+```
+
+Expected output:
+
+Observed issues:
+
+Decision:
+
+## Step 2 — [Name]
+
+Repeat as needed.
+
+# Quality control and validation
+
+| Check ID | Question | Method | Result | Pass criterion | Status |
+|---|---|---|---|---|---|
+| QC-01 | ... | ... | ... | ... | Pass / Fail / Qualified |
+
+Include positive controls, negative controls, sensitivity analyses, manual inspections, or independent reruns when applicable.
+
+# Output files
+
+| Output ID | File | Description | Data tier | SHA-256 | Storage location | Generated by |
+|---|---|---|---|---|---|---|
+| OUT-ENT-VGT-... | `results/...` | ... | Intermediate / final | ... | Git or UGA storage | script and commit |
+
+# Results
+
+State the results without interpretation first.
+
+Include:
+
+- sample sizes;
+- counts and percentages;
+- effect sizes or uncertainty;
+- thresholds;
+- unexpected results;
+- failed analyses;
+- missing outputs;
+- reproducibility status.
+
+# Scientific interpretation
+
+Explain what the results mean biologically and computationally.
+
+Separate:
+
+1. direct observations;
+2. supported interpretation;
+3. working hypothesis;
+4. speculation requiring further validation.
+
+# Alternative interpretations
+
+List plausible alternatives and what evidence would distinguish them.
+
+| Alternative interpretation | Supporting evidence | Contradicting evidence | Test needed |
+|---|---|---|---|
+| ... | ... | ... | ... |
+
+# Limitations
+
+Address:
+
+- dataset completeness;
+- annotation uncertainty;
+- model-quality limitations;
+- structure-prediction uncertainty;
+- threshold dependence;
+- network-resolution dependence;
+- phylogenetic non-independence;
+- possible host contamination or misannotation;
+- absence of biochemical validation;
+- limitations of manual interpretation.
+
+# Scientific decision made
+
+Record the decision resulting from the analysis.
+
+**Decision:**  
+[Example: Use global_min_tm weighted Leiden at resolution 1.0 as the primary partition and resolution 2.0 only as a sensitivity analysis.]
+
+**Decision maker(s):**
+
+**Date:**
+
+**Evidence supporting the decision:**
+
+**Consequences for subsequent analyses:**
+
+# Next step
+
+| Priority | Next action | Scientific purpose | Owner | Target record |
+|---|---|---|---|---|
+| 1 | ... | ... | ... | NB-VGT-... |
+
+# Manuscript linkage
+
+| Field | Value |
+|---|---|
+| Related manuscript | Working title or version |
+| Manuscript section | ... |
+| Claim ID | CLM-VGT-... |
+| Claim text supported | ... |
+| Figure or table | FIG... / TABLE... |
+| Panel-generation script | `src/...` |
+| Figure input | `results/...` |
+| Current scope | Main text / Supplement / Validation / Not currently included |
+| Evidentiary strength | Exploratory / Supporting / Primary / Validated |
+
+# Contemporaneous supporting evidence
+
+| Evidence ID | Date | Type | Description | Location | SHA-256 or message identifier | What it supports | Limitation |
+|---|---|---|---|---|---|---|---|
+| EVD-... | YYYY-MM-DD | Email / slide / draft / HPC log / output | ... | ... | ... | ... | ... |
+
+# CRediT contribution entry
+
+| Contributor | CRediT role | Degree | Specific contribution | Evidence location | Verification status |
+|---|---|---|---|---|---|
+| Lan Na | Conceptualization | Lead | [Specific idea or hypothesis] | Notebook section and contemporaneous evidence | draft-self-recorded |
+| Lan Na | Methodology | Lead | [Specific analytical design or criteria] | script/config/decision section | draft-self-recorded |
+| Lan Na | Software | Lead / supporting | [Specific implementation] | code path and commit | draft-self-recorded |
+| Lan Na | Formal analysis | Lead | [Specific analysis performed] | outputs and notebook | draft-self-recorded |
+| Lan Na | Data curation | Lead / supporting | [Specific metadata or dataset curation] | curated table and manifest | draft-self-recorded |
+| Lan Na | Validation | Lead / supporting | [Specific benchmarking or control analysis] | QC section | draft-self-recorded |
+| Lan Na | Visualization | Lead / supporting | [Specific panel design or generation] | figure script and panel | draft-self-recorded |
+| Lan Na | Writing – original draft | Lead / supporting | [Specific text drafted] | manuscript version | draft-self-recorded |
+| Name | Role | Degree | Specific contribution | Evidence | Status |
+
+# Reproducibility check
+
+- [ ] Input data have dataset IDs.
+- [ ] Checksums or version identifiers are recorded.
+- [ ] External storage locations are recorded.
+- [ ] Code paths and Git commit are recorded.
+- [ ] Environment is captured.
+- [ ] Parameters and random seeds are recorded.
+- [ ] Outputs are listed and checksummed.
+- [ ] Results are separated from interpretation.
+- [ ] Limitations and alternatives are documented.
+- [ ] Scientific decision and next step are recorded.
+- [ ] Claim and figure linkage is complete.
+- [ ] CRediT entries are specific.
+- [ ] Notebook was rendered successfully.
+- [ ] An independent rerun or validation status is recorded.
+
+# Closure
+
+| Field | Value |
+|---|---|
+| Notebook completed on | YYYY-MM-DD |
+| Completed by | Name |
+| Final commit | `<hash>` |
+| Reproduced by | Name or `not yet independently reproduced` |
+| Review status | ... |
+| Supersedes | Notebook ID or `none` |
+| Superseded by | Notebook ID or `none` |

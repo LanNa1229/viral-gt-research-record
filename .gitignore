@@ -1,0 +1,131 @@
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Python, Jupyter, Quarto, R
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.quarto/
+_freeze/
+_site/
+.Rhistory
+.Rproj.user/
+*.Rproj
+
+# Environments and package caches
+.env
+.env.*
+.venv/
+venv/
+env/
+conda-env/
+renv/library/
+node_modules/
+
+# Credentials and secrets
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials*
+secrets*
+tokens*
+*.token
+
+# Raw and bulk data: preserve only documentation anchors
+data/**
+!data/README.md
+!data/**/.gitkeep
+
+# Large biological and structural files
+*.pdb
+*.cif
+*.mmcif
+*.bcif
+*.mmtf
+*.sdf
+*.mol2
+*.xtc
+*.trr
+*.dcd
+*.gro
+
+# Large sequence, database, alignment, and network artifacts
+*.fa
+*.fasta
+*.faa
+*.fna
+*.ffn
+*.fastq
+*.fastq.gz
+*.sam
+*.bam
+*.cram
+*.m8
+*.db
+*.dbtype
+*.index
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.npz
+*.npy
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.pickle
+*.cys
+
+# Archives generated for transfer or snapshots
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.bundle
+
+# Logs and scheduler outputs
+*.log
+slurm-*.out
+*.slurm.out
+*.err
+nohup.out
+
+# Temporary and scratch directories
+tmp/
+temp/
+scratch/
+cache/
+work/
+.nextflow/
+.snakemake/
+snakemake-work/
+
+# Large generated report assets
+reports/**/assets/
+figures/**/raster_cache/
+
+# Keep project record files even if patterns change later
+!README.md
+!CONTRIBUTIONS.md
+!PROJECT_TIMELINE.md
+!CREDIT_CONTRIBUTION_LEDGER.tsv
+!CLAIM_FIGURE_EVIDENCE_MATRIX.tsv
+!DATA_TRANSFER_MANIFEST.tsv
+!notebooks/template/notebook_template.qmd
+!retrospective_records/RETROSPECTIVE_PROVENANCE_TEMPLATE.md
+!environment/README.md
+!archive_manifests/README.md
