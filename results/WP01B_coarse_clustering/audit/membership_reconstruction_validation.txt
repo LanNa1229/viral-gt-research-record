@@ -1,0 +1,41 @@
+WP01B MEMBERSHIP RECONSTRUCTION VALIDATION
+validation_date	2026-07-25T03:39:07-04:00
+
+### INPUT FILE IDENTITIES
+/home/ln72030/foldseek_virus_cluster_clean/cluster/cluster_cluster.tsv	size=25507	mtime=2025-05-29 16:05:24.732068032 -0400
+96b38f5bc846d4f16071e4f7d560a33c384b4422ffa291796987b667ee566359  /home/ln72030/foldseek_virus_cluster_clean/cluster/cluster_cluster.tsv
+/home/ln72030/foldseek_virus_cluster_clean/database/protein_db.source	size=25338	mtime=2025-05-05 00:58:27.191807544 -0400
+7a6c9198444ae16a80b762a3118345d98f3706d7add37cd4017591ed892bb2c9  /home/ln72030/foldseek_virus_cluster_clean/database/protein_db.source
+/home/ln72030/foldseek_virus_cluster_clean/accounting/cluster_membership.tsv	size=35795	mtime=2026-07-10 14:30:18.079550823 -0400
+cd731e42c1bffd7946427540d4cb61d72f706f494a93df2a8be11831f554fd2f  /home/ln72030/foldseek_virus_cluster_clean/accounting/cluster_membership.tsv
+
+### SOURCE-MAPPING INTEGRITY
+source_rows	1727
+unique_numeric_ids	1727
+unique_accessions	1727
+duplicate_numeric_ids	0
+duplicate_accessions	0
+
+### REBUILD BIOLOGICAL MEMBERSHIP
+raw_membership_rows	1727
+rebuilt_membership_rows	1727
+canonical_membership_rows	1727
+
+### REBUILT AND CANONICAL CHECKSUMS
+cd731e42c1bffd7946427540d4cb61d72f706f494a93df2a8be11831f554fd2f  /tmp/WP01B_rebuilt_membership.UMm42q.tsv
+cd731e42c1bffd7946427540d4cb61d72f706f494a93df2a8be11831f554fd2f  /home/ln72030/foldseek_virus_cluster_clean/accounting/cluster_membership.tsv
+
+### EXACT FILE COMPARISON
+byte_for_byte_comparison	PASS
+mismatched_rows	0
+
+### CANONICAL MEMBERSHIP INTEGRITY
+membership_rows	1727
+unique_representatives	761
+unique_members	1727
+multiple_assignments	0
+representatives_missing_as_members	0
+invalid_representative_self_assignments	0
+
+FINAL_STATUS	PASS
+CONCLUSION	raw membership plus protein_db.source reconstructs canonical biological membership exactly
