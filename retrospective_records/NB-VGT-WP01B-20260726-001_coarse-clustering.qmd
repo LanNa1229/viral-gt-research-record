@@ -1,0 +1,774 @@
+---
+title: "Retrospective Record of Foldseek Coarse Clustering and Supplementary Figure X-1-1"
+subtitle: "Viral GT Project — Work Package WP01B"
+author: "Lan Na"
+date: "2026-07-26"
+format:
+  html:
+    toc: true
+    number-sections: true
+    code-fold: false
+execute:
+  echo: true
+  warning: false
+  error: false
+---
+
+# Record identity
+
+| Field | Value |
+|---|---|
+| Notebook ID | `NB-VGT-WP01B-20260726-001` |
+| Project | Viral glycosyltransferase structural mining |
+| Work package | `WP01B` — Foldseek coarse clustering and Supplementary Figure X-1-1 |
+| Researcher | Lan Na |
+| Record type | Retrospective computational research record |
+| Reconstruction date | 2026-07-26 |
+| Original clustering date | 2025-05-05, based on the archived script and surviving output timestamps |
+| Network reconstruction period | 2026-07-10 to 2026-07-12, based on surviving table and Cytoscape-session timestamps |
+| Upstream record | `NB-VGT-WP01A-20260724-001` |
+| Related figure | Supplementary Figure X-1-1 |
+| Evidence classes | Contemporaneous note, archived code, surviving machine outputs, validated repository copies, saved Cytoscape session and SVG |
+| Status | Complete at the membership and figure-artifact levels; specified code-level regeneration gaps remain unresolved |
+
+# Scope and purpose
+
+This notebook reconstructs the coarse structural-clustering workflow applied to
+the 1,727 GT-A-query-derived viral structure entries assembled in WP01A. It
+extends through the complete multi-member membership network archived as
+Supplementary Figure X-1-1.
+
+The evidentiary chain documented here is:
+
+```text
+WP01A: 1,727 downloaded viral structure entries
+  → Foldseek database construction
+  → permissive Foldseek clustering
+  → final representative–member assignment
+  → validated canonical membership
+  → retained representative-centered alignment output
+  → direct versus indirect member classification
+  → complete multi-member Cytoscape source tables
+  → saved Cytoscape session
+  → final Supplementary Figure X-1-1 SVG
+```
+
+The notebook does not treat clustering as a definitive functional classifier.
+It records why the clustering was performed, what the baseline partition
+contained, how complete membership was represented in the figure, what the
+result did and did not establish, and which downstream analyses were initiated.
+
+The following are outside this notebook:
+
+- non-giant representative annotation and small-cluster coherence;
+- positive-control spike-in recovery and direct structural support;
+- singleton length, prediction-confidence, rescue, and trimming analyses;
+- high-resolution structure-similarity network construction.
+
+# Evidentiary standard
+
+Statements are separated into five evidence classes:
+
+1. **Direct contemporaneous evidence** — a note or file created during the
+   original analysis period.
+2. **Direct machine-generated evidence** — surviving outputs created by
+   Foldseek, reconstruction scripts, Cytoscape, or Git.
+3. **Direct present-day verification** — read-only recalculation or integrity
+   checking of preserved files.
+4. **Retrospective interpretation or recollection** — explicitly identified
+   present-day reconstruction.
+5. **Unresolved** — a point not established by the currently recovered
+   evidence.
+
+The record does not backdate the retrospective reconstruction. Missing
+auxiliary commands are documented rather than silently inferred.
+
+# Research question
+
+Could permissive structural clustering stratify the broad viral candidate set
+recovered by the MGAT2–BFVD search into a recurrent GT-A-enriched structural
+population and a lower-confidence long tail suitable for separate validation?
+
+# Contemporaneous hypothesis
+
+The following wording is preserved from Lan Na's contemporaneous OneNote
+record:
+
+> Key hypothesis:  
+> Main argument is why I choose large cluster? Why not others?  
+> Why I choose coarse clustering? -> Remove false positive.  
+> Big, giant cluster = GT-A like protein.  
+> Others = false positive.
+
+This text establishes the original scientific concern: choosing the dominant
+cluster required a defensible reason, and coarse clustering was proposed to
+separate recurrent GT-A-like structure from false-positive-rich search space.
+
+# Analytical rationale
+
+## Original rationale
+
+The initial MGAT2-based structural search was intentionally permissive. Such a
+search can recover remote GT-like structures, but it can also admit unrelated
+folds, partial domains, short models, poorly predicted structures, and
+borderline alignments. Recurrent recovery of a common structural architecture
+should produce a populated cluster, whereas many weak or idiosyncratic hits
+should remain in small clusters or as singletons.
+
+## Technical correction
+
+Coarse clustering does not directly remove or identify false positives.
+Cluster membership is an algorithmic structural assignment and is not proof of
+enzymatic function. A protein outside the dominant population may be a non-GT,
+a divergent GT, a partial structure, a multidomain protein, a low-confidence
+model, or an unresolved case.
+
+## Revised interpretation
+
+The analysis is therefore interpreted as structural stratification:
+
+- the dominant cluster is a candidate GT-A-enriched recurrent core;
+- non-giant clusters are a mixed set requiring representative-level and
+  within-cluster validation;
+- singletons require separate assessment of structure-represented length,
+  prediction confidence, direct alignability, and fold content.
+
+# Operational predictions
+
+Before downstream validation, the hypothesis implied four testable
+predictions:
+
+1. The cluster-size distribution should contain a dominant recurrent
+   population clearly separated from most other clusters.
+2. Established viral GT controls should be recovered in that population when
+   tested independently.
+3. Convincing GT-like assignments should be depleted, but not necessarily
+   absent, among non-giant representatives.
+4. A substantial subset of singletons should be explainable by short,
+   incomplete, weakly resolved, or otherwise non-compact structures.
+
+WP01B directly evaluates the first prediction and establishes the partition
+needed to test the remaining predictions in downstream work packages.
+
+# Input data and linkage to WP01A
+
+WP01A documented a dataset of 1,727 PDB structure files recovered from the
+MGAT2–BFVD Foldseek search and stored at:
+
+```text
+/home/ln72030/virus_pdb/virus_initial_hits
+```
+
+That PDB count was established by a contemporaneous 2025-05-05 OneNote entry
+and independently confirmed by read-only inspection of the surviving HPC
+directory on 2026-07-24.
+
+The WP01A record also documents an unresolved distinction between 1,755 unique
+BFVD targets retained in the Foldseek JSON and 1,727 downloaded PDB files.
+WP01B begins with the latter, realized 1,727-entry structure dataset.
+
+# Evidence inventory
+
+## EVD-VGT-WP01B-001 — Contemporaneous OneNote hypothesis
+
+Evidence type:
+
+Direct contemporaneous evidence.
+
+Content:
+
+The original hypothesis quoted above, including the explicit question of why
+the large cluster should be selected rather than the other clusters.
+
+Interpretive limit:
+
+The phrases “GT-A like” and “false positive” are hypotheses recorded at the
+time, not conclusions established solely by clustering.
+
+## EVD-VGT-WP01B-002 — Archived original clustering script
+
+Repository path:
+
+```text
+scripts/archive/WP01B_coarse_clustering/run_cluster_clean_virus.py
+```
+
+Original HPC path:
+
+```text
+/home/ln72030/foldseek_script/run_cluster_clean_virus.py
+```
+
+SHA-256:
+
+```text
+96570c629f220806b11c4908ae9e1aa642971a97c359ee07125d6d5eb436a32a
+```
+
+Surviving metadata:
+
+- owner: `ln72030`;
+- modification time: `2025-05-05 00:57:57 -0400`;
+- present-day verification date: 2026-07-24.
+
+Despite the `.py` extension, the archived file is a Bash script. The filename
+has not been changed because doing so would obscure provenance.
+
+## EVD-VGT-WP01B-003 — Raw cluster assignment
+
+Repository path:
+
+```text
+results/WP01B_coarse_clustering/raw/cluster_cluster.tsv
+```
+
+SHA-256:
+
+```text
+96b38f5bc846d4f16071e4f7d560a33c384b4422ffa291796987b667ee566359
+```
+
+This is the surviving representative–member assignment table.
+
+Provenance limitation:
+
+The archived clustering script prints the expected TSV path but does not
+contain the `foldseek createtsv` command that would produce it. The precise
+original export command or script version remains unresolved.
+
+## EVD-VGT-WP01B-004 — Foldseek identifier mapping
+
+Repository path:
+
+```text
+results/WP01B_coarse_clustering/raw/protein_db.source
+```
+
+SHA-256:
+
+```text
+7a6c9198444ae16a80b762a3118345d98f3706d7add37cd4017591ed892bb2c9
+```
+
+This file maps Foldseek internal numeric identifiers to biological structure
+identifiers.
+
+## EVD-VGT-WP01B-005 — Canonical biological membership
+
+Repository path:
+
+```text
+results/WP01B_coarse_clustering/canonical/cluster_membership.tsv
+```
+
+SHA-256:
+
+```text
+cd731e42c1bffd7946427540d4cb61d72f706f494a93df2a8be11831f554fd2f
+```
+
+This table is the canonical biological-identifier representation of the final
+Foldseek membership.
+
+## EVD-VGT-WP01B-006 — Membership validation
+
+Portable validation script:
+
+```text
+scripts/reproducible/WP01B_coarse_clustering/validate_membership_reconstruction.sh
+```
+
+Repository validation log:
+
+```text
+results/WP01B_coarse_clustering/audit/repository_membership_validation.txt
+```
+
+The validation established:
+
+- 1,727 membership rows;
+- 1,727 unique biological member identifiers;
+- one final representative per member;
+- 761 final clusters;
+- 115 multi-member clusters containing 1,081 proteins;
+- 646 singleton clusters/proteins.
+
+## EVD-VGT-WP01B-007 — Representative-centered alignment output
+
+Repository path:
+
+```text
+results/WP01B_coarse_clustering/raw/alignment/aln_result.m8
+```
+
+SHA-256:
+
+```text
+46c09ece565970a9e9660e5158c9f4c1446c11844aabdf3c536333c8f1f8bd26
+```
+
+This retained m8 provides explicit representative–member alignment evidence
+used to distinguish direct members from membership-only indirect members.
+
+The m8 is not a substitute for final cluster membership. A protein can belong
+to a final greedy cluster even when no explicit non-self row to the final
+representative is retained in this alignment output.
+
+## EVD-VGT-WP01B-008 — Complete Cytoscape source tables
+
+Repository paths:
+
+```text
+results/WP01B_coarse_clustering/figure_X-1-1/network_source/cytoscape_complete_nodes.tsv
+results/WP01B_coarse_clustering/figure_X-1-1/network_source/cytoscape_complete_edges.tsv
+results/WP01B_coarse_clustering/figure_X-1-1/network_source/cytoscape_edge_style_legend.tsv
+```
+
+SHA-256 values:
+
+| File | SHA-256 |
+|---|---|
+| `cytoscape_complete_nodes.tsv` | `42b94616734b1cd62d553fb4c375c7c5a19c49ee17de81dfe25d1f926e787c14` |
+| `cytoscape_complete_edges.tsv` | `55ddce7e149b781b8a48f1e8267b463697cb94da3cd998184a7217e8bcd8e5e9` |
+| `cytoscape_edge_style_legend.tsv` | `b04937e8cb5dfc327894912b627d2b9fe8ccead55fd7a8915e89077fe4678377` |
+
+Verified row counts:
+
+- complete node table: 1,727 data rows;
+- complete edge table: 966 data rows;
+- edge-style legend: 2 data rows.
+
+## EVD-VGT-WP01B-009 — Network accounting
+
+Repository paths:
+
+```text
+results/WP01B_coarse_clustering/figure_X-1-1/accounting/cluster_cytoscape_accounting.tsv
+results/WP01B_coarse_clustering/figure_X-1-1/accounting/cytoscape_absent_cluster_sizes.tsv
+results/WP01B_coarse_clustering/figure_X-1-1/accounting/cytoscape_absent_reps.txt
+results/WP01B_coarse_clustering/figure_X-1-1/accounting/cytoscape_visible_reps.txt
+```
+
+SHA-256 values:
+
+| File | SHA-256 |
+|---|---|
+| `cluster_cytoscape_accounting.tsv` | `a11ee34693920d880c1d99c18d950eade52a7df2f776b951f4d6eec32cc42001` |
+| `cytoscape_absent_cluster_sizes.tsv` | `b7f6ff07c4d67a92c83591c65541582ac4488f111a9c72c4f5b777f0c608d8e3` |
+| `cytoscape_absent_reps.txt` | `542546fd867c327b479b11cc526d0239f100ce4897a8ef051ecaca749b186060` |
+| `cytoscape_visible_reps.txt` | `9b3f20c7ef1b5da3d544751739f832d4dc2cb6daa937c54afe7e78311f9256c8` |
+
+These files preserve the reconciliation that motivated reconstruction of
+multi-member clusters missing from the initial direct-edge display.
+
+## EVD-VGT-WP01B-010 — Cytoscape session and final SVG
+
+Repository paths:
+
+```text
+figures/WP01B_coarse_clustering/figure_X-1-1/250710_Coarse_Clustering_GTA_CC01_01.cys
+figures/WP01B_coarse_clustering/figure_X-1-1/CC01_01.svg
+figures/WP01B_coarse_clustering/figure_X-1-1/SHA256SUMS
+```
+
+SHA-256 values:
+
+| File | SHA-256 |
+|---|---|
+| `250710_Coarse_Clustering_GTA_CC01_01.cys` | `83f81ea299d6ff58c60d2abfab6b5352e05af315b4feeb646211a61ee01d5d87` |
+| `CC01_01.svg` | `178fb82bb96b1c3ef12ce8b4e40dd4f6f9c4fdac90e293220bb8c6339c572eb1` |
+
+The `.cys` file is the editable visualization record. The SVG is the archived
+figure export.
+
+# Reconstructed clustering workflow
+
+## Step 1 — Structure-database creation
+
+The archived Bash script created a Foldseek structure database from the WP01A
+structure directory. Internal Foldseek identifiers were retained in
+`protein_db.source` and later mapped to biological identifiers.
+
+## Step 2 — Permissive clustering
+
+The archived command was:
+
+```bash
+foldseek cluster \
+  "$DB_NAME" \
+  "$CLUSTER_DIR/cluster" \
+  "$CLUSTER_TMP" \
+  --min-seq-id 0.0 \
+  -c 0.05 \
+  --cov-mode 0 \
+  --threads 64
+```
+
+Parameter rationale:
+
+- No minimum sequence identity was imposed because the search targeted
+  structurally conserved but sequence-divergent viral candidates.
+- A 5% bidirectional coverage threshold was deliberately permissive so that
+  local GT-like structural signal embedded in heterogeneous architectures was
+  not prematurely removed.
+- The permissiveness made subsequent validation essential.
+
+The Foldseek build observed during retrospective verification was:
+
+```text
+19800e921de4dcadd646feac40d83b4114137515
+```
+
+This does not independently establish the exact build used in May 2025.
+
+## Step 3 — Final membership export
+
+The surviving `cluster_cluster.tsv` assigns each Foldseek member to a final
+representative. Its modification timestamp postdates the initial clustering
+run, and the archived script lacks an explicit `createtsv` call. Therefore, the
+table is treated as a surviving machine output whose exact export command is
+unresolved, rather than as an output proven to have been created by the
+archived script alone.
+
+## Step 4 — Biological identifier reconstruction
+
+Foldseek numeric identifiers were mapped through `protein_db.source` to create
+`canonical/cluster_membership.tsv`.
+
+The reconstruction was validated independently on the original HPC data and
+again from the repository-preserved copies.
+
+## Step 5 — Representative-centered alignment output
+
+The retained `aln_result.m8` contains self and non-self alignments associated
+with the clustering workflow. For visualization, a non-representative member
+was considered direct only when an explicit non-self alignment to its final
+representative was present in this m8.
+
+This direct-alignment classification is an evidence annotation. It does not
+change final cluster membership.
+
+## Step 6 — Complete membership-network reconstruction
+
+The initial direct-edge network omitted some proteins belonging to
+multi-member clusters. The complete network was therefore reconstructed from
+the final membership table:
+
+- final representatives were retained as one node per cluster;
+- direct members were connected by explicit alignment edges;
+- indirect members were connected by membership-only edges;
+- all 115 multi-member clusters were included;
+- singleton nodes were retained in the complete node table for accounting but
+  excluded from the displayed multi-member network.
+
+# Verified results
+
+## Complete baseline partition
+
+| Quantity | Verified value |
+|---|---:|
+| Input structure entries | 1,727 |
+| Final clusters | 761 |
+| Multi-member clusters | 115 |
+| Proteins in multi-member clusters | 1,081 |
+| Singleton clusters/proteins | 646 |
+| Dominant-cluster representative | `A0A3Q8Q3U2` |
+| Dominant-cluster size | 594 |
+| Second-largest cluster size | 43 |
+
+The baseline partition is:
+
+```text
+1,081 multi-member proteins + 646 singleton proteins = 1,727 proteins
+115 multi-member clusters + 646 singleton clusters = 761 clusters
+```
+
+## Figure X-1-1 node accounting
+
+| Node role | Count | Evidentiary meaning |
+|---|---:|---|
+| Representative | 115 | Final Foldseek representative |
+| Direct member | 620 | Explicit non-self representative–member alignment in the retained m8 |
+| Indirect member | 346 | Same final cluster but no explicit final-representative alignment in the retained m8 |
+| Singleton | 646 | One-member cluster; retained in node table but not displayed |
+
+The displayed multi-member network contains:
+
+```text
+115 + 620 + 346 = 1,081 nodes
+```
+
+## Figure X-1-1 edge accounting
+
+| Edge type | Count | Evidentiary meaning |
+|---|---:|---|
+| Direct alignment | 620 | Alignment row exists in retained m8 |
+| Cluster membership | 346 | Edge reconstructs final membership only |
+| Total displayed edges | 966 | One edge per non-representative multi-member protein |
+
+Internal consistency:
+
+```text
+1,081 displayed nodes - 115 representatives = 966 non-representatives
+620 direct edges + 346 membership-only edges = 966 edges
+```
+
+The complete network has 115 connected components by construction, one for
+each final multi-member cluster.
+
+# Cytoscape visualization
+
+The complete edge table was imported as the network and the complete node table
+was joined by `node_id`. The saved session preserves the layout and visual
+mapping.
+
+Visual encoding:
+
+- blue: final representatives;
+- orange: direct members;
+- purple: indirect members;
+- solid green: direct-alignment edges;
+- dashed green: membership-only edges.
+
+The exact colors present in the retained SVG are:
+
+| Element | Hex color |
+|---|---|
+| Representative nodes | `#225EA8` |
+| Direct-member nodes | `#EC7014` |
+| Indirect-member nodes | `#C994C7` |
+| Edges | `#009900` |
+
+Node positions and edge lengths reflect layout only. They do not encode
+TM-score, E-value, evolutionary distance, or alignment strength.
+
+# Figure statement supported by WP01B
+
+Supplementary Figure X-1-1 supports the following bounded statement:
+
+> Permissive Foldseek clustering assigned 1,081 of the 1,727
+> GT-A-query-derived viral structure entries to 115 multi-member clusters. A
+> complete membership network contained 115 final representatives, 620 members
+> with explicit representative–member alignments in the retained m8, and 346
+> additional members connected by membership-only edges. The dominant baseline
+> cluster contained 594 proteins.
+
+The figure does not by itself establish:
+
+- that every protein in the dominant cluster is a glycosyltransferase;
+- that every non-giant or singleton protein is a false positive;
+- that a membership-only edge is a direct structural alignment;
+- that layout distances represent similarity or evolution.
+
+# Evaluation of the original hypothesis
+
+## Result available within WP01B
+
+The clustering yielded a strongly asymmetric partition. The dominant cluster
+contained 594 proteins, whereas the second-largest cluster contained 43. This
+supported the prediction that the permissive search contained one unusually
+recurrent structural population against a long tail.
+
+## What remained untested at the WP01B boundary
+
+The cluster-size discontinuity did not establish functional identity. Testing
+the original GT-A enrichment hypothesis required:
+
+- recovery of known viral GT positive controls;
+- direct structural-alignment support;
+- representative-level analysis of non-giant clusters;
+- within-cluster coherence analysis;
+- singleton structure-length and confidence assessment;
+- manual and query-centric rescue of credible outliers.
+
+## Revised conclusion
+
+WP01B justified using the dominant population as the primary candidate set for
+deeper analysis, but not declaring the remainder negative. The figure
+established a reproducible partition and complete membership accounting; the
+functional interpretation was evaluated separately.
+
+# Downstream analytical decisions
+
+The WP01B result led to four distinct downstream branches:
+
+1. Advance the dominant 594-member baseline cluster to known-control testing
+   and high-resolution structure-similarity analysis.
+2. Evaluate all non-giant representatives independently rather than assuming
+   that they were non-GT.
+3. Test structural coherence in non-giant clusters that lacked direct
+   representative-centered display support.
+4. Analyze singletons separately for length, prediction confidence, structural
+   rescue, and GT-fold content.
+
+This preserves rare or divergent GT-like candidates while prioritizing the
+strongest recurrent structural signal.
+
+# Reproducibility and integrity verification
+
+## Validate canonical membership
+
+From the repository root:
+
+```bash
+bash scripts/reproducible/WP01B_coarse_clustering/validate_membership_reconstruction.sh
+```
+
+## Validate Figure X-1-1 session and SVG
+
+```bash
+(
+  cd figures/WP01B_coarse_clustering/figure_X-1-1
+  sha256sum --check SHA256SUMS
+)
+```
+
+Expected result:
+
+```text
+CC01_01.svg: OK
+250710_Coarse_Clustering_GTA_CC01_01.cys: OK
+```
+
+## Recalculate network accounting
+
+The following read-only Python block verifies the principal counts from the
+preserved node and edge tables.
+
+```{python}
+from collections import Counter
+import csv
+from pathlib import Path
+
+def find_repository_root(start: Path) -> Path:
+    for candidate in (start, *start.parents):
+        if (
+            candidate / "results/WP01B_coarse_clustering"
+        ).is_dir():
+            return candidate
+    raise FileNotFoundError(
+        "Could not locate results/WP01B_coarse_clustering "
+        "from the notebook working directory."
+    )
+
+repo = find_repository_root(Path.cwd().resolve())
+nodes_path = (
+    repo
+    / "results/WP01B_coarse_clustering/figure_X-1-1/network_source/"
+      "cytoscape_complete_nodes.tsv"
+)
+edges_path = (
+    repo
+    / "results/WP01B_coarse_clustering/figure_X-1-1/network_source/"
+      "cytoscape_complete_edges.tsv"
+)
+
+with nodes_path.open(newline="") as handle:
+    nodes = list(csv.DictReader(handle, delimiter="\t"))
+
+with edges_path.open(newline="") as handle:
+    edges = list(csv.DictReader(handle, delimiter="\t"))
+
+node_roles = Counter(row["node_role"] for row in nodes)
+edge_types = Counter(row["edge_type"] for row in edges)
+
+assert len(nodes) == 1727
+assert node_roles == {
+    "singleton": 646,
+    "direct_member": 620,
+    "indirect_member": 346,
+    "representative": 115,
+}
+assert len(edges) == 966
+assert edge_types == {
+    "direct_alignment": 620,
+    "cluster_membership": 346,
+}
+
+multi_nodes = {
+    row["node_id"] for row in nodes if row["cluster_class"] == "multi_member"
+}
+edge_nodes = {
+    node
+    for row in edges
+    for node in (row["source"], row["target"])
+}
+assert len(multi_nodes) == 1081
+assert edge_nodes == multi_nodes
+
+print("WP01B Figure X-1-1 accounting: PASS")
+```
+
+# Repository history
+
+| Commit | Content |
+|---|---|
+| `e3f4890` | Validated coarse-clustering assignments, mapping, canonical membership, validation scripts, and initial WP01B record |
+| `622c052` | Representative-centered m8, complete Cytoscape source tables, and network accounting files |
+| `a5a2bef` | Saved Cytoscape session, final SVG, and SHA-256 manifest |
+
+At `a5a2bef`, local `main` and `origin/main` were synchronized.
+
+# Contribution statement
+
+Lan Na formulated the scientific question of whether a dominant structural
+cluster could provide a defensible high-confidence candidate population,
+designed and executed the permissive Foldseek coarse-clustering analysis,
+curated the structural input, reconstructed and validated the final membership,
+developed the direct-versus-indirect evidentiary interpretation, generated and
+curated the complete Cytoscape membership network, created the figure, and
+integrated the result into the manuscript logic.
+
+CRediT-aligned roles documented by this record:
+
+- Conceptualization
+- Methodology
+- Software and workflow execution
+- Formal analysis
+- Investigation
+- Data curation
+- Validation
+- Visualization
+- Writing — original draft
+
+This contribution statement describes WP01B only and does not assign or negate
+the contributions of others in other work packages.
+
+# Unresolved questions and limitations
+
+1. **Original TSV export command.** The archived clustering script does not
+   contain the `foldseek createtsv` command that produced
+   `cluster_cluster.tsv`. The surviving table and its validation are preserved,
+   but the exact original export invocation remains unresolved.
+2. **Exact historical Foldseek build.** The build observed during 2026
+   retrospective verification is recorded, but it is not independently proven
+   to be the exact May 2025 binary.
+3. **Complete-network generation script.** No surviving
+   `build_complete_foldseek_cytoscape_network.py` was found in the inspected
+   HPC directory. The final tables, accounting files, session, and SVG are
+   preserved, but full automated regeneration of those tables from canonical
+   membership and m8 remains incomplete.
+4. **Artifact-level versus code-level reproducibility.** Figure X-1-1 is
+   reproducible at the artifact level by opening the checksum-verified
+   Cytoscape session and is independently auditable from the source tables.
+   End-to-end code-level regeneration of the complete source tables is not yet
+   complete.
+5. **Functional interpretation.** Cluster topology alone does not establish GT
+   function. That claim depends on downstream validation and must not be
+   attributed to WP01B alone.
+
+# Record completion criteria
+
+WP01B is considered complete for the present retrospective record because:
+
+- the 1,727-entry final membership is preserved and validated;
+- all 115 multi-member clusters and 646 singletons are accounted for;
+- the representative-centered m8 is preserved;
+- the complete 1,081-node, 966-edge multi-member network is preserved;
+- direct and membership-only edges are explicitly distinguished;
+- the editable Cytoscape session and final SVG are checksum verified;
+- scientific interpretation, contribution history, and limitations are
+  explicitly recorded.
+
+The missing network-generation code remains a documented reproducibility
+improvement task rather than an unreported gap.
