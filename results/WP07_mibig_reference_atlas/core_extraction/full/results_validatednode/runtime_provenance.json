@@ -1,0 +1,26 @@
+{
+  "script_sha256": "a55aaa1def41c22ebf7dab3c331427e3c7a2d847c076f055fd20c83a65ca47a9",
+  "utc": "2026-09-10T20:32:16.114370+00:00",
+  "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "numpy": "2.2.6",
+    "pandas": "2.3.0",
+    "lmdb": "2.2.1"
+  },
+  "job_id": "48071887",
+  "command": [
+    "/scratch/ln72030/BGC_Prophet/core_context_full_20260910/run_hpc_core_context_full.py",
+    "--work",
+    "/scratch/ln72030/BGC_Prophet",
+    "--out",
+    "/scratch/ln72030/BGC_Prophet/core_context_full_20260910/results_validatednode"
+  ],
+  "device": "cpu",
+  "batch_size": 128,
+  "model_forward_reimplemented": false,
+  "individual_vectors_normalized": false,
+  "pooling": "H[j, derived_membership_mask[j]].mean(dim=0)",
+  "random_settings": "Unchanged from validated original loader",
+  "validated_pilot_job": "48067092"
+}

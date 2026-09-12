@@ -1,0 +1,84 @@
+{
+  "consensus_shape": [
+    2502,
+    320
+  ],
+  "pca_pc1": 0.3909129556549868,
+  "pca_pc2": 0.27468106116751656,
+  "pca_components_90": 5,
+  "hdbscan_primary": {
+    "min_cluster_size": 30,
+    "min_samples": 10,
+    "n_clusters": 6,
+    "n_noise": 843,
+    "noise_fraction": 0.3369304556354916
+  },
+  "knn": [
+    {
+      "definition": "any_saccharide",
+      "k": 5,
+      "n_positive": 195,
+      "n_total": 2502,
+      "precision_at_k": 0.7692307692307693,
+      "global_prevalence": 0.07793764988009592,
+      "fold_over_prevalence": 9.8698224852071,
+      "excess_percentage_points": 69.12931193506734,
+      "self_excluded_null_prevalence": 0.07756897241103558
+    },
+    {
+      "definition": "any_saccharide",
+      "k": 10,
+      "n_positive": 195,
+      "n_total": 2502,
+      "precision_at_k": 0.7661538461538461,
+      "global_prevalence": 0.07793764988009592,
+      "fold_over_prevalence": 9.830343195266272,
+      "excess_percentage_points": 68.82161962737501,
+      "self_excluded_null_prevalence": 0.07756897241103558
+    },
+    {
+      "definition": "any_saccharide",
+      "k": 20,
+      "n_positive": 195,
+      "n_total": 2502,
+      "precision_at_k": 0.7494871794871795,
+      "global_prevalence": 0.07793764988009592,
+      "fold_over_prevalence": 9.616497041420118,
+      "excess_percentage_points": 67.15495296070836,
+      "self_excluded_null_prevalence": 0.07756897241103558
+    },
+    {
+      "definition": "pure_saccharide",
+      "k": 5,
+      "n_positive": 130,
+      "n_total": 2502,
+      "precision_at_k": 0.9292307692307692,
+      "global_prevalence": 0.05195843325339728,
+      "fold_over_prevalence": 17.884118343195265,
+      "excess_percentage_points": 87.72723359773718,
+      "self_excluded_null_prevalence": 0.05157936825269892
+    },
+    {
+      "definition": "pure_saccharide",
+      "k": 10,
+      "n_positive": 130,
+      "n_total": 2502,
+      "precision_at_k": 0.93,
+      "global_prevalence": 0.05195843325339728,
+      "fold_over_prevalence": 17.89892307692308,
+      "excess_percentage_points": 87.80415667466028,
+      "self_excluded_null_prevalence": 0.05157936825269892
+    },
+    {
+      "definition": "pure_saccharide",
+      "k": 20,
+      "n_positive": 130,
+      "n_total": 2502,
+      "precision_at_k": 0.9257692307692307,
+      "global_prevalence": 0.05195843325339728,
+      "fold_over_prevalence": 17.81749704142012,
+      "excess_percentage_points": 87.38107975158333,
+      "self_excluded_null_prevalence": 0.05157936825269892
+    }
+  ]
+}

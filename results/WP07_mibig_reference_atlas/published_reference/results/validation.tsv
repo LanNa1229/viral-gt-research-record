@@ -1,0 +1,14 @@
+check	passed	detail
+embedding_shape	True	(12510, 320)
+embedding_finite	True	4003200
+nonzero_embedding_norms	True	Required for cosine
+metadata_csv_rows	True	12510, 12510
+embedding_row_bijection	True	Unique indices 0..12509
+unique_sample_ids	True	12,510 unique IDs
+metadata_csv_alignment	True	Exact ID, labels, isBGC match in embedding_row order
+source_csv_identity	True	Analysis copy SHA256 equals root CSV
+probability_shape_finite	True	(12510, 7)
+probability_range	True	Multilabel probabilities: no row-sum constraint
+bgc_count	True	2502
+five_augmentations	True	Exact suffix set for each BGC
+constant_bgc_metadata	True	Label and original sentence constant

@@ -1,0 +1,25 @@
+{
+  "script_sha256": "e7806d64b633b1e9938b096c8dfe91349852417887216c2b6354a1fa1d85a84b",
+  "audit_script_sha256": "8a768ee6bb16f374bb01dff8e2900344e17096ccceaaa4a40ad29f5cd604e7ae",
+  "utc": "2026-09-10T19:32:32.029149+00:00",
+  "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "numpy": "2.2.6",
+    "pandas": "2.3.0",
+    "lmdb": "2.2.1"
+  },
+  "command": [
+    "/scratch/ln72030/BGC_Prophet/core_context_pilot_20260910/run_hpc_core_context_pilot.py",
+    "--work",
+    "/scratch/ln72030/BGC_Prophet",
+    "--out",
+    "/scratch/ln72030/BGC_Prophet/core_context_pilot_20260910/results"
+  ],
+  "job_id": "48067092",
+  "device": "cpu",
+  "batch_size": 128,
+  "original_classify_used": true,
+  "full_tensor_saved": false,
+  "full_run_launched": false
+}

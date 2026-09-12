@@ -1,0 +1,22 @@
+{
+  "script_version": "2.0.0",
+  "script_sha256": "8a768ee6bb16f374bb01dff8e2900344e17096ccceaaa4a40ad29f5cd604e7ae",
+  "utc": "2026-09-10T09:31:20.035128+00:00",
+  "command": [
+    "scripts/extract_core_context_pilot.py",
+    "--mode",
+    "audit",
+    "--csv",
+    "BGC_train_dataset_classify.csv",
+    "--metadata",
+    "analysis/bgcprophet_reference/data/mibig_12510_metadata.tsv",
+    "--out",
+    "outputs/core_context_membership_audit"
+  ],
+  "input_sha256": {
+    "BGC_train_dataset_classify.csv": "78dab471e8ef7dcdec16f6b4eb82ef15ef01b8bf900743c14238d26186a1d7f9",
+    "analysis/bgcprophet_reference/data/mibig_12510_metadata.tsv": "faaee7f876a610b6b0c55e7dd982c8556d32e2cd4ff179c03855234c5e7706f9"
+  },
+  "inputs_unchanged": true,
+  "mode": "audit"
+}

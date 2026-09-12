@@ -1,0 +1,57 @@
+{
+  "script_sha256": "41a8fa1a9674a18ef9872496d8eb409282ddd5ce28bd2cdb728245223c59c058",
+  "command": [
+    "\\\\wsl.localhost\\Ubuntu\\home\\rahnn\\260908_MiBG\\analysis\\bgcprophet_reference\\scripts\\plot_umap_all_bgc_classes.py"
+  ],
+  "numpy_version": "2.3.5",
+  "matplotlib_version": "3.11.1",
+  "coordinate_source": "results/umap_coordinates.tsv",
+  "coordinate_sha256": "f862e3641229c207058352288a698af74e70feed4ffb786dba24db2413942bb7",
+  "metadata_sha256": "defef570a2795381c91d0dd555a7c68a7c3073440f1ae8497ba59c95a1fc69b0",
+  "canonical_classes": [
+    "Alkaloid",
+    "Terpene",
+    "NRP",
+    "Polyketide",
+    "RiPP",
+    "Saccharide",
+    "Other"
+  ],
+  "hybrid_rule": "More than one whitespace-separated canonical label",
+  "counts": {
+    "Alkaloid": 53,
+    "Terpene": 150,
+    "NRP": 468,
+    "Polyketide": 606,
+    "RiPP": 330,
+    "Saccharide": 130,
+    "Other": 298,
+    "Hybrid": 467
+  },
+  "xlim": [
+    -5.144168663024902,
+    18.573695945739747
+  ],
+  "ylim": [
+    -4.883082246780395,
+    17.143350458145143
+  ],
+  "limits_method": "Original float32 coordinates, original scatter groups and Matplotlib autoscaling",
+  "umap_recomputed": false,
+  "existing_results_verified_unchanged": 49,
+  "colors": {
+    "Alkaloid": "#CC79A7",
+    "Terpene": "#009E73",
+    "NRP": "#0072B2",
+    "Polyketide": "#D55E00",
+    "RiPP": "#E69F00",
+    "Saccharide": "#56B4E9",
+    "Other": "#777777",
+    "Hybrid": "#7B3294"
+  },
+  "figure_inches": [
+    6.8,
+    4.2
+  ],
+  "dpi": 600
+}

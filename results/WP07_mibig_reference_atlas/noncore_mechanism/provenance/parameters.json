@@ -1,0 +1,20 @@
+{
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "bootstrap_count": 10000,
+  "bootstrap_seed": 1729,
+  "comparison_seeds": "1729 + paired-test index (0..5)",
+  "equality_tolerance": 1e-12,
+  "ks": [
+    5,
+    10,
+    20,
+    50
+  ],
+  "reconstruction": "N=(128*A-n*B)/(128-n); raw float64 algebra",
+  "centroid": "Mean of five raw vectors, float64; no individual normalization",
+  "knn": "Exact corrected Step 3 implementation: transient float64 cosine normalization, 1-Z@Z.T, diagonal infinity, stable argsort, lexicographic BGC ties",
+  "permutations": "Reuse exact shared_label_permutations.npy from corrected consensus Step 3; verify seed/count/group order",
+  "no_inference": true,
+  "no_PCA_or_UMAP": true
+}

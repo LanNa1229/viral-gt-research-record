@@ -1,0 +1,59 @@
+{
+  "core": "/home/rahnn/260908_MiBG/outputs/core_context_full_20260910/results_validatednode/mibig_12510_core_context_embeddings.npy",
+  "core_metadata": "/home/rahnn/260908_MiBG/outputs/core_context_full_20260910/results_validatednode/mibig_12510_core_context_metadata.tsv",
+  "published": "/home/rahnn/260908_MiBG/analysis/bgcprophet_reference/data/mibig_12510_embeddings.npy",
+  "published_metadata": "/home/rahnn/260908_MiBG/analysis/bgcprophet_reference/data/mibig_12510_metadata.tsv",
+  "csv": "/home/rahnn/260908_MiBG/BGC_train_dataset_classify.csv",
+  "canonical_directory": "/home/rahnn/260908_MiBG/outputs/core_context_full_20260910/results_validatednode",
+  "palette": "/home/rahnn/260908_MiBG/analysis/bgcprophet_reference/results/umap_all_bgc_classes_provenance.json",
+  "annotations": "/home/rahnn/260908_MiBG/sources/mibig_gbk_3.1.tar.gz",
+  "reference_selection": "Only project candidate matching completed extraction's recorded SHA256",
+  "reference_zero_definition": "Core-first baseline: all suffix 0 cores start at position 0; not an uncontextualized BGC",
+  "original_columns": [
+    "ID",
+    "sentence",
+    "labels",
+    "isBGC",
+    "TDsentence",
+    "TDlabels"
+  ],
+  "metadata_columns": [
+    "embedding_row",
+    "ID",
+    "labels",
+    "isBGC"
+  ],
+  "validation_columns": [
+    "embedding_row",
+    "ID",
+    "core_length",
+    "selected_positions",
+    "selected_count_matches_core",
+    "core_interrupted",
+    "tdlabels_agree",
+    "encoder_shape",
+    "pooled_shape",
+    "encoder_finite",
+    "pooled_finite",
+    "metadata_aligned",
+    "unmasked_reference_exact",
+    "unmasked_reference_close",
+    "unmasked_reference_max_abs_difference",
+    "unmasked_mean_matches_classifier_input"
+  ],
+  "absent_columns": [
+    "taxonomy in training CSV",
+    "product/subclass in training CSV",
+    "explicit canonical designation",
+    "actual artificial padding indicator"
+  ],
+  "derived_rules": {
+    "base_BGC": "ID regex BGC followed by seven digits, before final underscore",
+    "suffix": "Integer after final underscore",
+    "core_gene_count": "Whitespace token count of sentence",
+    "context_gene_count": "128 minus core_gene_count; noncore biological-context positions, not asserted artificial padding",
+    "interrupted": "Membership positions contain at least one intervening noncore position"
+  },
+  "n_rows": 12510,
+  "n_base": 2502
+}

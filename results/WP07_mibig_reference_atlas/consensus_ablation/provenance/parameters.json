@@ -1,0 +1,49 @@
+{
+  "seed": 1729,
+  "bootstrap_count": 10000,
+  "permutation_count": 10000,
+  "ks": [
+    5,
+    10,
+    20,
+    50
+  ],
+  "consensus": "Raw arithmetic mean of five source vectors, float64 accumulation and float64 storage; suffix order -1,0,1,2,3",
+  "knn": "Original 320-D cosine; float64 transient L2-normalized copy; diagonal excluded; stable argsort; lexicographic base_BGC breaks exact ties",
+  "bootstrap": "Paired positive-query BGC resampling with replacement; percentile 95% CI for mean and median B-minus-A, fixed neighbor graphs",
+  "permutation": "Same permutation of the two-column Saccharide membership tuple used for A and B; all 2502 labels permuted; positive queries recomputed",
+  "pca": {
+    "svd_solver": "full",
+    "n_components": 320,
+    "whiten": false,
+    "standardize": false
+  },
+  "umap": {
+    "metric": "cosine",
+    "n_neighbors": [
+      15,
+      30,
+      50
+    ],
+    "min_dist": 0.1,
+    "n_components": 2,
+    "random_state": 1729,
+    "transform_seed": 1729,
+    "n_jobs": 1,
+    "n_epochs": 500,
+    "init": "spectral"
+  },
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.6.1",
+    "matplotlib": "3.10.3",
+    "umap-learn": "0.5.7",
+    "numba": "0.67.0",
+    "pynndescent": "0.6.0"
+  },
+  "dependency_path": "/home/rahnn/260908_MiBG/analysis/core_context_representation_geometry_20260910/.deps"
+}
