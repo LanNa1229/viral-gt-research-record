@@ -103,6 +103,15 @@ Current work packages include:
 └── scripts/
 ```
 
+## Reproduce GT31 core conservation on F2Y1U4
+
+The [GT31 conservation workflow](workflows/WP06_GT31_conservation/README.md)
+contains the essential analysis code, parameters, and instructions for the
+Q18515–F2Y1U4 supplementary structural comparison. With the separately
+distributed input bundle, it reproduces representative selection,
+reference-only strict/supported core definition, query mapping, and PyMOL
+core coloring with one Python command.
+
 ## 5. What belongs in Git
 
 Track in Git:
@@ -134,5 +143,6 @@ For each externally stored dataset, create a manifest under `metadata/manifests/
 - SHA-256 manifest location;
 - access restrictions;
 - notebook and commit that used the dataset.
+
 
 

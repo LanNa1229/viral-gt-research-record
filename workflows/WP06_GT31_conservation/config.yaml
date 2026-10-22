@@ -1,0 +1,37 @@
+quality:
+  min_model_plddt: 70.0
+  min_model_residues: 100
+  min_sequence_mapping_identity: 0.90
+  min_sequence_mapping_coverage: 0.90
+  min_local_plddt: 70.0
+
+lddt:
+  inclusion_radius_A: 15.0
+  thresholds_A: [0.5, 1.0, 2.0, 4.0]
+  min_neighbors: 5
+
+classification:
+  within_high: 0.75
+  between_high: 0.65
+  min_within_presence: 0.70
+  min_within_lddt_coverage: 0.60
+  min_between_presence: 0.50
+  min_between_lddt_coverage: 0.40
+  max_within_gap_frequency: 0.30
+
+pan_core:
+  min_subcluster_occupancy: 0.70
+  min_local_plddt: 70.0
+  within_high: 0.75
+  cross_high: 0.65
+  min_within_lddt_coverage: 0.60
+  min_cross_lddt_coverage: 0.40
+  min_cross_presence: 0.50
+  supported_min_cluster_pass_fraction: 0.75
+  region_min_length: 4
+  region_max_bridge_residues: 1
+  contact_cutoff_A: 10.0
+
+visualization:
+  dpi: 300
+  max_scatter_points_per_category: 20000
