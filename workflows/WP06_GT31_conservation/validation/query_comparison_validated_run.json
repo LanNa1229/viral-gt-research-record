@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "n_references": 17,
+  "n_subclusters": 4,
+  "checksums_verified": true,
+  "individual_identities_match_archive": true,
+  "subcluster_medians_match_archive": true,
+  "reported_bars_match": true,
+  "aggregation": "unweighted mean of four subcluster medians",
+  "bars": [
+    {
+      "metric": "sequence_identity",
+      "mean_subcluster_median": 0.16417829607252327,
+      "display_value": "16.42",
+      "display_unit": "%"
+    },
+    {
+      "metric": "query_coverage",
+      "mean_subcluster_median": 0.9924999999999999,
+      "display_value": "99.25",
+      "display_unit": "%"
+    },
+    {
+      "metric": "alignment_TM_score",
+      "mean_subcluster_median": 0.79955,
+      "display_value": "0.7996",
+      "display_unit": "score"
+    }
+  ],
+  "python": "3.12.14",
+  "upstream_foldseek_or_foldmason_rerun": false
+}

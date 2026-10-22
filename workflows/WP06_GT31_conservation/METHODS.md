@@ -1,5 +1,16 @@
 # Analysis definitions
 
+## Global query-versus-reference summary
+
+The three summary bars are calculated separately from local core conservation.
+For each of 17 references, sequence identity is the fraction of identical
+residues among mutually nongap columns of the archived reference19-plus-F2Y1U4
+FoldMason AA alignment. Query coverage and AlnTM use the archived Foldseek
+`qcov` and `alntmscore` fields with F2Y1U4 as query. No reverse-direction
+averaging or core-only masking is applied. Each metric is summarized by its
+median within SC01–SC04, then the unweighted mean of those four medians.
+See [QUERY_COMPARISON.md](QUERY_COMPARISON.md) for inputs, precision, and validation.
+
 ## Representative selection
 
 The membership table contains 17 GT31 references in SC01–SC04. References must

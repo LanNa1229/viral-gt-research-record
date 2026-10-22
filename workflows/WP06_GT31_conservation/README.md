@@ -56,6 +56,22 @@ because it supplies the original local geometry calculation used by the core
 caller. `common.py` supplies structure parsing, alignment mapping, configuration,
 and PDB output functions.
 
+## Reproduce the three summary bars
+
+The companion [query-comparison workflow](QUERY_COMPARISON.md) reproduces
+sequence identity **16.42%**, query coverage **99.25%**, and alignment TM-score
+**0.7996** as the unweighted mean of four subcluster medians. Run from the
+repository root (Python standard library only; no dependency installation needed):
+
+```bash
+python workflows/WP06_GT31_conservation/scripts/summarize_query_comparisons.py
+```
+
+It writes per-reference comparisons, subcluster medians, `bar_summary.tsv`, and
+a validation record under `query_comparison_output/`. All inputs are included.
+This calculation uses the full archived alignments/comparisons and does not
+restrict the scores to the strict or supported core residues.
+
 ## Reference set and alignment
 
 The 17 references belong to four annotation-defined groups: SC01 B3GALT5-like

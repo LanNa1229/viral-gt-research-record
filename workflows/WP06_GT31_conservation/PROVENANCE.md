@@ -56,6 +56,20 @@ the exact archived alignments are the reproducibility inputs.
 
 ## Validation
 
+The companion `scripts/summarize_query_comparisons.py` was added on 22 October
+2026 to reproduce the three global-comparison bars. Its identity definition
+matches `scripts/audit_c012.py` in the 21 October research record (SHA-256
+`3d4e41141268419283d0b91ace078e73a9fc3d55ac8cf3c020f1948883966589`).
+It reuses the included membership table and query-inclusive AA alignment.
+The added Foldseek input preserves the original header and 17 selected rows
+of the corrected comparison table. The archived July group medians and
+October audit values are validation targets. The three figure labels were
+transcribed from the reported legend into `reported_bar_values.json`; they
+are not used to compute any comparison score. Extraction sources, complete
+source hashes, and deposited hashes are recorded in
+`provenance/query_comparison_sources.tsv`. See `QUERY_COMPARISON.md` for the
+separate global-comparison checks and validation record.
+
 The driver verifies package checksums and compares all rows/columns in the
 reference core table, medoid local-metric table, and query mapping table with
 the archived results. Numeric comparisons use absolute and relative tolerance
