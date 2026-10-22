@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "core_calls_match_archive": true,
+  "anchor_metrics_match_archive": true,
+  "query_mapping_matches_archive": true,
+  "automatic_medoids_match_archive": true,
+  "input_sha256_verified": true,
+  "query_only_b_factor_changed": true,
+  "class_counts": {
+    "Q18515": {
+      "0": 242,
+      "60": 49,
+      "100": 98
+    },
+    "F2Y1U4": {
+      "0": 97,
+      "60": 41,
+      "100": 93
+    }
+  },
+  "summary": {
+    "n_reference_proteins": 17,
+    "n_subclusters": 4,
+    "reference_alignment_length": 966,
+    "n_strict_pan_core_columns": 98,
+    "n_supported_pan_core_columns": 147,
+    "n_supported_only_pan_core_columns": 49,
+    "n_strict_core_regions": 9,
+    "spatial_components_per_medoid": {
+      "A0A3B3R5I0": 1,
+      "Q18515": 1,
+      "Q1RLK6": 1,
+      "Q9N294": 1
+    },
+    "largest_spatial_component_fraction_per_medoid": {
+      "A0A3B3R5I0": 1.0,
+      "Q18515": 1.0,
+      "Q1RLK6": 1.0,
+      "Q9N294": 1.0
+    },
+    "anchor_medoid_id": "Q9N294",
+    "query_id": "F2Y1U4",
+    "query_strict_core_coverage": 0.9489795918367347,
+    "query_strict_core_3di_match": 0.6129032258064516,
+    "query_strict_core_aa_match": 0.26881720430107525,
+    "query_strict_core_median_local_lddt": 0.7172727162646517,
+    "query_fraction_local_lddt_ge_cross_threshold": 0.7849462365591398,
+    "query_fraction_local_lddt_ge_within_threshold": 0.3333333333333333
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "biopython": "1.88",
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.10.8",
+    "seaborn": "0.13.2",
+    "scipy": "1.17.0"
+  },
+  "elapsed_seconds": 19.32,
+  "upstream_search_and_alignment_rerun": false,
+  "pymol_rendering_tested": false
+}
