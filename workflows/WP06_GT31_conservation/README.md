@@ -6,24 +6,21 @@ steps from the archived C012 GT31 workflow: select representatives, define a
 reference-only structural core, and map that core onto F2Y1U4.
 
 The core numerical modules are preserved unchanged from the archived analysis.
-A portable driver was added on 22 October 2026. This GitHub deposit contains
-the code, parameters, and instructions. The reference PDBs, archived Foldseek
-scores, FoldMason alignments, and expected outputs are distributed separately
-in `GT31_conservation_inputs_20261022.zip`. No public input-data download is
-attached to this code commit. Obtain that bundle from the corresponding
-research record or repository owner before running the analysis.
+A portable driver was added on 22 October 2026. This directory contains the
+code, parameters, instructions, 18 input PDBs, archived Foldseek scores,
+FoldMason alignments, expected outputs, and validation record. Download or
+clone the complete repository to obtain both code and data together.
 
-After obtaining the inputs and installing Python dependencies, the rerun needs
-no GPU, network access, Foldseek executable, or FoldMason executable.
+After installing Python dependencies, the rerun needs no GPU, network access,
+Foldseek executable, or FoldMason executable.
 
 ## Run
 
-First extract `GT31_conservation_inputs_20261022.zip` into this workflow's
-directory (beside this README). It supplies `inputs/`, `expected/`,
-`INPUT_SHA256SUMS`, and input-provenance/validation records. The input checksum
-file must be directly beside this README, not inside an extra nested folder.
+Download the repository using GitHub's **Code → Download ZIP** option and
+extract it, or clone it with Git. All required scientific input files are
+included under this workflow directory.
 
-Then, from the repository root, with Python 3.12:
+From the repository root, with Python 3.12:
 
 ```bash
 python -m pip install -r workflows/WP06_GT31_conservation/requirements.txt
@@ -116,11 +113,11 @@ PyMOL rendering is not part of the automated numerical validation.
 - [PROVENANCE.md](PROVENANCE.md): archived sources and packaging changes.
 - `provenance/code_source_manifest.tsv`: archived code paths and SHA-256 hashes.
 - `SHA256SUMS`: checksums for deposited code, parameters, and documentation.
-- `INPUT_SHA256SUMS` in the separate bundle: checksums for inputs and expected results.
+- `INPUT_SHA256SUMS`: checksums for inputs and expected results.
 - `requirements.txt`: pinned direct dependencies used in validation.
 - `expected/`: original outputs used for regression comparisons; never read to
   choose core positions or query mappings.
-- `validation/` in the separate bundle: result of running this package before upload.
+- `validation/`: result of running this package before upload.
 
 The upstream searches and structural alignments are archived inputs. They were
 not recomputed in this release. See PROVENANCE.md for the recorded alignment

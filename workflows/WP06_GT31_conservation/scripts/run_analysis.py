@@ -25,9 +25,9 @@ def verify_files():
     data_manifest = ROOT / 'INPUT_SHA256SUMS'
     if not data_manifest.is_file():
         raise SystemExit(
-            'Required input data are distributed separately. Extract '
-            'GT31_conservation_inputs_20261022.zip into this workflow directory '
-            '(beside README.md), then run this command again. See README.md.')
+            'Required input data are missing from this checkout. Download the '
+            'complete workflow directory, including inputs/, expected/, and '
+            'INPUT_SHA256SUMS, then run this command again. See README.md.')
     for manifest in [ROOT / 'SHA256SUMS', data_manifest]:
         for line in manifest.read_text().splitlines():
             digest, relpath = line.split('  ', 1)

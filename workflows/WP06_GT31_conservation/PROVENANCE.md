@@ -9,14 +9,13 @@ The packaging date is distinct from the original analysis date.
 The five Python files under `src/vgt_constraints/` are byte-identical to the
 archived modules. `scripts/make_query_core_classes.py` is the unchanged helper
 added in the 21 October research record. `provenance/code_source_manifest.tsv`
-records the archived code/configuration paths and SHA-256 hashes. The separate
-input bundle contains `provenance/source_manifest.tsv`, with source paths,
-hashes, and transformations for the data as well.
+records the archived code/configuration paths and SHA-256 hashes.
+`provenance/source_manifest.tsv` records source paths, hashes, and
+transformations for the data as well. Code and inputs are distributed together.
 
 The reference membership table retains its original fields and rows, with
 structure paths made relative to this package. Its source archive hash is
-recorded separately. In the separate input bundle, the 18 original PDBs
-(17 references plus F2Y1U4) retain
+recorded separately. The 18 original PDBs (17 references plus F2Y1U4) retain
 their original coordinates and confidence values. These are the preserved
 analysis inputs; this package does not claim to rerun their model generation
 or provide a new structure-database release/version assignment.
@@ -46,7 +45,7 @@ The retained FoldMason logs identify the software build as
 `MMseqs Version` field). The recorded commands used `easy-msa`,
 `--report-mode 1 --refine-iters 0 --pair-threshold 0.0 --threads 16`.
 One alignment used 19 references; the other used those references plus F2Y1U4.
-The original explicit structure input order is preserved in the input bundle's
+The original explicit structure input order is preserved in
 `provenance/foldmason_commands.txt`.
 
 Only 17 of those references participate in core definition. The two additional
@@ -64,7 +63,7 @@ of 1e-10; categorical assignments must match. It also checks all summary
 values, representative identities, PDB class counts, and preservation of query
 atom-record fields outside the B-factor column.
 
-The input bundle's validation record was produced by executing this package
+The included validation record was produced by executing this package
 with the listed Python dependency versions. It is not a rerun of Foldseek,
 FoldMason, structure prediction, or the PyMOL renderer. The checksum manifests
 exclude the validation record itself to avoid a self-referential checksum cycle.

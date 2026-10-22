@@ -106,11 +106,11 @@ Current work packages include:
 ## Reproduce GT31 core conservation on F2Y1U4
 
 The [GT31 conservation workflow](workflows/WP06_GT31_conservation/README.md)
-contains the essential analysis code, parameters, and instructions for the
-Q18515–F2Y1U4 supplementary structural comparison. With the separately
-distributed input bundle, it reproduces representative selection,
-reference-only strict/supported core definition, query mapping, and PyMOL
-core coloring with one Python command.
+contains the essential analysis code, parameters, input structures, archived
+Foldseek/FoldMason results, and instructions for the Q18515–F2Y1U4 supplementary
+structural comparison. It reproduces representative selection, reference-only
+strict/supported core definition, query mapping, and PyMOL core coloring with
+one Python command. All inputs required for this rerun are included.
 
 ## 5. What belongs in Git
 
