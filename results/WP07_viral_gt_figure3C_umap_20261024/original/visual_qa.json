@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "inspected": [
+    "figures/preview_ABC.png",
+    "figures/Figure_A_reference_classes.png",
+    "figures/Figure_B_candidate_status.png",
+    "figures/Figure_C_saccharide_P10.png"
+  ],
+  "checks": [
+    "Readable legends and labels",
+    "No clipping or annotation overlap",
+    "Same coordinate system and axis limits",
+    "Viral triangles visible above references",
+    "Seven existing classes retained, including split-color hybrid markers",
+    "Figure B uses original candidate labels",
+    "Figure C color bar spans 0 to 1",
+    "PNG 5100x3420 at 600 dpi",
+    "SVG contains no raster image elements",
+    "Saved coordinates unchanged after SVG correction"
+  ],
+  "known_limitations": [
+    "Dense/exact-duplicate loci overplot",
+    "Reference class color is needed to distinguish seven annotations",
+    "No color-vision-deficiency simulations performed"
+  ],
+  "no_refit_for_export_correction": true
+}

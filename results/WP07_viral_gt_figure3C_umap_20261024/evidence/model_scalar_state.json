@@ -1,0 +1,33 @@
+{
+  "source": "original/joint_umap_model.pkl",
+  "source_sha256": "d2f78a616c269bf602b8d2152e94c72903aac571933c4695752fc27634bfbf99",
+  "execution_chain": "Original successful fit code writes pickle after fit; original/output_checksums.csv records its hash; raw finalizer command verifies that manifest.",
+  "inspection": "Retrospective static pickletools opcode inspection only; no deserialization, imports of scientific packages, new fitting or recomputation. Values already present in the execution-produced artifact.",
+  "evidence_type": "EXECUTION-VERIFIED",
+  "scalars": {
+    "n_epochs": {
+      "key_byte_offset": 168,
+      "recorded_value": null,
+      "effective_optimization_epochs": "NOT RECORDED"
+    },
+    "_a": {
+      "key_byte_offset": 3915330,
+      "value_byte_offset": 3915407,
+      "payload_hex": "4c17fa10293bf93f",
+      "dtype": "little-endian float64 (f8, memo 67 is <)",
+      "value": 1.5769434607659205
+    },
+    "_b": {
+      "key_byte_offset": 3915422,
+      "value_byte_offset": 3915431,
+      "payload_hex": "afbffab556a4ec3f",
+      "dtype": "little-endian float64 (f8, memo 67 is <)",
+      "value": 0.8950608782088149
+    },
+    "n_epochs_list": {
+      "key_byte_offset": 3915520,
+      "recorded_value": null,
+      "effective_optimization_epochs": "NOT RECORDED"
+    }
+  }
+}

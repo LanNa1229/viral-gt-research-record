@@ -1,0 +1,135 @@
+{
+  "classifier_seconds": 1.571783059524023,
+  "elapsed_seconds": 38.309250570993754,
+  "encoding": {
+    "esm_batch_size": 1,
+    "esm_seconds": 33.069300239003496,
+    "historical_cache_hits": 106,
+    "newly_encoded": 871,
+    "persistent_cache_hits": 6115,
+    "unique_sequences": 7092
+  },
+  "historical_sequence_cache": [
+    {
+      "array": "/home/rahnn/260908_MiBG/analysis/viral_glycan_benchmark_20261016/protein_esm2_embeddings.npy",
+      "array_sha256": "da5dae4a746a47cd610ce851d2abba9dbdc21c1acc9e76b7273f986a5fc97472",
+      "metadata": "/home/rahnn/260908_MiBG/analysis/viral_glycan_benchmark_20261016/protein_embedding_metadata.tsv",
+      "metadata_sha256": "bd12887bb8660fac924d075f0322dddb5aa79f3dac223f2fb9d95beaaf1e9995",
+      "proof_sha256": "f1d149751ff26261b97251d99f4a8b0a9b98351a2713104923a41a968c715fb7",
+      "rows": 20
+    },
+    {
+      "array": "/home/rahnn/260908_MiBG/analysis/viral_glycan_benchmark_A0A0K0N728_20261016/protein_esm2_embeddings.npy",
+      "array_sha256": "64a3c5a7112878cec619a42706a6e3f77438b554e21872551643961283b2c161",
+      "metadata": "/home/rahnn/260908_MiBG/analysis/viral_glycan_benchmark_A0A0K0N728_20261016/protein_embedding_metadata.tsv",
+      "metadata_sha256": "5201022f89196a6c702cc5ed3de5520f451e5d8a09e50874086727e1c41bc80e",
+      "proof_sha256": "a55ccd345cb638a7513e876b249d4619086f9f01ff733727b8add6065ec5c900",
+      "rows": 31
+    },
+    {
+      "array": "/home/rahnn/260908_MiBG/analysis/viral_glycan_benchmark_cluster7_ARF08726_ARF08739_20261016/protein_esm2_embeddings.npy",
+      "array_sha256": "0f5c8f3a133cc34a718e69405ea704686614f552a53a50f54588d0b6eb60bc4c",
+      "metadata": "/home/rahnn/260908_MiBG/analysis/viral_glycan_benchmark_cluster7_ARF08726_ARF08739_20261016/protein_embedding_metadata.tsv",
+      "metadata_sha256": "f5dee053149abc8930e7758dbb81e6fb39b4cdcd50b616d10e8b7a2b0e6f8352",
+      "proof_sha256": "ac38465252d8c7f0c5c9ed56acff16f577cf28b3b8dd46bcc1e4ad9a2b1bd2c1",
+      "rows": 160
+    }
+  ],
+  "input_checksums": {
+    "viral_gt_window_genes.tsv": "1fec7664c284378d44430c609d4bd1c146abab08059304c65df44633d152d105",
+    "viral_gt_windows.tsv": "adcc1405af0e4fa5c80e4a505cf6a2ebd61bf12a27c7a779f58d8c87ad53e003"
+  },
+  "limitations": [
+    "Variable-length CORE_ONLY inputs differ from original 128-position training construction",
+    "Training-reference localization is descriptive, not held-out accuracy or chemical validation",
+    "Published LMDB reference vectors and current CPU ESM vectors have historical near-identity rather than bitwise-identity evidence",
+    "Long proteins use the original first-1022-residue convention",
+    "Window observations preserve overlapping anchors and are not independent loci/genomes"
+  ],
+  "localization": {
+    "compatibility_gate": {
+      "classifier_sha256": "f45ca298980d4740dd43131a7e69c99cb233368c815470572cfc46f33abf4eb5",
+      "classifier_source_sha256": "fa4e1d045ac2c94559a9ab41054fd6b28d991d82be63e98585d7bc014564dca8",
+      "encoder_source_sha256": "fa4ad0c224707ee316b3ab3f37c102796ac176b7203fad357b99c331178a65f0",
+      "esm_sha256": "46f002a9870c9bdecd0ea887acb1f9a38a6b561e8f8bf8a6990b679b9d31b928",
+      "fixed_artifact_sha256": {
+        "esm_provenance.json": "f1d149751ff26261b97251d99f4a8b0a9b98351a2713104923a41a968c715fb7",
+        "mibig_CORE_ONLY_embeddings.npy": "78036e1636eaeeab90f4d157794c868d9b57033195939d83960d8e70bb831e22",
+        "mibig_matched_reference_metadata.tsv": "5184f8f3199da2d1fac90e85ff11e2a30b443b70aac60992136718856c18ba4c",
+        "mibig_original_regression.tsv": "4622855130a83bb97c51f1680aa7d423b0cdba2482236cc5ac341c735b7d6cef",
+        "pilot_validation.json": "8ca48c1c1cf2e587aaed694dd66f62811f7d811f3f0432387348a3e2110c01b7",
+        "reference_validation.json": "a75043f212d4df3297e2dfa37145127f5e890f866d4c36cc6284eeed1780306e",
+        "scripts/benchmark.py": "d0b7608341ef31ad29bae58b147804c7a6a0ecddcbc6b8b43801e255ed4b9233"
+      },
+      "pooling": "actual isolated core genes; original all-position mean; all-one additive membership",
+      "reference_rows": 2502,
+      "status": "PASS"
+    },
+    "n_queries": 737,
+    "n_reference_bgcs": 2502,
+    "n_saccharide_positive": 195,
+    "pooling": "isolated-core all-actual-position mean",
+    "reference_array": "/home/rahnn/260908_MiBG/analysis/viral_glycan_benchmark_20261016/mibig_CORE_ONLY_embeddings.npy",
+    "reference_array_sha256": "78036e1636eaeeab90f4d157794c868d9b57033195939d83960d8e70bb831e22",
+    "reference_metadata_sha256": "5184f8f3199da2d1fac90e85ff11e2a30b443b70aac60992136718856c18ba4c",
+    "retrieval": "cosine in 320D; accession tie break; descriptive P@k"
+  },
+  "n_excluded": 20,
+  "n_new_window_inferences": 609,
+  "n_resumed_window_inferences": 128,
+  "n_success": 737,
+  "output_checksums": {
+    "embedding_manifest.tsv": "97c73e8ed32c95ddf4a084ad617c3d141d2ae8b3974a8feaf7b9b40a47fd4b1b",
+    "inference_qc.tsv": "843e87f166ea7ebf1e6ce5eb05e2d114d1cda4a7549de1a21362b81cb0cd7455",
+    "saccharide_localization.tsv": "8cf84c727cda8bcd701d6973fdc03b40596783ee38b266b5899951b32d94759d",
+    "viral_bgc_embeddings.npy": "fabc70d82eca9f56e7fedaa8c71d6aca839e8b6ef0635657966fa879a24e2595",
+    "viral_bgc_predictions.tsv": "1132e85695341ddceb172f4cf07f312c5b77aaa7c7b744c8d9fde45cdccc2436"
+  },
+  "peak_process_rss_kib": 662148,
+  "reference_compatibility_gate": {
+    "classifier_sha256": "f45ca298980d4740dd43131a7e69c99cb233368c815470572cfc46f33abf4eb5",
+    "classifier_source_sha256": "fa4e1d045ac2c94559a9ab41054fd6b28d991d82be63e98585d7bc014564dca8",
+    "encoder_source_sha256": "fa4ad0c224707ee316b3ab3f37c102796ac176b7203fad357b99c331178a65f0",
+    "esm_sha256": "46f002a9870c9bdecd0ea887acb1f9a38a6b561e8f8bf8a6990b679b9d31b928",
+    "fixed_artifact_sha256": {
+      "esm_provenance.json": "f1d149751ff26261b97251d99f4a8b0a9b98351a2713104923a41a968c715fb7",
+      "mibig_CORE_ONLY_embeddings.npy": "78036e1636eaeeab90f4d157794c868d9b57033195939d83960d8e70bb831e22",
+      "mibig_matched_reference_metadata.tsv": "5184f8f3199da2d1fac90e85ff11e2a30b443b70aac60992136718856c18ba4c",
+      "mibig_original_regression.tsv": "4622855130a83bb97c51f1680aa7d423b0cdba2482236cc5ac341c735b7d6cef",
+      "pilot_validation.json": "8ca48c1c1cf2e587aaed694dd66f62811f7d811f3f0432387348a3e2110c01b7",
+      "reference_validation.json": "a75043f212d4df3297e2dfa37145127f5e890f866d4c36cc6284eeed1780306e",
+      "scripts/benchmark.py": "d0b7608341ef31ad29bae58b147804c7a6a0ecddcbc6b8b43801e255ed4b9233"
+    },
+    "pooling": "actual isolated core genes; original all-position mean; all-one additive membership",
+    "reference_rows": 2502,
+    "status": "PASS"
+  },
+  "root": "/home/rahnn/260908_MiBG",
+  "run": "/home/rahnn/260908_MiBG/analysis/viral_gt_mining_20261017/runs/baseline_594_v2",
+  "sequence_cache_directory": "/home/rahnn/260908_MiBG/analysis/viral_gt_mining_20261017/cache/esm/f4e951b9c37bf0d05e6aeeaf0379503a1d5603ab3b7f5366c05aef21e1ec6390",
+  "sequence_cache_shared_explicitly": true,
+  "settings": {
+    "classifier_sha256": "f45ca298980d4740dd43131a7e69c99cb233368c815470572cfc46f33abf4eb5",
+    "classifier_source_sha256": "fa4e1d045ac2c94559a9ab41054fd6b28d991d82be63e98585d7bc014564dca8",
+    "device": "cpu",
+    "dtype": "float32",
+    "encoder_source_sha256": "fa4ad0c224707ee316b3ab3f37c102796ac176b7203fad357b99c331178a65f0",
+    "esm_checkpoint_sha256": "46f002a9870c9bdecd0ea887acb1f9a38a6b561e8f8bf8a6990b679b9d31b928",
+    "esm_layer": 6,
+    "esm_max_residues": 1022,
+    "esm_pooling": "residue mean excluding BOS/EOS",
+    "frozen_wrapper_sha256": "d0b7608341ef31ad29bae58b147804c7a6a0ecddcbc6b8b43801e255ed4b9233",
+    "gene_order": "relative_position ascending, genomic coordinate order",
+    "membership": "all float32 ones; original additive bias",
+    "padding": "none",
+    "pooling": "mean of contextualized actual window genes; original classifier input",
+    "repetition": "none",
+    "strategy": "CORE_ONLY",
+    "versions": {
+      "fair-esm": "2.0.0",
+      "numpy": "1.26.4",
+      "torch": "2.5.1+cpu"
+    }
+  },
+  "status": "PASS"
+}

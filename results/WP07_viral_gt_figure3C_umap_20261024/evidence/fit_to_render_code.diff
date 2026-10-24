@@ -1,0 +1,16 @@
+--- fit_executed
++++ final_render_source
+@@ -200,7 +200,7 @@
+             sc=ax.scatter(*vxy[order].T,s=26,c=vals[order],cmap='viridis',vmin=0,vmax=1,marker='^',linewidths=.2,edgecolors='white',zorder=4)
+             handles=[Line2D([],[],marker='o',linestyle='',color='#CFCFCF',markersize=6,label=f'Reference BGCs ({nr:,})'),Line2D([],[],marker='^',linestyle='',color='#555555',markersize=6,label=f'Viral loci ({len(vr):,})')]
+             ax.legend(handles=handles,loc='upper left',bbox_to_anchor=(1.02,1),frameon=False,fontsize=9)
+-            cax=fig.add_axes([.76,.28,.025,.36]); bar=fig.colorbar(sc,cax=cax,ticks=np.linspace(0,1,6)); bar.set_label('Saccharide P@10',fontsize=10,labelpad=8); bar.ax.tick_params(labelsize=9)
++            cax=fig.add_axes([.76,.28,.025,.36]); bar=fig.colorbar(sc,cax=cax,ticks=np.linspace(0,1,6)); bar.set_label('Saccharide P@10',fontsize=10,labelpad=8); bar.ax.tick_params(labelsize=9); bar.solids.set_rasterized(False)
+             title='Saccharide neighbors of representative viral windows'; note='P@10 uses the plotted representative window and cosine neighbors in the original 320D space.'; name='Figure_C_saccharide_P10'
+         fig.text(.025,.945,panel,weight='bold',fontsize=16); fig.text(.10,.945,title,fontsize=12)
+         fig.text(.10,.905,f'{nr:,} reference BGCs + {len(vr):,} viral loci | joint cosine UMAP | seed 42',color='#555555',fontsize=9)
+@@ -248,3 +248,4 @@
+     write('output_checksums.csv',[dict(path=str(p.relative_to(OUT)),sha256=sha(p)) for p in sorted(OUT.rglob('*')) if p.is_file() and 'cache' not in p.relative_to(OUT).parts and p.name!='output_checksums.csv'])
+     print('Completed one joint UMAP, A/B/C PNG+SVG, CSV, medoid mappings and 320D diagnostics.',flush=True)
+ if __name__=='__main__': main()
++

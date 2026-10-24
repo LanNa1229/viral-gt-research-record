@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "checks": {
+    "565_baseline_556_included": true,
+    "sample_coordinate_dimensions": true,
+    "unique_sample_ids": true,
+    "coordinate_CSV_roundtrip": true,
+    "reference_order": true,
+    "viral_order": true,
+    "observed_vectors_only": true,
+    "independent_scipy_cosine_medoids": true,
+    "independent_P10": true,
+    "independent_nearest_reference": true,
+    "plotted_scores_labels_representatives": true,
+    "Figure_A_reference_classes_PNG_resolution": true,
+    "Figure_A_reference_classes_SVG_valid_XML": true,
+    "Figure_A_reference_classes_SVG_vector_marks": true,
+    "Figure_B_candidate_status_PNG_resolution": true,
+    "Figure_B_candidate_status_SVG_valid_XML": true,
+    "Figure_B_candidate_status_SVG_vector_marks": true,
+    "Figure_C_saccharide_P10_PNG_resolution": true,
+    "Figure_C_saccharide_P10_SVG_valid_XML": true,
+    "Figure_C_saccharide_P10_SVG_vector_marks": true
+  },
+  "reference_BGCs": 2502,
+  "viral_loci": 556,
+  "total_points": 3058,
+  "unique_representative_vectors": 513,
+  "exact_duplicate_vector_sets": 28,
+  "loci_in_duplicate_sets": 71,
+  "duplicate_sets_with_different_ordered_contexts": 0,
+  "exports": [
+    {
+      "name": "Figure_A_reference_classes",
+      "png_pixels": [
+        5100,
+        3420
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "svg_valid": true,
+      "svg_embedded_raster_images": 0
+    },
+    {
+      "name": "Figure_B_candidate_status",
+      "png_pixels": [
+        5100,
+        3420
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "svg_valid": true,
+      "svg_embedded_raster_images": 0
+    },
+    {
+      "name": "Figure_C_saccharide_P10",
+      "png_pixels": [
+        5100,
+        3420
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "svg_valid": true,
+      "svg_embedded_raster_images": 0
+    }
+  ]
+}

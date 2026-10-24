@@ -1,0 +1,162 @@
+{
+  "reference_shape": [
+    2502,
+    320
+  ],
+  "viral_shape": [
+    737,
+    320
+  ],
+  "anchors": 594,
+  "mapped_anchors": 593,
+  "original_windows": 757,
+  "complete_windows": 616,
+  "excluded_windows": 20,
+  "baseline_loci": 565,
+  "exclusion_reasons": {
+    "translation_mismatch": 10,
+    "translation_unverified": 10
+  },
+  "baseline_status_counts": {
+    "candidate": 288,
+    "not_selected": 269,
+    "unresolved": 8
+  },
+  "reference_saccharide": 195,
+  "reference_multilabel": 467,
+  "classifier_sha256": "f45ca298980d4740dd43131a7e69c99cb233368c815470572cfc46f33abf4eb5",
+  "esm_sha256": "46f002a9870c9bdecd0ea887acb1f9a38a6b561e8f8bf8a6990b679b9d31b928",
+  "included_loci": 556,
+  "excluded_loci": 9,
+  "included_status_counts": {
+    "not_selected": 269,
+    "candidate": 287
+  },
+  "excluded_status_counts": {
+    "unresolved": 8,
+    "candidate": 1
+  },
+  "multiple_original_windows": 130,
+  "multiple_usable_windows": 129,
+  "representative_complete15": 447,
+  "representative_min_genes": 1,
+  "representative_max_genes": 15,
+  "reference_core_min_genes": 1,
+  "reference_core_max_genes": 115,
+  "unique_representative_vectors": 513,
+  "nearest_reference_saccharide_count": 222,
+  "nearest_reference_saccharide_fraction": 0.39928057553956836,
+  "P10_groups": [
+    {
+      "group": "selected",
+      "n": 287,
+      "mean": 0.6930313588850174,
+      "minimum": 0.0,
+      "q25": 0.5,
+      "median": 0.8,
+      "q75": 1.0,
+      "maximum": 1.0,
+      "fraction_P10_ge_0_5": 0.7979094076655052,
+      "nearest_saccharide": 208
+    },
+    {
+      "group": "not_selected",
+      "n": 269,
+      "mean": 0.040892193308550186,
+      "minimum": 0.0,
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.1,
+      "maximum": 0.4,
+      "fraction_P10_ge_0_5": 0.0,
+      "nearest_saccharide": 14
+    },
+    {
+      "group": "unresolved",
+      "n": 0,
+      "mean": null,
+      "minimum": null,
+      "q25": null,
+      "median": null,
+      "q75": null,
+      "maximum": null,
+      "fraction_P10_ge_0_5": null,
+      "nearest_saccharide": 0
+    },
+    {
+      "group": "other_including_unresolved",
+      "n": 269,
+      "mean": 0.040892193308550186,
+      "minimum": 0.0,
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.1,
+      "maximum": 0.4,
+      "fraction_P10_ge_0_5": 0.0,
+      "nearest_saccharide": 14
+    }
+  ],
+  "gene_count_groups": [
+    {
+      "group": "complete_15",
+      "n": 447,
+      "min_genes": 15,
+      "max_genes": 15,
+      "mean_P10": 0.39038031319910516,
+      "median_P10": 0.2
+    },
+    {
+      "group": "boundary_short",
+      "n": 109,
+      "min_genes": 1,
+      "max_genes": 14,
+      "mean_P10": 0.3247706422018348,
+      "median_P10": 0.1
+    }
+  ],
+  "checks_passed": {
+    "compatible_strategy": 1,
+    "no_padding_repetition": 1,
+    "mask_policy": 1,
+    "ESM_policy": 1,
+    "frozen_hash": 18,
+    "reference_regression": 1,
+    "same_checkpoint": 1,
+    "reference_dimensions": 1,
+    "reference_valid": 1,
+    "reference_row_alignment": 1,
+    "viral_dimensions": 1,
+    "viral_valid": 1,
+    "viral_row_alignment": 1,
+    "unique_reference_ids": 1,
+    "unique_window_embeddings": 1,
+    "reference_population": 1,
+    "five_augmentations": 2502,
+    "identical_reference_core_labels": 2502,
+    "reference_core_count": 2502,
+    "seven_existing_classes": 2502,
+    "original_anchor_cohort": 1,
+    "same_locus_universe": 1,
+    "frozen_locus_crosswalk": 565,
+    "frozen_candidate_labels": 565,
+    "candidate_union_consistency": 565,
+    "unique_window_locus": 757,
+    "complete_window_mapping": 1,
+    "actual_gene_count": 757,
+    "contiguous_source_genes": 757,
+    "no_repeated_gene_padding": 757,
+    "relative_position_identity": 757,
+    "anchor_identity": 757,
+    "embedding_eligibility": 737,
+    "mask_length": 737,
+    "per_embedding_model": 737,
+    "embedding_gene_order": 737,
+    "recorded_pooling": 737,
+    "gene_sequence_hash": 10416,
+    "cache_identity": 737,
+    "cached_vector_pooling": 737,
+    "missing_reason": 20,
+    "P10_reproduction": 556,
+    "nearest_reproduction": 556
+  }
+}
