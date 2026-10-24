@@ -151,3 +151,23 @@ For each externally stored dataset, create a manifest under `metadata/manifests/
 
 
 
+
+
+## Section 1 reproducibility release
+
+The [Section 1 workflows](workflows/WP01_section1/README.md) preserve the code,
+lightweight canonical results, figure-generation utilities and validation for
+Figure 1 and Supplementary Figures 1–4. The downstream baseline comprises
+1,727 structures retrieved using the original 447-residue MGAT2 Foldseek query.
+The selected Section 1 snapshot uses MIT for original code and CC BY 4.0 for
+original data/documentation, subject to its third-party notices and exclusions;
+these terms do not relicense unrelated repository content.
+
+- [Versioned Section 1 release](https://github.com/LanNa1229/viral-gt-research-record/releases/tag/section1-v1.0.0)
+- [Software archive](https://doi.org/10.5281/zenodo.23626496)
+- [Dataset archive and Figure Source Data](https://doi.org/10.5281/zenodo.23626546)
+
+Unconfirmed institutional AF3 model inputs/databases and the qualitative model
+plate are excluded from the public subset; numerical control evidence is
+retained. Missing truncated-core files are a documented, non-blocking historical
+limitation. See the scoped workflow and public exclusion manifest for details.

@@ -1,0 +1,101 @@
+{
+  "status": "VERIFIED",
+  "normalization": "Unicode NFKC, whitespace and soft-hyphen removal only; no claims rewritten",
+  "paragraph_checks": [
+    {
+      "docx_paragraph": 18,
+      "text": "AI-Driven, Structure-first workflows reveals a hidden viral glycosyltransferase space",
+      "canonical_text_found_in_merged_pdf": true
+    },
+    {
+      "docx_paragraph": 19,
+      "text": "To systematically explore the extent of glycosyltransferase-like proteins in viruses, we established an AI-driven, structure-guided two-stage discovery framework that integrates viral proteome mining, structure-based similarity search, structural clustering (Figure 1).  Because viral proteins can diverge substantially at the sequence level for their rapid evolution, we used protein structural information to identify GT-like folds that may be missed by sequence-based rapidly evolving viral proteins. We first defined a minimal structural core from reference glycosyltransferases and encoded this query using the AI-learned structural alphabet 3Di (van Kempen et al., 2024), enabling fold-aware searches against ~300,000 synthetic structures derived from viral proteomes. The searches recovered 1,727 GT-A-query-derived candidates, revealing a broad viral structural space associated with established glycosyltransferase folds.",
+      "canonical_text_found_in_merged_pdf": true
+    },
+    {
+      "docx_paragraph": 20,
+      "text": "We next applied permissive structural clustering as a false-positive hits removal step to organize the GT-A-query-derived candidates. Clustering was performed without a minimum sequence-identity requirement and with a low symmetric coverage threshold, thereby allowing highly sequence-divergent proteins and proteins with substantial differences in length or domain architecture to remain connected through shared structural features. We hypothesized that genuine GT-A-like proteins would repeatedly recover a conserved fold-level architecture and therefore preferentially form multi-member clusters, whereas false positive hits including generic nucleotide-binding elements, partial structural cores or unrelated Rossmann-like proteins would remain dispersed among small clusters or singletons. All 1,727 candidates were assigned to 761 clusters, including 115 multi-member clusters containing 1,081 proteins and 646 singletons (Supplementary Figure. 1). Cluster sizes were highly uneven. The largest cluster contained 594 proteins, whereas the second-largest contained only 43. This marked difference prompted us to examine whether the dominant cluster represented a recurrent GT-A-like structural group. ",
+      "canonical_text_found_in_merged_pdf": true
+    },
+    {
+      "docx_paragraph": 21,
+      "text": "To assess whether the dominant cluster captured known viral GT architectures, we performed a positive-control spike-in benchmark using six non-redundant, previously characterized viral GTs (A197, CvHAS, gp110, A111/114R, A064R, and L230; Supplementary Figure. 2 a,b). These controls were added to the original 1,727-protein dataset and subjected to structural clustering using the same permissive parameters. All six controls were assigned to the dominant cluster represented by A0A3Q8Q3U2 (Supplementary Figure. 2a). We next examined whether the controls shared direct structural similarity with the original members of this cluster, rather than being grouped together solely through permissive clustering. To test this, we aligned each control against the cluster representative, A0A3Q8Q3U2, and all 594 original cluster members (Supplementary Figure. 2c). Each control showed a high-coverage structural match to at least one original member (query coverage, 85.3–100%; target coverage, 90.4–100%; min(qTM, tTM), 0.625–0.956). In particular, A197 and gp110 showed substantial structural similarity (min(qTM, tTM) = 0.674 and 0.797, respectively) despite low sequence identities (19.4% and 21.1%). Together, these results show that the dominant cluster contains established viral GTs with detectable structural similarity to its original members, even when their sequence identities are low.",
+      "canonical_text_found_in_merged_pdf": true
+    },
+    {
+      "docx_paragraph": 22,
+      "text": "Having established that the dominant cluster recovered known viral GT architectures, we next tested whether recurrent GT-like structures were also present outside the dominant cluster. We independently performed the Foldseek structural search of all 114 non-giant cluster representatives and classified four as GT-like, 23 as non-GT and 87 as ambiguous or unresolved (Supplementary Figure. 3 f). Of these 114 clusters, 51 had direct representative–member alignments in the initial Foldseek output, whereas 63 lacked such records. We therefore independently compared all protein pairs within the latter 63 clusters and found that 54 contained no pairs meeting both the predefined TM-score and alignment-coverage thresholds (Supplementary Figure. 3d,e). These findings supported prioritizing the dominant cluster for downstream analysis, presenting GT in giant cluster. ",
+      "canonical_text_found_in_merged_pdf": true
+    },
+    {
+      "docx_paragraph": 23,
+      "text": "Following our analysis of the multi-member clusters, we examined the remaining 646 proteins assigned to singleton clusters across a total 761 clusters during the initial structural clustering. Because these proteins did not cluster with other viral candidates, we investigated whether singleton assignments were associated with short or low-confidence structural models. Of the 646 singletons, 328 (50.8%) were shorter than 122 amino acids and had a median pLDDT below 70, whereas 93 (14.4%) were at least 122 amino acids long with a median pLDDT of 70 or greater (Supplementary Figure. 4d). These results suggest that a substantial fraction of singletons consisted of short or poorly resolved structural models, although singleton status alone does not exclude potentially divergent GT-like proteins.",
+      "canonical_text_found_in_merged_pdf": true
+    },
+    {
+      "docx_paragraph": 24,
+      "text": "Together, these three analyses supported the enrichment of recurrent GT-A-like structural signal in the dominant cluster, whereas smaller clusters and singletons frequently showed uncertain functional assignments or limited structural support. We therefore selected the dominant cluster as the primary input for high-resolution all-versus-all structural alignment and downstream structure-similarity network analysis.",
+      "canonical_text_found_in_merged_pdf": true
+    },
+    {
+      "docx_paragraph": 191,
+      "text": "Structure-guided retrieval and coarse clustering",
+      "canonical_text_found_in_merged_pdf": true
+    },
+    {
+      "docx_paragraph": 192,
+      "text": "Viral protein structures in BFVD were searched using Foldseek with a 447-residue MGAT2 structure and a truncated GT-A core query. The 1,727 structures collected from the MGAT2 search were clustered using Foldseek (--min-seq-id 0.0 -c 0.05 --cov-mode 0; 64 threads). Cluster assignments were reconstructed from the complete representative–member membership table. Direct representative–member alignments were distinguished from membership-only connections using Foldseek alignment outputs. Protein lengths were derived from structure-associated sequences, and short (≤102 aa) and long (≥763 aa) proteins were examined across multi-member cluster-size classes.",
+      "canonical_text_found_in_merged_pdf": true
+    },
+    {
+      "docx_paragraph": 193,
+      "text": "Positive-control benchmarking",
+      "canonical_text_found_in_merged_pdf": true
+    },
+    {
+      "docx_paragraph": 194,
+      "text": "Six viral GT proteins (A197, CvHAS, gp110, A111/114R, A064R and L230) were evaluated by repeating baseline clustering with seven GT structural entries, including two L230 models. Two nanobody chains associated with CvHAS (7SP6_B and 7SP6_C) were present in the spike-in dataset but excluded from the GT recovery denominator. For independent structural comparisons, the redundant L230 model was excluded, and six nonredundant controls were aligned against the original 1,727 structures using exhaustive Foldseek searches (--exhaustive-search 1 --alignment-type 2 --max-seqs 100000 -e 1000000 -c 0.0 --cov-mode 0). Structural support was evaluated against the dominant-cluster representative and the best-matching original giant-cluster member, prioritized using min(qTM, tTM).",
+      "canonical_text_found_in_merged_pdf": true
+    },
+    {
+      "docx_paragraph": 195,
+      "text": "Structural evaluation of non-dominant clusters",
+      "canonical_text_found_in_merged_pdf": true
+    },
+    {
+      "docx_paragraph": 196,
+      "text": "The 114 non-dominant multi-member cluster representatives were annotated using two Foldseek search batches against structural reference databases. High-confidence hits required probability ≥0.70, E-value ≤1 × 10⁻³, query coverage ≥0.50 and alignment length ≥80 residues; non-GT assignments additionally required target coverage ≥0.30 where available. GT-like assignments required supporting matches from two distinct targets or databases, or a strong GT-annotated alignment (probability ≥0.95; query coverage ≥0.70). Representatives with consistent non-GT evidence and no comparable GT support were classified as non-GT; conflicting or insufficient evidence remained unresolved. Two representatives without matched batch records were examined manually.",
+      "canonical_text_found_in_merged_pdf": true
+    },
+    {
+      "docx_paragraph": 197,
+      "text": "Separately, exhaustive structural comparisons were examined for 383 unique protein pairs from 63 clusters lacking recorded direct representative–member alignments. Pairs were considered structurally supported when both min(qTM, tTM) and min(qcov, tcov) were ≥0.50. Supported-pair density was calculated as the proportion of within-cluster pairs satisfying both criteria.",
+      "canonical_text_found_in_merged_pdf": true
+    },
+    {
+      "docx_paragraph": 198,
+      "text": "Singleton length and prediction-confidence analysis",
+      "canonical_text_found_in_merged_pdf": true
+    },
+    {
+      "docx_paragraph": 199,
+      "text": "The 646 singleton proteins were characterized using structure-derived sequence length and median residue-level pLDDT. Singleton distributions were compared with those of other non-dominant multi-member proteins using two-sided Mann–Whitney U tests with Benjamini–Hochberg correction. Effect sizes were estimated using Cliff’s delta with bootstrap confidence intervals. A length threshold of 122 amino acids, corresponding to the tenth percentile of the multi-member population, and median pLDDT ≥70 were used to identify a higher-confidence singleton subset.",
+      "canonical_text_found_in_merged_pdf": true
+    }
+  ],
+  "reference_sha256": [
+    {
+      "file": "Viral_GT_draftv1.4_261022_LanNa_references_added.docx",
+      "size_bytes": 15773313,
+      "sha256": "59553089561da827437fd31e5c975bc170cb76d24d06a3e2cc9cf6305dc59b41",
+      "status": "VERIFIED"
+    },
+    {
+      "file": "Viral_GT_manuscript_and_supplementary_merged_20261023.pdf",
+      "size_bytes": 8966865,
+      "sha256": "16224096b6969b2c6e1a92d193d149adb46e36de32204ddf82c902f52f2badec",
+      "status": "VERIFIED"
+    }
+  ],
+  "supplementary_captions": "merged PDF is the compiled figure/caption authority; current main DOCX and older supplementary DOCX are preserved separately"
+}

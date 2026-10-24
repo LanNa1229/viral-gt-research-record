@@ -1,0 +1,1060 @@
+{
+  "checks": [
+    {
+      "check": "spike new entries",
+      "actual": 9,
+      "expected": 9,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\spike_figure_input_corrected\\spike_cluster_membership.tsv"
+    },
+    {
+      "check": "GT entry identifiers match manuscript definition",
+      "actual": [
+        "2C0N",
+        "7SP6_A",
+        "Che8_gp110_model",
+        "Q5UQC3_apo_model",
+        "Q5UQC3_model",
+        "Q84432_model",
+        "pbcv1_a064r_1_model"
+      ],
+      "expected": [
+        "2C0N",
+        "7SP6_A",
+        "Che8_gp110_model",
+        "Q5UQC3_apo_model",
+        "Q5UQC3_model",
+        "Q84432_model",
+        "pbcv1_a064r_1_model"
+      ],
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\spike_figure_input_corrected\\new_spike_ids.txt"
+    },
+    {
+      "check": "unique control proteins by explicit identifier mapping",
+      "actual": 6,
+      "expected": 6,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\spike_figure_input_corrected\\spike_cluster_membership.tsv"
+    },
+    {
+      "check": "GT structural entry denominator",
+      "actual": 7,
+      "expected": 7,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\spike_figure_input_corrected\\spike_cluster_membership.tsv"
+    },
+    {
+      "check": "GT entries recovered in representative A0A3Q8Q3U2 cluster",
+      "actual": 7,
+      "expected": 7,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\spike_figure_input_corrected\\spike_cluster_membership.tsv"
+    },
+    {
+      "check": "post-spike cluster size",
+      "actual": 483,
+      "expected": 483,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\spike_figure_input_corrected\\spike_cluster_membership.tsv"
+    },
+    {
+      "check": "retained original giant members",
+      "actual": 439,
+      "expected": 439,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\spike_figure_input_corrected\\baseline_cluster_membership.tsv"
+    },
+    {
+      "check": "other baseline members recruited",
+      "actual": 37,
+      "expected": 37,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\spike_figure_input_corrected\\baseline_cluster_membership.tsv"
+    },
+    {
+      "check": "nonself representative-member direct alignments",
+      "actual": 620,
+      "expected": 620,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\ubuntu\\home\\rahnn\\projects\\viral-gt-research-record\\results\\WP01B_coarse_clustering\\raw\\alignment\\aln_result.m8"
+    },
+    {
+      "check": "non-giant clusters with direct alignments",
+      "actual": 51,
+      "expected": 51,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\ubuntu\\home\\rahnn\\projects\\viral-gt-research-record\\results\\WP01B_coarse_clustering\\raw\\alignment\\aln_result.m8"
+    },
+    {
+      "check": "multi-member indirect members",
+      "actual": 346,
+      "expected": 346,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\ubuntu\\home\\rahnn\\projects\\viral-gt-research-record\\results\\WP01B_coarse_clustering\\raw\\alignment\\aln_result.m8"
+    },
+    {
+      "check": "multi-member cluster size median",
+      "actual": 2,
+      "expected": 2,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\accounting\\cluster_membership.tsv"
+    },
+    {
+      "check": "two annotation output batches",
+      "actual": 2,
+      "expected": 2,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\phase2_verification\\evidence\\ubuntu\\home\\rahnn\\260710_Temp"
+    },
+    {
+      "check": "combined batch alignment records",
+      "actual": 29359,
+      "expected": 29359,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\phase2_verification\\evidence\\ubuntu\\home\\rahnn\\260710_Temp"
+    },
+    {
+      "check": "representative classification rows",
+      "actual": 114,
+      "expected": 114,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\ubuntu\\home\\rahnn\\260710_Temp\\PanelC_excluded_cluster_representative_classification_manual_updated.tsv"
+    },
+    {
+      "check": "unique representative queries",
+      "actual": 114,
+      "expected": 114,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\ubuntu\\home\\rahnn\\260710_Temp\\PanelC_excluded_cluster_representative_classification_manual_updated.tsv"
+    },
+    {
+      "check": "final GT-like count",
+      "actual": 4,
+      "expected": 4,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\ubuntu\\home\\rahnn\\260710_Temp\\PanelC_excluded_cluster_representative_classification_manual_updated.tsv"
+    },
+    {
+      "check": "final non-GT count",
+      "actual": 23,
+      "expected": 23,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\ubuntu\\home\\rahnn\\260710_Temp\\PanelC_excluded_cluster_representative_classification_manual_updated.tsv"
+    },
+    {
+      "check": "final unresolved count",
+      "actual": 87,
+      "expected": 87,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\ubuntu\\home\\rahnn\\260710_Temp\\PanelC_excluded_cluster_representative_classification_manual_updated.tsv"
+    },
+    {
+      "check": "small cluster count",
+      "actual": 63,
+      "expected": 63,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\small_cluster_pairwise_v3_compute\\summary"
+    },
+    {
+      "check": "unique unordered within-cluster protein pairs",
+      "actual": 383,
+      "expected": 383,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\small_cluster_pairwise_v3_compute\\summary\\pairwise_within_cluster.tsv"
+    },
+    {
+      "check": "pair table row count",
+      "actual": 383,
+      "expected": 383,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\small_cluster_pairwise_v3_compute\\summary\\pairwise_within_cluster.tsv"
+    },
+    {
+      "check": "supported flag mismatches from independent threshold",
+      "actual": 0,
+      "expected": 0,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\small_cluster_pairwise_v3_compute\\summary\\pairwise_within_cluster.tsv"
+    },
+    {
+      "check": "clusters without supported pairs",
+      "actual": 54,
+      "expected": 54,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\small_cluster_pairwise_v3_compute\\summary"
+    },
+    {
+      "check": "expected sum of unordered cluster pairs",
+      "actual": 383,
+      "expected": 383,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\small_cluster_pairwise_v3_compute\\summary"
+    },
+    {
+      "check": "per-cluster support counts agree with summary",
+      "actual": 0,
+      "expected": 0,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\small_cluster_pairwise_v3_compute\\summary"
+    },
+    {
+      "check": "singleton denominator",
+      "actual": 646,
+      "expected": 646,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables"
+    },
+    {
+      "check": "short AND lower-confidence singleton category",
+      "actual": 328,
+      "expected": 328,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables"
+    },
+    {
+      "check": "reference-length AND higher-confidence singleton category",
+      "actual": 93,
+      "expected": 93,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables"
+    },
+    {
+      "check": "328/646 rounded percent",
+      "actual": 50.8,
+      "expected": 50.8,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables"
+    },
+    {
+      "check": "93/646 rounded percent",
+      "actual": 14.4,
+      "expected": 14.4,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables"
+    },
+    {
+      "check": "multi-member P10 length threshold",
+      "actual": 122.0,
+      "expected": 122.0,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables"
+    },
+    {
+      "check": "multi-member cluster-size lower quartile",
+      "actual": 2.0,
+      "expected": 2,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\accounting\\cluster_membership.tsv"
+    },
+    {
+      "check": "multi-member cluster-size upper quartile",
+      "actual": 4.0,
+      "expected": 4,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\accounting\\cluster_membership.tsv"
+    },
+    {
+      "check": "Supplementary 3c short/long/total: 2",
+      "actual": [
+        19,
+        0,
+        128
+      ],
+      "expected": [
+        19,
+        0,
+        128
+      ],
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\singleton_length_plddt_master_table.tsv"
+    },
+    {
+      "check": "Supplementary 3c short/long/total: 3",
+      "actual": [
+        5,
+        0,
+        60
+      ],
+      "expected": [
+        5,
+        0,
+        60
+      ],
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\singleton_length_plddt_master_table.tsv"
+    },
+    {
+      "check": "Supplementary 3c short/long/total: 4-5",
+      "actual": [
+        3,
+        2,
+        48
+      ],
+      "expected": [
+        3,
+        2,
+        48
+      ],
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\singleton_length_plddt_master_table.tsv"
+    },
+    {
+      "check": "Supplementary 3c short/long/total: 6-10",
+      "actual": [
+        4,
+        1,
+        75
+      ],
+      "expected": [
+        4,
+        1,
+        75
+      ],
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\singleton_length_plddt_master_table.tsv"
+    },
+    {
+      "check": "Supplementary 3c short/long/total: 11-50",
+      "actual": [
+        16,
+        12,
+        176
+      ],
+      "expected": [
+        16,
+        12,
+        176
+      ],
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\singleton_length_plddt_master_table.tsv"
+    },
+    {
+      "check": "Supplementary 3c short/long/total: >50",
+      "actual": [
+        8,
+        40,
+        594
+      ],
+      "expected": [
+        8,
+        40,
+        594
+      ],
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\singleton_length_plddt_master_table.tsv"
+    },
+    {
+      "check": "U: fasta_length; singleton vs all_multimember",
+      "actual": 69496.0,
+      "expected": 69496.0,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: fasta_length; singleton vs all_multimember",
+      "actual": -0.8009640196698963,
+      "expected": -0.8009640196698963,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: fasta_length; singleton vs giant_cluster",
+      "actual": 16234.5,
+      "expected": 16234.5,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: fasta_length; singleton vs giant_cluster",
+      "actual": -0.9153844951058573,
+      "expected": -0.9153844951058573,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: fasta_length; singleton vs other_multimember",
+      "actual": 53261.5,
+      "expected": 53261.5,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: fasta_length; singleton vs other_multimember",
+      "actual": -0.6614039325878411,
+      "expected": -0.6614039325878411,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: fasta_length; giant_cluster vs other_multimember",
+      "actual": 209503.0,
+      "expected": 209503.0,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: fasta_length; giant_cluster vs other_multimember",
+      "actual": 0.4484544279205471,
+      "expected": 0.4484544279205471,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: median_plddt; singleton vs all_multimember",
+      "actual": 167009.5,
+      "expected": 167009.5,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: median_plddt; singleton vs all_multimember",
+      "actual": -0.5216861465848328,
+      "expected": -0.5216861465848328,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: median_plddt; singleton vs giant_cluster",
+      "actual": 44991.0,
+      "expected": 44991.0,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: median_plddt; singleton vs giant_cluster",
+      "actual": -0.7655033305188104,
+      "expected": -0.7655033305188104,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: median_plddt; singleton vs other_multimember",
+      "actual": 122018.5,
+      "expected": 122018.5,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: median_plddt; singleton vs other_multimember",
+      "actual": -0.22429927336762,
+      "expected": -0.22429927336762,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: median_plddt; giant_cluster vs other_multimember",
+      "actual": 221910.5,
+      "expected": 221910.5,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: median_plddt; giant_cluster vs other_multimember",
+      "actual": 0.5342369623683791,
+      "expected": 0.5342369623683791,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: mean_plddt; singleton vs all_multimember",
+      "actual": 167239.0,
+      "expected": 167239.0,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: mean_plddt; singleton vs all_multimember",
+      "actual": -0.5210288604462672,
+      "expected": -0.5210288604462672,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: mean_plddt; singleton vs giant_cluster",
+      "actual": 43729.0,
+      "expected": 43729.0,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: mean_plddt; singleton vs giant_cluster",
+      "actual": -0.7720809748673526,
+      "expected": -0.7720809748673526,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: mean_plddt; singleton vs other_multimember",
+      "actual": 123510.0,
+      "expected": 123510.0,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: mean_plddt; singleton vs other_multimember",
+      "actual": -0.2148174518915964,
+      "expected": -0.2148174518915964,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: mean_plddt; giant_cluster vs other_multimember",
+      "actual": 226796.0,
+      "expected": 226796.0,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: mean_plddt; giant_cluster vs other_multimember",
+      "actual": 0.5680141593899295,
+      "expected": 0.5680141593899295,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: frac_plddt_lt50; singleton vs all_multimember",
+      "actual": 437030.5,
+      "expected": 437030.5,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: frac_plddt_lt50; singleton vs all_multimember",
+      "actual": 0.2516518073220817,
+      "expected": 0.2516518073220817,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: frac_plddt_lt50; singleton vs giant_cluster",
+      "actual": 282657.5,
+      "expected": 282657.5,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: frac_plddt_lt50; singleton vs giant_cluster",
+      "actual": 0.4732333656482264,
+      "expected": 0.4732333656482264,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: frac_plddt_lt50; singleton vs other_multimember",
+      "actual": 154373.0,
+      "expected": 154373.0,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: frac_plddt_lt50; singleton vs other_multimember",
+      "actual": -0.018613994825207758,
+      "expected": -0.018613994825207758,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: frac_plddt_lt50; giant_cluster vs other_multimember",
+      "actual": 76456.0,
+      "expected": 76456.0,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: frac_plddt_lt50; giant_cluster vs other_multimember",
+      "actual": -0.47140121267431334,
+      "expected": -0.47140121267431334,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: frac_plddt_lt70; singleton vs all_multimember",
+      "actual": 547309.5,
+      "expected": 547309.5,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: frac_plddt_lt70; singleton vs all_multimember",
+      "actual": 0.5674899688684081,
+      "expected": 0.5674899688684081,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: frac_plddt_lt70; singleton vs giant_cluster",
+      "actual": 345764.5,
+      "expected": 345764.5,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: frac_plddt_lt70; singleton vs giant_cluster",
+      "actual": 0.8021520676319438,
+      "expected": 0.8021520676319438,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: frac_plddt_lt70; singleton vs other_multimember",
+      "actual": 201545.0,
+      "expected": 201545.0,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: frac_plddt_lt70; singleton vs other_multimember",
+      "actual": 0.2812696677071347,
+      "expected": 0.2812696677071347,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: frac_plddt_lt70; giant_cluster vs other_multimember",
+      "actual": 59058.0,
+      "expected": 59058.0,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: frac_plddt_lt70; giant_cluster vs other_multimember",
+      "actual": -0.5916868894281626,
+      "expected": -0.5916868894281626,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: longest_segment_lt70; singleton vs all_multimember",
+      "actual": 400876.5,
+      "expected": 400876.5,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: longest_segment_lt70; singleton vs all_multimember",
+      "actual": 0.1481070445608499,
+      "expected": 0.1481070445608499,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: longest_segment_lt70; singleton vs giant_cluster",
+      "actual": 265787.0,
+      "expected": 265787.0,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: longest_segment_lt70; singleton vs giant_cluster",
+      "actual": 0.38530297818223525,
+      "expected": 0.38530297818223525,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: longest_segment_lt70; singleton vs other_multimember",
+      "actual": 135089.5,
+      "expected": 135089.5,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: longest_segment_lt70; singleton vs other_multimember",
+      "actual": -0.1412038067145155,
+      "expected": -0.1412038067145155,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "U: longest_segment_lt70; giant_cluster vs other_multimember",
+      "actual": 84565.5,
+      "expected": 84565.5,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "delta: longest_segment_lt70; giant_cluster vs other_multimember",
+      "actual": -0.415334038537324,
+      "expected": -0.415334038537324,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "all Mann-Whitney p-values agree at relative tolerance 1e-10",
+      "actual": 0,
+      "expected": 0,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "BH-adjusted p-values agree at relative tolerance 1e-10",
+      "actual": 0,
+      "expected": 0,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "500-resample bootstrap CI lower: fasta_length",
+      "actual": -0.7084686365630225,
+      "expected": -0.7084686365630225,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "500-resample bootstrap CI upper: fasta_length",
+      "actual": -0.6212646454885856,
+      "expected": -0.6212646454885856,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "500-resample bootstrap CI lower: median_plddt",
+      "actual": -0.28819993197754623,
+      "expected": -0.2881999319775463,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "500-resample bootstrap CI upper: median_plddt",
+      "actual": -0.1606199261288867,
+      "expected": -0.16061992612888673,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "500-resample bootstrap CI lower: frac_plddt_lt70",
+      "actual": 0.21638022008760274,
+      "expected": 0.21638022008760277,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    },
+    {
+      "check": "500-resample bootstrap CI upper: frac_plddt_lt70",
+      "actual": 0.33982730561153457,
+      "expected": 0.33982730561153457,
+      "pass_check": true,
+      "source": "<AUDIT_PROJECT>\\audit\\2026-10-24\\evidence\\sapelo2\\home\\ln72030\\foldseek_virus_cluster_clean\\singleton_length_plddt_analysis_v3\\tables\\statistical_comparison_table.tsv"
+    }
+  ],
+  "details": {
+    "spike": {
+      "new_entries": [
+        "2C0N",
+        "7SP6_A",
+        "7SP6_B",
+        "7SP6_C",
+        "Che8_gp110_model",
+        "Q5UQC3_apo_model",
+        "Q5UQC3_model",
+        "Q84432_model",
+        "pbcv1_a064r_1_model"
+      ],
+      "GT_entry_to_protein_mapping": {
+        "2C0N": "A197",
+        "7SP6_A": "CvHAS",
+        "Che8_gp110_model": "gp110",
+        "Q84432_model": "A111/114R",
+        "pbcv1_a064r_1_model": "A064R",
+        "Q5UQC3_apo_model": "L230",
+        "Q5UQC3_model": "L230"
+      },
+      "nanobody_assignments": {
+        "7SP6_C": "7SP6_C",
+        "7SP6_B": "7SP6_C"
+      },
+      "baseline_members_absent_from_new_giant": 155
+    },
+    "annotation": {
+      "batches": {
+        "Foldseek_coarse_clustering1/Foldseek_coarse_clustering": {
+          "unfiltered_alignment_rows": 51110,
+          "alignment_rows_after_114_representative_filter": 16453,
+          "hit_queries": [
+            "A0A1V0SF98",
+            "A0A1V0SJ19",
+            "A0A1V0SL47",
+            "A0A1X9VNW5",
+            "A0A290U429",
+            "A0A2D0ZP19",
+            "A0A2H5BQC2",
+            "A0A2I7QK01",
+            "A0A2P0VNQ4",
+            "A0A2P1GNG2",
+            "A0A2P1GNX3",
+            "A0A401IPP5",
+            "A0A411D364",
+            "A0A481Z5T9",
+            "A0A482F4D1",
+            "A0A4D5XFN5",
+            "A0A516LHE3",
+            "A0A516LNX4",
+            "A0A5H2WYZ6",
+            "A0A5J6TVW1",
+            "A0A5K0U7A3",
+            "A0A5K0UA04",
+            "A0A5S9HXY7",
+            "A0A679FDZ4",
+            "A0A6G5XYV5",
+            "A0A6J5L7S0",
+            "A0A6J5MWB5",
+            "A0A6J5PIX6",
+            "A0A6J7WNI4",
+            "A0A6J7XAR9",
+            "A0A6S4PG60",
+            "A0A7G5M3N2",
+            "A0A7U0G8P3",
+            "A0A811A9Y5",
+            "A0A8F8KTN6",
+            "A0A8J9R3F2",
+            "A0A8S5RPZ6",
+            "A0A9E7TEM4",
+            "A2PZW9",
+            "F8WPT3",
+            "H2ED42",
+            "H6SU46",
+            "H9NC57",
+            "J9PTY6",
+            "J9QGR4",
+            "Q197D5",
+            "Q91BC9",
+            "R9TQH4",
+            "T2C5F8",
+            "U5NIS9"
+          ],
+          "ledger_queries": 152,
+          "ledger_status_counts": {
+            "COMPLETE": 152
+          },
+          "run_ids": [
+            "run_20260710_120245"
+          ]
+        },
+        "CC_rep_foldseek": {
+          "unfiltered_alignment_rows": 13406,
+          "alignment_rows_after_114_representative_filter": 12906,
+          "hit_queries": [
+            "A0A0B5J7K0",
+            "A0A0B5JEK5",
+            "A0A1B0XUM4",
+            "A0A1C8ZZ47",
+            "A0A1C9C546",
+            "A0A1L3KMJ9",
+            "A0A1S5VFY0",
+            "A0A1V0M8G7",
+            "A0A1Z1NED9",
+            "A0A2I7RBG1",
+            "A0A2S0SZ38",
+            "A0A2S1FYN1",
+            "A0A345MUK2",
+            "A0A384WWT1",
+            "A0A3G4ZSK2",
+            "A0A3G4ZXW4",
+            "A0A3T1CXE0",
+            "A0A410TDX1",
+            "A0A481YYA9",
+            "A0A4Y5UXU2",
+            "A0A513Q9S0",
+            "A0A513QA86",
+            "A0A514DGR2",
+            "A0A5C0PVM1",
+            "A0A5C1K3T9",
+            "A0A5Q2F871",
+            "A0A5Q2W5J0",
+            "A0A650EES4",
+            "A0A6B7ZF63",
+            "A0A6G8MY89",
+            "A0A6J5KGF0",
+            "A0A6J5LH17",
+            "A0A6J5N5Z7",
+            "A0A6J7X3X5",
+            "A0A6S4PD04",
+            "A0A7M1RVJ3",
+            "A0A7S5RBT3",
+            "A0A7S5VJ45",
+            "A0A894YVT4",
+            "A0A8A1VF65",
+            "A0A8F4MX76",
+            "A0A8S5M340",
+            "A0A8S5Q8R1",
+            "A0A8S5SQS6",
+            "A0A8S5UM23",
+            "A0A8S5UZI2",
+            "A3QMI3",
+            "A7ITT2",
+            "B3VM64",
+            "G4YAB4",
+            "G8DG05",
+            "G8DGQ1",
+            "H7BW97",
+            "K4IBL1",
+            "K4RM63",
+            "O90834",
+            "Q19Y27",
+            "Q94MU6",
+            "S4VP33",
+            "S5VMA1",
+            "UPI000009AE93",
+            "X5L4P3"
+          ],
+          "ledger_queries": 63,
+          "ledger_status_counts": {
+            "COMPLETE": 63
+          },
+          "run_ids": [
+            "run_20260711_204511"
+          ]
+        }
+      },
+      "combined_unique_hit_queries": 112,
+      "non_giant_queries_with_batch_rows": 112,
+      "non_giant_without_batch_rows": [
+        "A0A3G4ZUT7",
+        "A0A7G7S0G2"
+      ],
+      "batch_queries_outside_non_giant_classification": [],
+      "unique_query_database_target_records": 29359,
+      "classification_counts": {
+        "non-GT": 23,
+        "GT-like": 4,
+        "ambiguous/unresolved": 87
+      },
+      "manual_notes": [
+        {
+          "query_id": "A0A3G4ZUT7",
+          "panel_C_class": "GT-like",
+          "evidence_tier": "manual_foldseek_GT_supported",
+          "manual_notes": "Manual Foldseek: GT-like top hit to AF-U7PPC6-F1-model_v6 annotated as initiation-specific alpha-1,6-mannosyltransferase; no best non-GT hit recorded."
+        },
+        {
+          "query_id": "A0A7G7S0G2",
+          "panel_C_class": "ambiguous/unresolved",
+          "evidence_tier": "manual_foldseek_no_informative_hit_short_protein",
+          "manual_notes": "Manual Foldseek: very short protein; no GT-like hit and no informative functional/fold assignment detected."
+        }
+      ],
+      "separate_followup": {
+        "rows": 501,
+        "queries": [
+          "A0A3G4ZUT7",
+          "A0A7G7S0G2"
+        ],
+        "included_in_29359": false
+      }
+    },
+    "coherence": {
+      "supported_pairs": 84,
+      "clusters_with_supported_pairs": 9,
+      "thresholds": "min(qTM,tTM)>=0.50 and min(qcov,tcov)>=0.50; values from retained per-pair table"
+    },
+    "cluster_length_outliers": [
+      {
+        "cluster_size_class": "2",
+        "short_le102": 19,
+        "long_ge763": 0,
+        "n": 128
+      },
+      {
+        "cluster_size_class": "3",
+        "short_le102": 5,
+        "long_ge763": 0,
+        "n": 60
+      },
+      {
+        "cluster_size_class": "4-5",
+        "short_le102": 3,
+        "long_ge763": 2,
+        "n": 48
+      },
+      {
+        "cluster_size_class": "6-10",
+        "short_le102": 4,
+        "long_ge763": 1,
+        "n": 75
+      },
+      {
+        "cluster_size_class": "11-50",
+        "short_le102": 16,
+        "long_ge763": 12,
+        "n": 176
+      },
+      {
+        "cluster_size_class": ">50",
+        "short_le102": 8,
+        "long_ge763": 40,
+        "n": 594
+      }
+    ],
+    "statistics": {
+      "independently_recomputed_pairwise_tests": 24,
+      "BH_family_size": 24,
+      "method": "bisect pair-count U, tied normal approximation with continuity correction, erfc two-sided p, independent BH implementation",
+      "bootstrap_CI_status": "three reported Cliff delta CIs independently regenerated using 500 resamples, seed 20260712, NumPy default_rng and pair-count deltas; no original scientific scripts executed",
+      "selected_comparisons": [
+        {
+          "metric": "fasta_length",
+          "groups_compared": "singleton vs other_multimember",
+          "n_first": 646,
+          "n_second": 487,
+          "U": 53261.5,
+          "p": 3.6100682029080367e-81,
+          "delta": -0.6614039325878411,
+          "original_p": 3.610068202907865e-81,
+          "original_adjusted_p": 1.2377376695684109e-80,
+          "original_delta": -0.6614039325878411,
+          "original_CI_lower": -0.7084686365630225,
+          "original_CI_upper": -0.6212646454885856,
+          "BH_adjusted_p": 1.2377376695684697e-80,
+          "p_relative_error": 4.75175454539567e-14,
+          "adjusted_p_relative_error": 4.75175454539567e-14,
+          "independent_bootstrap_CI": [
+            -0.7084686365630225,
+            -0.6212646454885856
+          ]
+        },
+        {
+          "metric": "median_plddt",
+          "groups_compared": "singleton vs other_multimember",
+          "n_first": 646,
+          "n_second": 487,
+          "U": 122018.5,
+          "p": 9.749608307990114e-11,
+          "delta": -0.22429927336762,
+          "original_p": 9.749608307990045e-11,
+          "original_adjusted_p": 1.1699529969588054e-10,
+          "original_delta": -0.22429927336762,
+          "original_CI_lower": -0.2881999319775463,
+          "original_CI_upper": -0.16061992612888673,
+          "BH_adjusted_p": 1.1699529969588137e-10,
+          "p_relative_error": 7.105427357601002e-15,
+          "adjusted_p_relative_error": 7.105427357601002e-15,
+          "independent_bootstrap_CI": [
+            -0.28819993197754623,
+            -0.1606199261288867
+          ]
+        },
+        {
+          "metric": "frac_plddt_lt70",
+          "groups_compared": "singleton vs other_multimember",
+          "n_first": 646,
+          "n_second": 487,
+          "U": 201545.0,
+          "p": 4.59181074559189e-16,
+          "delta": 0.2812696677071347,
+          "original_p": 4.591810745591828e-16,
+          "original_adjusted_p": 5.800181994431781e-16,
+          "original_delta": 0.2812696677071347,
+          "original_CI_lower": 0.21638022008760277,
+          "original_CI_upper": 0.33982730561153457,
+          "BH_adjusted_p": 5.80018199443186e-16,
+          "p_relative_error": 1.354472090042691e-14,
+          "adjusted_p_relative_error": 1.354472090042691e-14,
+          "independent_bootstrap_CI": [
+            0.21638022008760274,
+            0.33982730561153457
+          ]
+        }
+      ]
+    }
+  }
+}

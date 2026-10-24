@@ -1,0 +1,117 @@
+[
+  {
+    "workflow": "network",
+    "exit_code": 0,
+    "elapsed_seconds": 0.8054156303405762,
+    "command": [
+      "<UBUNTU_HOME>/singleton_length_plddt_workflow_v2_existing_project/.venv/bin/python",
+      "-B",
+      "<AUDIT_PROJECT>/release_candidate/section1/github/scripts/archive/WP01B_coarse_clustering/build_complete_foldseek_cytoscape_network.py",
+      "--membership",
+      "<AUDIT_PROJECT>/release_candidate/section1/zenodo_dataset/source_data/original_tsv/WP01B/cluster_membership.tsv",
+      "--m8",
+      "<AUDIT_PROJECT>/release_candidate/section1/zenodo_dataset/data/WP01B/small_tables/aln_result.m8",
+      "--outdir",
+      "<AUDIT_PROJECT>/release_candidate/section1/verification/isolated_runs/network"
+    ],
+    "status": "VERIFIED",
+    "comparisons": [
+      {
+        "generated_rows": 1727,
+        "historical_rows": 1727,
+        "schema_equal": true,
+        "key_sets_equal": true,
+        "different_values": [],
+        "byte_identical": true,
+        "status": "VERIFIED"
+      },
+      {
+        "generated_rows": 966,
+        "historical_rows": 966,
+        "schema_equal": true,
+        "key_sets_equal": true,
+        "different_values": [],
+        "byte_identical": true,
+        "status": "VERIFIED"
+      }
+    ]
+  },
+  {
+    "workflow": "coherence",
+    "exit_code": 0,
+    "elapsed_seconds": 1.122373342514038,
+    "command": [
+      "<UBUNTU_HOME>/singleton_length_plddt_workflow_v2_existing_project/.venv/bin/python",
+      "-B",
+      "<AUDIT_PROJECT>/release_candidate/section1/github/scripts/archive/WP01E_small_cluster_coherence/summarize_small_cluster_coherence.py",
+      "--membership",
+      "<AUDIT_PROJECT>/release_candidate/section1/zenodo_dataset/data/WP01E_small_cluster_coherence/small_cluster_pairwise_v3_compute/selected_cluster_membership.tsv",
+      "--pairwise",
+      "<AUDIT_PROJECT>/release_candidate/section1/zenodo_dataset/data/WP01E_small_cluster_coherence/small_cluster_pairwise_v3_compute/pairwise_directed.tsv",
+      "--fasta",
+      "<AUDIT_PROJECT>/release_candidate/section1/zenodo_dataset/data/WP01E_small_cluster_coherence/small_cluster_pairwise_v3_compute/full_database_structural_sequences.fasta",
+      "--outdir",
+      "<AUDIT_PROJECT>/release_candidate/section1/verification/isolated_runs/coherence"
+    ],
+    "status": "VERIFIED",
+    "comparisons": [
+      {
+        "generated_rows": 63,
+        "historical_rows": 63,
+        "schema_equal": true,
+        "key_sets_equal": true,
+        "different_values": [],
+        "byte_identical": true,
+        "status": "VERIFIED"
+      }
+    ]
+  },
+  {
+    "workflow": "controls",
+    "exit_code": 0,
+    "elapsed_seconds": 2.29073166847229,
+    "command": [
+      "<UBUNTU_HOME>/singleton_length_plddt_workflow_v2_existing_project/.venv/bin/python",
+      "-B",
+      "<AUDIT_PROJECT>/release_candidate/section1/github/scripts/archive/WP01C_positive_controls/summarize_direct_alignment_support.py",
+      "--all-hits",
+      "<AUDIT_PROJECT>/release_candidate/section1/zenodo_dataset/data/WP01C_positive_controls/direct_alignment_support/control_vs_baseline_all_hits.tsv",
+      "--baseline-membership",
+      "<AUDIT_PROJECT>/release_candidate/section1/zenodo_dataset/source_data/original_tsv/WP01B/cluster_membership.tsv",
+      "--control-ids",
+      "<AUDIT_PROJECT>/release_candidate/section1/github/scripts/archive/WP01C_positive_controls/control_ids.txt",
+      "--representative",
+      "A0A3Q8Q3U2",
+      "--output-dir",
+      "<AUDIT_PROJECT>/release_candidate/section1/verification/isolated_runs/controls"
+    ],
+    "status": "VERIFIED",
+    "comparisons": [
+      {
+        "generated_rows": 12,
+        "historical_rows": 12,
+        "schema_equal": true,
+        "key_sets_equal": true,
+        "different_values": [],
+        "byte_identical": true,
+        "status": "VERIFIED"
+      }
+    ]
+  },
+  {
+    "workflow": "archived singleton statistical implementation only",
+    "elapsed_seconds": 9.421987295150757,
+    "status": "VERIFIED",
+    "comparisons": [
+      {
+        "generated_rows": 30,
+        "historical_rows": 30,
+        "schema_equal": true,
+        "key_sets_equal": true,
+        "different_values": [],
+        "byte_identical": false,
+        "status": "VERIFIED"
+      }
+    ]
+  }
+]

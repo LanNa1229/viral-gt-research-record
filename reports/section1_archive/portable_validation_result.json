@@ -1,0 +1,649 @@
+{
+  "status": "VERIFIED",
+  "checks": [
+    {
+      "check": "unique baseline entries",
+      "observed": 1727,
+      "expected": 1727,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "clusters",
+      "observed": 761,
+      "expected": 761,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "multi-member clusters",
+      "observed": 115,
+      "expected": 115,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "singleton clusters",
+      "observed": 646,
+      "expected": 646,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "dominant cluster",
+      "observed": 594,
+      "expected": 594,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "GT entries",
+      "observed": 7,
+      "expected": 7,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "distinct control proteins",
+      "observed": 6,
+      "expected": 6,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "GT recovery",
+      "observed": 7,
+      "expected": 7,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "spike cluster",
+      "observed": 483,
+      "expected": 483,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "original giant retained",
+      "observed": 439,
+      "expected": 439,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "other baseline recruited",
+      "observed": 37,
+      "expected": 37,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "representatives",
+      "observed": 114,
+      "expected": 114,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "GT-like",
+      "observed": 4,
+      "expected": 4,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "non-GT",
+      "observed": 23,
+      "expected": 23,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "ambiguous/unresolved",
+      "observed": 87,
+      "expected": 87,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "relevant original batch alignments in final hit audit",
+      "observed": 29359,
+      "expected": 29359,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "representatives with original selected batch matches",
+      "observed": 112,
+      "expected": 112,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "small clusters",
+      "observed": 63,
+      "expected": 63,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "small-cluster members",
+      "observed": 185,
+      "expected": 185,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "unordered pairs",
+      "observed": 383,
+      "expected": 383,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "supported pairs",
+      "observed": 84,
+      "expected": 84,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "clusters with no supported pair",
+      "observed": 54,
+      "expected": 54,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "QC singletons",
+      "observed": 646,
+      "expected": 646,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "stratum short=True;confident=False",
+      "observed": 328,
+      "expected": 328,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "stratum short=True;confident=True",
+      "observed": 120,
+      "expected": 120,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "stratum short=False;confident=False",
+      "observed": 105,
+      "expected": 105,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "stratum short=False;confident=True",
+      "observed": 93,
+      "expected": 93,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "fasta_length singleton/all_multimember U",
+      "observed": 69496.0,
+      "expected": 69496.0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "fasta_length singleton/all_multimember delta",
+      "observed": -0.8009640196698963,
+      "expected": -0.8009640196698963,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "fasta_length singleton/giant_cluster U",
+      "observed": 16234.5,
+      "expected": 16234.5,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "fasta_length singleton/giant_cluster delta",
+      "observed": -0.9153844951058573,
+      "expected": -0.9153844951058573,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "fasta_length singleton/other_multimember U",
+      "observed": 53261.5,
+      "expected": 53261.5,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "fasta_length singleton/other_multimember delta",
+      "observed": -0.6614039325878411,
+      "expected": -0.6614039325878411,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "fasta_length giant_cluster/other_multimember U",
+      "observed": 209503.0,
+      "expected": 209503.0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "fasta_length giant_cluster/other_multimember delta",
+      "observed": 0.4484544279205471,
+      "expected": 0.4484544279205471,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "median_plddt singleton/all_multimember U",
+      "observed": 167009.5,
+      "expected": 167009.5,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "median_plddt singleton/all_multimember delta",
+      "observed": -0.5216861465848328,
+      "expected": -0.5216861465848328,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "median_plddt singleton/giant_cluster U",
+      "observed": 44991.0,
+      "expected": 44991.0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "median_plddt singleton/giant_cluster delta",
+      "observed": -0.7655033305188104,
+      "expected": -0.7655033305188104,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "median_plddt singleton/other_multimember U",
+      "observed": 122018.5,
+      "expected": 122018.5,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "median_plddt singleton/other_multimember delta",
+      "observed": -0.22429927336762,
+      "expected": -0.22429927336762,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "median_plddt giant_cluster/other_multimember U",
+      "observed": 221910.5,
+      "expected": 221910.5,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "median_plddt giant_cluster/other_multimember delta",
+      "observed": 0.5342369623683791,
+      "expected": 0.5342369623683791,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "mean_plddt singleton/all_multimember U",
+      "observed": 167239.0,
+      "expected": 167239.0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "mean_plddt singleton/all_multimember delta",
+      "observed": -0.5210288604462672,
+      "expected": -0.5210288604462672,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "mean_plddt singleton/giant_cluster U",
+      "observed": 43729.0,
+      "expected": 43729.0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "mean_plddt singleton/giant_cluster delta",
+      "observed": -0.7720809748673526,
+      "expected": -0.7720809748673526,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "mean_plddt singleton/other_multimember U",
+      "observed": 123510.0,
+      "expected": 123510.0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "mean_plddt singleton/other_multimember delta",
+      "observed": -0.2148174518915964,
+      "expected": -0.2148174518915964,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "mean_plddt giant_cluster/other_multimember U",
+      "observed": 226796.0,
+      "expected": 226796.0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "mean_plddt giant_cluster/other_multimember delta",
+      "observed": 0.5680141593899295,
+      "expected": 0.5680141593899295,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt50 singleton/all_multimember U",
+      "observed": 437030.5,
+      "expected": 437030.5,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt50 singleton/all_multimember delta",
+      "observed": 0.2516518073220817,
+      "expected": 0.2516518073220817,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt50 singleton/giant_cluster U",
+      "observed": 282657.5,
+      "expected": 282657.5,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt50 singleton/giant_cluster delta",
+      "observed": 0.4732333656482264,
+      "expected": 0.4732333656482264,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt50 singleton/other_multimember U",
+      "observed": 154373.0,
+      "expected": 154373.0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt50 singleton/other_multimember delta",
+      "observed": -0.018613994825207758,
+      "expected": -0.018613994825207758,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt50 giant_cluster/other_multimember U",
+      "observed": 76456.0,
+      "expected": 76456.0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt50 giant_cluster/other_multimember delta",
+      "observed": -0.47140121267431334,
+      "expected": -0.47140121267431334,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt70 singleton/all_multimember U",
+      "observed": 547309.5,
+      "expected": 547309.5,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt70 singleton/all_multimember delta",
+      "observed": 0.5674899688684081,
+      "expected": 0.5674899688684081,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt70 singleton/giant_cluster U",
+      "observed": 345764.5,
+      "expected": 345764.5,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt70 singleton/giant_cluster delta",
+      "observed": 0.8021520676319438,
+      "expected": 0.8021520676319438,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt70 singleton/other_multimember U",
+      "observed": 201545.0,
+      "expected": 201545.0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt70 singleton/other_multimember delta",
+      "observed": 0.2812696677071347,
+      "expected": 0.2812696677071347,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt70 giant_cluster/other_multimember U",
+      "observed": 59058.0,
+      "expected": 59058.0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt70 giant_cluster/other_multimember delta",
+      "observed": -0.5916868894281626,
+      "expected": -0.5916868894281626,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "longest_segment_lt70 singleton/all_multimember U",
+      "observed": 400876.5,
+      "expected": 400876.5,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "longest_segment_lt70 singleton/all_multimember delta",
+      "observed": 0.1481070445608499,
+      "expected": 0.1481070445608499,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "longest_segment_lt70 singleton/giant_cluster U",
+      "observed": 265787.0,
+      "expected": 265787.0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "longest_segment_lt70 singleton/giant_cluster delta",
+      "observed": 0.38530297818223525,
+      "expected": 0.38530297818223525,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "longest_segment_lt70 singleton/other_multimember U",
+      "observed": 135089.5,
+      "expected": 135089.5,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "longest_segment_lt70 singleton/other_multimember delta",
+      "observed": -0.1412038067145155,
+      "expected": -0.1412038067145155,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "longest_segment_lt70 giant_cluster/other_multimember U",
+      "observed": 84565.5,
+      "expected": 84565.5,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "longest_segment_lt70 giant_cluster/other_multimember delta",
+      "observed": -0.415334038537324,
+      "expected": -0.415334038537324,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "BH family size",
+      "observed": 24,
+      "expected": 24,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "fasta_length singleton vs all_multimember BH relative error",
+      "observed": 1.5831780331154732e-13,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "fasta_length singleton vs giant_cluster BH relative error",
+      "observed": 1.5831780331154732e-13,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "fasta_length singleton vs other_multimember BH relative error",
+      "observed": 4.75175454539567e-14,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "fasta_length giant_cluster vs other_multimember BH relative error",
+      "observed": 2.5091040356528538e-14,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "median_plddt singleton vs all_multimember BH relative error",
+      "observed": 6.217248937900877e-15,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "median_plddt singleton vs giant_cluster BH relative error",
+      "observed": 1.3233858453531866e-13,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "median_plddt singleton vs other_multimember BH relative error",
+      "observed": 1.5543122344752192e-15,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "median_plddt giant_cluster vs other_multimember BH relative error",
+      "observed": 3.3306690738754696e-16,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "mean_plddt singleton vs all_multimember BH relative error",
+      "observed": 1.2656542480726785e-14,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "mean_plddt singleton vs giant_cluster BH relative error",
+      "observed": 1.0458300891968975e-13,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "mean_plddt singleton vs other_multimember BH relative error",
+      "observed": 7.327471962526033e-15,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "mean_plddt giant_cluster vs other_multimember BH relative error",
+      "observed": 4.6629367034256575e-15,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt50 singleton vs all_multimember BH relative error",
+      "observed": 1.3322676295501878e-14,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt50 singleton vs giant_cluster BH relative error",
+      "observed": 3.752553823233029e-14,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt50 singleton vs other_multimember BH relative error",
+      "observed": 0.0,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt50 giant_cluster vs other_multimember BH relative error",
+      "observed": 3.774758283725532e-15,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt70 singleton vs all_multimember BH relative error",
+      "observed": 4.8627768478581856e-14,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt70 singleton vs giant_cluster BH relative error",
+      "observed": 2.1094237467877974e-15,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt70 singleton vs other_multimember BH relative error",
+      "observed": 1.354472090042691e-14,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt70 giant_cluster vs other_multimember BH relative error",
+      "observed": 5.551115123125783e-16,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "longest_segment_lt70 singleton vs all_multimember BH relative error",
+      "observed": 5.551115123125783e-16,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "longest_segment_lt70 singleton vs giant_cluster BH relative error",
+      "observed": 4.218847493575595e-15,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "longest_segment_lt70 singleton vs other_multimember BH relative error",
+      "observed": 4.6629367034256575e-15,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "longest_segment_lt70 giant_cluster vs other_multimember BH relative error",
+      "observed": 3.1530333899354446e-14,
+      "expected": 0,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "fasta_length bootstrap lower",
+      "observed": -0.7084686365630225,
+      "expected": -0.7084686365630225,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "fasta_length bootstrap upper",
+      "observed": -0.6212646454885856,
+      "expected": -0.6212646454885856,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "median_plddt bootstrap lower",
+      "observed": -0.28819993197754623,
+      "expected": -0.2881999319775463,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "median_plddt bootstrap upper",
+      "observed": -0.1606199261288867,
+      "expected": -0.16061992612888673,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt70 bootstrap lower",
+      "observed": 0.21638022008760274,
+      "expected": 0.21638022008760277,
+      "status": "VERIFIED"
+    },
+    {
+      "check": "frac_plddt_lt70 bootstrap upper",
+      "observed": 0.33982730561153457,
+      "expected": 0.33982730561153457,
+      "status": "VERIFIED"
+    }
+  ],
+  "bootstrap": "VERIFIED:500resamples;seed20260712;three displayed intervals",
+  "scope": "frozen processed numerical evidence; not an end-to-end Foldseek or initial-search rerun",
+  "historical_gaps": [
+    "original MGAT2 web-search export (non-blocking for verified downstream baseline)",
+    "final PanelC merge/classifier source",
+    "exact historical execution hash/environment for some scripts"
+  ],
+  "non_blocking_scope_limitation": "Separate truncated-core files unavailable on another computer; no search/rerun or independent equivalence claim; author decision 2026-10-24"
+}
