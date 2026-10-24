@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "inspected": [
+    "figures/preview_C1_C4.png",
+    "figures/Figure_C4_size_stability_QC.png"
+  ],
+  "observations": [
+    "C1/C2 use exact saved joint coordinates with subdued background",
+    "C2 explicitly displays all 287 baseline noise points",
+    "C3 uses distinct global/Saccharide IDs and row fractions/counts",
+    "C4 final labels and group-count annotations have no observed overlap",
+    "All panels identify original-320D clustering versus UMAP display"
+  ],
+  "initial_layout_issue": "C4 long x labels touched the footer and HDBSCAN labels collided with the title; initial exports retained, final layout corrected",
+  "color_vision_simulations": "NOT RECORDED",
+  "vector_export_check": "VALIDATION.json",
+  "clustering_or_UMAP_refit": false
+}

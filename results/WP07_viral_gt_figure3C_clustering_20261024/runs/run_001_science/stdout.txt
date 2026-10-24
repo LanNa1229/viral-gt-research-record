@@ -1,0 +1,13 @@
+COHORT selected287 287
+DONE selected287 baseline Counter({np.str_('VC03'): 74, np.str_('VC01'): 68, np.str_('VC02'): 55, np.str_('VC05'): 55, np.str_('VC04'): 35}) silhouette 0.20003249229411557
+COHORT all556 556
+DONE all556 baseline Counter({np.str_('AV01'): 95, np.str_('AV06'): 91, np.str_('AV02'): 81, np.str_('AV03'): 74, np.str_('AV07'): 65, np.str_('AV08'): 64, np.str_('AV05'): 51, np.str_('AV04'): 35}) silhouette 0.29290143222150117
+COHORT selected_full15 243
+DONE selected_full15 baseline Counter({np.str_('FV01'): 65, np.str_('FV04'): 55, np.str_('FV05'): 44, np.str_('FV03'): 43, np.str_('FV02'): 36}) silhouette 0.18407109854725232
+COHORT selected_deduplicated 263
+DONE selected_deduplicated baseline Counter({np.str_('DV04'): 71, np.str_('DV05'): 60, np.str_('DV03'): 53, np.str_('DV02'): 46, np.str_('DV01'): 33}) silhouette 0.23130040909168034
+COHORT global_joint 2789
+DONE global_joint baseline Counter({np.str_('GC01'): 396, np.str_('GC07'): 384, np.str_('GC04'): 344, np.str_('GC10'): 336, np.str_('GC03'): 293, np.str_('GC06'): 291, np.str_('GC08'): 252, np.str_('GC02'): 175, np.str_('GC05'): 160, np.str_('GC09'): 158}) silhouette 0.4748312805764614
+COHORT saccharide_joint 482
+DONE saccharide_joint baseline Counter({np.str_('SC03'): 120, np.str_('SC06'): 75, np.str_('SC07'): 67, np.str_('SC04'): 65, np.str_('SC02'): 58, np.str_('SC01'): 57, np.str_('SC05'): 40}) silhouette 0.11733972666967815
+SCIENTIFIC ANALYSIS COMPLETE {"selected287": {"n": 287, "communities": 5, "sizes": {"VC01": 68, "VC02": 55, "VC03": 74, "VC04": 35, "VC05": 55}}, "all556": {"n": 556, "communities": 8, "sizes": {"AV01": 95, "AV02": 81, "AV03": 74, "AV04": 35, "AV05": 51, "AV06": 91, "AV07": 65, "AV08": 64}}, "selected_full15": {"n": 243, "communities": 5, "sizes": {"FV01": 65, "FV02": 36, "FV03": 43, "FV04": 55, "FV05": 44}}, "selected_deduplicated": {"n": 263, "communities": 5, "sizes": {"DV01": 33, "DV02": 46, "DV03": 53, "DV04": 71, "DV05": 60}}, "global_joint": {"n": 2789, "communities": 10, "sizes": {"GC01": 396, "GC02": 175, "GC03": 293, "GC04": 344, "GC05": 160, "GC06": 291, "GC07": 384, "GC08": 252, "GC09": 158, "GC10": 336}}, "saccharide_joint": {"n": 482, "communities": 7, "sizes": {"SC01": 57, "SC02": 58, "SC03": 120, "SC04": 65, "SC05": 40, "SC06": 75, "SC07": 67}}, "genome_balanced": {"n": 287, "communities": 5, "sizes": {"GB01": 55, "GB02": 65, "GB03": 76, "GB04": 35, "GB05": 56}}, "genome_component_balanced": {"n": 287, "communities": 5, "sizes": {"CB01": 44, "CB02": 46, "CB03": 64, "CB04": 76, "CB05": 57}}}
