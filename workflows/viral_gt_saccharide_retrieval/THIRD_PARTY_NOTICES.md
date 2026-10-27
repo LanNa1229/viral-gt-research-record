@@ -1,6 +1,6 @@
 # Attribution and third-party scope
 
-Original Step 3 scripts, adapter, validation, derived analysis organization and documentation: Lan Na (given Lan; family Na). Original-work licenses remain proposals pending approval.
+Original Step 3 scripts, adapter, validation, derived analysis organization and documentation: Lan Na (given Lan; family Na). Approved original-work licenses: MIT only for original software and CC BY 4.0 only for original derived data/documentation. Third-party rights and source terms remain separate.
 
 MIBiG Consortium: reference BGC accessions/product-class annotation facts are attributed through the historical BGC-Prophet training collection and checksum-frozen metadata. The official site states CC BY 4.0: https://mibig.secondarymetabolites.org/ ; https://creativecommons.org/licenses/by/4.0/ . General project citation: Zdouc, Blin et al., MIBiG 4.0, doi:10.1093/nar/gkae1115. This citation does not identify the unresolved historical catalogue version. No ownership/relicensing of original annotations is asserted. The reference database/matrix are referenced, not redistributed.
 

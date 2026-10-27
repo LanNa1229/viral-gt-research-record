@@ -2,9 +2,9 @@
   "format": 1,
   "version": "1.0.0",
   "creator": "Lan Na",
-  "publication_status": "local preparation; approval pending",
-  "dataset_doi": null,
-  "software_commit": null,
+  "publication_status": "Published v1.0.0 with explicit creator approval",
+  "dataset_doi": "10.5281/zenodo.23683720",
+  "software_commit": "232437d59a1cf1a7830dc9541300bf95d2132418",
   "public_repository_head_audited": "84f6bf9fcd2f88a227b3da520d859a2e7dd51068",
   "archives": {
     "step1": {
@@ -453,5 +453,28 @@
     "cosine_rtol": 1e-12,
     "exact_neighbor_identity": true,
     "self_match_exclusion": "No explicit filter; observed query/reference identifiers are disjoint"
+  },
+  "publication": {
+    "published": "2026-10-27",
+    "creator": "Lan Na",
+    "record_url": "https://zenodo.org/records/23683720",
+    "dataset_doi": "10.5281/zenodo.23683720",
+    "exact_software_commit": "232437d59a1cf1a7830dc9541300bf95d2132418",
+    "dataset_archive_sha256": "d8488e31e1320070a04ecf7c34f6617c77fc8b2ccb5a6c9540afe23f9659f957",
+    "reviewed_software_archive_sha256": "8abfae8d0ed2795b946b0e2e861f3570a78ec3ddba8158f81164b9adaaefddf0",
+    "original_software_license": "MIT",
+    "original_derived_data_documentation_license": "CC-BY-4.0",
+    "third_party_terms": "Separate attribution and original-provider terms preserved; no weights redistributed",
+    "historical_comparator": "P@10 >= 0.5",
+    "historical_cohorts": [
+      245,
+      242
+    ],
+    "retrospective_only_strict_cohorts": [
+      230,
+      227
+    ],
+    "public_resources": 26,
+    "no_scientific_rerun_during_publication": true
   }
 }
