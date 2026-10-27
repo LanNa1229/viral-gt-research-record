@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "representative_pairs": 6,
+  "windows_inferred": 12,
+  "full_cohort_inference": false,
+  "protein_encoding": {
+    "unique_sequences": 66,
+    "historical_cache_hits": 0,
+    "persistent_cache_hits": 0,
+    "newly_encoded": 66,
+    "esm_seconds": 3.8242030149995117,
+    "esm_batch_size": 1
+  },
+  "all_proteins_encoded_from_sequences": true,
+  "historical_pilot_cache_or_LMDB_used": false,
+  "model_weights_unchanged": true,
+  "max_score_abs_error": 0.0,
+  "max_embedding_abs_error": 0.0,
+  "tolerance": 1e-06,
+  "all_actual_position_pooling": true,
+  "positional_encoding_quirk_preserved": true,
+  "python": "3.12.11",
+  "packages": {
+    "torch": "2.5.1+cpu",
+    "numpy": "1.26.4",
+    "fair-esm": "2.0.0"
+  },
+  "elapsed_seconds": 7.104922604999956,
+  "model_checkpoint_sha256": "f45ca298980d4740dd43131a7e69c99cb233368c815470572cfc46f33abf4eb5",
+  "esm_checkpoint_sha256": "46f002a9870c9bdecd0ea887acb1f9a38a6b561e8f8bf8a6990b679b9d31b928",
+  "source_adapter_sha256": "77745f3b5a56dee4020442ce9ce11f6e6ca99ded5744217d25a51a11338cbac8",
+  "source_wrapper_sha256": "d0b7608341ef31ad29bae58b147804c7a6a0ecddcbc6b8b43801e255ed4b9233"
+}

@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "canary_original_workspace_read_blocked": true,
+  "denied": [
+    {
+      "event": "open",
+      "path": "/home/rahnn/260908_MiBG/analysis/viral_gt_step2_release_20261027/scripts/guarded_regression.py",
+      "write": false
+    },
+    {
+      "event": "open",
+      "path": "/home/rahnn/260908_MiBG/analysis/viral_gt_step2_release_20261027/scripts/guarded_regression.py",
+      "write": false
+    },
+    {
+      "event": "open",
+      "path": "/home/rahnn/260908_MiBG/analysis/viral_gt_step2_release_20261027/scripts/guarded_regression.py",
+      "write": false
+    },
+    {
+      "event": "open",
+      "path": "/home/rahnn/260908_MiBG/analysis/viral_gt_step2_release_20261027/scripts/guarded_regression.py",
+      "write": false
+    },
+    {
+      "event": "open",
+      "path": "/home/rahnn/260908_MiBG/analysis/viral_gt_step2_release_20261027/scripts/guarded_regression.py",
+      "write": false
+    }
+  ],
+  "network_or_subprocess_events": [],
+  "error": null,
+  "scope": "Python audit hooks; not kernel sandboxing",
+  "elapsed_seconds": 8.492933257000914,
+  "observed_open_events": 1097,
+  "historical_scientific_file_reads": 0,
+  "runtime_roots_explicitly_declared": true,
+  "raw_guard_passed": false,
+  "benign_harness_self_source_denials": 5,
+  "adjudication": "Only harness-self reads for warning formatting were denied; no unknown scientific reads, writes or network calls. Raw guard trace preserved."
+}

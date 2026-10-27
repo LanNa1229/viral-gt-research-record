@@ -1,0 +1,378 @@
+{
+  "format": 1,
+  "public_commit_audited": "855a729971a0a0d8bcc21b551a8f881c9e558b6e",
+  "step1": {
+    "doi": "10.5281/zenodo.23680510",
+    "archive_name": "Step1_viral_GT_neighborhoods_v1.0.0_DATA_FINAL.zip",
+    "archive_url": "https://zenodo.org/records/23680510/files/Step1_viral_GT_neighborhoods_v1.0.0_DATA_FINAL.zip?download=1",
+    "archive_sha256": "9da5bd59b94e2546a98b263a8ea0cd039b1094d5d0ebac8df8a8428b54064a1f",
+    "inputs": [
+      {
+        "member": "step1/outputs/baseline_594_v2/viral_gt_windows.tsv",
+        "cache_path": "runs/15/viral_gt_windows.tsv",
+        "sha256": "adcc1405af0e4fa5c80e4a505cf6a2ebd61bf12a27c7a779f58d8c87ad53e003",
+        "bytes": 433282
+      },
+      {
+        "member": "step1/outputs/baseline_594_v2/viral_gt_window_genes.tsv",
+        "cache_path": "runs/15/viral_gt_window_genes.tsv",
+        "sha256": "1fec7664c284378d44430c609d4bd1c146abab08059304c65df44633d152d105",
+        "bytes": 6184708
+      },
+      {
+        "member": "step1/outputs/baseline_594_v2/inference_qc.tsv",
+        "cache_path": "runs/15/inference_qc.tsv",
+        "sha256": "843e87f166ea7ebf1e6ce5eb05e2d114d1cda4a7549de1a21362b81cb0cd7455",
+        "bytes": 56790
+      },
+      {
+        "member": "step1/outputs/baseline_594_v2/inference_provenance.json",
+        "cache_path": "runs/15/inference_provenance.json",
+        "sha256": "4414e94a047334da5add5670813a201b87b8f4ee374736bcd9072b2d806c6bf7",
+        "bytes": 8077
+      },
+      {
+        "member": "step1/outputs/window11_594_v1/viral_gt_windows.tsv",
+        "cache_path": "runs/11/viral_gt_windows.tsv",
+        "sha256": "8dfe56d0a74c07f525c2ce7cc5974f10a829997989a953829b19178ef8271abe",
+        "bytes": 499952
+      },
+      {
+        "member": "step1/outputs/window11_594_v1/viral_gt_window_genes.tsv",
+        "cache_path": "runs/11/viral_gt_window_genes.tsv",
+        "sha256": "36a6f6e463588bb516f88798e205b81eb4c4ab6be744b71a27c33e9f98287959",
+        "bytes": 4630897
+      },
+      {
+        "member": "step1/outputs/window11_594_v1/inference_qc.tsv",
+        "cache_path": "runs/11/inference_qc.tsv",
+        "sha256": "934cb8a539437eb29d658671444f4dca16d7872f09a8e547650245a053dc65f5",
+        "bytes": 58223
+      },
+      {
+        "member": "step1/outputs/window11_594_v1/inference_provenance.json",
+        "cache_path": "runs/11/inference_provenance.json",
+        "sha256": "ded08a274fe6f0a998faf3e4f5db794166434a4b46ccfdb6cda64c0b0cd6d999",
+        "bytes": 8077
+      }
+    ]
+  },
+  "files": [
+    {
+      "id": "historical_adapter",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/6818c60c2af209c739eeb107da35bcd2f192168a/workflows/viral_gt_neighborhood_extraction/historical/baseline_594_v2/src/viral_gt_mining/inference.py",
+      "sha256": "77745f3b5a56dee4020442ce9ce11f6e6ca99ded5744217d25a51a11338cbac8",
+      "bytes": 26956,
+      "cache_path": "historical/inference.py",
+      "role": "Exact published viral inference helpers",
+      "commit": "6818c60c2af209c739eeb107da35bcd2f192168a",
+      "repository_path": "workflows/viral_gt_neighborhood_extraction/historical/baseline_594_v2/src/viral_gt_mining/inference.py"
+    },
+    {
+      "id": "benchmark",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/7b35093eefa99a4704e7b64039f51b7564788fd4/results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_glycan_benchmark_20261016/scripts/benchmark.py",
+      "sha256": "d0b7608341ef31ad29bae58b147804c7a6a0ecddcbc6b8b43801e255ed4b9233",
+      "bytes": 23457,
+      "cache_path": "analysis/viral_glycan_benchmark_20261016/scripts/benchmark.py",
+      "role": "Exact published forward/hook/label wrapper",
+      "commit": "7b35093eefa99a4704e7b64039f51b7564788fd4",
+      "repository_path": "results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_glycan_benchmark_20261016/scripts/benchmark.py"
+    },
+    {
+      "id": "historical/run_full.py",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/6818c60c2af209c739eeb107da35bcd2f192168a/workflows/viral_gt_neighborhood_extraction/historical/baseline_594_v2/workflows/viral_gt_mining/run_full.py",
+      "sha256": "4abf4b65b3c51a62b12c898e7f1129e7fbe51a8d7e5fc8a01363331a4fc18246",
+      "bytes": 6046,
+      "cache_path": "historical/run_full.py",
+      "role": "Published historical launcher/environment; documentation only",
+      "commit": "6818c60c2af209c739eeb107da35bcd2f192168a",
+      "repository_path": "workflows/viral_gt_neighborhood_extraction/historical/baseline_594_v2/workflows/viral_gt_mining/run_full.py"
+    },
+    {
+      "id": "historical/experiment.py",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/6818c60c2af209c739eeb107da35bcd2f192168a/workflows/viral_gt_neighborhood_extraction/historical/window11/experiment.py",
+      "sha256": "8d6fc8848b720de15b859699bbe4685506d56bdabcce00a3fdf73201a6e182a8",
+      "bytes": 17219,
+      "cache_path": "historical/experiment.py",
+      "role": "Published historical launcher/environment; documentation only",
+      "commit": "6818c60c2af209c739eeb107da35bcd2f192168a",
+      "repository_path": "workflows/viral_gt_neighborhood_extraction/historical/window11/experiment.py"
+    },
+    {
+      "id": "historical/common.py",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/6818c60c2af209c739eeb107da35bcd2f192168a/workflows/viral_gt_neighborhood_extraction/historical/window11/common.py",
+      "sha256": "e99b3d6c52332329bdf909727e7f616fa2df8d7af5470071b04c6a1611da8d31",
+      "bytes": 4018,
+      "cache_path": "historical/common.py",
+      "role": "Published historical launcher/environment; documentation only",
+      "commit": "6818c60c2af209c739eeb107da35bcd2f192168a",
+      "repository_path": "workflows/viral_gt_neighborhood_extraction/historical/window11/common.py"
+    },
+    {
+      "id": "historical/software_versions.json",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/6818c60c2af209c739eeb107da35bcd2f192168a/workflows/viral_gt_neighborhood_extraction/historical/software_versions.json",
+      "sha256": "bda84297ba24bac2609e59bff3348e05f416a07c4a397a84c8e94cb2073d7cb6",
+      "bytes": 94,
+      "cache_path": "historical/software_versions.json",
+      "role": "Published historical launcher/environment; documentation only",
+      "commit": "6818c60c2af209c739eeb107da35bcd2f192168a",
+      "repository_path": "workflows/viral_gt_neighborhood_extraction/historical/software_versions.json"
+    },
+    {
+      "id": "historical/extract_bgc_embeddings.py",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/707f1379770c1c31ebeb5e07baa8551fac7338e1/scripts/archive/WP07_mibig_reference_atlas/published_style_extraction/extract_bgc_embeddings.py",
+      "sha256": "33e6a9eb5d07e7634b3033d96667c450be1b3b7da9dcf8417600dbdd4ff3f616",
+      "bytes": 4555,
+      "cache_path": "historical/extract_bgc_embeddings.py",
+      "role": "Older 128-position exporter; not the viral CORE_ONLY launcher",
+      "commit": "707f1379770c1c31ebeb5e07baa8551fac7338e1",
+      "repository_path": "scripts/archive/WP07_mibig_reference_atlas/published_style_extraction/extract_bgc_embeddings.py"
+    },
+    {
+      "id": "runs/15/viral_gt_windows.tsv",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/7b35093eefa99a4704e7b64039f51b7564788fd4/results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_gt_mining_20261017/runs/baseline_594_v2/viral_gt_windows.tsv",
+      "sha256": "adcc1405af0e4fa5c80e4a505cf6a2ebd61bf12a27c7a779f58d8c87ad53e003",
+      "bytes": 433282,
+      "cache_path": "runs/15/viral_gt_windows.tsv",
+      "role": "Frozen published 15-gene input/output",
+      "commit": "7b35093eefa99a4704e7b64039f51b7564788fd4",
+      "repository_path": "results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_gt_mining_20261017/runs/baseline_594_v2/viral_gt_windows.tsv"
+    },
+    {
+      "id": "runs/15/viral_gt_window_genes.tsv",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/7b35093eefa99a4704e7b64039f51b7564788fd4/results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_gt_mining_20261017/runs/baseline_594_v2/viral_gt_window_genes.tsv",
+      "sha256": "1fec7664c284378d44430c609d4bd1c146abab08059304c65df44633d152d105",
+      "bytes": 6184708,
+      "cache_path": "runs/15/viral_gt_window_genes.tsv",
+      "role": "Frozen published 15-gene input/output",
+      "commit": "7b35093eefa99a4704e7b64039f51b7564788fd4",
+      "repository_path": "results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_gt_mining_20261017/runs/baseline_594_v2/viral_gt_window_genes.tsv"
+    },
+    {
+      "id": "runs/15/viral_bgc_predictions.tsv",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/7b35093eefa99a4704e7b64039f51b7564788fd4/results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_gt_mining_20261017/runs/baseline_594_v2/viral_bgc_predictions.tsv",
+      "sha256": "1132e85695341ddceb172f4cf07f312c5b77aaa7c7b744c8d9fde45cdccc2436",
+      "bytes": 240513,
+      "cache_path": "runs/15/viral_bgc_predictions.tsv",
+      "role": "Frozen published 15-gene input/output",
+      "commit": "7b35093eefa99a4704e7b64039f51b7564788fd4",
+      "repository_path": "results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_gt_mining_20261017/runs/baseline_594_v2/viral_bgc_predictions.tsv"
+    },
+    {
+      "id": "runs/15/viral_bgc_embeddings.npy",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/7b35093eefa99a4704e7b64039f51b7564788fd4/results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_gt_mining_20261017/runs/baseline_594_v2/viral_bgc_embeddings.npy",
+      "sha256": "fabc70d82eca9f56e7fedaa8c71d6aca839e8b6ef0635657966fa879a24e2595",
+      "bytes": 943488,
+      "cache_path": "runs/15/viral_bgc_embeddings.npy",
+      "role": "Frozen published 15-gene input/output",
+      "commit": "7b35093eefa99a4704e7b64039f51b7564788fd4",
+      "repository_path": "results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_gt_mining_20261017/runs/baseline_594_v2/viral_bgc_embeddings.npy"
+    },
+    {
+      "id": "runs/15/embedding_manifest.tsv",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/7b35093eefa99a4704e7b64039f51b7564788fd4/results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_gt_mining_20261017/runs/baseline_594_v2/embedding_manifest.tsv",
+      "sha256": "97c73e8ed32c95ddf4a084ad617c3d141d2ae8b3974a8feaf7b9b40a47fd4b1b",
+      "bytes": 1074572,
+      "cache_path": "runs/15/embedding_manifest.tsv",
+      "role": "Frozen published 15-gene input/output",
+      "commit": "7b35093eefa99a4704e7b64039f51b7564788fd4",
+      "repository_path": "results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_gt_mining_20261017/runs/baseline_594_v2/embedding_manifest.tsv"
+    },
+    {
+      "id": "runs/15/inference_qc.tsv",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/7b35093eefa99a4704e7b64039f51b7564788fd4/results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_gt_mining_20261017/runs/baseline_594_v2/inference_qc.tsv",
+      "sha256": "843e87f166ea7ebf1e6ce5eb05e2d114d1cda4a7549de1a21362b81cb0cd7455",
+      "bytes": 56790,
+      "cache_path": "runs/15/inference_qc.tsv",
+      "role": "Frozen published 15-gene input/output",
+      "commit": "7b35093eefa99a4704e7b64039f51b7564788fd4",
+      "repository_path": "results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_gt_mining_20261017/runs/baseline_594_v2/inference_qc.tsv"
+    },
+    {
+      "id": "runs/15/inference_provenance.json",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/7b35093eefa99a4704e7b64039f51b7564788fd4/results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_gt_mining_20261017/runs/baseline_594_v2/inference_provenance.json",
+      "sha256": "4414e94a047334da5add5670813a201b87b8f4ee374736bcd9072b2d806c6bf7",
+      "bytes": 8077,
+      "cache_path": "runs/15/inference_provenance.json",
+      "role": "Frozen published 15-gene input/output",
+      "commit": "7b35093eefa99a4704e7b64039f51b7564788fd4",
+      "repository_path": "results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_gt_mining_20261017/runs/baseline_594_v2/inference_provenance.json"
+    },
+    {
+      "id": "runs/15/saccharide_localization.tsv",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/7b35093eefa99a4704e7b64039f51b7564788fd4/results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_gt_mining_20261017/runs/baseline_594_v2/saccharide_localization.tsv",
+      "sha256": "8cf84c727cda8bcd701d6973fdc03b40596783ee38b266b5899951b32d94759d",
+      "bytes": 244543,
+      "cache_path": "runs/15/saccharide_localization.tsv",
+      "role": "Frozen published 15-gene input/output",
+      "commit": "7b35093eefa99a4704e7b64039f51b7564788fd4",
+      "repository_path": "results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_gt_mining_20261017/runs/baseline_594_v2/saccharide_localization.tsv"
+    },
+    {
+      "id": "reference/mibig_CORE_ONLY_embeddings.npy",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/7b35093eefa99a4704e7b64039f51b7564788fd4/results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_glycan_benchmark_20261016/mibig_CORE_ONLY_embeddings.npy",
+      "sha256": "78036e1636eaeeab90f4d157794c868d9b57033195939d83960d8e70bb831e22",
+      "bytes": 3202688,
+      "cache_path": "reference/mibig_CORE_ONLY_embeddings.npy",
+      "role": "Published matched CORE_ONLY reference/proof",
+      "commit": "7b35093eefa99a4704e7b64039f51b7564788fd4",
+      "repository_path": "results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_glycan_benchmark_20261016/mibig_CORE_ONLY_embeddings.npy"
+    },
+    {
+      "id": "reference/mibig_matched_reference_metadata.tsv",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/7b35093eefa99a4704e7b64039f51b7564788fd4/results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_glycan_benchmark_20261016/mibig_matched_reference_metadata.tsv",
+      "sha256": "5184f8f3199da2d1fac90e85ff11e2a30b443b70aac60992136718856c18ba4c",
+      "bytes": 95738,
+      "cache_path": "reference/mibig_matched_reference_metadata.tsv",
+      "role": "Published matched CORE_ONLY reference/proof",
+      "commit": "7b35093eefa99a4704e7b64039f51b7564788fd4",
+      "repository_path": "results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_glycan_benchmark_20261016/mibig_matched_reference_metadata.tsv"
+    },
+    {
+      "id": "reference/reference_validation.json",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/7b35093eefa99a4704e7b64039f51b7564788fd4/results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_glycan_benchmark_20261016/reference_validation.json",
+      "sha256": "a75043f212d4df3297e2dfa37145127f5e890f866d4c36cc6284eeed1780306e",
+      "bytes": 261,
+      "cache_path": "reference/reference_validation.json",
+      "role": "Published matched CORE_ONLY reference/proof",
+      "commit": "7b35093eefa99a4704e7b64039f51b7564788fd4",
+      "repository_path": "results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_glycan_benchmark_20261016/reference_validation.json"
+    },
+    {
+      "id": "reference/mibig_original_regression.tsv",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/7b35093eefa99a4704e7b64039f51b7564788fd4/results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_glycan_benchmark_20261016/mibig_original_regression.tsv",
+      "sha256": "4622855130a83bb97c51f1680aa7d423b0cdba2482236cc5ac341c735b7d6cef",
+      "bytes": 1733,
+      "cache_path": "reference/mibig_original_regression.tsv",
+      "role": "Published matched CORE_ONLY reference/proof",
+      "commit": "7b35093eefa99a4704e7b64039f51b7564788fd4",
+      "repository_path": "results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_glycan_benchmark_20261016/mibig_original_regression.tsv"
+    },
+    {
+      "id": "reference/pilot_validation.json",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/7b35093eefa99a4704e7b64039f51b7564788fd4/results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_glycan_benchmark_20261016/pilot_validation.json",
+      "sha256": "8ca48c1c1cf2e587aaed694dd66f62811f7d811f3f0432387348a3e2110c01b7",
+      "bytes": 747,
+      "cache_path": "reference/pilot_validation.json",
+      "role": "Published matched CORE_ONLY reference/proof",
+      "commit": "7b35093eefa99a4704e7b64039f51b7564788fd4",
+      "repository_path": "results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_glycan_benchmark_20261016/pilot_validation.json"
+    },
+    {
+      "id": "reference/esm_provenance.json",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/LanNa1229/viral-gt-research-record/7b35093eefa99a4704e7b64039f51b7564788fd4/results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_glycan_benchmark_20261016/esm_provenance.json",
+      "sha256": "f1d149751ff26261b97251d99f4a8b0a9b98351a2713104923a41a968c715fb7",
+      "bytes": 496,
+      "cache_path": "reference/esm_provenance.json",
+      "role": "Published matched CORE_ONLY reference/proof",
+      "commit": "7b35093eefa99a4704e7b64039f51b7564788fd4",
+      "repository_path": "results/WP07_viral_gt_figure3C_umap_20261024/inputs/workspace/analysis/viral_glycan_benchmark_20261016/esm_provenance.json"
+    },
+    {
+      "id": "upstream_classifier.py",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/HUST-NingKang-Lab/BGC-Prophet/de5068695a381d117ae3829d9c2698d954b85efc/bgc_prophet/train/classifier.py",
+      "cache_path": "sources/upstream/bgc_prophet/train/classifier.py",
+      "sha256": "fa4e1d045ac2c94559a9ab41054fd6b28d991d82be63e98585d7bc014564dca8",
+      "bytes": 2515,
+      "commit": "de5068695a381d117ae3829d9c2698d954b85efc",
+      "license": "MIT; Copyright (c) 2023 NingLab",
+      "role": "External exact upstream import dependency; not republished"
+    },
+    {
+      "id": "upstream_model.py",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/HUST-NingKang-Lab/BGC-Prophet/de5068695a381d117ae3829d9c2698d954b85efc/bgc_prophet/train/model.py",
+      "cache_path": "sources/upstream/bgc_prophet/train/model.py",
+      "sha256": "fa4ad0c224707ee316b3ab3f37c102796ac176b7203fad357b99c331178a65f0",
+      "bytes": 4024,
+      "commit": "de5068695a381d117ae3829d9c2698d954b85efc",
+      "license": "MIT; Copyright (c) 2023 NingLab",
+      "role": "External exact upstream import dependency; not republished"
+    },
+    {
+      "id": "upstream_batch3Linear.py",
+      "kind": "file",
+      "url": "https://raw.githubusercontent.com/HUST-NingKang-Lab/BGC-Prophet/de5068695a381d117ae3829d9c2698d954b85efc/bgc_prophet/train/batch3Linear.py",
+      "cache_path": "sources/upstream/bgc_prophet/train/batch3Linear.py",
+      "sha256": "37d212d01697bd1f4bf4e4ee32f8387b24adcb52c9c656b3124f80b8d1692d8c",
+      "bytes": 2196,
+      "commit": "de5068695a381d117ae3829d9c2698d954b85efc",
+      "license": "MIT; Copyright (c) 2023 NingLab",
+      "role": "External exact upstream import dependency; not republished"
+    },
+    {
+      "id": "classifier",
+      "kind": "tar_member",
+      "url": "https://github.com/HUST-NingKang-Lab/BGC-Prophet/files/12733164/model.tar.gz",
+      "archive_sha256": "bb4bff5e14c950f7c02884657d90536db9437787bd14d339f6dbc5fef3cffe08",
+      "member_basename": "classifier.pt",
+      "cache_path": "analysis/viral_glycan_benchmark_20261016/sources/classifier.pt",
+      "sha256": "f45ca298980d4740dd43131a7e69c99cb233368c815470572cfc46f33abf4eb5",
+      "bytes": 9885291,
+      "license": "Author-distributed weight asset; repository source MIT; no asset-specific redistribution grant located",
+      "role": "External pinned classifier checkpoint; not republished"
+    },
+    {
+      "id": "esm",
+      "kind": "file",
+      "url": "https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t6_8M_UR50D.pt",
+      "cache_path": "models/esm2_t6_8M_UR50D.pt",
+      "sha256": "46f002a9870c9bdecd0ea887acb1f9a38a6b561e8f8bf8a6990b679b9d31b928",
+      "bytes": 30099493,
+      "license": "Meta ESM source MIT; official facebook/esm2_t6_8M_UR50D model card MIT; canonical binary retained upstream; no project redistribution",
+      "role": "External original ESM resource; not republished"
+    },
+    {
+      "id": "esm_contact",
+      "kind": "file",
+      "url": "https://dl.fbaipublicfiles.com/fair-esm/regression/esm2_t6_8M_UR50D-contact-regression.pt",
+      "cache_path": "models/esm2_t6_8M_UR50D-contact-regression.pt",
+      "sha256": "8f7a4557d57713b97ba0e484303007efb7230d25299c0ac47a0a1b12a87bbb9d",
+      "bytes": 1511,
+      "license": "Meta ESM source MIT; official facebook/esm2_t6_8M_UR50D model card MIT; canonical binary retained upstream; no project redistribution",
+      "role": "External original ESM resource; not republished"
+    }
+  ],
+  "step2_outputs": [
+    {
+      "dataset_path": "outputs/window11_594_v1/viral_bgc_predictions.tsv",
+      "cache_path": "runs/11/viral_bgc_predictions.tsv",
+      "sha256": "e6b08aa729b3c35181fe69abefc8c012aeb0150138285e8af676d2935240812b",
+      "bytes": 243382
+    },
+    {
+      "dataset_path": "outputs/window11_594_v1/viral_bgc_embeddings.npy",
+      "cache_path": "runs/11/viral_bgc_embeddings.npy",
+      "sha256": "f5924d4956568afddfbf96b163ed62fd06f2cf80fd49a2b8c3573ade963a9f9a",
+      "bytes": 947328
+    },
+    {
+      "dataset_path": "outputs/window11_594_v1/embedding_manifest.tsv",
+      "cache_path": "runs/11/embedding_manifest.tsv",
+      "sha256": "6c2f6a30990939b832aebb03e811fcc2e989b2c2e2d9dfd04494e43d379e6890",
+      "bytes": 870113
+    }
+  ]
+}
