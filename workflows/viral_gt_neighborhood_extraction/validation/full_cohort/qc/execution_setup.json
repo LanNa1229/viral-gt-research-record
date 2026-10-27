@@ -1,0 +1,42 @@
+{
+  "started_utc": "2026-10-27T00:17:19.308062+00:00",
+  "temporary_workspace": "/tmp/viral_gt_step1_fullcohort_20261026_2v5b0ebd",
+  "archives": [
+    {
+      "path": "/home/rahnn/260908_MiBG/analysis/viral_gt_step1_release_20261026/Step1_GitHub_package_v1.0.0.zip",
+      "sha256": "88f4034343bb47de7e2b81f27676631bd95b933fead0ae94525bef631f142b0a",
+      "unpacked_to": "/tmp/viral_gt_step1_fullcohort_20261026_2v5b0ebd/code"
+    },
+    {
+      "path": "/home/rahnn/260908_MiBG/analysis/viral_gt_step1_release_20261026/Step1_viral_GT_neighborhoods_v1.0.0_DATA.zip",
+      "sha256": "d54e2897e22bd04b97925073148a1fed96e7db672b4f9f3ba205ffbd8c59e55f",
+      "unpacked_to": "/tmp/viral_gt_step1_fullcohort_20261026_2v5b0ebd/dataset"
+    }
+  ],
+  "command": [
+    "/home/rahnn/260908_MiBG/analysis/bgcprophet_sequence_recovery_20260912/.venv/bin/python",
+    "-I",
+    "-B",
+    "/tmp/viral_gt_step1_fullcohort_20261026_2v5b0ebd/guarded_execution.py",
+    "--root",
+    "/tmp/viral_gt_step1_fullcohort_20261026_2v5b0ebd",
+    "--code",
+    "/tmp/viral_gt_step1_fullcohort_20261026_2v5b0ebd/code/workflows/viral_gt_neighborhood_extraction",
+    "--data",
+    "/tmp/viral_gt_step1_fullcohort_20261026_2v5b0ebd/dataset/step1",
+    "--output",
+    "/tmp/viral_gt_step1_fullcohort_20261026_2v5b0ebd/regenerated",
+    "--canary",
+    "/home/rahnn/260908_MiBG/AGENTS.md"
+  ],
+  "cwd": "/tmp/viral_gt_step1_fullcohort_20261026_2v5b0ebd",
+  "environment_overrides": {
+    "PYTHONPATH": "",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "runtime": "documented existing Python3.12.11 / Biopython1.85 environment; no packages installed",
+  "code_and_dataset_manifest_files_verified": 1829,
+  "fresh_empty_output": true,
+  "full_cohort_expected": 594
+}

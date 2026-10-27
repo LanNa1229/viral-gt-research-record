@@ -1,0 +1,66 @@
+{
+  "adapter": "new portability adaptation 2026-10-26; unchanged historical function ASTs isolated from broad launchers",
+  "historical_code_pins": {
+    "extract": "9880dab746f4762ba4f7d8aacacb452feec3c0fc2384fcd71f84d42f8d3768e9",
+    "experiment": "8d6fc8848b720de15b859699bbe4685506d56bdabcce00a3fdf73201a6e182a8",
+    "analysis": "2a85da9400f6b00aa505c37e1b66b70d1ee8c0ef1e4c221eb1c4bdf92a3bddf7"
+  },
+  "python": "3.12.11 | packaged by conda-forge | (main, Jun  4 2025, 14:45:31) [GCC 13.3.0]",
+  "biopython": "1.85",
+  "input_anchor_sha256": "b1d316856a7e60dab0aa6e2414b829e90647f63d316104d2b8cef332e765d928",
+  "source_files": 517,
+  "extraction15": {
+    "status": "PASS",
+    "input_path": "/tmp/viral_gt_step1_fullcohort_20261026_2v5b0ebd/dataset/step1/inputs/baseline_594_anchors.txt",
+    "input_sha256": "b1d316856a7e60dab0aa6e2414b829e90647f63d316104d2b8cef332e765d928",
+    "input_rows": 594,
+    "unique_accessions": 594,
+    "duplicate_rows": 0,
+    "successful_input_rows": 593,
+    "unresolved_input_rows": 1,
+    "mapping_occurrence_rows": 757,
+    "windows": 757,
+    "gene_rows": 10688,
+    "complete_windows": 616,
+    "eligible_windows": 737,
+    "source_files": 517,
+    "source_errors": 0,
+    "wall_seconds": 18.070498328001122,
+    "python": "3.12.11",
+    "script_sha256": "9880dab746f4762ba4f7d8aacacb452feec3c0fc2384fcd71f84d42f8d3768e9",
+    "software_version": "0.1.0",
+    "parser_policy": "all_CDS_partial_translation_v2",
+    "parameters": {
+      "upstream": 7,
+      "downstream": 7,
+      "order": "ascending_coordinates",
+      "circular_policy": "no_wrap",
+      "CDS_policy": "all_annotated_CDS",
+      "duplicates": "retain_input_rows_share_identical_window"
+    }
+  },
+  "counts": {
+    "window15": {
+      "windows": 757,
+      "gene_rows": 10688,
+      "complete": 616,
+      "shortened": 141,
+      "eligible_for_later_inference": 737,
+      "native_loci": 565,
+      "genome_units": 466
+    },
+    "window11": {
+      "windows": 757,
+      "gene_rows": 7967,
+      "complete": 658,
+      "shortened": 99,
+      "eligible_for_later_inference": 740,
+      "native_loci": 575,
+      "genome_units": 466
+    }
+  },
+  "inference_calls": 0,
+  "network_calls": 0,
+  "classification_not_recomputed": true,
+  "original_source_files_modified": false
+}

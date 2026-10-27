@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "recorded_utc": "2026-10-26T23:53:21.961293+00:00",
+  "representative_fixture": {
+    "anchors": 9,
+    "mapped_anchors": 8,
+    "source_records": 8,
+    "windows_per_size": 9,
+    "genome_units": 7,
+    "loci_per_size": 7,
+    "source_bytes": 3953785
+  },
+  "portable_regressions": [
+    {
+      "interpreter": "/home/rahnn/260908_MiBG/analysis/bgcprophet_sequence_recovery_20260912/.venv/bin/python",
+      "environment": {
+        "python": "3.12.11 | packaged by conda-forge | (main, Jun  4 2025, 14:45:31) [GCC 13.3.0]",
+        "biopython": "1.85"
+      },
+      "tests": 9,
+      "status": "PASS",
+      "log": "validation/regression_environment1.log"
+    },
+    {
+      "interpreter": "/home/rahnn/260908_MiBG/analysis/viral_taxonomy_reconciliation_20261019/env/taxonomy/bin/python",
+      "environment": {
+        "python": "3.11.17 (main, Oct 13 2026, 16:45:47) [GCC 15.3.0]",
+        "biopython": "1.88"
+      },
+      "tests": 9,
+      "status": "PASS",
+      "log": "validation/regression_environment2.log"
+    }
+  ],
+  "full_archived_data_verification": {
+    "passed": true,
+    "anchors": 594,
+    "mapped": 593,
+    "unresolved": "UPI001FBC14AE",
+    "occurrences_each_size": 757,
+    "genome_units": 466,
+    "native_loci15": 565,
+    "native_loci11": 575,
+    "checked_sources": 517,
+    "recorded_inference_count15": 737,
+    "recorded_inference_count11": 740,
+    "all_frozen_757_subset_pairs_verified": true,
+    "extraction_performed": false,
+    "inference_performed": false
+  },
+  "full_portable_fresh_genome_extraction_performed": false,
+  "all_BGC_Prophet_ESM_calls": 0,
+  "claim": "Representative end-to-end extraction reproduced; entire frozen dataset verified, but no claim of a fresh full-cohort portable extraction run or exact historical environment lock"
+}

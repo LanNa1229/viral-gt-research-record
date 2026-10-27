@@ -1,0 +1,271 @@
+LOCUS       MK072357                8056 bp    DNA     linear   ENV 19-NOV-2018
+DEFINITION  MAG: Homavirus sp. clone Homavirus_26 genomic sequence.
+ACCESSION   MK072357
+VERSION     MK072357.1
+KEYWORDS    ENV; Metagenome Assembled Genome; MAG.
+SOURCE      Homavirus sp. (soil metagenome)
+  ORGANISM  Homavirus sp.
+            Viruses; Varidnaviria; Bamfordvirae; Nucleocytoviricota;
+            Megaviricetes; Imitervirales; Orthomivirineae; Mimiviridae;
+            Klosneuvirinae.
+REFERENCE   1  (bases 1 to 8056)
+  AUTHORS   Schulz,F., Alteio,L., Goudeau,D., Ryan,E.M., Malmstrom,R.R.,
+            Blanchard,J. and Woyke,T.
+  TITLE     Hidden diversity of soil giant viruses
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 8056)
+  AUTHORS   Schulz,F., Alteio,L., Goudeau,D., Ryan,E.M., Malmstrom,R.R.,
+            Blanchard,J. and Woyke,T.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (15-OCT-2018) DOE Joint Genome Institute, Lawrence
+            Berkeley National Lab, 2800 Mitchell Dr, Walnut Creek, CA 94598, USA
+COMMENT     ##Assembly-Data-START##
+            Assembly Method       :: SPAdes v. 3.10.1
+            Coverage              :: 10.1723x
+            Sequencing Technology :: Illumina
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..8056
+                     /organism="Homavirus sp."
+                     /mol_type="genomic DNA"
+                     /isolate="HOV1"
+                     /isolation_source="enriched cells from forest soil in Barre
+                     Woods Harvard Forest LTER site"
+                     /db_xref="taxon:2487769"
+                     /clone="Homavirus_26"
+                     /environmental_sample=""
+                     /geo_loc_name="USA: Petersham, MA"
+                     /collection_date="28-Jul-2017"
+                     /collected_by="L. Alteio"
+                     /identified_by="F. Schulz"
+                     /metagenome_source="soil metagenome"
+                     /note="metagenomic"
+     gene            complement(63..944)
+                     /locus_tag="Homavirus26_1"
+     CDS             complement(63..944)
+                     /locus_tag="Homavirus26_1"
+                     /codon_start=1
+                     /product="dTDP-6-deoxy-L-lyxo-4-hexulose reductase"
+                     /protein_id="AYV82293.1"
+                     /translation="MSENSLTNVCHFYWDNPQTMTFLNLLTILSFNQYNSGWKLILWEP
+                     EFYYKDFTWNENCNKDRIYDKKQRIYNYIKNNITNLVIKKVDFDKIGFSNKISEVHKSY
+                     YLRYYVLNKYGGIWSELDIIYIKPFNLSSFNLSSFDNIFSKCMSIDNKKNKTKRYEDHI
+                     LWYIYYPVPFLYSKKNTKLFDFILNNCLENYDKSKYQSIGADLLMKLFNNYSTDQLLNL
+                     FQEKNFILSNEYYLPYQWYDVDLLFWPENVSHKTQLLIDSLNKNLPPSPYTXXXFTGSM
+                     DIVYLKNILIQQ"
+     gap             117..126
+                     /estimated_length=10
+     gene            1114..2085
+                     /locus_tag="Homavirus26_2"
+     CDS             1114..2085
+                     /locus_tag="Homavirus26_2"
+                     /codon_start=1
+                     /product="UDP-N-acetylglucosamine 4,6-dehydratase"
+                     /protein_id="AYV82294.1"
+                     /translation="MISNKTILIYGGTGSLGYEITSRYLDTNKIINYSRDEAKHWKMKL
+                     KYNSHKNLNFIIGDIRDKGRVKDSLLKSKPNIVIIAAAMKHIDQCELATHECIQTNLLG
+                     IKNILDSIDELQNDLNLETVCFISTDKACSPVNIYGMAKAMSEVLMVEKAHYIKSIKFV
+                     SVRYGNVLNSRGSIIPILHQIGKDNRVKEFKLTHINMTRFVMTLNQSVDLIEHAILKAD
+                     SGDTVIPQLISMNVKDIIEIFSEIYNKPYVISGLRPGEKMLESLINETQSMRMYVDNDG
+                     YHIIKPHYFGKIINDDPREYNSRLNPLSKEELKQYLINLNLI"
+     gene            complement(2082..3599)
+                     /locus_tag="Homavirus26_3"
+     CDS             complement(2082..3599)
+                     /locus_tag="Homavirus26_3"
+                     /note="hypothetical protein B6D46_10620"
+                     /codon_start=1
+                     /product="hypothetical protein"
+                     /protein_id="AYV82295.1"
+                     /translation="MYFSPTIKIITTDTKCENTLNVLKDFNCKKELLDNIHNLCINDFI
+                     SEEYMLIVEDDITDELFRPTMSIYKIIDNAPQNWDIIVLSIECDLPTYNTLLNYPSDYI
+                     LHMNINNINKNLYGTKKAYIINKKGVSKLNTSYSNYNTYIYKYPIFTSETGSMQLKQYI
+                     LSKVNNSYRPFFSIILPVYNGMNYIGHAIESVLTQEFTDFELIIVNDGSTDDTKKYLDN
+                     LNNKKLYIIHQTNQRTANAINNGIKRSVGSYITWTSHDNILKHNFLSEYYNVLNMNKEV
+                     HFMYGGTIFFGTDNWNSNPGLLNPRELFFAYPGIASFMWRRDTVCKVGDFNADLHGIED
+                     LDYVWRTIEYNSKIYSLKKLLYMFRMHNQQASYELSATNKWYGLNRKMLTLFVERNTNN
+                     FQISSFYPYINECKNINRAYCIAYYELAMKIISDNRAVYREILHPFALMCLEKSYTYDN
+                     TFKDAINLFNMLNNNKNVLHKQLIITDITNEELFIVEKEHMKLHEYS"
+     gene            3796..4776
+                     /locus_tag="Homavirus26_4"
+     CDS             3796..4776
+                     /locus_tag="Homavirus26_4"
+                     /codon_start=1
+                     /product="UDP-N-acetylglucosamine 2-epimerase
+                     (non-hydrolyzing)"
+                     /protein_id="AYV82296.1"
+                     /translation="MTILICFGTRPEYIKVKSLIENLQNIKTCFTGQHKDLLKNVKVDY
+                     HLSIDNNVCENRLNCVLINILKHSYIFDNINYVLVQGDTSTACAMALSAFNHEIKIIHL
+                     EAGLRCNIKDPFPEEMHRQVIARMADIHLCPTEFNKENLLKENVHGSIFVVGNSGLDGL
+                     SKDNCDYTNRVLITLHRKNNHSIMEKWFNQIEMLANKYSDIEFMIPIHPNPNVIKHRNI
+                     FRKVKVVDPMEHNDLIEYVKKCKFVISDSGGLQEECSFLNKKIIVCRENTERPESVGVH
+                     SFMCKTPEDLVSLVDMINIDYVVNAECPYGNGNSWINIKNILQEV"
+     gene            complement(4762..4992)
+                     /locus_tag="Homavirus26_5"
+     CDS             complement(4762..4992)
+                     /locus_tag="Homavirus26_5"
+                     /codon_start=1
+                     /product="hypothetical protein"
+                     /protein_id="AYV82297.1"
+                     /translation="MQTWLIIICEQNGLFNLLYYQFFCQCYLSGYLSGYLSGYLSGYLS
+                     GYLSGYLSGYLSGYLSGYLSGYLSGYLSNFL"
+     gene            4983..5333
+                     /locus_tag="Homavirus26_6"
+     CDS             4983..5333
+                     /locus_tag="Homavirus26_6"
+                     /codon_start=1
+                     /product="hypothetical protein"
+                     /protein_id="AYV82298.1"
+                     /translation="MFAFARQICRSGLSSSPILTPYKMSTSSDVLSELSSRHANYDYGE
+                     TEEILLSKCTKKAVIKPQVRPQVRPQVRHRRSLKTPSKTSLKVPLDTTLYNDTNNDYYS
+                     RLSVEQSRCISK"
+     gene            5438..6289
+                     /locus_tag="Homavirus26_7"
+     CDS             5438..6289
+                     /locus_tag="Homavirus26_7"
+                     /codon_start=1
+                     /product="endonuclease/exonuclease/phosphatase family
+                     protein"
+                     /protein_id="AYV82299.1"
+                     /translation="MNKLLVLSYNIWFEEIVEEERLCSLIKIITHIHPDIVCLQEVKPY
+                     IYDILIKELKKYSYHFPKKITSNYGCVIFSKYPITKCMTYPFTNSMMGRSLIISKIDYP
+                     YYCKDSSIEKVEIVIVTTHFESIFNKKYENTIKIDQFKMAHYILNQLYDSYKNVIFCVD
+                     TNIIENEEDKFIPTRNSTRELITELITELITESTINKDTHIWLDAWKEHGELSNKFTFD
+                     SVNNIYLKLKNCKYRSRLDRVLYRCQACKVEEFELIKHINLKKQISDIIEPSDHFGILI
+                     KF"
+ORIGIN
+        1 atatttatca acatatgtgt caataaaaca atttatttta aattgtttat tttttataac
+       61 atctattgtt gtattaatat attttttaga taaactatgt ccattgaacc agtgaannnn
+      121 nnnnnngtgt atggagatgg gggtagattt ttattcaaac tatctatcaa taattgtgtt
+      181 ttatgagaaa cattttctgg ccagaataaa agatctacat cataccattg ataaggtagg
+      241 taatattcat tagataaaat aaaatttttt tcttgaaaca gattcaacaa ttgatcggtg
+      301 ctatagttgt taaataattt cattaataga tcagcaccaa ttgattgata tttgcttttg
+      361 tcataatttt ctaaacaatt atttaaaata aaatcaaata gtttagtatt ctttttagaa
+      421 tataaaaatg gtacaggata gtatatgtac cataaaatgt gatcctcata tcttttagtt
+      481 ttattttttt tattatcaat tgacatgcat tttgagaaaa tattatcaaa tgaagacaaa
+      541 ttaaatgaag acagattaaa tggcttaata tatataatat ctaattcact ccaaattcca
+      601 ccatatttat ttaatacata gtatcttaga taataggatt tgtgcacttc actgatttta
+      661 ttagaaaatc caattttatc aaaatcgact tttttaataa ctaaattagt aatgttattt
+      721 ttaatataat tatatatacg ttgttttttg tcataaattc tatccttatt acaattttca
+      781 ttccaagtga aatctttata atagaattcg ggttcccata aaattagttt ccacccactg
+      841 ttatattgat taaatgacaa tattgtgagt agatttaaaa aagtcatcgt ttgtggatta
+      901 tcccaataaa agtgacatac atttgtcaag gaattttcgc tcatttatag tatcaaattc
+      961 ttatagaatg aaatactatt tttttttatc tgattatacg tatgtggtta tttgtatatg
+     1021 gttatttgta tatggttatt tgtatgtagt tatctgtata tagttattgt atgtggttat
+     1081 ttatataaaa tatataaatt acataaataa tatatgatat caaataagac aatattgata
+     1141 tatggtggaa caggatcttt gggttatgaa ataacttcta gatatttaga taccaacaaa
+     1201 attataaatt attctcgtga tgaggcgaaa cattggaaaa tgaaattaaa atataacagt
+     1261 cataaaaatc ttaatttcat tattggtgac ataagagata aggggagagt taaagattcc
+     1321 ctactaaaat cgaaaccgaa tattgttata attgcggctg caatgaaaca catcgatcaa
+     1381 tgtgaacttg ccactcatga atgtatacaa acaaatttat tgggtataaa aaatatactt
+     1441 gatagcatag atgaattaca gaatgattta aatttggaaa cagtttgttt tattagcact
+     1501 gataaggcat gcagtccagt caacatttat ggtatggcaa aagcaatgtc tgaagtatta
+     1561 atggtggaaa aagcacatta tattaagagt ataaaatttg tttcagttag atacggtaat
+     1621 gtacttaatt caagaggtag tattataccg atacttcatc aaattggtaa agataataga
+     1681 gttaaggaat ttaagctaac tcatattaat atgacaagat ttgtaatgac actaaatcaa
+     1741 agtgttgatt taatagaaca tgcaatatta aaagcagatt caggtgatac agttatacca
+     1801 caattaattt ctatgaatgt aaaagatatt atagaaatat tttccgaaat atacaataaa
+     1861 ccctatgtaa ttagtggttt gagacctggc gaaaaaatgt tagagtctct gattaatgaa
+     1921 acacaatcaa tgagaatgta tgttgacaat gatggatatc atattattaa accacattat
+     1981 tttggcaaaa taataaatga tgatccaaga gaatataata gtagattaaa tcctttgtct
+     2041 aaagaagagt tgaaacaata tttgattaat ctgaatttaa tttaactata ttcatgtagt
+     2101 ttcatatgtt ctttttcaac aataaatagt tcttcattag tgatatctgt aattattaac
+     2161 tgtttgtgca atacattctt attattattc agcatattaa atagattaat agcatctttg
+     2221 aatgtattat catatgtgta agatttttcc aaacacatta atgcaaatgg atgtaatatt
+     2281 tccctatata cagcccgatt gtcacttata attttcatgg ccaattcata ataggcgata
+     2341 cagtatgctc gattaatatt tttacattca tttatataag gataaaaact tgatatttga
+     2401 aaattattag tatttctttc aacaaataat gttaacattt tcctgtttaa gccataccat
+     2461 ttattagttg cagataattc ataactagct tgctgattat gcattctaaa catatataac
+     2521 aattttttta atgaataaat ttttgagtta tattcaatcg ttctccatac ataatctaga
+     2581 tcttctatac catgtaaatc agcattaaaa tcaccaactt tacacaccgt atctcttctc
+     2641 cacataaaac tagctattcc tggataagca aaaaacaact ctcttggatt taatagtcca
+     2701 ggattcgaat tccaattatc agttccgaag aatatagttc ctccatacat aaaatgcact
+     2761 tctttattca tatttaatac attgtaatat tctgacaaaa aattatgttt taatatatta
+     2821 tcatgtgatg tccatgttat atatgagcca acacttcttt ttataccatt atttatagca
+     2881 ttagctgttc gctgatttgt ttgatgtatt atataaagtt ttttattatt taaattatcc
+     2941 aaatattttt tagtgtcatc agttgatcca tcgttcacaa ttattaattc aaaatctgta
+     3001 aattcttgtg taagaacact ttcaattgca tgaccaatat aattcatacc attataaaca
+     3061 ggtagtataa ttgaaaaaaa tggtctataa ctgttgttga cttttgagag tatatattgt
+     3121 tttaattgca tggatccagt ttcacttgta aatataggat acttgtatat gtatgtgtta
+     3181 taattactat atgatgtatt taatttacta accccttttt tatttataat atatgctttt
+     3241 ttagttccat ataaattctt atttatgttg tttatattca tatgcaaaat ataatctgat
+     3301 ggataattca ataaagtatt atatgtaggt agatcacatt caattgacaa tactattata
+     3361 tcccaatttt gtggagcatt atcaataatt ttataaatgg acattgtggg tctaaataat
+     3421 tcatcagtta tatcatcttc tacgatcaac atatattcct cactaatgaa atcattaata
+     3481 cacaaattat gtatgttatc aagtagttcc tttttacaat taaaatcctt taatacattt
+     3541 aatgtgtttt cacattttgt atcagtagtg attattttaa tggttggaga aaaatacatt
+     3601 ttttatatat taaagataaa taatatttat atttgtcttt atactcattt gtatttctct
+     3661 ttatactcat ttgtgtataa tttgtgtata atatgtatgt aatttattat gtgactaatt
+     3721 tgctctgtgt gtgtatgtgt gtatgtgtgt gaaaatgatg taattttata tatcagaaat
+     3781 atatattgta aaacgatgac aattctaata tgttttggaa cacggccaga atatataaaa
+     3841 gttaaatcct taatagaaaa tttacaaaac atcaaaacat gtttcacggg tcaacataaa
+     3901 gatctactta aaaatgttaa agttgattat catttatcta tagataacaa tgtgtgtgaa
+     3961 aacagattaa attgtgtatt aataaacatt ttaaaacata gttatatttt tgataatata
+     4021 aattatgtat tagtacaggg ggacacgtct acggcgtgtg cgatggcatt atctgcattt
+     4081 aatcatgaaa taaaaataat acatttagaa gctggcctaa gatgtaatat aaaagaccca
+     4141 tttccagaag agatgcatcg acaagttata gctagaatgg cagatataca cttgtgtcct
+     4201 actgagttta acaaggaaaa tttattaaaa gaaaatgttc atggtagtat atttgttgtt
+     4261 ggcaacagtg gtttagatgg attaagtaaa gataattgtg actatacaaa tagggtcctt
+     4321 ataacactcc ataggaaaaa taatcattct attatggaaa agtggtttaa tcaaatagaa
+     4381 atgttggcca ataaatatag tgatatagaa tttatgatac ctatacatcc aaatccaaat
+     4441 gttataaaac accgaaatat attcagaaaa gttaaagttg tcgatccaat ggaacacaat
+     4501 gacctaattg aatatgtgaa aaaatgtaaa tttgttattt cagatagcgg tggattacaa
+     4561 gaagaatgta gttttctaaa taaaaagatt attgtgtgta gagaaaatac ggaaagacca
+     4621 gaaagtgtgg gagtacatag ttttatgtgc aaaactcctg aggatttagt gtcattggtt
+     4681 gatatgataa atatagatta tgtagttaat gcagaatgtc cttatggaaa tggaaatagt
+     4741 tggataaata taaagaatat attacaagaa gtttgataaa taacctgata aataacctga
+     4801 taaataacct gataaataac ctgataagta acctgataaa taacctgaca aataacctga
+     4861 taaataacct gacaaataac ctgataaata acctgataaa taacctgata aataacattg
+     4921 acaaaaaaat tgataatata acagattgaa tagtccattt tgttcacata ttataatcaa
+     4981 ccatgtttgc attcgctaga caaatttgtc gtagtggact ttctagttca ccaatattga
+     5041 caccatataa aatgtccact tcatctgatg ttttatcaga gttaagtagt agacatgcca
+     5101 attatgacta tggtgaaact gaggaaatac tactctctaa atgcacaaaa aaagctgtga
+     5161 ttaaaccgca ggttagacca caggtcagac cacaggttag acacagacgt tcactaaaga
+     5221 caccatcaaa gacatcatta aaggtaccat tagatactac attatacaat gacactaata
+     5281 atgattacta ctccagatta tcagtagagc agagtagatg tatctctaaa taagatatat
+     5341 tgaataaaag ctactaataa gagatactaa taaaagatat tcaaaaaatt gataaatata
+     5401 ttattaaaat ttaataatat gtcctatcaa gactagtatg aataagttac ttgtattaag
+     5461 ttataatatt tggtttgagg aaatagttga ggaggagaga ttatgttcat taattaaaat
+     5521 aattacacac atacatcctg atatagtatg tttacaagaa gtaaaaccat atatatatga
+     5581 catactaata aaagaattaa aaaagtacag ttatcatttt ccgaaaaaaa taacatctaa
+     5641 ttacggctgt gtgatatttt caaaatatcc catcacaaaa tgtatgacat atccgtttac
+     5701 taacagtatg atgggtagat cattgattat atcaaaaata gattacccat attattgcaa
+     5761 agattcttct attgaaaaag ttgagattgt tatagtgact acacattttg aaagtatatt
+     5821 taataaaaaa tatgagaata caattaagat tgatcaattc aaaatggctc actatatact
+     5881 aaatcaattg tatgatagtt ataaaaatgt tattttttgt gttgatacaa atattataga
+     5941 aaatgaggag gacaaattta tcccaacaag aaattccaca agagaattga taacagaatt
+     6001 gataacagaa ttgataacag aatcaacaat taataaagac acacatatat ggttagacgc
+     6061 atggaaagaa catggtgaac tatcaaataa atttacattt gattctgtaa ataatatata
+     6121 tctaaaatta aaaaattgta aatatagatc tagattggat agggtattgt atagatgtca
+     6181 agcatgcaaa gtagaggaat ttgaattaat aaaacatata aatttaaaaa aacaaattag
+     6241 tgacataata gaaccatctg atcattttgg tatactaata aaattttaaa taaaaatatg
+     6301 aatttataaa cacttaaaac tactgatgga tcaatataat ataattaaaa actataatat
+     6361 atataaatat gaagtgggat aatttatggg ccagattatt gaacttgtta aattggttaa
+     6421 atttatctta catacatgat tggtttcata aagttagtga tgttgttact aatatatgta
+     6481 atagatggaa gactaatgaa tttgttacaa actgtattac taactttatt actaatctgt
+     6541 acgataatat atttcatact attgcaatat tgattgtgtg ttttttcaca cctgaatata
+     6601 atttgttgtt aaaaatgata acattggatg gtttattttc agcgtttcac ttttttaaaa
+     6661 catattttaa taaaaatata tcagatagtc aaataatagt gtacacatca gccctatata
+     6721 gtggatcaat attagataga tacatttatt atttgttaca atactgtttt tacaatctaa
+     6781 tatgttattt cttatggaca gtagatttga atatattgta ttatttcata ttggtaacaa
+     6841 tagctccttc aattttaaat aaaatagtat caagtgatga atttgggata attattaaaa
+     6901 aaaaagagaa tttggttaag gtaataatag ccaaaaaatt tgcatcatta ataaagttca
+     6961 tttcaaaagt ttacttgaat aaagatataa atgtgaaaca taaggaacta ttaccattat
+     7021 tagataatta taaaaatacc gtatcatatt ttggagaagt attaaaaaat tctctaatta
+     7081 taatattgct atcatatgtt aaaaattatt caccaaagtt ttattacaga gtaacaaagt
+     7141 atttttacac ttttaaaact aataatatgt tagagagttt taatattgat acagcaaaag
+     7201 aaacactgat tactattgtt gataaaaaac aatgggatga acttttgaaa ccaaatgtat
+     7261 acagagccat atttcaccta tatcagataa ataatgaaaa cacaaattat ataggtaagt
+     7321 ttacatttga ttttaattat aaattagctc agatgtttac catttggacg gtatcatcat
+     7381 tttttcaata tgtactaata gctccaattg tatcattttt attcttgtta tacagaaata
+     7441 atataaataa caaaaatgtc ttggatagta ttatcaaaga taatgtgtat aaagtaatga
+     7501 ttttaatttt tgccggtatt gtaggattgt acagtgagag ttatctgtta actagtttgt
+     7561 tgtgtcaatt tggttatcaa ctgttagtta ataaaataag tattgatata tatcatttca
+     7621 taattaagaa aataagaaaa tatataaaag ttattaataa caaaaatata ccttatatag
+     7681 taccactttt atgttcagcc ctatatgtaa ccatatatgg tatgatagcg aatgtttaca
+     7741 cttctatttt ggttggattc aatgtaatac atgaccttat aacacatcgg gatattaaaa
+     7801 gaaaattcat atttagtgga ttgttgttaa ttggagcatt atctgattat aatataattc
+     7861 acatgttgta tctaatatgc gtgttctaca tatctatcgc actggtagat caaaagttaa
+     7921 tggaatattg tattaagaaa atatatcttt tacttacgta tggaaaaatg tcctgcatat
+     7981 acatcaagaa gaatattaat atatatagga ctaaattagc agtttactac aataaattat
+     8041 ataacaattg gaaaaa
+//

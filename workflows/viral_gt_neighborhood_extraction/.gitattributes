@@ -1,0 +1,9 @@
+# Preserve all package bytes across checkouts, especially frozen original scripts/data.
+* -text
+historical/** -whitespace
+provenance/** -whitespace
+manifests/** -whitespace
+tests/fixture/** -whitespace
+
+*.tsv -whitespace
+validation/full_cohort/** -whitespace

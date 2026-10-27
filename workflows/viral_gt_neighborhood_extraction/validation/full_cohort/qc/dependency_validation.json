@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "isolated_interpreter": 1,
+  "user_site_disabled": 1,
+  "canary_read_outside_packages_blocked": true,
+  "algorithm_denied_external_read_attempts": 0,
+  "algorithm_external_scientific_reads": 0,
+  "frozen_window_or_CDS_output_files_read_during_extraction": 0,
+  "test_expected_files_read_during_extraction": 0,
+  "writes_outside_fresh_output": 0,
+  "model_imports": [],
+  "network_or_subprocess_events_during_extraction": [],
+  "unique_access_entries_by_category": {
+    "documented_python_runtime": 250,
+    "packaged_code": 5,
+    "packaged_data": 1114,
+    "regenerated_output": 20
+  },
+  "packaged_scientific_file_roles": {
+    "packaged anchor or portable input manifest": 3,
+    "packaged fixed-baseline identity crosswalk": 1,
+    "raw mapping evidence": 593,
+    "source annotation": 517
+  },
+  "packaged_data_files": [
+    "inputs/baseline_594_anchors.txt",
+    "portable_inputs/aliases.tsv",
+    "portable_inputs/genbanks.tsv",
+    "relationships/anchor_window_locus_genome.tsv"
+  ],
+  "documented_external_dependencies": "Python3.12.11 / Biopython1.85 and transitive runtime/OS libraries from existing declared environment",
+  "identity_crosswalk_caveat": "The archived packaged relationship table is explicitly read to preserve fixed baseline locus IDs; native loci are computed fresh. No frozen window/gene output table is read during extraction.",
+  "enforcement_limit": "Python audit hooks enforce file opens, directory reads, SQLite database path, subprocess/network and model-import restrictions. This is not a separate kernel container or syscall tracer; no cross-machine execution is claimed."
+}

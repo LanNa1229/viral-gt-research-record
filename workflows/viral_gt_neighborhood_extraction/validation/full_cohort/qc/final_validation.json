@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "completed_utc": "2026-10-27T00:26:32.684723+00:00",
+  "verdict": "Full scientific extraction reproduced from the prepared package in the documented runtime; not a byte-for-byte clone of every historical auxiliary report",
+  "temporary_workspace": "/tmp/viral_gt_step1_fullcohort_20261026_2v5b0ebd",
+  "elapsed_seconds": 19.251221665996127,
+  "windows_compared": 1514,
+  "CDS_rows_compared": 18655,
+  "all_window_nonpath_fields_match": true,
+  "all_CDS_fields_and_order_match": true,
+  "AA_sequences_identical": 18655,
+  "common_table_cells_compared": 519999,
+  "exact_table_cells": 517211,
+  "scientific_discrepancies": 0,
+  "value_difference_categories": {
+    "expected_path_relocation": 2789,
+    "expected_runtime_measurement": 1
+  },
+  "schema_omissions": 27,
+  "unregenerated_historical_auxiliary_files": 14,
+  "no_undocumented_scientific_file_reads_observed": true,
+  "frozen_expected_window_or_gene_table_reads_during_extraction": 0,
+  "documented_runtime_files_by_package": {
+    "Bio": 64,
+    "numpy": 104,
+    "Python standard-library/runtime": 82
+  },
+  "release_archives_and_package_unchanged": true,
+  "historical_inputs_and_outputs_unchanged": true,
+  "preservation_checks": [
+    {
+      "manifest": "/home/rahnn/260908_MiBG/analysis/viral_gt_step1_release_20261026/release_manifest.tsv",
+      "files": 1830,
+      "status": "PASS"
+    },
+    {
+      "manifest": "/home/rahnn/260908_MiBG/analysis/viral_gt_step1_release_20261026/source_copy_manifest.tsv",
+      "files": 1773,
+      "status": "PASS"
+    },
+    {
+      "manifest": "/home/rahnn/260908_MiBG/analysis/viral_gt_mining_20261017/runs/baseline_594_v2/artifact_checksums.tsv",
+      "files": 36,
+      "status": "PASS"
+    },
+    {
+      "manifest": "/home/rahnn/260908_MiBG/analysis/viral_gt_mining_20261017/runs/baseline_594_v2/run_snapshot_checksums.tsv",
+      "files": 30,
+      "status": "PASS"
+    },
+    {
+      "manifest": "/home/rahnn/260908_MiBG/analysis/viral_taxonomy_reconciliation_20261019/figures/final_sankey_242/SHA256SUMS.tsv",
+      "files": 53,
+      "status": "PASS"
+    }
+  ],
+  "model_inference_calls": 0,
+  "publication": false,
+  "limits": [
+    "Python-level audit hooks, not kernel container/syscall isolation",
+    "Existing documented Python/Biopython/NumPy and OS runtime remain external software dependencies",
+    "Packaged fixed-baseline identity crosswalk is an explicit input; native loci independently regenerated",
+    "Auxiliary metadata columns and execution-history receipts are not all re-emitted; no claim of exact original environmental or shell replay"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "original_source": "frozen baseline_594_v2 and window11_594_v1; expected tables copied, not regenerated",
+  "requested_anchors": [
+    "A0A0K0N728",
+    "A0A2K9V8E1",
+    "A0A3G5A4X3",
+    "A0A3G5A8Z5",
+    "A0A516LPJ5",
+    "A0A6N1NUE9",
+    "M4R1G6",
+    "M9Z3C6",
+    "UPI001FBC14AE"
+  ],
+  "expected_windows15": [
+    "vgt_00e8c481b167a853d40b544d",
+    "vgt_366f3de7fcfac8360f3b2cee",
+    "vgt_38c62874b8ee09fcdbdae221",
+    "vgt_40b7e20e69cd0cafc47b4db0",
+    "vgt_58f577a00e3546b582a0f71c",
+    "vgt_5dfacb70878ffea627bc931f",
+    "vgt_9350e0d6f21cdd9a08c1765d",
+    "vgt_cc097caee6e184ee5d0dacce",
+    "vgt_f66b30117c7f9811bbfcf410"
+  ],
+  "expected_windows11": [
+    "vgt11_028f435274412a3eb90ad3e1",
+    "vgt11_0b635feefd4b4ee115ad6c46",
+    "vgt11_1a8f6f6b9567fd2720017ed2",
+    "vgt11_314981cf441da0969b4e7931",
+    "vgt11_5a2d969e28bcec7f0d0132ca",
+    "vgt11_ae01ff43fbd653911010d509",
+    "vgt11_b9e1d8047d61b5b4262094ec",
+    "vgt11_d22f169b181ece5b6b5ea753",
+    "vgt11_d686afc32d002715c64561fb"
+  ],
+  "requested_contexts": [
+    {
+      "window_id": "vgt_40b7e20e69cd0cafc47b4db0",
+      "source_accession": "MK072357.1",
+      "reason": "multigene short source and overlapping anchors"
+    },
+    {
+      "window_id": "vgt_f66b30117c7f9811bbfcf410",
+      "source_accession": "KC511810.1",
+      "reason": "single partial CDS at both boundaries"
+    },
+    {
+      "window_id": "vgt_366f3de7fcfac8360f3b2cee",
+      "source_accession": "MG779342.1",
+      "reason": "invalid outer translations; eligibility changes at11"
+    },
+    {
+      "window_id": "vgt_5dfacb70878ffea627bc931f",
+      "source_accession": "KR063281.1",
+      "reason": "complete linear genome boundary and counterpart alias"
+    },
+    {
+      "window_id": "vgt_38c62874b8ee09fcdbdae221",
+      "source_accession": "NC_070761.1",
+      "reason": "sequence/taxid-equivalent accession counterpart"
+    },
+    {
+      "window_id": "vgt_9350e0d6f21cdd9a08c1765d",
+      "source_accession": "KY523104.2",
+      "reason": "historical source version required for exact anchor mapping"
+    },
+    {
+      "window_id": "vgt_cc097caee6e184ee5d0dacce",
+      "source_accession": "MK892661.1",
+      "reason": "compound CDS crossing source circular origin without wrapping window"
+    },
+    {
+      "window_id": "vgt_00e8c481b167a853d40b544d",
+      "source_accession": "HQ633071.1",
+      "reason": "complete15, reverse-strand anchor, coordinate order retained"
+    }
+  ],
+  "fixture_source_files": 8,
+  "fixture_source_bytes": 3953785,
+  "no_new_prediction_or_annotation": true
+}
