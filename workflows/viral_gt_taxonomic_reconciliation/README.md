@@ -1,5 +1,7 @@
 # Viral GT Step 6: taxonomic reconciliation
 
+Dataset: [10.5281/zenodo.23701289](https://doi.org/10.5281/zenodo.23701289).
+
 Step 6 reconciles accession-specific NCBI/ICTV taxonomy with full-genome vConTACT3 and geNomad evidence. It retains source labels, uncertain assignments and the original 466 screened units, 245 candidates (190 Both, 29 11-only, 26 15-only) and separate 242-genome Sankey subset.
 
 ## Inputs and setup
