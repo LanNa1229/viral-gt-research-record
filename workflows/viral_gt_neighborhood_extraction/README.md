@@ -1,6 +1,6 @@
 # Step1 viral GT genomic-neighborhood extraction — version1.0.0
 
-**Scientific extraction fully reproduced. Final publication approval pending.** The exact historical code is preserved alongside a separate portable adapter. Original input/output files, candidate criteria and final taxonomy figures are unchanged. No BGC-Prophet inference was rerun.
+**Scientific extraction fully reproduced and published.** The exact historical code is preserved alongside a separate portable adapter. Original input/output files, candidate criteria and final taxonomy figures are unchanged. No BGC-Prophet inference was rerun.
 
 ## Scientific results
 
@@ -56,8 +56,16 @@ The last command is the now-tested full-cohort extraction operation. It creates 
 
 ## Creator, licenses and publication references
 
-Creator confirmed by the user:Lan Na, given name Lan, family name Na. Manuscript coauthors are not automatically dataset creators. Third-party database attribution is separate.
+Creator: **Lan Na** (given name Lan; family name Na), confirmed independent author of the original Step 1 code and analytical results. Manuscript coauthors are not automatically dataset creators.
 
-Proposed for final approval:MIT for Lan Na's original software and CC-BY-4.0 for original derived data/documentation. NCBI/INSDC records retain their source-policy terms and attribution; UniProt-family records retain upstream CC-BY-4.0 attribution. Embedded source sequences are not silently covered by the project's grant. See [file-level source/license summary](manifests/file_level_sources_licenses.tsv) and [license proposal](LICENSE_PROPOSAL.md).
+Original software is licensed under [MIT](LICENSES/MIT.txt); original derived data and documentation under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode). [Approved license scope](LICENSES/APPROVED_LICENSE_SCOPE.md) preserves the separate NCBI/INSDC source-policy qualifications and UniProt Consortium attribution. The reviewed [file-level source index](manifests/file_level_sources_licenses.tsv) remains a dated preparation record; its pending/proposed status was resolved by explicit creator approval, as documented in the approved scope. No grant covers third-party rights the project does not hold.
 
-Existing public project:https://github.com/LanNa1229/viral-gt-research-record . Target directory:workflows/viral_gt_neighborhood_extraction/. No Step1 push or public DOI has occurred at this checkpoint. Publish one scientific dataset linked in Zenodo metadata to the exact approved Step1 GitHub commit, never the old repository base. No duplicate software DOI or automatic whole-repository archiving is proposed. DOI, publication date and public commit are filled only after explicit approval. The immutable data archive can remain hash-stable by placing assigned public identifiers in record metadata and a post-publication reference record.
+- Dataset version: **1.0.0**, published **2026-10-26**.
+- Dataset DOI: [10.5281/zenodo.23680510](https://doi.org/10.5281/zenodo.23680510).
+- Dataset record and frozen ZIP: [Zenodo record 23680510](https://zenodo.org/records/23680510).
+- Exact approved code commit: [6818c60c2af209c739eeb107da35bcd2f192168a](https://github.com/LanNa1229/viral-gt-research-record/commit/6818c60c2af209c739eeb107da35bcd2f192168a). This is the software identifier in the Zenodo related-work metadata.
+- [Publication metadata and verification](PUBLICATION.json) and [archive checksums](manifests/publication_archive_checksums.tsv).
+
+The Zenodo ZIP and checksum sidecar were downloaded anonymously after publication and matched their approved SHA256 values. All 1,788 archived files passed SHA256 comparison and ZIP CRC validation; all 99 files in the exact code commit match the reviewed code package. The approved data ZIP remains byte-for-byte unchanged. The local code handoff ZIP is preserved as reviewed; it is not an additional Zenodo upload or separate software DOI. This later documentation commit updates publication references and license approval only; it does not alter historical code, fixtures, scientific results or validation evidence.
+
+Earlier preparation/audit files retain their dated statements and are not current publication-status assertions. No automatic whole-repository archiving or duplicate software DOI was enabled. Repository files outside this Step 1 directory remain unchanged by these publication commits.
