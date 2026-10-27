@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "scope": "Full frozen-query retrieval reproduction only; no model inference or embedding generation",
+  "evaluated_windows": 1477,
+  "conditions": {
+    "15": {
+      "evaluated": 737,
+      "retrieval_positive": 325,
+      "classifier_positive": 246,
+      "classifier_only": 6,
+      "retrieval_only": 85,
+      "both": 240,
+      "neither": 406,
+      "union_positive": 331,
+      "exact_Pk_comparisons": 2211,
+      "exact_top20_neighbor_rows": 14740,
+      "max_neighbor_cosine_abs_error": 8.881784197001252e-16,
+      "max_localization_scalar_abs_error": 8.881784197001252e-16
+    },
+    "11": {
+      "evaluated": 740,
+      "retrieval_positive": 337,
+      "classifier_positive": 265,
+      "classifier_only": 7,
+      "retrieval_only": 79,
+      "both": 258,
+      "neither": 396,
+      "union_positive": 344,
+      "exact_Pk_comparisons": 2220,
+      "exact_top20_neighbor_rows": 14800,
+      "max_neighbor_cosine_abs_error": 8.881784197001252e-16,
+      "max_localization_scalar_abs_error": 1.1102230246251565e-15
+    }
+  },
+  "neighbor_rows_checked": 29540,
+  "exact_Pk_values_checked": 4431,
+  "neighbor_id_rank_label_comparisons": "exact",
+  "cosine_comparison": {
+    "atol": 1e-12,
+    "rtol": 1e-12,
+    "byte_identity_claim": false
+  },
+  "historical_count_table_rows_exact": 18,
+  "model_inference_calls": 0,
+  "embedding_generation_calls": 0,
+  "full_evidence_location": "Step3_frozen_retrieval_outputs_v1.0.0_DATA.zip/validation/reproduction_validation.json; DOI pending approval"
+}

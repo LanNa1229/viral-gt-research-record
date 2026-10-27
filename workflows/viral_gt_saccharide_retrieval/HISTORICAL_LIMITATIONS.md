@@ -1,0 +1,13 @@
+# Scientific and historical limits
+
+- P@10 >= 0.5 is the historical exploratory rule. P@10 is a source-label neighbor fraction, not a calibrated probability of glycan biosynthesis, significance test or validated biological boundary.
+- The representation and classifier share supervised training information. Their agreement is not independent biological validation, sensitivity/specificity measurement or proof of classifier false-negative recovery.
+- Existing proofs document matching BGC-Prophet checkpoint and contextual mean pooling. Reference proteins came from preserved LMDB vectors; viral inputs also used cached/new CPU ESM2 encodings. Cross-runtime regression/near-identity is not universal bitwise equivalence. Step 3 starts from frozen contextual arrays.
+- There are 2,502 unique accessions but 2,496 exact vectors. Saccharide groups BGC0000740/0746/0747/0748, BGC0000741/0744/0745 and BGC0000742/0743 have identical vectors. All retain separate accession weights; ten neighbors need not be ten independent embedding patterns.
+- Source labels come from the historical BGC-Prophet MIBiG-derived collection. There are 195 Saccharide accessions (130 single-label, 65 multilabel), with no blank labels. The historical upstream MIBiG release is unresolved; no newer release is substituted or inferred from current citations.
+- Query window IDs are disjoint from reference accessions, but there is no general biological self-match/shared-protein/homology filter. The bank is not established as independently held out. Separate training augmentations are not separate final reference rows.
+- Quantitative retrieval uses original 320D vectors, not PCA/UMAP. Published UMAP locus representatives have different counting units.
+- Window counts preserve overlaps. Unknown inference outcomes remain unresolved. The original fixed-15-locus/genome grouping is reused for historical accounting.
+- Retrospective threshold sensitivity: >=0.5 gives 245 candidates and 242 after three original single-CDS figure exclusions; >0.5 gives 230/227, removing 15 and changing support categories for 14 retained genomes. The 34/26 boundary windows are historically included; 2/4 retain their own classifier support. Frozen cohorts and figures are unchanged.
+- Full frozen-array retrieval reproduction covers all 1,477 queries. Full-cohort model inference was not independently rerun; Step 2's 12-window model reproduction remains distinct.
+- New validation reports are not reconstructed original execution timestamps. AST extraction is explicit composition, not whole-script replay. Existing-environment reuse is not clean-room OS recreation or a kernel sandbox guarantee.
