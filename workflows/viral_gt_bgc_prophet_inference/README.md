@@ -1,6 +1,6 @@
 # Step 2: viral BGC-Prophet inference and contextual 320D embeddings
 
-Local v1.0.0 release candidate; publication approval pending. Full frozen accounting is verified; representative cold-cache reproduction passed for six paired occurrences (12 windows), with zero score or embedding differences. Full-cohort inference has not been rerun.
+Published v1.0.0 on 2026-10-27 with explicit creator approval. Full frozen accounting is verified; representative cold-cache reproduction passed for six paired occurrences (12 windows), with zero score or embedding differences. Full-cohort inference has not been rerun.
 
 This directory contains new portability, verification and documentation only. Already published historical scripts, Step 1 inputs, 15-gene outputs and the matched reference bank are linked by immutable commit/DOI and SHA256 in resources.json and references/public_file_reuse.tsv. Historical source bytes are not duplicated or edited. The separate Step 2 dataset contains only six missing historical 11-gene files plus new release evidence/metadata. No upstream source or model weight is redistributed here.
 
@@ -22,6 +22,14 @@ Saccharide uses its original sigmoid score and threshold=max(0.5, Other score). 
 
 Read EXECUTION_GUIDE.md and ENVIRONMENT.md. portable/step2.py composes the checksum-pinned original encode_missing, load_model, infer and predicted functions. It replaces absolute-path/cache plumbing only. The validated cold-cache alternative reconstructs protein vectors from preserved sequences, without historical pilot caches or LMDB. Six fixed pairs cover one-gene and five-gene inputs, full positive/negative windows, a long protein and multilabel output.
 
-validation/representative_regression.json, validation/frozen_accounting.json and tests/test_release.py record/check scientific correspondence. The full-cohort infer command is separately gated and has not been executed or validated across all windows. Do not describe this candidate as a complete standalone full-cohort scientific reproduction. See HISTORICAL_LIMITATIONS.md.
+validation/representative_regression.json, validation/frozen_accounting.json and tests/test_release.py record/check scientific correspondence. The full-cohort infer command is separately gated and has not been executed or validated across all windows. Do not describe this release as a complete standalone full-cohort scientific reproduction. See HISTORICAL_LIMITATIONS.md.
 
-Original creator: Lan Na (given Lan; family Na). Proposed MIT covers original software; proposed CC BY 4.0 covers original derived data/documentation. Upstream terms remain separate; see LICENSE_PROPOSAL.md and THIRD_PARTY_NOTICES.md. No Step 2 public commit or dataset DOI is assigned yet. Step 1 dataset: https://doi.org/10.5281/zenodo.23680510 .
+Original creator: Lan Na (given Lan; family Na). MIT covers original software; CC BY 4.0 covers original derived data/documentation only. Third-party rights and terms remain separate; see LICENSE_PROPOSAL.md and THIRD_PARTY_NOTICES.md. Step 1 dataset: https://doi.org/10.5281/zenodo.23680510 .
+
+## Publication and immutable release snapshots
+
+Dataset DOI: https://doi.org/10.5281/zenodo.23682612 ; public record: https://zenodo.org/records/23682612 . The exact approved 25-file software snapshot is commit 46546bbce60eac137e783d788729da2aa6772398 (https://github.com/LanNa1229/viral-gt-research-record/commit/46546bbce60eac137e783d788729da2aa6772398). This follow-up updates publication links, license activation and integrity manifests only; executable code, validation records and historical scientific outputs are unchanged.
+
+The dataset contains 17 files inside Step2_frozen_11gene_outputs_v1.0.0_DATA.zip (SHA256 e7cc21d83e6b114622b4dd228a33f763fb45d85f0c7dd5a4a0518120bdfafa8d), published with its checksum sidecar. The reviewed software ZIP (SHA256 1e753b7a3715ab054e8c5f49fd1d7fd642b32910e76095bdcd9bf8af19f2558f) is represented by the exact code commit; it is not a separately uploaded Zenodo software archive. Preparation snapshots retain their original pending-approval wording; publication and original-work license approval were subsequently granted explicitly by the creator.
+
+All 31 unique existing public references were checked for resolution and SHA256 identity before publication. No BGC-Prophet or ESM2 weights are redistributed. Twelve representative windows reproduced exactly; the full cohort was not independently rerun. No inference was run during publication.
