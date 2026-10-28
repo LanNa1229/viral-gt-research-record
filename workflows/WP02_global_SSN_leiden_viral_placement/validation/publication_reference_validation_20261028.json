@@ -1,0 +1,135 @@
+{
+  "scope": "packaged original outputs independently verified; not a new Leiden run",
+  "metrics": {
+    "input_structures": 4854,
+    "unique_structural_pairs": 224825,
+    "multi_protein_communities": 80,
+    "network_isolates": 580,
+    "viral_proteins": 687,
+    "cazy_unassigned_viral": 383,
+    "direct_family_supported": 130,
+    "dominant_family_concordant": 110,
+    "alternative_family_support": 20,
+    "figure2a_display_edges": 9942
+  },
+  "alignment_observed": {
+    "rows": 454207,
+    "self_hits": 4854,
+    "reciprocal_pairs": 224528,
+    "one_way_pairs": 297,
+    "duplicate_same_direction_rows": 0
+  },
+  "checks": [
+    {
+      "test": "input_structures",
+      "status": "PASS",
+      "observed": 4854
+    },
+    {
+      "test": "unique_structural_pairs",
+      "status": "PASS",
+      "observed": 224825
+    },
+    {
+      "test": "multi_protein_communities",
+      "status": "PASS",
+      "observed": 80
+    },
+    {
+      "test": "network_isolates",
+      "status": "PASS",
+      "observed": 580
+    },
+    {
+      "test": "viral_proteins",
+      "status": "PASS",
+      "observed": 687
+    },
+    {
+      "test": "cazy_unassigned_viral",
+      "status": "PASS",
+      "observed": 383
+    },
+    {
+      "test": "direct_family_supported",
+      "status": "PASS",
+      "observed": 130
+    },
+    {
+      "test": "dominant_family_concordant",
+      "status": "PASS",
+      "observed": 110
+    },
+    {
+      "test": "alternative_family_support",
+      "status": "PASS",
+      "observed": 20
+    },
+    {
+      "test": "figure2a_display_edges",
+      "status": "PASS",
+      "observed": 9942
+    },
+    {
+      "test": "structure_manifest_and_node_ID_sets",
+      "status": "PASS",
+      "observed": 4854
+    },
+    {
+      "test": "viral_placement_ID_set",
+      "status": "PASS",
+      "observed": 687
+    },
+    {
+      "test": "corrected_m8_schema",
+      "status": "PASS",
+      "observed": {
+        "17": 454207
+      }
+    },
+    {
+      "test": "corrected_alignment_IDs",
+      "status": "PASS",
+      "observed": 4854
+    },
+    {
+      "test": "raw_pair_IDs",
+      "status": "PASS",
+      "observed": 224825
+    },
+    {
+      "test": "all_edge_aggregates_from_alignments",
+      "status": "PASS",
+      "observed": {}
+    },
+    {
+      "test": "direct_support_independently_from_full_graph",
+      "status": "PASS",
+      "observed": []
+    },
+    {
+      "test": "classifier_original_node_hash",
+      "status": "PASS",
+      "observed": "377739de2678e574f391421c5b634a903b6905cd3bea9bd267d8b6fcaf143e2c"
+    },
+    {
+      "test": "classifier_original_edge_hash",
+      "status": "PASS",
+      "observed": "3470794769ae3c568af7bd8643bfd6b1e8bafd04c734b74a1ee8b915a6993227"
+    },
+    {
+      "test": "Figure2B_original_input_byte_identity",
+      "status": "PASS",
+      "observed": "369c7c0d39be98264772b09a8833705e6c85c5f5ce7820461bf41e0afe97f998"
+    },
+    {
+      "test": "all_Figure2B_three_stage_flows",
+      "status": "PASS",
+      "observed": {
+        "groups": 26,
+        "total": 687
+      }
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,7 @@
+# Data licensing and third-party output terms
+
+Original research data controlled by the contributors are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0), as selected by the owner. Attribute the research team, manuscript, version and data DOI when available. License: https://creativecommons.org/licenses/by/4.0/legalcode.
+
+**This is a mixed-rights collection, not a blanket CC BY 4.0 grant for all coordinates or derivatives.** The 420 identified AlphaFold DB structures retain CC BY 4.0 and attribution; 2,194 locally generated AlphaFold 3 structures and applicable derivatives remain subject to the included AlphaFold 3 Output Terms of Use, including non-commercial and other restrictions. Three experimental PDB references retain CC0 for matching archive data. Source-specific terms for 2,237 structures remain unresolved; their public redistribution is on hold.
+
+Original workflow code and later verification helpers are MIT licensed separately. No AlphaFold model parameters are distributed. Required attribution, terms copies and the per-file source map accompany the data; see `THIRD_PARTY_NOTICES.md`, `licenses/` and `inputs/structures/structure_sources_and_licenses.tsv` in the companion dataset. Inclusion in a local archive grants no additional rights. Preserve applicable restrictions on substantially derived AlphaFold 3 output rather than treating all generated results as unconditionally CC BY 4.0.

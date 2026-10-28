@@ -1,0 +1,361 @@
+{
+  "passed": true,
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "dependencies": {
+    "cloudpickle": "3.1.2",
+    "contourpy": "1.3.3",
+    "cycler": "0.12.1",
+    "fonttools": "4.68.0",
+    "igraph": "0.11.9",
+    "joblib": "1.6.0",
+    "kiwisolver": "1.5.1",
+    "leidenalg": "0.10.2",
+    "matplotlib": "3.10.7",
+    "numpy": "2.2.6",
+    "packaging": "26.3",
+    "pandas": "2.3.3",
+    "pillow": "13.0.0",
+    "pyparsing": "3.3.3",
+    "python-dateutil": "3.0.0",
+    "python-igraph": "0.11.9",
+    "pytz": "2026.5",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "seaborn": "0.13.2",
+    "six": "1.17.0",
+    "texttable": "1.7.2",
+    "threadpoolctl": "3.7.0",
+    "tzdata": "2026.5"
+  },
+  "scientific_counts": {
+    "preserved": {
+      "nodes": 4854,
+      "edges": 224825,
+      "isolates": 580,
+      "communities": 660,
+      "multi_protein_communities": 80,
+      "viral_proteins": 687,
+      "cazy_unassigned": 383,
+      "direct_family_supported": 130,
+      "dominant_family_concordant": 110,
+      "alternative_family_supported": 20
+    },
+    "fresh": {
+      "nodes": 4854,
+      "edges": 224825,
+      "isolates": 580,
+      "communities": 660,
+      "multi_protein_communities": 80,
+      "viral_proteins": 687,
+      "cazy_unassigned": 383,
+      "direct_family_supported": 126,
+      "dominant_family_concordant": 105,
+      "alternative_family_supported": 21
+    }
+  },
+  "fresh_partition_ARI_vs_preserved": 0.9451745569665067,
+  "fresh_is_exact_historical_reproduction": false,
+  "checks": [
+    {
+      "test": "Python_syntax",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "analyze_ssn_leiden.py_unchanged",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "classify_viral_structural_placement_v3.py_unchanged",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "analyze_ssn_leiden.py_CLI",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "classify_viral_structural_placement_v3.py_CLI",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "dependency_cloudpickle",
+      "status": "PASS",
+      "observed": "3.1.2"
+    },
+    {
+      "test": "dependency_contourpy",
+      "status": "PASS",
+      "observed": "1.3.3"
+    },
+    {
+      "test": "dependency_cycler",
+      "status": "PASS",
+      "observed": "0.12.1"
+    },
+    {
+      "test": "dependency_fonttools",
+      "status": "PASS",
+      "observed": "4.68.0"
+    },
+    {
+      "test": "dependency_igraph",
+      "status": "PASS",
+      "observed": "0.11.9"
+    },
+    {
+      "test": "dependency_joblib",
+      "status": "PASS",
+      "observed": "1.6.0"
+    },
+    {
+      "test": "dependency_kiwisolver",
+      "status": "PASS",
+      "observed": "1.5.1"
+    },
+    {
+      "test": "dependency_leidenalg",
+      "status": "PASS",
+      "observed": "0.10.2"
+    },
+    {
+      "test": "dependency_matplotlib",
+      "status": "PASS",
+      "observed": "3.10.7"
+    },
+    {
+      "test": "dependency_numpy",
+      "status": "PASS",
+      "observed": "2.2.6"
+    },
+    {
+      "test": "dependency_packaging",
+      "status": "PASS",
+      "observed": "26.3"
+    },
+    {
+      "test": "dependency_pandas",
+      "status": "PASS",
+      "observed": "2.3.3"
+    },
+    {
+      "test": "dependency_pillow",
+      "status": "PASS",
+      "observed": "13.0.0"
+    },
+    {
+      "test": "dependency_pyparsing",
+      "status": "PASS",
+      "observed": "3.3.3"
+    },
+    {
+      "test": "dependency_python-dateutil",
+      "status": "PASS",
+      "observed": "3.0.0"
+    },
+    {
+      "test": "dependency_python-igraph",
+      "status": "PASS",
+      "observed": "0.11.9"
+    },
+    {
+      "test": "dependency_pytz",
+      "status": "PASS",
+      "observed": "2026.5"
+    },
+    {
+      "test": "dependency_scikit-learn",
+      "status": "PASS",
+      "observed": "1.7.2"
+    },
+    {
+      "test": "dependency_scipy",
+      "status": "PASS",
+      "observed": "1.15.3"
+    },
+    {
+      "test": "dependency_seaborn",
+      "status": "PASS",
+      "observed": "0.13.2"
+    },
+    {
+      "test": "dependency_six",
+      "status": "PASS",
+      "observed": "1.17.0"
+    },
+    {
+      "test": "dependency_texttable",
+      "status": "PASS",
+      "observed": "1.7.2"
+    },
+    {
+      "test": "dependency_threadpoolctl",
+      "status": "PASS",
+      "observed": "3.7.0"
+    },
+    {
+      "test": "dependency_tzdata",
+      "status": "PASS",
+      "observed": "2026.5"
+    },
+    {
+      "test": "fixture_directional_mean_of_row_minima",
+      "status": "PASS",
+      "observed": {
+        "AB": 0.6000000000000001,
+        "AC": 0.7
+      }
+    },
+    {
+      "test": "fixture_self_and_unknown_removal",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "fixture_reciprocal_filter",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "fixture_coverage_filter",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "fixture_optional_alignment_TM_filter",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "fixture_weighted_Leiden_and_isolate_retention",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "preserved_all_nodes_and_unique_IDs",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "preserved_classifier_all_node_IDs",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "preserved_viral_IDs",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "preserved_community_assignments_complete",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "preserved_valid_undirected_edges",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "preserved_classifier_degrees",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "preserved_classifier_strengths",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "preserved_direct_support_recomputed_from_graph",
+      "status": "PASS",
+      "observed": []
+    },
+    {
+      "test": "preserved_Figure2B_mapping_complete",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "preserved_all_protein_columns_reproduced",
+      "status": "PASS",
+      "observed": {
+        "columns": 148,
+        "differences": {}
+      }
+    },
+    {
+      "test": "preserved_figure2b_alluvial_flow_counts.tsv",
+      "status": "PASS",
+      "observed": {}
+    },
+    {
+      "test": "preserved_figure2b_node_counts.tsv",
+      "status": "PASS",
+      "observed": {}
+    },
+    {
+      "test": "fresh_all_nodes_and_unique_IDs",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "fresh_classifier_all_node_IDs",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "fresh_viral_IDs",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "fresh_community_assignments_complete",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "fresh_valid_undirected_edges",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "fresh_classifier_degrees",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "fresh_classifier_strengths",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "fresh_direct_support_recomputed_from_graph",
+      "status": "PASS",
+      "observed": []
+    },
+    {
+      "test": "fresh_Figure2B_mapping_complete",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "fresh_full_edge_table_byte_identical",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "fresh_primary_parameters",
+      "status": "PASS",
+      "observed": null
+    },
+    {
+      "test": "fresh_isolates_retained",
+      "status": "PASS",
+      "observed": null
+    }
+  ]
+}

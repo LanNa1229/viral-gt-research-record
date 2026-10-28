@@ -1,0 +1,1307 @@
+{
+  "mode": "primary",
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "versions": {
+    "pandas": "2.3.3",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2",
+    "igraph": "0.11.9",
+    "leidenalg": "0.10.2",
+    "matplotlib": "3.10.7",
+    "seaborn": "0.13.2"
+  },
+  "commands": [
+    {
+      "step": "primary_leiden",
+      "argv": [
+        "/tmp/section2_release_validation_20261027/bin/python",
+        "-B",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/github_ready/workflows/WP02_global_SSN_leiden_viral_placement/original/analyze_ssn_leiden.py",
+        "--nodes",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/zenodo_data/section2_ssn_005_data/inputs/metadata/005_GTA_node_metadata_completed_20260727.tsv",
+        "--alignments",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/zenodo_data/section2_ssn_005_data/inputs/foldseek/005_GTA_all_vs_all_TM065_cov050_rich.id_corrected.m8",
+        "--outdir",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/validation/primary_recluster_run/leiden",
+        "--node-id-column",
+        "name",
+        "--group-column",
+        "Group",
+        "--species-column",
+        "Species",
+        "--gtfam-column",
+        "GTFam",
+        "--alignment-columns",
+        "query,target,fident,alnlen,evalue,bits,alntmscore,qtmscore,ttmscore,qcov,tcov,qlen,tlen,qstart,qend,tstart,tend",
+        "--resolutions",
+        "1.0",
+        "--seeds",
+        "1",
+        "--primary-resolution",
+        "1.0",
+        "--n-iterations",
+        "-1",
+        "--heterogeneous-purity",
+        "0.7",
+        "--high-purity",
+        "0.8",
+        "--min-annotated",
+        "5",
+        "--skip-plots"
+      ]
+    },
+    {
+      "step": "viral_placement",
+      "argv": [
+        "/tmp/section2_release_validation_20261027/bin/python",
+        "-B",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/github_ready/workflows/WP02_global_SSN_leiden_viral_placement/original/classify_viral_structural_placement_v3.py",
+        "--nodes",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/validation/primary_recluster_run/leiden/cytoscape_nodes_analyzed.csv",
+        "--edges",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/validation/primary_recluster_run/leiden/edges_clean_undirected.csv",
+        "--outdir",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/validation/primary_recluster_run/placement",
+        "--node-id-column",
+        "name",
+        "--community-column",
+        "community",
+        "--virus-column",
+        "is_virus",
+        "--cazy-family-column",
+        "CAZy_family",
+        "--gtfam-column",
+        "GTFam",
+        "--weight-column",
+        "weight_global_min_tm",
+        "--known-family-min-annotated",
+        "5",
+        "--known-family-min-purity",
+        "0.8",
+        "--mixed-min-second-family-n",
+        "2",
+        "--mixed-min-second-family-fraction",
+        "0.2",
+        "--small-community-max",
+        "4",
+        "--large-community-min",
+        "20",
+        "--peripheral-quantile",
+        "0.25",
+        "--virus-enrichment-q",
+        "0.05",
+        "--bridge-min-degree",
+        "3",
+        "--bridge-min-external-neighbors",
+        "1",
+        "--bridge-min-external-strength-fraction",
+        "0.2",
+        "--bridge-min-participation",
+        "0.3",
+        "--bridge-hub-min-external-communities",
+        "3",
+        "--family-support-min-neighbors",
+        "2",
+        "--family-support-min-strength-fraction",
+        "0.67",
+        "--family-support-min-margin",
+        "0.2"
+      ]
+    },
+    {
+      "step": "figure2a_display",
+      "argv": [
+        "/tmp/section2_release_validation_20261027/bin/python",
+        "-B",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/github_ready/workflows/WP02_global_SSN_leiden_viral_placement/scripts/derive_figure2a_display.py",
+        "--data-root",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/zenodo_data/section2_ssn_005_data",
+        "--outdir",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/validation/primary_recluster_run/figure2a"
+      ]
+    }
+  ],
+  "comparison": {
+    "ARI_vs_original_primary": 0.9451745569665067,
+    "raw_community_label_differences": 878,
+    "method": "new environment; original algorithm and primary settings; no Foldseek run",
+    "placement_scientific_field_differences": 195,
+    "placement_rows": 687,
+    "placement_differences": [
+      {
+        "name": "2C0N",
+        "column": "community",
+        "original": "C005",
+        "reproduced": "C001"
+      },
+      {
+        "name": "2C0N",
+        "column": "unassigned_family_support_call",
+        "original": "ambiguous_multi_family_direct_support",
+        "reproduced": "direct_support_concordant_with_community"
+      },
+      {
+        "name": "2C0N",
+        "column": "directly_supported_cazy_family",
+        "original": "",
+        "reproduced": "GT2"
+      },
+      {
+        "name": "2C0N",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__intercommunity_connector__cazy_unassigned",
+        "reproduced": "genuine_mixed_family__intercommunity_connector__cazy_unassigned"
+      },
+      {
+        "name": "7SP6_A",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C012"
+      },
+      {
+        "name": "A0A076FM45",
+        "column": "community",
+        "original": "C078",
+        "reproduced": "C075"
+      },
+      {
+        "name": "A0A0F7L1S0",
+        "column": "community",
+        "original": "C005",
+        "reproduced": "C001"
+      },
+      {
+        "name": "A0A0F7L1S0",
+        "column": "placement_major",
+        "original": "peripheral_established_family_context",
+        "reproduced": "genuine_mixed_family_community"
+      },
+      {
+        "name": "A0A0F7L1S0",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__peripheral__cazy_assigned",
+        "reproduced": "genuine_mixed_family__embedded_or_internal__cazy_assigned"
+      },
+      {
+        "name": "A0A0F7L6X9",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A0K0N728",
+        "column": "placement_major",
+        "original": "established_family_context",
+        "reproduced": "genuine_mixed_family_community"
+      },
+      {
+        "name": "A0A0K0N728",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__embedded_or_internal__cazy_assigned",
+        "reproduced": "genuine_mixed_family__embedded_or_internal__cazy_assigned"
+      },
+      {
+        "name": "A0A0S1TQK4",
+        "column": "community",
+        "original": "C012",
+        "reproduced": "C011"
+      },
+      {
+        "name": "A0A159B7X0",
+        "column": "unassigned_family_support_call",
+        "original": "direct_support_concordant_with_community",
+        "reproduced": "ambiguous_multi_family_direct_support"
+      },
+      {
+        "name": "A0A159B7X0",
+        "column": "directly_supported_cazy_family",
+        "original": "GT2",
+        "reproduced": ""
+      },
+      {
+        "name": "A0A1C3NFH8",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A1V0SAG8",
+        "column": "placement_major",
+        "original": "intercommunity_bridge",
+        "reproduced": "genuine_mixed_family_community"
+      },
+      {
+        "name": "A0A1V0SAG8",
+        "column": "figure2b_group",
+        "original": "genuine_mixed_family__intercommunity_connector__cazy_assigned",
+        "reproduced": "genuine_mixed_family__embedded_or_internal__cazy_assigned"
+      },
+      {
+        "name": "A0A1V0SD50",
+        "column": "community",
+        "original": "C001",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A1V0SKJ4",
+        "column": "community",
+        "original": "C060",
+        "reproduced": "C048"
+      },
+      {
+        "name": "A0A218MKE4",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__intercommunity_connector__cazy_assigned",
+        "reproduced": "genuine_mixed_family__intercommunity_connector__cazy_assigned"
+      },
+      {
+        "name": "A0A2H4UUT1",
+        "column": "community",
+        "original": "C012",
+        "reproduced": "C011"
+      },
+      {
+        "name": "A0A2P0VNX7",
+        "column": "community",
+        "original": "C053",
+        "reproduced": "C057"
+      },
+      {
+        "name": "A0A2R8FF35",
+        "column": "placement_major",
+        "original": "annotation_depleted_community",
+        "reproduced": "virus_enriched_dark_community"
+      },
+      {
+        "name": "A0A346LU90",
+        "column": "placement_major",
+        "original": "peripheral_established_family_context",
+        "reproduced": "intercommunity_bridge"
+      },
+      {
+        "name": "A0A346LU90",
+        "column": "unassigned_family_support_call",
+        "original": "ambiguous_multi_family_direct_support",
+        "reproduced": "direct_support_concordant_with_community"
+      },
+      {
+        "name": "A0A346LU90",
+        "column": "directly_supported_cazy_family",
+        "original": "",
+        "reproduced": "GT25"
+      },
+      {
+        "name": "A0A346LU90",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__peripheral__cazy_unassigned",
+        "reproduced": "dominant_family_with_minor_admixture__intercommunity_connector__cazy_unassigned"
+      },
+      {
+        "name": "A0A384ZX68",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A3G4ZPD3",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C012"
+      },
+      {
+        "name": "A0A3G4ZQT4",
+        "column": "community",
+        "original": "C001",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A3G4ZQT4",
+        "column": "unassigned_family_support_call",
+        "original": "insufficient_independent_annotated_neighbors",
+        "reproduced": "direct_support_discordant_with_community"
+      },
+      {
+        "name": "A0A3G4ZQT4",
+        "column": "directly_supported_cazy_family",
+        "original": "",
+        "reproduced": "GT2"
+      },
+      {
+        "name": "A0A3G4ZTD4",
+        "column": "community",
+        "original": "C066",
+        "reproduced": "C055"
+      },
+      {
+        "name": "A0A3G4ZUE2",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C012"
+      },
+      {
+        "name": "A0A3G4ZUR9",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C012"
+      },
+      {
+        "name": "A0A3G4ZVK1",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "A0A3G5A0C8",
+        "column": "community",
+        "original": "C060",
+        "reproduced": "C048"
+      },
+      {
+        "name": "A0A3G5A4J5",
+        "column": "community",
+        "original": "C042",
+        "reproduced": "C036"
+      },
+      {
+        "name": "A0A3G5A4R7",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A3G5A8V8",
+        "column": "community",
+        "original": "C062",
+        "reproduced": "C050"
+      },
+      {
+        "name": "A0A3G5AE29",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A3G5AJI2",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A3G5AK51",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A481Z4C0",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A481Z534",
+        "column": "community",
+        "original": "C063",
+        "reproduced": "C052"
+      },
+      {
+        "name": "A0A481Z5M0",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A481Z5Y2",
+        "column": "community",
+        "original": "C064",
+        "reproduced": "C053"
+      },
+      {
+        "name": "A0A481Z8F6",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A481ZAP2",
+        "column": "community",
+        "original": "C033",
+        "reproduced": "C031"
+      },
+      {
+        "name": "A0A481ZC42",
+        "column": "community",
+        "original": "C033",
+        "reproduced": "C031"
+      },
+      {
+        "name": "A0A482ICV6",
+        "column": "placement_major",
+        "original": "established_family_context",
+        "reproduced": "genuine_mixed_family_community"
+      },
+      {
+        "name": "A0A482ICV6",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__embedded_or_internal__cazy_assigned",
+        "reproduced": "genuine_mixed_family__embedded_or_internal__cazy_assigned"
+      },
+      {
+        "name": "A0A516KXV4",
+        "column": "unassigned_family_support_call",
+        "original": "direct_support_concordant_with_community",
+        "reproduced": "ambiguous_multi_family_direct_support"
+      },
+      {
+        "name": "A0A516KXV4",
+        "column": "directly_supported_cazy_family",
+        "original": "GT2",
+        "reproduced": ""
+      },
+      {
+        "name": "A0A516LS96",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "A0A516LSB6",
+        "column": "community",
+        "original": "C005",
+        "reproduced": "C001"
+      },
+      {
+        "name": "A0A516LSB6",
+        "column": "cazy_relation_to_community",
+        "original": "discordant",
+        "reproduced": "concordant"
+      },
+      {
+        "name": "A0A516LSB6",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__intercommunity_connector__cazy_assigned",
+        "reproduced": "genuine_mixed_family__intercommunity_connector__cazy_assigned"
+      },
+      {
+        "name": "A0A516MAT7",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "A0A5B8HVM2",
+        "column": "community",
+        "original": "C065",
+        "reproduced": "C054"
+      },
+      {
+        "name": "A0A5B8HW22",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C001"
+      },
+      {
+        "name": "A0A5B8HW22",
+        "column": "cazy_relation_to_community",
+        "original": "discordant",
+        "reproduced": "concordant"
+      },
+      {
+        "name": "A0A5B8HYC8",
+        "column": "placement_major",
+        "original": "intercommunity_bridge",
+        "reproduced": "genuine_mixed_family_community"
+      },
+      {
+        "name": "A0A5B8HYC8",
+        "column": "figure2b_group",
+        "original": "genuine_mixed_family__intercommunity_connector__cazy_assigned",
+        "reproduced": "genuine_mixed_family__embedded_or_internal__cazy_assigned"
+      },
+      {
+        "name": "A0A5J6VIH2",
+        "column": "community",
+        "original": "C066",
+        "reproduced": "C055"
+      },
+      {
+        "name": "A0A5J6VJ25",
+        "column": "community",
+        "original": "C043",
+        "reproduced": "C038"
+      },
+      {
+        "name": "A0A5J6VPG4",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C001"
+      },
+      {
+        "name": "A0A5K0U8N8",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C012"
+      },
+      {
+        "name": "A0A5K0U9M7",
+        "column": "community",
+        "original": "C036",
+        "reproduced": "C037"
+      },
+      {
+        "name": "A0A5K0U9X1",
+        "column": "community",
+        "original": "C036",
+        "reproduced": "C037"
+      },
+      {
+        "name": "A0A5K0UBH0",
+        "column": "community",
+        "original": "C036",
+        "reproduced": "C037"
+      },
+      {
+        "name": "A0A5Q2F0I6",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "A0A5Q2W553",
+        "column": "community",
+        "original": "C007",
+        "reproduced": "C001"
+      },
+      {
+        "name": "A0A5Q2W553",
+        "column": "unassigned_family_support_call",
+        "original": "direct_support_concordant_with_community",
+        "reproduced": "ambiguous_multi_family_direct_support"
+      },
+      {
+        "name": "A0A5Q2W553",
+        "column": "directly_supported_cazy_family",
+        "original": "GT7",
+        "reproduced": ""
+      },
+      {
+        "name": "A0A5Q2W553",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__intercommunity_connector__cazy_unassigned",
+        "reproduced": "genuine_mixed_family__intercommunity_connector__cazy_unassigned"
+      },
+      {
+        "name": "A0A6G6XIK1",
+        "column": "community",
+        "original": "C043",
+        "reproduced": "C038"
+      },
+      {
+        "name": "A0A6G6XQV8",
+        "column": "placement_major",
+        "original": "annotation_depleted_community",
+        "reproduced": "virus_enriched_dark_community"
+      },
+      {
+        "name": "A0A6J5KT09",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C012"
+      },
+      {
+        "name": "a0a6j5kw90",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A6J5L5D8",
+        "column": "placement_major",
+        "original": "intercommunity_bridge",
+        "reproduced": "genuine_mixed_family_community"
+      },
+      {
+        "name": "A0A6J5L5D8",
+        "column": "figure2b_group",
+        "original": "genuine_mixed_family__intercommunity_connector__cazy_unassigned",
+        "reproduced": "genuine_mixed_family__embedded_or_internal__cazy_unassigned"
+      },
+      {
+        "name": "A0A6J5L7D2",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "A0A6J5L7D4",
+        "column": "community",
+        "original": "C005",
+        "reproduced": "C001"
+      },
+      {
+        "name": "A0A6J5L7D4",
+        "column": "unassigned_family_support_call",
+        "original": "direct_support_discordant_with_community",
+        "reproduced": "direct_support_concordant_with_community"
+      },
+      {
+        "name": "A0A6J5L7D4",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__intercommunity_connector__cazy_unassigned",
+        "reproduced": "genuine_mixed_family__intercommunity_connector__cazy_unassigned"
+      },
+      {
+        "name": "A0A6J5LJT2",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C012"
+      },
+      {
+        "name": "A0A6J5LTW8",
+        "column": "placement_major",
+        "original": "intercommunity_bridge",
+        "reproduced": "genuine_mixed_family_community"
+      },
+      {
+        "name": "A0A6J5LTW8",
+        "column": "unassigned_family_support_call",
+        "original": "direct_support_concordant_with_community",
+        "reproduced": "ambiguous_multi_family_direct_support"
+      },
+      {
+        "name": "A0A6J5LTW8",
+        "column": "directly_supported_cazy_family",
+        "original": "GT2",
+        "reproduced": ""
+      },
+      {
+        "name": "A0A6J5LTW8",
+        "column": "figure2b_group",
+        "original": "genuine_mixed_family__intercommunity_connector__cazy_unassigned",
+        "reproduced": "genuine_mixed_family__embedded_or_internal__cazy_unassigned"
+      },
+      {
+        "name": "A0A6J5M782",
+        "column": "community",
+        "original": "C005",
+        "reproduced": "C001"
+      },
+      {
+        "name": "A0A6J5M782",
+        "column": "placement_major",
+        "original": "intercommunity_bridge",
+        "reproduced": "genuine_mixed_family_community"
+      },
+      {
+        "name": "A0A6J5M782",
+        "column": "cazy_relation_to_community",
+        "original": "discordant",
+        "reproduced": "concordant"
+      },
+      {
+        "name": "A0A6J5M782",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__intercommunity_connector__cazy_assigned",
+        "reproduced": "genuine_mixed_family__embedded_or_internal__cazy_assigned"
+      },
+      {
+        "name": "A0A6J5M9G7",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A6J5MCB8",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A6J5ME55",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A6J5MF54",
+        "column": "placement_major",
+        "original": "established_family_context",
+        "reproduced": "genuine_mixed_family_community"
+      },
+      {
+        "name": "A0A6J5MF54",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__embedded_or_internal__cazy_assigned",
+        "reproduced": "genuine_mixed_family__embedded_or_internal__cazy_assigned"
+      },
+      {
+        "name": "A0A6J5ND39",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "a0a6j5nd39",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A6J5NJ84",
+        "column": "placement_major",
+        "original": "established_family_context",
+        "reproduced": "genuine_mixed_family_community"
+      },
+      {
+        "name": "A0A6J5NJ84",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__embedded_or_internal__cazy_assigned",
+        "reproduced": "genuine_mixed_family__embedded_or_internal__cazy_assigned"
+      },
+      {
+        "name": "A0A6J5NSL9",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A6J5P4D7",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "A0A6J5QMH6",
+        "column": "community",
+        "original": "C005",
+        "reproduced": "C001"
+      },
+      {
+        "name": "A0A6J5QMH6",
+        "column": "cazy_relation_to_community",
+        "original": "discordant",
+        "reproduced": "concordant"
+      },
+      {
+        "name": "A0A6J5QMH6",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__intercommunity_connector__cazy_assigned",
+        "reproduced": "genuine_mixed_family__intercommunity_connector__cazy_assigned"
+      },
+      {
+        "name": "A0A6J5R481",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C001"
+      },
+      {
+        "name": "A0A6J5RL31",
+        "column": "unassigned_family_support_call",
+        "original": "direct_support_concordant_with_community",
+        "reproduced": "ambiguous_multi_family_direct_support"
+      },
+      {
+        "name": "A0A6J5RL31",
+        "column": "directly_supported_cazy_family",
+        "original": "GT2",
+        "reproduced": ""
+      },
+      {
+        "name": "A0A6J5RYU2",
+        "column": "community",
+        "original": "C005",
+        "reproduced": "C001"
+      },
+      {
+        "name": "A0A6J5RYU2",
+        "column": "placement_major",
+        "original": "peripheral_established_family_context",
+        "reproduced": "genuine_mixed_family_community"
+      },
+      {
+        "name": "A0A6J5RYU2",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__peripheral__cazy_unassigned",
+        "reproduced": "genuine_mixed_family__embedded_or_internal__cazy_unassigned"
+      },
+      {
+        "name": "A0A6J7WPK1",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__intercommunity_connector__cazy_assigned",
+        "reproduced": "genuine_mixed_family__intercommunity_connector__cazy_assigned"
+      },
+      {
+        "name": "A0A6J7WTC2",
+        "column": "placement_major",
+        "original": "established_family_context",
+        "reproduced": "genuine_mixed_family_community"
+      },
+      {
+        "name": "A0A6J7WTC2",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__embedded_or_internal__cazy_assigned",
+        "reproduced": "genuine_mixed_family__embedded_or_internal__cazy_assigned"
+      },
+      {
+        "name": "A0A6J7WYC1",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C001"
+      },
+      {
+        "name": "A0A6J7WZJ8",
+        "column": "placement_major",
+        "original": "annotation_depleted_community",
+        "reproduced": "virus_enriched_dark_community"
+      },
+      {
+        "name": "A0A6J7XBW3",
+        "column": "placement_major",
+        "original": "intercommunity_bridge",
+        "reproduced": "genuine_mixed_family_community"
+      },
+      {
+        "name": "A0A6J7XBW3",
+        "column": "figure2b_group",
+        "original": "genuine_mixed_family__intercommunity_connector__cazy_unassigned",
+        "reproduced": "genuine_mixed_family__embedded_or_internal__cazy_unassigned"
+      },
+      {
+        "name": "A0A6M3VX42",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "A0A6N1NQZ0",
+        "column": "community",
+        "original": "C053",
+        "reproduced": "C057"
+      },
+      {
+        "name": "A0A6N1NUS0",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C012"
+      },
+      {
+        "name": "A0A7D7EYZ2",
+        "column": "unassigned_family_support_call",
+        "original": "direct_support_concordant_with_community",
+        "reproduced": "ambiguous_multi_family_direct_support"
+      },
+      {
+        "name": "A0A7D7EYZ2",
+        "column": "directly_supported_cazy_family",
+        "original": "GT2",
+        "reproduced": ""
+      },
+      {
+        "name": "A0A7D7IXE4",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A7G8LFL5",
+        "column": "community",
+        "original": "C043",
+        "reproduced": "C038"
+      },
+      {
+        "name": "A0A7S5RHF0",
+        "column": "placement_major",
+        "original": "intercommunity_bridge",
+        "reproduced": "genuine_mixed_family_community"
+      },
+      {
+        "name": "A0A7S5RHF0",
+        "column": "unassigned_family_support_call",
+        "original": "direct_support_concordant_with_community",
+        "reproduced": "ambiguous_multi_family_direct_support"
+      },
+      {
+        "name": "A0A7S5RHF0",
+        "column": "directly_supported_cazy_family",
+        "original": "GT2",
+        "reproduced": ""
+      },
+      {
+        "name": "A0A7S5RHF0",
+        "column": "figure2b_group",
+        "original": "genuine_mixed_family__intercommunity_connector__cazy_unassigned",
+        "reproduced": "genuine_mixed_family__embedded_or_internal__cazy_unassigned"
+      },
+      {
+        "name": "A0A879R2A6",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A8D9CAL9",
+        "column": "community",
+        "original": "C065",
+        "reproduced": "C054"
+      },
+      {
+        "name": "A0A8D9FR24",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A8S0I0F3",
+        "column": "community",
+        "original": "C039",
+        "reproduced": "C043"
+      },
+      {
+        "name": "A0A8S0I1X4",
+        "column": "community",
+        "original": "C039",
+        "reproduced": "C043"
+      },
+      {
+        "name": "A0A8S0IDT3",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "A0A8S5PXW0",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A8S5PY38",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "A0A8S5RVP3",
+        "column": "community",
+        "original": "C067",
+        "reproduced": "C058"
+      },
+      {
+        "name": "A7RBM8",
+        "column": "community",
+        "original": "C037",
+        "reproduced": "C040"
+      },
+      {
+        "name": "AAN01968.1_model",
+        "column": "community",
+        "original": "C063",
+        "reproduced": "C052"
+      },
+      {
+        "name": "ans04308.1",
+        "column": "community",
+        "original": "C058",
+        "reproduced": "C065"
+      },
+      {
+        "name": "atz80616.1",
+        "column": "community",
+        "original": "C012",
+        "reproduced": "C011"
+      },
+      {
+        "name": "ayv77183.1",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "bar34210.1",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "bdc16454.1",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "cab4128362.1",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "cab4129118.1",
+        "column": "placement_major",
+        "original": "established_family_context",
+        "reproduced": "genuine_mixed_family_community"
+      },
+      {
+        "name": "cab4129118.1",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__embedded_or_internal__cazy_assigned",
+        "reproduced": "genuine_mixed_family__embedded_or_internal__cazy_assigned"
+      },
+      {
+        "name": "cab4129518.1",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "cab4142359.1",
+        "column": "placement_major",
+        "original": "intercommunity_bridge",
+        "reproduced": "genuine_mixed_family_community"
+      },
+      {
+        "name": "cab4142359.1",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__intercommunity_connector__cazy_assigned",
+        "reproduced": "genuine_mixed_family__embedded_or_internal__cazy_assigned"
+      },
+      {
+        "name": "cab4147569.1",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "cab4158066.1",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "cab4164834.1",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "cab4174815.1",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "cab4188756.1",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "cab4191773.1",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "cab4221432.1",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C019"
+      },
+      {
+        "name": "D4N7N2",
+        "column": "placement_major",
+        "original": "established_family_context",
+        "reproduced": "intercommunity_bridge"
+      },
+      {
+        "name": "D4N7N2",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__embedded_or_internal__cazy_assigned",
+        "reproduced": "dominant_family_with_minor_admixture__intercommunity_connector__cazy_assigned"
+      },
+      {
+        "name": "F2Y1U4",
+        "column": "community",
+        "original": "C012",
+        "reproduced": "C011"
+      },
+      {
+        "name": "G8DH22",
+        "column": "community",
+        "original": "C012",
+        "reproduced": "C011"
+      },
+      {
+        "name": "M1HTG7",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C012"
+      },
+      {
+        "name": "M1HWA2",
+        "column": "placement_major",
+        "original": "annotation_depleted_community",
+        "reproduced": "virus_enriched_dark_community"
+      },
+      {
+        "name": "M1HWF1",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C012"
+      },
+      {
+        "name": "M1IPF3",
+        "column": "placement_major",
+        "original": "intercommunity_bridge",
+        "reproduced": "genuine_mixed_family_community"
+      },
+      {
+        "name": "M1IPF3",
+        "column": "unassigned_family_support_call",
+        "original": "direct_support_concordant_with_community",
+        "reproduced": "ambiguous_multi_family_direct_support"
+      },
+      {
+        "name": "M1IPF3",
+        "column": "directly_supported_cazy_family",
+        "original": "GT2",
+        "reproduced": ""
+      },
+      {
+        "name": "M1IPF3",
+        "column": "figure2b_group",
+        "original": "genuine_mixed_family__intercommunity_connector__cazy_unassigned",
+        "reproduced": "genuine_mixed_family__embedded_or_internal__cazy_unassigned"
+      },
+      {
+        "name": "M4QDL4",
+        "column": "community",
+        "original": "C039",
+        "reproduced": "C043"
+      },
+      {
+        "name": "NP_817448.1",
+        "column": "placement_major",
+        "original": "established_family_context",
+        "reproduced": "intercommunity_bridge"
+      },
+      {
+        "name": "NP_817448.1",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__embedded_or_internal__cazy_assigned",
+        "reproduced": "dominant_family_with_minor_admixture__intercommunity_connector__cazy_assigned"
+      },
+      {
+        "name": "Q6XM73",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C012"
+      },
+      {
+        "name": "Q84432_model",
+        "column": "community",
+        "original": "C077",
+        "reproduced": "C074"
+      },
+      {
+        "name": "Q8QNI9",
+        "column": "community",
+        "original": "C009",
+        "reproduced": "C012"
+      },
+      {
+        "name": "qbk85315.1",
+        "column": "community",
+        "original": "C042",
+        "reproduced": "C036"
+      },
+      {
+        "name": "qbk88873.1",
+        "column": "community",
+        "original": "C062",
+        "reproduced": "C050"
+      },
+      {
+        "name": "qbk90529.1",
+        "column": "community",
+        "original": "C064",
+        "reproduced": "C053"
+      },
+      {
+        "name": "qbk92993.1",
+        "column": "community",
+        "original": "C033",
+        "reproduced": "C031"
+      },
+      {
+        "name": "qbk93484.1",
+        "column": "community",
+        "original": "C033",
+        "reproduced": "C031"
+      },
+      {
+        "name": "qdj96490.1",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "qfg73899.1",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "qfg74883.1",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "qig73672.1",
+        "column": "community",
+        "original": "C067",
+        "reproduced": "C058"
+      },
+      {
+        "name": "qmp83179.1",
+        "column": "community",
+        "original": "C010",
+        "reproduced": "C009"
+      },
+      {
+        "name": "S5WBW8",
+        "column": "community",
+        "original": "C005",
+        "reproduced": "C001"
+      },
+      {
+        "name": "S5WBW8",
+        "column": "unassigned_family_support_call",
+        "original": "ambiguous_multi_family_direct_support",
+        "reproduced": "direct_support_discordant_with_community"
+      },
+      {
+        "name": "S5WBW8",
+        "column": "directly_supported_cazy_family",
+        "original": "",
+        "reproduced": "GT62"
+      },
+      {
+        "name": "S5WBW8",
+        "column": "figure2b_group",
+        "original": "dominant_family_with_minor_admixture__intercommunity_connector__cazy_unassigned",
+        "reproduced": "genuine_mixed_family__intercommunity_connector__cazy_unassigned"
+      },
+      {
+        "name": "uog94188.1",
+        "column": "community",
+        "original": "C078",
+        "reproduced": "C075"
+      }
+    ],
+    "figure2a_edge_set_equal": true
+  },
+  "exact_scientific_reproduction": false,
+  "historical_environment": false
+}

@@ -1,0 +1,105 @@
+{
+  "mode": "frozen",
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "versions": {
+    "pandas": "2.3.3",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2",
+    "igraph": "0.11.9",
+    "leidenalg": "0.10.2",
+    "matplotlib": "3.10.7",
+    "seaborn": "0.13.2"
+  },
+  "commands": [
+    {
+      "step": "viral_placement",
+      "argv": [
+        "/tmp/section2_release_validation_20261027/bin/python",
+        "-B",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/github_ready/workflows/WP02_global_SSN_leiden_viral_placement/original/classify_viral_structural_placement_v3.py",
+        "--nodes",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/zenodo_data/section2_ssn_005_data/outputs/primary/leiden/cytoscape_nodes_analyzed.csv",
+        "--edges",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/zenodo_data/section2_ssn_005_data/outputs/primary/leiden/edges_clean_undirected.csv",
+        "--outdir",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/validation/frozen_run/placement",
+        "--node-id-column",
+        "name",
+        "--community-column",
+        "community",
+        "--virus-column",
+        "is_virus",
+        "--cazy-family-column",
+        "CAZy_family",
+        "--gtfam-column",
+        "GTFam",
+        "--weight-column",
+        "weight_global_min_tm",
+        "--known-family-min-annotated",
+        "5",
+        "--known-family-min-purity",
+        "0.8",
+        "--mixed-min-second-family-n",
+        "2",
+        "--mixed-min-second-family-fraction",
+        "0.2",
+        "--small-community-max",
+        "4",
+        "--large-community-min",
+        "20",
+        "--peripheral-quantile",
+        "0.25",
+        "--virus-enrichment-q",
+        "0.05",
+        "--bridge-min-degree",
+        "3",
+        "--bridge-min-external-neighbors",
+        "1",
+        "--bridge-min-external-strength-fraction",
+        "0.2",
+        "--bridge-min-participation",
+        "0.3",
+        "--bridge-hub-min-external-communities",
+        "3",
+        "--family-support-min-neighbors",
+        "2",
+        "--family-support-min-strength-fraction",
+        "0.67",
+        "--family-support-min-margin",
+        "0.2"
+      ]
+    },
+    {
+      "step": "figure2a_display",
+      "argv": [
+        "/tmp/section2_release_validation_20261027/bin/python",
+        "-B",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/github_ready/workflows/WP02_global_SSN_leiden_viral_placement/scripts/derive_figure2a_display.py",
+        "--data-root",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/zenodo_data/section2_ssn_005_data",
+        "--outdir",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/validation/frozen_run/figure2a"
+      ]
+    },
+    {
+      "step": "figure2b_render",
+      "argv": [
+        "/tmp/section2_release_validation_20261027/bin/python",
+        "-B",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/github_ready/workflows/WP02_global_SSN_leiden_viral_placement/original/make_figure2b_alluvial.py",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/validation/frozen_run/placement/viral_structural_placement.tsv",
+        "--output-dir",
+        "/mnt/d/Projects/Vira_GT_Section2/release_section2_20261027/validation/frozen_run/figure2b"
+      ]
+    }
+  ],
+  "comparison": {
+    "placement_scientific_field_differences": 0,
+    "placement_rows": 687,
+    "placement_differences": [],
+    "figure2a_edge_set_equal": true
+  },
+  "exact_scientific_reproduction": true,
+  "historical_environment": false
+}

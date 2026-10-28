@@ -1,0 +1,9 @@
+# Research data and code provenance
+
+The manuscript reference is the preserved dataset-005 resolution-1, seed-1 primary analysis. `original/` contains byte-preserved recovered scientific scripts; no scientific algorithm, filtering rule, weight calculation or placement threshold was changed for this release. New files in `scripts/` handle portable execution and validation separately.
+
+The companion dataset includes original coordinate bytes, raw/headered and corrected/headerless rich Foldseek alignments, metadata, full weighted edge and node tables, primary communities, v3 placement and Figure 2A/B source data. Detailed original paths, hashes and roles are recorded in `manifests/original_source_inventory.tsv`; structure-specific paths, hashes and available source evidence are in the dataset's `inputs/structures/structures_manifest.tsv`. The earlier candidate archives remain preserved locally.
+
+The full graph has 224,825 undirected edges. Mean directional row minima define `weight_global_min_tm`; all metadata nodes are retained. The Figure 2A display-edge reduction does not alter the quantitative graph. Figure 2B input is the primary v3 protein-level classifier output. Protein evidence categories and computational Methods are supplied with the dataset.
+
+Later functional validation is explicitly separated from original research outputs. It verifies preserved-partition replay and a fresh, internally consistent execution without presenting the latter as the historical partition. `validation/publication_functional_validation_20261028.json` records measured counts, environment and tests. The original software lock was not recovered. Archival configs retain their original paths; the runner resolves current data paths. The original ID-normalization executable was not recovered; the separate reconstruction is byte-verified against the supplied corrected M8.

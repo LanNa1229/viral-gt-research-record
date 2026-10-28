@@ -1,0 +1,13 @@
+category	n	denominator	definition
+CAZy_assigned	304	all viral-labeled nodes (687)	normalized CAZy family present; excluded from the 383-unassigned denominator
+CAZy_unassigned	383	all viral-labeled nodes (687)	normalized CAZy family absent, including GTnc/Unassigned; does not assert lack of all sequence/domain annotation
+direct_support_any_family	130	CAZy-unassigned viral nodes (383)	best family has >=2 within-community annotated neighbors; >=0.67 of annotated-neighbor strength; best-minus-second strength fraction >=0.20
+direct_support_concordant_with_community	110	CAZy-unassigned viral nodes (383)	passes all direct-support thresholds and best family equals community modal CAZy family; subset of 130; Figure 2B directly supported category
+direct_support_discordant_with_community	20	CAZy-unassigned viral nodes (383)	passes all thresholds but best family differs from community modal family; subset of 130 AND subset of the 73 limited/ambiguous/alternative display group
+ambiguous_multi_family_direct_support	11	CAZy-unassigned viral nodes (383)	at least two best-family neighbors but strength-fraction and/or margin threshold fails
+insufficient_independent_annotated_neighbors	42	CAZy-unassigned viral nodes (383)	some annotated within-community support, but best family represented by fewer than two neighbors
+no_direct_annotated_neighbor_support	200	CAZy-unassigned viral nodes (383)	no CAZy-annotated neighbor in the SAME Leiden community; not necessarily absent external annotated neighbors or absent structural edges
+limited_ambiguous_or_alternative_support	73	all viral-labeled nodes (687) for plotted percent; or 383 for unassigned-only percent	display aggregate: 20 discordant direct + 11 ambiguous + 42 insufficient; overlaps the 130 total through its 20 discordant direct supports
+reliable_family_context_among_direct_supports	57	all 130 directly supported unassigned viral nodes	53 concordant +4 discordant pass context-gated family interpretation; 73 other directly supported nodes lack reliable community-family context
+CAZy_assigned_modal_family_concordant	213	CAZy-assigned viral nodes (304)	assigned family matches community modal CAZy family; a different criterion from direct-neighbor support and from reliable family purity
+CAZy_assigned_modal_family_discordant	91	CAZy-assigned viral nodes (304)	assigned family differs from community modal family; does not establish incorrect CAZy annotation

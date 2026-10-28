@@ -1,0 +1,55 @@
+{
+  "arguments": {
+    "nodes": "005_GTA_node_metadata_completed_20260727.tsv",
+    "alignments": "005_GTA_all_vs_all_TM065_cov050_rich.id_corrected.m8",
+    "outdir": "output/resolution_seed_sweep_v1",
+    "node_id_column": "name",
+    "group_column": "Group",
+    "species_column": "Species",
+    "gtfam_column": "GTFam",
+    "alignment_columns": "query,target,fident,alnlen,evalue,bits,alntmscore,qtmscore,ttmscore,qcov,tcov,qlen,tlen,qstart,qend,tstart,tend",
+    "virus_overrides": null,
+    "focus_clusters": null,
+    "resolutions": "0.5,0.75,1.0,1.25,1.5,2.0",
+    "seeds": "1,2,3,4,5",
+    "primary_resolution": 1.0,
+    "n_iterations": -1,
+    "reciprocal_only": false,
+    "analysis_min_coverage": null,
+    "analysis_min_alntmscore": null,
+    "heterogeneous_purity": 0.7,
+    "high_purity": 0.8,
+    "min_annotated": 5,
+    "skip_plots": true
+  },
+  "resolutions": [
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5,
+    2.0
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "methods_run": [
+    "unweighted",
+    "alntmscore",
+    "global_min_tm"
+  ],
+  "preferred_method_for_cytoscape_node_metrics": "global_min_tm",
+  "edge_stats": {
+    "alignment_rows_input": 454207,
+    "alignment_rows_missing_node": 0,
+    "self_hits_removed": 4854,
+    "unique_undirected_edges_before_reciprocal_filter": 224825,
+    "reciprocal_edges": 224528,
+    "one_way_edges": 297,
+    "unique_undirected_edges_analysis": 224825
+  }
+}

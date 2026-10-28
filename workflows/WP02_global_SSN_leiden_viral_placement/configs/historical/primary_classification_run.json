@@ -1,0 +1,61 @@
+{
+  "script_version": "3.0.0",
+  "inputs": {
+    "nodes": "/home/rahnn/260728_Temp/output/preflight_r1_seed1_v3_correct_schema/cytoscape_nodes_analyzed.csv",
+    "nodes_sha256": "377739de2678e574f391421c5b634a903b6905cd3bea9bd267d8b6fcaf143e2c",
+    "edges": "/home/rahnn/260728_Temp/output/preflight_r1_seed1_v3_correct_schema/cytoscape_edges_analyzed.csv",
+    "edges_sha256": "3470794769ae3c568af7bd8643bfd6b1e8bafd04c734b74a1ee8b915a6993227",
+    "viral_reference_metadata": null,
+    "viral_reference_metadata_sha256": null
+  },
+  "columns": {
+    "node_id": "name",
+    "community": "community",
+    "virus": "is_virus",
+    "cazy_family": "CAZy_family",
+    "gtfam_fallback": "GTFam",
+    "weight": "weight_global_min_tm"
+  },
+  "thresholds": {
+    "known_family_min_annotated": 5,
+    "known_family_min_purity": 0.8,
+    "mixed_min_second_family_n": 2,
+    "mixed_min_second_family_fraction": 0.2,
+    "small_community_max": 4,
+    "large_community_min": 20,
+    "peripheral_quantile": 0.25,
+    "virus_enrichment_q": 0.05,
+    "bridge_min_degree": 3,
+    "bridge_min_external_neighbors": 1,
+    "bridge_min_external_strength_fraction": 0.2,
+    "bridge_min_participation": 0.3,
+    "bridge_hub_min_external_communities": 3,
+    "family_support_min_neighbors": 2,
+    "family_support_min_strength_fraction": 0.67,
+    "family_support_min_margin": 0.2
+  },
+  "counts": {
+    "nodes": 4854,
+    "viral_nodes": 687,
+    "communities": 660,
+    "graph_isolates": 580,
+    "viral_graph_isolates": 143,
+    "known_viral_gt_nodes": 0,
+    "bridge_candidates": 132,
+    "reference_metadata_rows": 0,
+    "reference_metadata_matched_nodes": 0,
+    "reference_metadata_unmatched_rows": 0,
+    "edge_rows_input": 224825,
+    "edge_rows_missing_node_removed": 0,
+    "self_edges_removed": 0,
+    "duplicate_directional_or_undirected_rows_collapsed": 0,
+    "unique_undirected_edges_analyzed": 224825
+  },
+  "interpretation_guardrails": [
+    "Leiden community membership is a network-partition result; it does not by itself establish family membership, function, or homology.",
+    "A CAZy-unassigned protein is assigned a directly supported family only when family-specific neighbour count, strength fraction, and support-margin thresholds all pass.",
+    "Bridge subtypes are topological screening calls, not graph-theory articulation points or evidence of evolutionary intermediacy.",
+    "Full-length versus domain-mediated bridge hypotheses require Foldseek alignment coordinates or an equivalent domain-resolved analysis.",
+    "Virus-enriched annotation-depleted communities require structural, domain, and genomic-context validation before any novel-family claim."
+  ]
+}
