@@ -19,7 +19,7 @@ The tested environment includes NumPy, pandas, SciPy, scikit-learn, python-igrap
 
 ## Input data
 
-Obtain the companion `section2_ssn_005_data` dataset from **Zenodo: [ZENODO_DOI — insert after approved deposition]** and verify the release SHA256. It contains the 4,854 original coordinate files, raw and corrected Foldseek alignments, node metadata, full graph, primary communities, viral classifications and Figure 2A/B tables. Set `DATA` to the extracted dataset directory:
+The companion `section2_ssn_005_data` dataset, version 1.0.2, is archived at [Zenodo (DOI: 10.5281/zenodo.23720756)](https://doi.org/10.5281/zenodo.23720756). The record is public; the complete ZIP is restricted while source-specific permissions remain unresolved. Users with access should verify the release SHA256. It contains the 4,854 original coordinate files, raw and corrected Foldseek alignments, node metadata, full graph, primary communities, viral classifications and Figure 2A/B tables. Set `DATA` to the extracted dataset directory:
 
 ```bash
 DATA=/absolute/path/to/section2_ssn_005_data
@@ -65,6 +65,6 @@ There are 130 directly family-supported CAZy-unassigned proteins in the primary 
 
 - Manuscript: **[APPROVED_MANUSCRIPT_CITATION / DOI]**.
 - Code: [viral-gt-research-record](https://github.com/LanNa1229/viral-gt-research-record), workflow `WP02_global_SSN_leiden_viral_placement`, **[APPROVED_RELEASE_TAG]**.
-- Data: **[ZENODO_DOI]**. Replace placeholders when the corresponding releases are approved and identifiers exist.
+- Data: [10.5281/zenodo.23720756](https://doi.org/10.5281/zenodo.23720756), version 1.0.2. The metadata are public and the dataset ZIP remains restricted.
 
-Original code and verification helpers: MIT. Original data: CC BY 4.0; third-party structures retain their applicable terms. See [data license](DATA_LICENSE.md) and [coordinate rights](RIGHTS_AND_RETRIEVAL.md). This local candidate has not been published.
+Original code and verification helpers: MIT. Original data: CC BY 4.0; third-party structures retain their applicable terms. See [data license](DATA_LICENSE.md) and [coordinate rights](RIGHTS_AND_RETRIEVAL.md). The workflow is published in this repository, and the Zenodo record is published with restricted file access.
