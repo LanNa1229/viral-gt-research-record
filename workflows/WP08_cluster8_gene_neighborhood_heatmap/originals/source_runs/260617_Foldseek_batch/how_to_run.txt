@@ -1,0 +1,108 @@
+query_id    protein_id       cluster     source_genome     structure_file              model_source
+C7_001      UFOVP405_23      cluster7    LR796378.1        structures/C7_001.pdb       AlphaFold
+C8_001      ATW62693.1       cluster8    XXXX              structures/C8_001.pdb       ESMFold
+C8_002      A0A6J5M498       cluster8    UniProt           structures/C8_002.pdb       AFDB
+
+
+
+
+
+Running Batch mode -foldseek
+
+
+python foldseek_batch_api_v2.py \
+  --manifest foldseek_manifest_A0A6J5M498_neighbors.tsv \
+  --outdir A0A6J5M498_foldseek \
+  --databases pdb100 afdb-swissprot afdb50 BFVD afdb-proteome \
+  --mode 3diaa \
+  --top-n 100 \
+  --sleep-between-submissions 60 \
+  --poll-interval 10 \
+  --request-timeout 120 \
+  --max-wait 3600 \
+  --retry-failed
+
+
+# not bfvd, BFVD
+
+
+Running analysis Report
+
+python analyze_foldseek_results_v2.py \
+  --input A0A5P8D8M7_foldseek/final/foldseek_all_hits.tsv \
+  --outdir A0A5P8D8M7_foldseek/final/analysis_v2 \
+  --top-n 20 \
+  --highconf-prob 0.70 \
+  --highconf-evalue 1e-3 \
+  --highconf-qcov 0.50 \
+  --highconf-alnlen 80 \
+  --target-databases pdb100 afdb-swissprot afdb50 BFVD afdb-proteome
+
+python analyze_foldseek_results_v2.py \
+  --input A0A169B7X0_foldseek/final/foldseek_all_hits.tsv \
+  --outdir A0A169B7X0_foldseek/final/analysis_v2 \
+  --top-n 20 \
+  --highconf-prob 0.70 \
+  --highconf-evalue 1e-3 \
+  --highconf-qcov 0.50 \
+  --highconf-alnlen 80 \
+  --target-databases pdb100
+
+python analyze_foldseek_results_v2.py \
+  --input A0A169B7X0_foldseek/final/foldseek_all_hits.tsv \
+  --outdir A0A169B7X0_foldseek/final/analysis_v2_allDB_priority \
+  --top-n 20 \
+  --highconf-prob 0.70 \
+  --highconf-evalue 1e-3 \
+  --highconf-qcov 0.50 \
+  --highconf-alnlen 80 \
+  --target-databases pdb100 afdb-swissprot afdb50 cath50
+
+
+--top-n 20 : 각 query/database 조합에서 상위 20개 hit만 따로 보기 좋게 뽑겠다는 뜻이야.
+--highconf-prob 0.70 : foldseek hit 중에서 probability >=0.70 인 hit을 high-confidence 후보로 보겠다는 뜻이댜. 
+--highconf-evalue 1e-3 : evalue <= 1e-3인 hit를 high-confidence 후보로 보겠다는 뜻이야.
+--highconf-qcov 0.50 : q_coverage >= 0.50인 hit를 high-confidence로 보겠다는 뜻이야. q_coverage는 query protein 중에서 alignment에 포함된 비율이야.
+--highconf-alnlen 80: alignment length >= 80 aa인 hit만 high-confidence로 보겠다는 뜻이야. 즉, 너무 짧은 alignment는 제외하겠다는 거야.
+----target-databases pdb100 이건 분석에서 priority database로 PDB100을 사용하겠다는 뜻이야. 중요한 점은 이 command가 pdb100만 분석한다는 뜻은 아니야.
+
+
+column -t -s $'\t' \
+  260617_foldseek_api_cluster7_8/analysis_v2/10_database_top_hit_names.tsv | less -S
+
+column -t -s $'\t' \
+  260617_foldseek_api_cluster7_8/analysis_v2/11_name_search_hits.tsv | less -S
+
+column -t -s $'\t' \
+  260617_foldseek_api_cluster7_8/analysis_v2/12_name_search_summary_by_query.tsv | less -S
+
+
+Make top 5 database hits
+
+python - <<'PY'
+import pandas as pd
+
+base = "260618_foldseek_api_BAG41682_neighbors/final/analysis_v2"
+p = f"{base}/10_database_top_hit_names.tsv"
+df = pd.read_csv(p, sep="\t")
+
+cols = [
+    "query_id", "protein_id", "database", "rank",
+    "target_id", "hit_name",
+    "matched_name_terms",
+    "matched_keyword_categories",
+    "probability", "evalue", "score",
+    "seq_identity", "aln_length", "q_coverage", "t_coverage"
+]
+cols = [c for c in cols if c in df.columns]
+
+out = (
+    df.sort_values(["query_id", "database", "rank"])
+      .groupby(["query_id", "database"], as_index=False)
+      .head(5)
+)
+
+out[cols].to_csv(f"{base}/database_top5_compact.tsv", sep="\t", index=False)
+print(f"Wrote: {base}/database_top5_compact.tsv")
+PY
+

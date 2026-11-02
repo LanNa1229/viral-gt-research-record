@@ -1,0 +1,1289 @@
+2026-06-27 19:48:59,097 [INFO] Reading manifest: /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_manifest_A0A5P8D8M7_neighbors.tsv
+2026-06-27 19:48:59,098 [INFO] Validated 21 input structures
+2026-06-27 19:48:59,098 [INFO] [1/21] Processing query_id=SEA_YUUY_35
+2026-06-27 19:48:59,099 [INFO] Submitting SEA_YUUY_35 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_35_model.cif
+2026-06-27 19:50:03,324 [INFO] ticket=eFUKvC2p6Gb0IZyzdrGK43IU-0Wm6xtNoVDcFA status=COMPLETE
+2026-06-27 19:50:03,324 [INFO] Fetching result JSON for SEA_YUUY_35
+2026-06-27 19:50:11,755 [INFO] [2/21] Processing query_id=SEA_YUUY_36
+2026-06-27 19:50:11,756 [INFO] Submitting SEA_YUUY_36 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_36_model.cif
+2026-06-27 19:51:17,825 [INFO] ticket=sjlvUncb3wUsDx_g9yZg31miUoOUTNvTPRDttA status=COMPLETE
+2026-06-27 19:51:17,826 [INFO] Fetching result JSON for SEA_YUUY_36
+2026-06-27 19:51:22,101 [INFO] [3/21] Processing query_id=SEA_YUUY_37
+2026-06-27 19:51:22,101 [INFO] Submitting SEA_YUUY_37 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_37_model.cif
+2026-06-27 19:52:28,456 [INFO] ticket=Kv46_-HL3_P36VKaBZvug1YjS5ITRAXEDKSJRg status=COMPLETE
+2026-06-27 19:52:28,456 [INFO] Fetching result JSON for SEA_YUUY_37
+2026-06-27 19:52:33,367 [INFO] [4/21] Processing query_id=SEA_YUUY_39
+2026-06-27 19:52:33,367 [INFO] Submitting SEA_YUUY_39 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_39_model.cif
+2026-06-27 19:53:39,111 [INFO] ticket=qCnLAIdxCbBVwg2T8H34rsYaeOEamDuLCSW5CA status=COMPLETE
+2026-06-27 19:53:39,111 [INFO] Fetching result JSON for SEA_YUUY_39
+2026-06-27 19:53:39,630 [INFO] [5/21] Processing query_id=SEA_YUUY_40
+2026-06-27 19:53:39,630 [INFO] Submitting SEA_YUUY_40 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_40_model.cif
+2026-06-27 19:57:00,830 [INFO] Reading manifest: /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_manifest_A0A5P8D8M7_neighbors.tsv
+2026-06-27 19:57:00,831 [INFO] Validated 21 input structures
+2026-06-27 19:57:00,831 [INFO] [1/21] Processing query_id=SEA_YUUY_35
+2026-06-27 19:57:00,831 [INFO] Skipping completed query from ledger: SEA_YUUY_35
+2026-06-27 19:57:00,950 [INFO] [2/21] Processing query_id=SEA_YUUY_36
+2026-06-27 19:57:00,950 [INFO] Skipping completed query from ledger: SEA_YUUY_36
+2026-06-27 19:57:01,006 [INFO] [3/21] Processing query_id=SEA_YUUY_37
+2026-06-27 19:57:01,007 [INFO] Skipping completed query from ledger: SEA_YUUY_37
+2026-06-27 19:57:01,088 [INFO] [4/21] Processing query_id=SEA_YUUY_39
+2026-06-27 19:57:01,088 [INFO] Skipping completed query from ledger: SEA_YUUY_39
+2026-06-27 19:57:01,115 [INFO] [5/21] Processing query_id=SEA_YUUY_40
+2026-06-27 19:57:06,066 [ERROR] Error processing SEA_YUUY_40
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f3116db8c20>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket/4T3noG2J1aMGRz0QA0u9H_ntDsMjNLi6Jfjb6Q (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116db8c20>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 490, in process_one_query
+    status_data = wait_for_completion(
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 236, in wait_for_completion
+    status_data = get_job_status(session, ticket_id, base_url, timeout)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 221, in get_job_status
+    response = session.get(f"{base_url}/ticket/{ticket_id}", timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket/4T3noG2J1aMGRz0QA0u9H_ntDsMjNLi6Jfjb6Q (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116db8c20>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-06-27 19:57:06,150 [INFO] [6/21] Processing query_id=SEA_YUUY_41
+2026-06-27 19:57:06,151 [INFO] Submitting SEA_YUUY_41 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_41_model.cif
+2026-06-27 19:57:16,242 [ERROR] Error processing SEA_YUUY_41
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f3116a65550>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a65550>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 471, in process_one_query
+    ticket = submit_foldseek_job(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 184, in submit_foldseek_job
+    response = session.post(
+               ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a65550>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-06-27 19:57:16,293 [INFO] [7/21] Processing query_id=SEA_YUUY_42
+2026-06-27 19:57:16,294 [INFO] Submitting SEA_YUUY_42 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_42_model.cif
+2026-06-27 19:57:24,171 [ERROR] Error processing SEA_YUUY_42
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f3116a657f0>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a657f0>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 471, in process_one_query
+    ticket = submit_foldseek_job(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 184, in submit_foldseek_job
+    response = session.post(
+               ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a657f0>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-06-27 19:57:24,188 [INFO] [8/21] Processing query_id=SEA_YUUY_43
+2026-06-27 19:57:24,188 [INFO] Submitting SEA_YUUY_43 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_43_model.cif
+2026-06-27 19:57:24,293 [ERROR] Error processing SEA_YUUY_43
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f3116a65bb0>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a65bb0>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 471, in process_one_query
+    ticket = submit_foldseek_job(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 184, in submit_foldseek_job
+    response = session.post(
+               ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a65bb0>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-06-27 19:57:24,312 [INFO] [9/21] Processing query_id=SEA_YUUY_44
+2026-06-27 19:57:24,313 [INFO] Submitting SEA_YUUY_44 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_44_model.cif
+2026-06-27 19:57:24,414 [ERROR] Error processing SEA_YUUY_44
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f3116a65f70>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a65f70>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 471, in process_one_query
+    ticket = submit_foldseek_job(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 184, in submit_foldseek_job
+    response = session.post(
+               ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a65f70>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-06-27 19:57:24,439 [INFO] [10/21] Processing query_id=SEA_YUUY_45
+2026-06-27 19:57:24,439 [INFO] Submitting SEA_YUUY_45 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_45_model.cif
+2026-06-27 19:57:24,811 [ERROR] Error processing SEA_YUUY_45
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f3116a664b0>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a664b0>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 471, in process_one_query
+    ticket = submit_foldseek_job(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 184, in submit_foldseek_job
+    response = session.post(
+               ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a664b0>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-06-27 19:57:24,832 [INFO] [11/21] Processing query_id=SEA_YUUY_46
+2026-06-27 19:57:24,832 [INFO] Submitting SEA_YUUY_46 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_46_model.cif
+2026-06-27 19:57:25,063 [ERROR] Error processing SEA_YUUY_46
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f3116a66600>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a66600>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 471, in process_one_query
+    ticket = submit_foldseek_job(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 184, in submit_foldseek_job
+    response = session.post(
+               ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a66600>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-06-27 19:57:25,082 [INFO] [12/21] Processing query_id=SEA_YUUY_47
+2026-06-27 19:57:25,083 [INFO] Submitting SEA_YUUY_47 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_47_model.cif
+2026-06-27 19:57:25,173 [ERROR] Error processing SEA_YUUY_47
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f3116a65b50>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a65b50>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 471, in process_one_query
+    ticket = submit_foldseek_job(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 184, in submit_foldseek_job
+    response = session.post(
+               ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a65b50>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-06-27 19:57:25,212 [INFO] [13/21] Processing query_id=SEA_YUUY_48
+2026-06-27 19:57:25,213 [INFO] Submitting SEA_YUUY_48 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_48_model.cif
+2026-06-27 19:57:25,292 [ERROR] Error processing SEA_YUUY_48
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f3116a64b30>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a64b30>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 471, in process_one_query
+    ticket = submit_foldseek_job(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 184, in submit_foldseek_job
+    response = session.post(
+               ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a64b30>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-06-27 19:57:25,332 [INFO] [14/21] Processing query_id=SEA_YUUY_49
+2026-06-27 19:57:25,333 [INFO] Submitting SEA_YUUY_49 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_49_model.cif
+2026-06-27 19:57:25,445 [ERROR] Error processing SEA_YUUY_49
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f3116a668a0>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a668a0>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 471, in process_one_query
+    ticket = submit_foldseek_job(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 184, in submit_foldseek_job
+    response = session.post(
+               ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a668a0>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-06-27 19:57:25,463 [INFO] [15/21] Processing query_id=SEA_YUUY_50
+2026-06-27 19:57:25,463 [INFO] Submitting SEA_YUUY_50 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_50_model.cif
+2026-06-27 19:57:25,565 [ERROR] Error processing SEA_YUUY_50
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f3116a66c60>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a66c60>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 471, in process_one_query
+    ticket = submit_foldseek_job(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 184, in submit_foldseek_job
+    response = session.post(
+               ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a66c60>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-06-27 19:57:25,600 [INFO] [16/21] Processing query_id=SEA_YUUY_51
+2026-06-27 19:57:25,601 [INFO] Submitting SEA_YUUY_51 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_51_model.cif
+2026-06-27 19:57:25,707 [ERROR] Error processing SEA_YUUY_51
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f3116a670e0>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a670e0>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 471, in process_one_query
+    ticket = submit_foldseek_job(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 184, in submit_foldseek_job
+    response = session.post(
+               ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a670e0>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-06-27 19:57:25,742 [INFO] [17/21] Processing query_id=SEA_YUUY_52
+2026-06-27 19:57:25,743 [INFO] Submitting SEA_YUUY_52 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_52_model.cif
+2026-06-27 19:57:25,830 [ERROR] Error processing SEA_YUUY_52
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f3116a67650>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a67650>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 471, in process_one_query
+    ticket = submit_foldseek_job(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 184, in submit_foldseek_job
+    response = session.post(
+               ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a67650>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-06-27 19:57:25,859 [INFO] [18/21] Processing query_id=SEA_YUUY_53
+2026-06-27 19:57:25,859 [INFO] Submitting SEA_YUUY_53 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_53_model.cif
+2026-06-27 19:57:25,962 [ERROR] Error processing SEA_YUUY_53
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f3116a67a10>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a67a10>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 471, in process_one_query
+    ticket = submit_foldseek_job(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 184, in submit_foldseek_job
+    response = session.post(
+               ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a67a10>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-06-27 19:57:26,006 [INFO] [19/21] Processing query_id=SEA_YUUY_54
+2026-06-27 19:57:26,007 [INFO] Submitting SEA_YUUY_54 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_54_model.cif
+2026-06-27 19:57:26,166 [ERROR] Error processing SEA_YUUY_54
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f3116a67440>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a67440>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 471, in process_one_query
+    ticket = submit_foldseek_job(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 184, in submit_foldseek_job
+    response = session.post(
+               ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a67440>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-06-27 19:57:26,187 [INFO] [20/21] Processing query_id=SEA_YUUY_55
+2026-06-27 19:57:26,187 [INFO] Submitting SEA_YUUY_55 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_55_model.cif
+2026-06-27 19:57:26,320 [ERROR] Error processing SEA_YUUY_55
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f3116a67170>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a67170>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 471, in process_one_query
+    ticket = submit_foldseek_job(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 184, in submit_foldseek_job
+    response = session.post(
+               ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a67170>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-06-27 19:57:26,336 [INFO] [21/21] Processing query_id=SEA_YUUY_56
+2026-06-27 19:57:26,336 [INFO] Submitting SEA_YUUY_56 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_56_model.cif
+2026-06-27 19:57:26,471 [ERROR] Error processing SEA_YUUY_56
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f3116a66c00>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a66c00>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 471, in process_one_query
+    ticket = submit_foldseek_job(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_batch_api_v2.py", line 184, in submit_foldseek_job
+    response = session.post(
+               ^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rahnn/miniforge3/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='search.foldseek.com', port=443): Max retries exceeded with url: /api/ticket (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f3116a66c00>: Failed to resolve 'search.foldseek.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-06-27 19:57:26,496 [INFO] Done. Wrote 1547 parsed hit rows
+2026-06-27 19:57:26,496 [INFO] Final results: /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/A0A5P8D8M7_foldseek/final/foldseek_all_hits.tsv
+2026-06-27 19:57:26,496 [INFO] Job ledger: /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/A0A5P8D8M7_foldseek/job_ledger.tsv
+2026-06-27 19:58:05,565 [INFO] Reading manifest: /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/foldseek_manifest_A0A5P8D8M7_neighbors.tsv
+2026-06-27 19:58:05,565 [INFO] Validated 21 input structures
+2026-06-27 19:58:05,566 [INFO] [1/21] Processing query_id=SEA_YUUY_35
+2026-06-27 19:58:05,566 [INFO] Skipping completed query from ledger: SEA_YUUY_35
+2026-06-27 19:58:05,702 [INFO] [2/21] Processing query_id=SEA_YUUY_36
+2026-06-27 19:58:05,702 [INFO] Skipping completed query from ledger: SEA_YUUY_36
+2026-06-27 19:58:05,762 [INFO] [3/21] Processing query_id=SEA_YUUY_37
+2026-06-27 19:58:05,762 [INFO] Skipping completed query from ledger: SEA_YUUY_37
+2026-06-27 19:58:05,840 [INFO] [4/21] Processing query_id=SEA_YUUY_39
+2026-06-27 19:58:05,841 [INFO] Skipping completed query from ledger: SEA_YUUY_39
+2026-06-27 19:58:05,857 [INFO] [5/21] Processing query_id=SEA_YUUY_40
+2026-06-27 19:58:05,857 [INFO] Submitting SEA_YUUY_40 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_40_model.cif
+2026-06-27 19:59:09,235 [INFO] ticket=4T3noG2J1aMGRz0QA0u9H_ntDsMjNLi6Jfjb6Q status=COMPLETE
+2026-06-27 19:59:09,236 [INFO] Fetching result JSON for SEA_YUUY_40
+2026-06-27 19:59:21,554 [INFO] [6/21] Processing query_id=SEA_YUUY_41
+2026-06-27 19:59:21,554 [INFO] Submitting SEA_YUUY_41 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_41_model.cif
+2026-06-27 20:00:25,483 [INFO] ticket=g_8VPjTj-ARoxC19XxVdRL1lMhVqL5Hh__YzVw status=COMPLETE
+2026-06-27 20:00:25,483 [INFO] Fetching result JSON for SEA_YUUY_41
+2026-06-27 20:00:26,221 [INFO] [7/21] Processing query_id=SEA_YUUY_42
+2026-06-27 20:00:26,221 [INFO] Submitting SEA_YUUY_42 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_42_model.cif
+2026-06-27 20:01:30,080 [INFO] ticket=TZnPhQgE5rXoum5MFabjKruGXoIPl-COZVe0NA status=COMPLETE
+2026-06-27 20:01:30,080 [INFO] Fetching result JSON for SEA_YUUY_42
+2026-06-27 20:01:33,731 [INFO] [8/21] Processing query_id=SEA_YUUY_43
+2026-06-27 20:01:33,731 [INFO] Submitting SEA_YUUY_43 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_43_model.cif
+2026-06-27 20:02:38,108 [INFO] ticket=QEX9xgNwWYydwAmtsXFdlBWAZGuOhD2RuoOczg status=COMPLETE
+2026-06-27 20:02:38,108 [INFO] Fetching result JSON for SEA_YUUY_43
+2026-06-27 20:02:40,541 [INFO] [9/21] Processing query_id=SEA_YUUY_44
+2026-06-27 20:02:40,541 [INFO] Submitting SEA_YUUY_44 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_44_model.cif
+2026-06-27 20:03:45,324 [INFO] ticket=m0hmtca6KumtedsvE_zYDMl_DG6llAreVmTzUQ status=COMPLETE
+2026-06-27 20:03:45,325 [INFO] Fetching result JSON for SEA_YUUY_44
+2026-06-27 20:03:46,183 [INFO] [10/21] Processing query_id=SEA_YUUY_45
+2026-06-27 20:03:46,183 [INFO] Submitting SEA_YUUY_45 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_45_model.cif
+2026-06-27 20:04:51,055 [INFO] ticket=1JJT0w73ORHG5HR9PC866RivfssIBzxw3Y8ruw status=COMPLETE
+2026-06-27 20:04:51,056 [INFO] Fetching result JSON for SEA_YUUY_45
+2026-06-27 20:04:54,757 [INFO] [11/21] Processing query_id=SEA_YUUY_46
+2026-06-27 20:04:54,757 [INFO] Submitting SEA_YUUY_46 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_46_model.cif
+2026-06-27 20:06:00,037 [INFO] ticket=MCIrJgaeP9OmaqhrMlBS8vglyaeAgL-JHsRaSA status=COMPLETE
+2026-06-27 20:06:00,038 [INFO] Fetching result JSON for SEA_YUUY_46
+2026-06-27 20:06:05,729 [INFO] [12/21] Processing query_id=SEA_YUUY_47
+2026-06-27 20:06:05,729 [INFO] Submitting SEA_YUUY_47 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_47_model.cif
+2026-06-27 20:07:10,626 [INFO] ticket=5YtyrWrkhdroSwLVG_plUxlU8GOHGVQDK_EWIA status=COMPLETE
+2026-06-27 20:07:10,626 [INFO] Fetching result JSON for SEA_YUUY_47
+2026-06-27 20:07:12,071 [INFO] [13/21] Processing query_id=SEA_YUUY_48
+2026-06-27 20:07:12,072 [INFO] Submitting SEA_YUUY_48 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_48_model.cif
+2026-06-27 20:08:16,477 [INFO] ticket=5L9Ie76z2S-XyIO51OtwyekfnEy465M7wShfTQ status=COMPLETE
+2026-06-27 20:08:16,477 [INFO] Fetching result JSON for SEA_YUUY_48
+2026-06-27 20:08:18,625 [INFO] [14/21] Processing query_id=SEA_YUUY_49
+2026-06-27 20:08:18,625 [INFO] Submitting SEA_YUUY_49 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_49_model.cif
+2026-06-27 20:09:23,817 [INFO] ticket=XDxU8dWkLYecweHLzw6hQ56Xw3rl8w8wFjzk5A status=COMPLETE
+2026-06-27 20:09:23,818 [INFO] Fetching result JSON for SEA_YUUY_49
+2026-06-27 20:09:27,265 [INFO] [15/21] Processing query_id=SEA_YUUY_50
+2026-06-27 20:09:27,265 [INFO] Submitting SEA_YUUY_50 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_50_model.cif
+2026-06-27 20:10:31,936 [INFO] ticket=OBykyys7GMPKcVOUp05Ifg-mG1ggt7CtCVmcpQ status=COMPLETE
+2026-06-27 20:10:31,936 [INFO] Fetching result JSON for SEA_YUUY_50
+2026-06-27 20:10:32,332 [INFO] [16/21] Processing query_id=SEA_YUUY_51
+2026-06-27 20:10:32,333 [INFO] Submitting SEA_YUUY_51 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_51_model.cif
+2026-06-27 20:11:37,014 [INFO] ticket=CRB0zQOtKoEvDb-Twv8JR8ypw8XCJu6RQAAisA status=COMPLETE
+2026-06-27 20:11:37,014 [INFO] Fetching result JSON for SEA_YUUY_51
+2026-06-27 20:11:39,031 [INFO] [17/21] Processing query_id=SEA_YUUY_52
+2026-06-27 20:11:39,031 [INFO] Submitting SEA_YUUY_52 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_52_model.cif
+2026-06-27 20:12:43,760 [INFO] ticket=9uV7KIM28cts98UxCtUptB2T2w4FO93Dud6BYg status=COMPLETE
+2026-06-27 20:12:43,760 [INFO] Fetching result JSON for SEA_YUUY_52
+2026-06-27 20:12:46,828 [INFO] [18/21] Processing query_id=SEA_YUUY_53
+2026-06-27 20:12:46,828 [INFO] Submitting SEA_YUUY_53 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_53_model.cif
+2026-06-27 20:13:51,499 [INFO] ticket=gtjunDMlLapC0LiV90gptv5nexsqLRDCjdF1ww status=COMPLETE
+2026-06-27 20:13:51,499 [INFO] Fetching result JSON for SEA_YUUY_53
+2026-06-27 20:13:52,216 [INFO] [19/21] Processing query_id=SEA_YUUY_54
+2026-06-27 20:13:52,216 [INFO] Submitting SEA_YUUY_54 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_54_model.cif
+2026-06-27 20:14:56,818 [INFO] ticket=QrXkZf8o9xK1wiVVDY2iLvmbfin9EWh7h_9oDg status=COMPLETE
+2026-06-27 20:14:56,819 [INFO] Fetching result JSON for SEA_YUUY_54
+2026-06-27 20:14:59,464 [INFO] [20/21] Processing query_id=SEA_YUUY_55
+2026-06-27 20:14:59,464 [INFO] Submitting SEA_YUUY_55 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_55_model.cif
+2026-06-27 20:16:04,080 [INFO] ticket=Zuqcm4XZCwXXtDxAoHzQEsX7hWMC8zqfoJJk-Q status=COMPLETE
+2026-06-27 20:16:04,080 [INFO] Fetching result JSON for SEA_YUUY_55
+2026-06-27 20:16:05,957 [INFO] [21/21] Processing query_id=SEA_YUUY_56
+2026-06-27 20:16:05,957 [INFO] Submitting SEA_YUUY_56 -> /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/structures/SEA_YUUY_56_model.cif
+2026-06-27 20:17:10,499 [INFO] ticket=pWki9M1J3d75fr47QBDnMsOD4fLufbXmzI0gFQ status=COMPLETE
+2026-06-27 20:17:10,499 [INFO] Fetching result JSON for SEA_YUUY_56
+2026-06-27 20:17:13,250 [INFO] Done. Wrote 8122 parsed hit rows
+2026-06-27 20:17:13,250 [INFO] Final results: /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/A0A5P8D8M7_foldseek/final/foldseek_all_hits.tsv
+2026-06-27 20:17:13,250 [INFO] Job ledger: /home/rahnn/260627_Foldseek_batch_A0A5P8D8M7/A0A5P8D8M7_foldseek/job_ledger.tsv

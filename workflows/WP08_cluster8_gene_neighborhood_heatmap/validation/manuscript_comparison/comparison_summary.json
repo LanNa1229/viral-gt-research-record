@@ -1,0 +1,57 @@
+{
+  "cells": 363,
+  "agreements": 363,
+  "confirmed_discrepancies": [],
+  "uncertain": [],
+  "grouping_agrees": true,
+  "resize_comparisons": [
+    {
+      "method": "NEAREST",
+      "pixel_equal": false,
+      "mean_absolute_channel_error": 0.7762743253831464,
+      "fraction_pixels_identical": 0.9620389102145163
+    },
+    {
+      "method": "BOX",
+      "pixel_equal": false,
+      "mean_absolute_channel_error": 1.051465385153308,
+      "fraction_pixels_identical": 0.9466493635327093
+    },
+    {
+      "method": "BILINEAR",
+      "pixel_equal": false,
+      "mean_absolute_channel_error": 2.008562659649747,
+      "fraction_pixels_identical": 0.900773181806129
+    },
+    {
+      "method": "HAMMING",
+      "pixel_equal": false,
+      "mean_absolute_channel_error": 1.2434636215646546,
+      "fraction_pixels_identical": 0.9102503911142584
+    },
+    {
+      "method": "BICUBIC",
+      "pixel_equal": false,
+      "mean_absolute_channel_error": 1.5838484499189176,
+      "fraction_pixels_identical": 0.8897611512407252
+    },
+    {
+      "method": "LANCZOS",
+      "pixel_equal": false,
+      "mean_absolute_channel_error": 1.6270909469982338,
+      "fraction_pixels_identical": 0.8504297967453679
+    }
+  ],
+  "best_resize": {
+    "method": "NEAREST",
+    "pixel_equal": false,
+    "mean_absolute_channel_error": 0.7762743253831464,
+    "fraction_pixels_identical": 0.9620389102145163
+  },
+  "preservation": {
+    "historical_matrix_sha256": "86700b5265fac5066fc9ba0e4f0f837d5f369c114123d047464b19712936f5dd",
+    "historical_png_sha256": "22a09d804340686bab353904471c384eee5a0fec881e504141a6c68c02ee64e7",
+    "manuscript_png_sha256": "8a938331cff92bd986ec142b63c18cf316ad6557cf6f2172701ee9178764e5bb"
+  },
+  "method": "Each cell decoded from five border-excluding interior patches and calibrated to the image colorbar; certainty requires >=99% nearest-color agreement in every patch, median RGB distance <=3 and the same decoded score across offsets. No scoring code or Foldseek executed."
+}

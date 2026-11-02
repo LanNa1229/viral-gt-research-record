@@ -1,0 +1,1 @@
+Original Section 1 data and documentation are licensed under the Creative Commons Attribution 4.0 International license, as authorized by Lan Na. Full legal terms: https://creativecommons.org/licenses/by/4.0/legalcode . Third-party terms and attribution remain as specified in THIRD_PARTY_NOTICES.md.

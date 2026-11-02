@@ -1,0 +1,14 @@
+# Licenses, attribution and public exclusions
+
+Lan Na authorized MIT for original Section 1 code and CC BY 4.0 for original data/documentation on 24 October 2026. Sole Zenodo creator status does not override third-party rights. The license applies only to the scoped Section 1 package; it does not relicense the wider repository.
+
+- BFVD predicted structure data: CC BY 4.0. Credit the BFVD authors and the historical source database; the exact original database build is not reconstructed. Kim RS et al., “BFVD—a large repository of predicted viral protein structures”, https://doi.org/10.1093/nar/gkae1119. Provider license: https://bfvd.steineggerlab.workers.dev/ . The historical baseline is 1,727 structures from the original 447-residue MGAT2 Foldseek search, not the provider's current full release.
+- PDB archive data (including 2C0N and 7SP6): CC0 1.0, with original identifiers/authors retained. https://www.rcsb.org/pages/policies . CC0 data are not relicensed by the original-data CC BY notice.
+- AlphaFold DB predictions/reference exports: CC BY 4.0. https://alphafold.ebi.ac.uk/download and https://alphafold.ebi.ac.uk/assets/License-Disclaimer.pdf . Cite Jumper et al. (2021) and relevant source entries, retaining original target identifiers.
+- UniProt sequence/annotation content: CC BY 4.0; UniProt Consortium. https://www.uniprot.org/help/license and https://www.uniprot.org/api-documentation/support-data .
+- CATH classification/annotation content: CC BY 4.0; Sillitoe, Dawson, Lewis, Lee, Lees and Orengo. https://cathdb.info/wiki/doku/?id=privacy .
+- Foldseek is an external dependency, not bundled as an executable. Reference database/target identifiers are retained in original search exports. Third-party database terms remain applicable.
+
+Unconfirmed institutional AF3 control-model CIFs, model inputs/ranking/confidence records, and retained spike structural database components containing those models are withheld from this public subset. The archived control plate and assembled Supplementary Figure 2 containing it are withheld conservatively; the reconstructed public figure code shows a disclosure placeholder for panel B. Numerical memberships, direct-alignment evidence and Source Data are retained. See PUBLIC_EXCLUSIONS.tsv for exact files and original hashes. Do not infer access permission to withheld files from this record. No restricted record is created without confirmed permission to deposit its files.
+
+Full, byte-preserved private rc2 packages remain in the audit project. Public provenance documentation replaces account-specific home/workspace prefixes with semantic placeholders. REDACTED_METADATA.tsv identifies changed metadata and original SHA-256; scientific code in scripts/archive/ and retrospective notebooks remain byte-identical. Historical absolute path defaults retained in those original sources are necessary execution provenance, not credentials. Source-data values are unchanged.

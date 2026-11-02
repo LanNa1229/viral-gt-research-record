@@ -1,0 +1,66 @@
+[
+  {
+    "command": [
+      "git",
+      "branch",
+      "--show-current"
+    ],
+    "returncode": 0,
+    "stdout": "main\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": " M workflows/viral_gt_candidate_selection/SHA256SUMS.tsv\n M workflows/viral_gt_candidate_selection/portable/fetch_resources.py\n M workflows/viral_gt_candidate_selection/portable/step4.py\n M workflows/viral_gt_candidate_selection/tests/test_step4.py\n M workflows/viral_gt_candidate_selection/validation/run_isolated.py\n?? workflows/WP08_cluster8_gene_neighborhood_heatmap/\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "log",
+      "-5",
+      "--oneline"
+    ],
+    "returncode": 0,
+    "stdout": "52dd614 Link WP02 README to registered Zenodo dataset DOI\n11505cc Publish WP02 global SSN and viral placement workflow v1.0.2\n2831a75 Link published Step 7 Sankey dataset DOI\n0ccb483 Restore exact Step 7 historical source bytes\nfeda729 Publish approved Step 7 frozen Sankey visualization documentation\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "ls-remote",
+      "origin",
+      "refs/heads/main"
+    ],
+    "returncode": 0,
+    "stdout": "52dd6147505ce3434a688f7703ed76baec731c3d\trefs/heads/main\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--name-status"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "--get",
+      "credential.helper"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": ""
+  }
+]
