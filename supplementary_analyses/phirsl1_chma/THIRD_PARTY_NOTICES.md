@@ -1,0 +1,7 @@
+# Third-party data and notices
+This archive does not relicense third-party data or expand repository-wide licenses.
+- PDB 7SQR, 7SQV, 8FNE: wwPDB archive CC0; processed chain A monomers retained in inputs/chma_monomers. 8FNE excludes MBP. https://www.wwpdb.org/about/usage-policies
+- AlphaFold DB models (156 PDB files): CC BY 4.0; credit Google DeepMind/EMBL-EBI and Jumper et al. (2021), https://doi.org/10.1038/s41586-021-03819-2 . Accession/source metadata retained. https://alphafold.ebi.ac.uk/download
+- UniProt content: CC BY 4.0, UniProt Consortium, https://www.uniprot.org/help/license . NCBI records retain their original source/accession annotations.
+- ORF270 AlphaFold 3 model, confidence metadata, derived structural results and figure: subject to AlphaFold 3 Output Terms of Use, included under inputs/orf270_af3/. Public scientific/open-source releases are expressly permitted by those terms; restrictions remain applicable. Model CIF is unmodified; PDB is a coordinate-format conversion. Cite Abramson et al. (2024), https://doi.org/10.1038/s41586-024-07487-w . No model weights or prediction software are redistributed.
+- Publisher PDFs, supplement PDFs/workbooks/CSV, manuscript images and downloaded ZIP archives are not redistributed. Source citations/accessions and provider URLs remain in the record. Published homologue accession sequences were fetched from NCBI; this archive does not redistribute the publisher's table rendering.

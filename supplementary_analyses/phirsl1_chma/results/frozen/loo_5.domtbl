@@ -1,0 +1,14 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+QFP93061.1           -            659 loo_5                -            625   1.8e-24   72.0   0.0   1   1   4.5e-24   4.5e-24   70.6   0.0    90   595   109   639    89   651 0.83 hypothetical protein [Serratia phage PCH45]
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      inputs/loo_5.hmm
+# Target file:     work/holdout_5.faa
+# Option settings: hmmsearch --tblout results/loo_5.tbl --domtblout results/loo_5.domtbl -E 100 --domE 100 --max --cpu 4 inputs/loo_5.hmm work/holdout_5.faa 
+# Current dir:     <ANALYSIS_ROOT>
+# Date:            Wed Nov  4 13:01:44 2026
+# [ok]

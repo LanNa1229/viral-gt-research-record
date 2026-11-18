@@ -1,0 +1,19 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+NP_803620.1          -          chma68_control       -           6.8e-221  723.5   8.5  7.6e-221  723.4   8.5   1.0   1   0   0   1   1   1   1 -
+F8SJT5               -          chma68_control       -           1.3e-200  656.5   8.1  1.5e-200  656.4   8.1   1.0   1   0   0   1   1   1   1 -
+B3FIW8               -          chma68_control       -           3.4e-185  605.6  18.9  3.8e-185  605.4  18.9   1.0   1   0   0   1   1   1   1 -
+ANH52002.1           -          chma68_control       -             1e-170  557.8  50.6  2.2e-169  553.4  50.6   2.0   1   1   0   1   1   1   1 -
+A0A482GDX1           -          chma68_control       -           1.3e-125  408.8   1.6  1.6e-125  408.5   1.6   1.0   1   0   0   1   1   1   1 -
+QFP93061.1           -          chma68_control       -           4.7e-110  357.4   0.0  5.2e-110  357.3   0.0   1.0   1   0   0   1   1   1   1 hypothetical protein [Serratia phage PCH45]
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      inputs/chma68_control.hmm
+# Target file:     inputs/chma_characterized.faa
+# Option settings: hmmsearch --tblout results/chma68_control.tbl --domtblout results/chma68_control.domtbl -E 100 --domE 100 --max --cpu 4 inputs/chma68_control.hmm inputs/chma_characterized.faa 
+# Current dir:     <ANALYSIS_ROOT>
+# Date:            Wed Nov  4 13:02:59 2026
+# [ok]

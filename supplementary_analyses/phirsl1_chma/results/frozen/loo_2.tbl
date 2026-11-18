@@ -1,0 +1,14 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+F8SJT5               -          loo_2                -           1.5e-198  647.2   2.9  1.7e-198  647.1   2.9   1.0   1   0   0   1   1   1   1 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      inputs/loo_2.hmm
+# Target file:     work/holdout_2.faa
+# Option settings: hmmsearch --tblout results/loo_2.tbl --domtblout results/loo_2.domtbl -E 100 --domE 100 --max --cpu 4 inputs/loo_2.hmm work/holdout_2.faa 
+# Current dir:     <ANALYSIS_ROOT>
+# Date:            Wed Nov  4 13:01:43 2026
+# [ok]

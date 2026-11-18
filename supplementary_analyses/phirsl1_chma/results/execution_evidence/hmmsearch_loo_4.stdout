@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  inputs/loo_4.hmm
+# target sequence database:        work/holdout_4.faa
+# per-seq hits tabular output:     results/loo_4.tbl
+# per-dom hits tabular output:     results/loo_4.domtbl
+# sequence reporting threshold:    E-value <= 100
+# domain reporting threshold:      E-value <= 100
+# Max sensitivity mode:            on [all heuristic filters off]
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       loo_4  [M=625]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.1e-69  218.8  10.5    7.3e-69  218.5  10.5    1.0  1  ANH52002.1  
+
+
+Domain annotation for each sequence (and alignments):
+>> ANH52002.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  218.5  10.5   7.3e-69   7.3e-69       6     585 ..      39     662 ..      31     709 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 218.5 bits;  conditional E-value: 7.3e-69
+       loo_4   6 kekgtvqvqaa.aeqrtaQrakeak.qsrptaaeagtgginslmr.rsgrldgsdara.....................sealevftklkeeale...q 77 
+                 ++++ +q+  + a+q+  Q ++ a  q++ t+++ +t+g ns++  + ++++   +++                     +e  +      +e le   +
+  ANH52002.1  39 QQPQQQQTPPQqAPQSAPQPVQAATqQQQHTPQFHQTAG-NSTVNnTTNNTNTEQQQPrqsriygmnerrsrifdatafGENFKIALEATKEVLEgyeD 136
+                 223333333333444444555555534777888888887.6666514444666666667789999999999*999888877777777777788874445 PP
+
+       loo_4  78 qdlaDdfdilrfdrdqtrVgysslvvvkrakingkpeilvrtLvLpnssielptrkteienGlsgdileekavvsdvftgqyinrveafikkasgksgg 176
+                 + ++  f  +++         ++l  ++  + +g+ +++v+tL+L+n   +l++++  ++  l+g+  e   + +  ++ +y+ rv + + ++ g+ ++
+  ANH52002.1 137 KGFNKSF--FLVPVADATLHCNGLAYASVFNFGGSTKAIVYTLMLENTGSPLKPQR--GNDPLTGEPFEIPRMTGSQYDNTYWARVAQLVAHRVGN-NA 230
+                 5555554..555555678899****************************9**9999..99********************************9996.68 PP
+
+       loo_4 177 evilaGpavvpadfdlkdelkvknLliksvNvlddllakrngek...pfsiaglkkddeeilaakldfkgepskDvvgnPirsDivvtvsrgkrddqpe 272
+                 ev+ aG+ vv a+++ +d  ++k+Ll ++ N+     +  +g +   pf+ia     +    +a ++f+++p+  v g+Pir D+ v++s         
+  ANH52002.1 231 EVLDAGACVVHAEMKWDDKSAIKQLLNNAENATMAYANSLSGYRiepPFNIAQEVDPNIDRITAGFNFNPQPLFTVDGQPIRNDVEVKLSAYAEG---- 325
+                 9********************************88877777766666*******9999999*****************************99876.... PP
+
+       loo_4 273 nefyetdqkLnqvslfvdLeytpqeqa....qklfg.vrqqeaslpPqytpaiviTdvrkaewlqantlemyllaLsnifrltaeqawarsLlpkaaev 366
+                     +t + +  v ++v+L   pq+q     q ++g ++qq  +   ++ p+  iT+  +    +a+ +e +llaL  + ++ +++ w  ++ pk+ ++
+  ANH52002.1 326 AGQVQTTEAITTVNGYVELIAAPQQQMgyqqQMMMGmNPQQAMQFYRRFYPQFTITSTGTG-ISNAQGPEFQLLALFAASLIGENSNWHHAFAPKMVNG 423
+                 4456788999**************987777666666256677777779*********9887.5699********************************* PP
+
+       loo_4 367 kdlrdigALalvsele........vridlkaetfddeqfakllekvvqpspviqidvprmGensalervlldAvggenq.........qeaveaiiral 448
+                 +d+ digA+ ++++          ++i +k   f+ + + +ll+   ++s  i id++++G   +++++ll A g +n          q+a +aii+a 
+  ANH52002.1 424 VDINDIGAINYELKMGlespddrpKKIITKDHSFTTQALHQLLYTACHESMSIAIDIEETGTRTWVNSMLLLAGGQPNGnaaalspqgQQAHKAIIQAA 522
+                 ********99987654112222225678899999***************************************544443334556667*********** PP
+
+       loo_4 449 nnltggefekfydedtlpiieatgreidlGyyndddGe.ksdrRDLdvlgalNi...segneqEyldiygtqvdndlhqdlraarskeldraylGssvt 543
+                 nnlt+gef+k +  + + i  + g++i+ G+y  +d + k d+R +d l++lN    +++  +E ++i +  +    +++++a r+++l +++lG+s+ 
+  ANH52002.1 523 NNLTNGEFSKHFTDQNQLIAVRDGTRIQGGFYVSKDNHqKMDIRNVDLLAVLNFvgeTDPRIVEEWKIITSSTSGMSTPKRVALRQQKL-QQLLGESFV 620
+                 ************999999**************977655278************833345688999999998888877888886666665.789****** PP
+
+       loo_4 544 ytgraervtfnpkflealdealadaGltitmeniatlagrqR 585
+                      erv  n +f++al +a+ +aGl +++en++ +   q 
+  ANH52002.1 621 LKAYYERVVINWAFMDALRKAITAAGLIVRPENTNMQYNVQS 662
+                 **********************************98776554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (625 nodes)
+Target sequences:                          1  (711 residues searched)
+Passed MSV filter:                         1  (1); expected 1.0 (1)
+Passed bias filter:                        1  (1); expected 1.0 (1)
+Passed Vit filter:                         1  (1); expected 1.0 (1)
+Passed Fwd filter:                         1  (1); expected 1.0 (1)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 57.91
+//
+[ok]

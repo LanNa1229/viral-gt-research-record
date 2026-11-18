@@ -1,0 +1,19 @@
+results/foldseek_tm.raw.tsv exists and will be overwritten
+convertalis work/chma_struct work/afdb work/fs_tm results/foldseek_tm.raw.tsv --format-output query,target,fident,alnlen,qstart,qend,qlen,tstart,tend,tlen,evalue,bits,qcov,tcov,alntmscore,qtmscore,ttmscore,rmsd,lddt 
+
+MMseqs Version:        	755d3fa84b8259d4d30aa92782f0bfc2bfc3363f
+Substitution matrix    	aa:3di.out,nucl:3di.out
+Alignment format       	0
+Format alignment output	query,target,fident,alnlen,qstart,qend,qlen,tstart,tend,tlen,evalue,bits,qcov,tcov,alntmscore,qtmscore,ttmscore,rmsd,lddt
+Gap open cost          	aa:10,nucl:10
+Gap extension cost     	aa:1,nucl:1
+Database output        	false
+Preload mode           	0
+Threads                	16
+Compressed             	0
+Verbosity              	3
+Exact TMscore          	0
+
+[=================================================================] 3 0s 224ms
+Time for merging to foldseek_tm.raw.tsv: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 294ms

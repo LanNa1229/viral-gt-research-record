@@ -1,0 +1,23 @@
+# Updated figure QC
+
+- Selected model: <USER_HOME>/Downloads/phirsl1_orf270/seed-1_sample-1/model.cif
+- SHA-256: 428390360131d91b48b7e4f4143178bd6decc88e825646b766b3a554f5e19b89
+- Selection: supplied deterministic preference and highest supplied ranking; sample 1. Supplied full-precision ranking = 0.8052457233370919; original summary_confidences.json rounds it to 0.81. Both retained.
+- Sequence: exact match to all 265 aa of YP_001950147.1; mean CA pLDDT 90.200151.
+- Copied original CIF and summary metadata preserved under inputs/. PDB conversion preserves coordinates and confidence B-factors.
+- Method: identical Foldseek executable and global --alignment-type 1 --exhaustive-search 1 -a 1 -e 100 --max-seqs 1000 --threads 4 for added model and recomputed controls. Exact argv, version, stdout and stderr retained in logs/. Original 468 global comparisons reused unchanged; no sequence searches or original-model searches rerun.
+- References: unchanged resolved monomers, 7SQR/7SQV/8FNE, lengths 522/523/525; same MBP exclusion in 8FNE.
+- Updated count: 157 unique proteins, 471 comparisons. One representative model per protein. Only three added ORF270 comparisons. Six non-self global controls (nine including self, all retained).
+- ORF270 scores (ChmA-query normalization / target normalization):
+  - 8FNE: 1.310E-01 / 2.319E-01; RMSD 5.275E+00; lDDT 2.871E-01; query/target coverage 0.937/0.974.
+  - 7SQV: 1.200E-01 / 2.065E-01; RMSD 5.940E+00; lDDT 2.378E-01; query/target coverage 0.673/0.928.
+  - 7SQR: 1.253E-01 / 2.135E-01; RMSD 6.605E+00; lDDT 1.786E-01; query/target coverage 0.626/0.532.
+- Maximum ORF270 score: 0.131 against 8FNE.
+- New global query-normalized control range: [0.8582, 0.9263]. Previous figure used local controls and both-chain normalization; new figure uses six directed global query-normalized scores throughout. Old control values were not reused.
+- ORF333 remains the strongest original and overall model match (0.277, DNA topoisomerase II); it is not highlighted to prioritize ORF270.
+- Interpretation unchanged: no convincing canonical ChmA homology; not proof of absence of a nucleus or of other compartmentalization functions.
+- Panel A unchanged observed data: 207 distinct domains, 191 proteins; raw HMM coordinates/E-values cross-checked. No artificial observations. Six leave-one-out controls remain in original results (E range 1.5e-198 to 1.8e-24), not in the rendered plot.
+- Original source hashes verified before plotting; originals and previous figure untouched. Source hashes are in results/update_summary.json.
+- Presentation: 180 x 95 mm; Arial exclusively; all written text black; vector PDF/ editable-text SVG; PNG 600 dpi. Requested clutter removed.
+- Reproduce computations: python update_structural_analysis.py; reproduce figure: python plot_chma_supplementary_updated.py (WSL environment from original METHODS; matplotlib/numpy/Biopython). No download or model generation.
+- Visual inspection passed: panel B heuristic label and 0.5 dashed line removed; all other elements retained. Panel A is pixel-identical to the previous 600 dpi PNG; both plotted-data tables have unchanged SHA-256 hashes. Final PNG visually inspected.

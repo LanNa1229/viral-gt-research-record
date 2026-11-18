@@ -1,0 +1,94 @@
+Create directory work/fs_tmp_trace
+search work/chma_struct work/afdb work/fs_result_trace work/fs_tmp_trace -a 1 --exhaustive-search 1 -e 100 --max-seqs 1000 --threads 4 
+
+MMseqs Version:                    	755d3fa84b8259d4d30aa92782f0bfc2bfc3363f
+TMscore threshold                  	0
+TMscore threshold mode             	0
+LDDT threshold                     	0
+Sort by structure bit score        	1
+Alignment type                     	2
+Exact TMscore                      	0
+Substitution matrix                	aa:3di.out,nucl:3di.out
+Add backtrace                      	true
+Alignment mode                     	3
+Alignment mode                     	0
+E-value threshold                  	100
+Seq. id. threshold                 	0
+Min alignment length               	0
+Seq. id. mode                      	0
+Alternative alignments             	0
+Coverage threshold                 	0
+Coverage mode                      	0
+Max sequence length                	65535
+Compositional bias                 	1
+Compositional bias scale           	1
+Max reject                         	2147483647
+Max accept                         	2147483647
+Preload mode                       	0
+Gap open cost                      	aa:10,nucl:10
+Gap extension cost                 	aa:1,nucl:1
+Threads                            	4
+Compressed                         	0
+Verbosity                          	3
+Seed substitution matrix           	aa:3di.out,nucl:3di.out
+Sensitivity                        	9.5
+k-mer length                       	0
+Target search mode                 	0
+k-score                            	seq:2147483647,prof:2147483647
+Max results per query              	1000
+Split database                     	0
+Split mode                         	2
+Split memory limit                 	0
+Diagonal scoring                   	true
+Exact k-mer matching               	0
+Mask residues                      	0
+Mask residues probability          	0.999995
+Mask lower case residues           	1
+Mask lower letter repeating N times	6
+Minimum diagonal score             	30
+Selected taxa                      	
+Spaced k-mers                      	1
+Spaced k-mer pattern               	
+Local temporary path               	
+Use GPU                            	0
+Use GPU server                     	0
+Wait for GPU server                	600
+Prefilter mode                     	0
+TMalign hit order                  	0
+TMalign fast                       	1
+MultiDomain Mode                   	1
+Mask profile                       	1
+Profile E-value threshold          	0.1
+Global sequence weighting          	false
+Allow deletions                    	false
+Filter MSA                         	1
+Use filter only at N seqs          	0
+Maximum seq. id. threshold         	0.9
+Minimum seq. id.                   	0.0
+Minimum score per column           	-20
+Minimum coverage                   	0
+Select N most diverse seqs         	1000
+Pseudo count mode                  	0
+Profile output mode                	0
+Cluster search                     	0
+Exhaustive search mode             	true
+Search iterations                  	1
+Remove temporary files             	true
+Force restart with latest tmp      	false
+MPI runner                         	
+
+structurealign work/chma_struct work/afdb work/fs_tmp_trace/15614506131005398326/pref work/fs_tmp_trace/15614506131005398326/strualn --tmscore-threshold 0 --tmscore-threshold-mode 0 --lddt-threshold 0 --sort-by-structure-bits 1 --alignment-type 2 --exact-tmscore 0 --sub-mat 'aa:3di.out,nucl:3di.out' -a 1 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 100 --min-seq-id 0 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0 --cov-mode 0 --max-seq-len 65535 --comp-bias-corr 1 --comp-bias-corr-scale 0.5 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:10,nucl:10 --gap-extend aa:1,nucl:1 --zdrop 40 --threads 4 --compressed 0 -v 3 
+
+[=================================================================] 3 0s 79ms
+Time for merging to strualn: 0h 0m 0s 1ms
+Time for processing: 0h 0m 0s 146ms
+mvdb work/fs_tmp_trace/15614506131005398326/strualn work/fs_tmp_trace/15614506131005398326/aln -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+mvdb work/fs_tmp_trace/15614506131005398326/aln work/fs_result_trace -v 3 
+
+Time for processing: 0h 0m 0s 1ms
+Removing temporary files
+rmdb work/fs_tmp_trace/15614506131005398326/pref -v 3 
+
+Time for processing: 0h 0m 0s 0ms
