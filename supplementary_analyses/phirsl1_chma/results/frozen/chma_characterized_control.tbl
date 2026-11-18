@@ -1,0 +1,19 @@
+#                                                                     --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name                 accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------       -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+B3FIW8               -          chma_characterized_control -           2.9e-283  929.6  12.1  3.2e-283  929.5  12.1   1.0   1   0   0   1   1   1   1 -
+NP_803620.1          -          chma_characterized_control -           1.3e-278  914.2   3.0  1.5e-278  914.0   3.0   1.0   1   0   0   1   1   1   1 -
+F8SJT5               -          chma_characterized_control -           1.9e-277  910.4   3.8  2.1e-277  910.2   3.8   1.0   1   0   0   1   1   1   1 -
+ANH52002.1           -          chma_characterized_control -             1e-243  799.0  20.2  1.5e-243  798.4  20.2   1.2   1   0   0   1   1   1   1 -
+A0A482GDX1           -          chma_characterized_control -             5e-233  763.7   0.0  5.5e-233  763.5   0.0   1.0   1   0   0   1   1   1   1 -
+QFP93061.1           -          chma_characterized_control -           8.4e-225  736.5   0.0  9.3e-225  736.3   0.0   1.0   1   0   0   1   1   1   1 hypothetical protein [Serratia phage PCH45]
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      inputs/chma_characterized_control.hmm
+# Target file:     inputs/chma_characterized.faa
+# Option settings: hmmsearch --tblout results/chma_characterized_control.tbl --domtblout results/chma_characterized_control.domtbl -E 100 --domE 100 --max --cpu 4 inputs/chma_characterized_control.hmm inputs/chma_characterized.faa 
+# Current dir:     <ANALYSIS_ROOT>
+# Date:            Wed Nov  4 13:01:41 2026
+# [ok]

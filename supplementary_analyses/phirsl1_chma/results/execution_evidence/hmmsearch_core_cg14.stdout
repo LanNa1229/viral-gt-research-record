@@ -1,0 +1,2418 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  inputs/core_cg14.hmm
+# target sequence database:        inputs/phiRSL1.faa
+# per-seq hits tabular output:     results/core_cg14.tbl
+# per-dom hits tabular output:     results/core_cg14.domtbl
+# sequence reporting threshold:    E-value <= 100
+# domain reporting threshold:      E-value <= 100
+# Max sensitivity mode:            on [all heuristic filters off]
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       core_cg14  [M=121]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+  ------ inclusion threshold ------
+       0.02    9.3   0.0      0.023    9.1   0.0    1.2  1  YP_001949902.1  RSL1_ORF027 hypothetical protein
+       0.58    4.6   0.0        1.3    3.5   0.0    1.5  2  YP_001950161.1  RSL1_ORF284 hypothetical protein
+       0.83    4.1   0.0        3.2    2.2   0.0    2.0  2  YP_001950175.1  RSL1_ORF299 hypothetical protein
+        1.1    3.7   0.0        2.7    2.4   0.0    1.6  1  YP_001950090.1  RSL1_ORF211 portal protein
+        1.3    3.5   0.0        1.8    3.0   0.0    1.3  1  YP_001949947.1  RSL1_ORF071 hypothetical protein
+        1.5    3.3   0.0        1.5    3.3   0.0    1.2  1  YP_001949964.1  RSL1_ORF089 hypothetical protein
+        2.1    2.7   0.0          5    1.6   0.0    1.7  1  YP_001949900.1  RSL1_ORF025 hypothetical protein
+          3    2.3   0.0        3.1    2.2   0.0    1.1  1  YP_001949901.1  RSL1_ORF026 hypothetical protein
+        3.5    2.0   0.0        7.9    0.9   0.0    1.5  2  YP_001949883.1  RSL1_ORF008 hypothetical protein
+        3.7    2.0   0.0        7.5    1.0   0.0    1.4  2  YP_001949998.1  RSL1_ORF123 hypothetical protein
+        5.4    1.4   0.0          9    0.7   0.0    1.2  1  YP_001949996.1  RSL1_ORF121 hypothetical protein
+        6.2    1.3   0.0         38   -1.3   0.0    1.8  2  YP_001949981.1  RSL1_ORF107 hypothetical protein
+        6.9    1.1   0.0         29   -0.9   0.0    1.7  2  YP_001950029.1  RSL1_ORF153 hypothetical protein
+          7    1.1   0.1        7.6    1.0   0.1    1.2  1  YP_001950054.1  RSL1_ORF176 hypothetical protein
+        7.5    1.0   0.1        7.3    1.0   0.1    1.3  1  YP_001950046.1  RSL1_ORF169 hypothetical protein
+        7.5    1.0   0.0         16   -0.1   0.0    1.4  1  YP_001950107.1  RSL1_ORF228 hypothetical protein
+        7.5    1.0   0.0         18   -0.3   0.0    1.5  1  YP_001950112.1  RSL1_ORF233 beta-glucosyl-HMC-alpha-glucosylt
+        8.4    0.8   0.0         27   -0.8   0.0    1.5  2  YP_001950099.1  RSL1_ORF220 hypothetical protein
+          9    0.7   0.1         16   -0.1   0.1    1.5  1  YP_001950030.1  RSL1_ORF154 hypothetical protein
+        9.6    0.6   0.0         10    0.6   0.0    1.3  1  YP_001950154.1  RSL1_ORF277 hypothetical protein
+         11    0.5   0.2         34   -1.1   0.0    1.5  1  YP_001949954.1  RSL1_ORF078 hypothetical protein
+         12    0.3   0.0         34   -1.1   0.0    1.4  1  YP_001949971.1  RSL1_ORF096 hypothetical protein
+         13    0.3   0.0         41   -1.4   0.0    1.5  1  YP_001950095.1  RSL1_ORF216 terminase large subunit
+         14    0.1   0.1         27   -0.8   0.1    1.4  1  YP_001949989.1  RSL1_ORF114 hypothetical protein
+         14    0.1   0.0         17   -0.2   0.0    1.2  1  YP_001950165.1  RSL1_ORF289 hypothetical protein
+         15   -0.0   0.1         75   -2.2   0.1    1.5  1  YP_001950171.1  RSL1_ORF295 hypothetical protein
+         15   -0.0   0.0         90   -2.5   0.0    1.6  1  YP_001950068.1  RSL1_ORF189 hypothetical protein
+         16   -0.1   0.0         24   -0.6   0.0    1.3  1  YP_001950056.1  RSL1_ORF178 hypothetical protein
+         16   -0.1   0.1         34   -1.1   0.0    1.3  1  YP_001950014.1  RSL1_ORF139 hypothetical protein
+         16   -0.1   0.0         34   -1.1   0.0    1.3  1  YP_001949925.1  RSL1_ORF049 hypothetical protein
+         17   -0.2   0.0         34   -1.1   0.0    1.3  1  YP_001950123.1  RSL1_ORF245 hypothetical protein
+         17   -0.2   0.0    1.6e+02   -3.3   0.0    1.5  0  YP_001950116.1  RSL1_ORF237 beta-glucosyl-HMC-alpha-glucosylt
+         18   -0.2   0.0    1.2e+02   -2.8   0.0    1.5  1  YP_001950013.1  RSL1_ORF138 hypothetical protein
+         18   -0.3   0.0         31   -1.0   0.0    1.3  1  YP_001949905.1  RSL1_ORF030 hypothetical protein
+         20   -0.4   0.0         37   -1.2   0.0    1.3  1  YP_001950188.1  RSL1_ORF311 hypothetical protein
+         20   -0.4   0.1         79   -2.3   0.0    1.4  1  YP_001950136.1  RSL1_ORF258 hypothetical protein
+         20   -0.4   0.1         59   -1.9   0.1    1.4  1  YP_001949917.1  RSL1_ORF042 hypothetical protein
+         20   -0.4   0.0         88   -2.5   0.0    1.4  2  YP_001950059.1  RSL1_ORF181 endolysin
+         21   -0.4   0.0         80   -2.3   0.0    1.4  1  YP_001950031.1  RSL1_ORF155 hypothetical protein
+         21   -0.5   0.1         81   -2.3   0.0    1.5  1  YP_001949886.1  RSL1_ORF011 hypothetical protein
+         21   -0.5   0.1         36   -1.2   0.1    1.2  1  YP_001950096.1  RSL1_ORF217 hypothetical protein
+         22   -0.5   0.0         48   -1.6   0.0    1.3  1  YP_001949895.1  RSL1_ORF021 hypothetical protein
+         22   -0.5   0.0         30   -1.0   0.0    1.2  1  YP_001949961.1  RSL1_ORF085 hypothetical protein
+         22   -0.5   0.0    1.1e+02   -2.8   0.0    1.4  2  YP_001949913.1  RSL1_ORF038 hypothetical protein
+         22   -0.5   0.0         49   -1.6   0.0    1.3  1  YP_001950218.1  RSL1_ORF340 hypothetical protein
+         23   -0.6   0.0         41   -1.4   0.0    1.3  1  YP_001949887.1  RSL1_ORF012 hypothetical protein
+         23   -0.6   0.0         36   -1.2   0.0    1.3  1  YP_001949912.1  RSL1_ORF037 hypothetical protein
+         24   -0.7   0.1    1.7e+02   -3.4   0.0    1.4  0  YP_001950025.1  RSL1_ORF149 replicative DNA helicase
+         24   -0.7   0.0         39   -1.3   0.0    1.3  1  YP_001950179.1  RSL1_ORF303 hypothetical protein
+         24   -0.7   0.0      2e+02   -3.6   0.0    1.5  0  YP_001950134.1  RSL1_ORF256 DNA polymerase I
+         25   -0.7   0.0         92   -2.5   0.0    1.4  1  YP_001950077.1  RSL1_ORF198 hypothetical protein
+         25   -0.7   0.0         25   -0.7   0.0    1.3  1  YP_001950143.1  RSL1_ORF266 hypothetical protein
+         25   -0.7   0.0         41   -1.4   0.0    1.3  1  YP_001950122.1  RSL1_ORF243 hypothetical protein
+         26   -0.7   0.0    1.5e+02   -3.2   0.0    1.4  1  YP_001950147.1  RSL1_ORF270 hypothetical protein
+         26   -0.7   0.0         77   -2.3   0.0    1.3  1  YP_001950151.1  RSL1_ORF274 hypothetical protein
+         26   -0.7   0.0         38   -1.3   0.0    1.2  1  YP_001950148.1  RSL1_ORF271 hypothetical protein
+         26   -0.8   0.0    1.3e+02   -3.0   0.0    1.3  1  YP_001950073.1  RSL1_ORF194 tail fiber protein
+         26   -0.8   0.1         28   -0.9   0.1    1.1  1  YP_001950168.1  RSL1_ORF292 hypothetical protein
+         27   -0.8   0.0         56   -1.8   0.0    1.3  1  YP_001950187.1  RSL1_ORF310 hypothetical protein
+         27   -0.8   0.0         76   -2.3   0.0    1.3  1  YP_001949940.1  RSL1_ORF064 DNA binding protein
+         27   -0.8   0.0         22   -0.6   0.0    1.1  1  YP_001950138.1  RSL1_ORF261 hypothetical protein
+         27   -0.8   0.0         85   -2.4   0.0    1.3  1  YP_001950129.1  RSL1_ORF251 hypothetical protein
+         28   -0.8   0.0    2.5e+02   -3.9   0.0    1.4  0  YP_001950162.1  RSL1_ORF285 hypothetical protein
+         28   -0.9   0.0         58   -1.9   0.0    1.3  1  YP_001950130.1  RSL1_ORF252 hypothetical protein
+         28   -0.9   0.1    3.4e+02   -4.7   0.1    1.4  0  YP_001949978.1  RSL1_ORF104 cytidyltransferase
+         28   -0.9   0.0    3.4e+02   -4.5   0.0    1.4  0  YP_001949920.1  RSL1_ORF045 phosphohydrolase
+         29   -0.9   0.0    2.6e+02   -4.0   0.0    1.4  0  YP_001950119.1  RSL1_ORF240 hypothetical protein
+         29   -0.9   0.0         48   -1.6   0.0    1.2  1  YP_001949963.1  RSL1_ORF088 hypothetical protein
+         29   -0.9   0.0         51   -1.7   0.0    1.3  1  YP_001950103.1  RSL1_ORF223 hypothetical protein
+         29   -0.9   0.0         64   -2.0   0.0    1.3  1  YP_001950091.1  RSL1_ORF212 hypothetical protein
+         29   -0.9   0.1    3.4e+02   -4.7   0.1    1.4  0  YP_001950015.1  RSL1_ORF140 tail sheath
+         30   -0.9   0.1         29   -0.9   0.1    1.2  1  YP_001950019.2  RSL1_ORF144 hypothetical protein
+         30   -0.9   0.0         32   -1.1   0.0    1.2  1  YP_001950018.1  RSL1_ORF143 hypothetical protein
+         30   -1.0   0.0         90   -2.5   0.0    1.3  1  YP_001949889.1  RSL1_ORF014 hypothetical protein
+         30   -1.0   0.0         82   -2.4   0.0    1.3  1  YP_003199410.1  RSL1_ORF120 hypothetical protein
+         30   -1.0   0.0         58   -1.9   0.0    1.2  1  YP_001950189.1  RSL1_ORF312 hypothetical protein
+         31   -1.0   0.0    1.3e+02   -3.0   0.0    1.3  1  YP_001950117.1  RSL1_ORF238 adenosine 5'-phosphosulfate kinas
+         31   -1.0   0.0    1.2e+02   -2.9   0.0    1.3  1  YP_001950022.1  RSL1_ORF146 hypothetical protein
+         31   -1.0   0.0         34   -1.1   0.0    1.2  1  YP_001949968.1  RSL1_ORF093 hypothetical protein
+         31   -1.0   0.0         48   -1.6   0.0    1.3  1  YP_001949938.1  RSL1_ORF062 hypothetical protein
+         31   -1.0   0.0         98   -2.6   0.0    1.2  1  YP_001950183.1  RSL1_ORF307 hypothetical protein
+         32   -1.0   0.0         96   -2.6   0.0    1.3  1  YP_001949986.1  RSL1_ORF112 hypothetical protein
+         32   -1.0   0.0    1.3e+02   -3.0   0.0    1.3  1  YP_001950219.1  RSL1_ORF341 hypothetical protein
+         32   -1.0   0.0         51   -1.7   0.0    1.2  1  YP_001949994.1  RSL1_ORF119 hypothetical protein
+         32   -1.0   0.0         64   -2.0   0.0    1.3  1  YP_001949916.1  RSL1_ORF041 hypothetical protein
+         32   -1.0   0.0         55   -1.8   0.0    1.2  1  YP_001950044.1  RSL1_ORF167 hypothetical protein
+         32   -1.1   0.1         30   -0.9   0.1    1.2  1  YP_001949977.1  RSL1_ORF102 plasmid maintenance system antido
+         32   -1.1   0.0    2.7e+02   -4.1   0.0    1.4  0  YP_001949982.1  RSL1_ORF108 topoisomerase IB
+         32   -1.1   0.0         42   -1.4   0.0    1.2  1  YP_001950164.1  RSL1_ORF288 hypothetical protein
+         33   -1.1   0.0         51   -1.7   0.0    1.3  1  YP_001949922.1  RSL1_ORF047 hypothetical protein
+         33   -1.1   0.0         57   -1.9   0.0    1.2  1  YP_001949935.1  RSL1_ORF059 hypothetical protein
+         33   -1.1   0.0         73   -2.2   0.0    1.3  1  YP_001950072.1  RSL1_ORF193 hypothetical protein
+         34   -1.1   0.0    1.7e+02   -3.4   0.0    1.3  0  YP_001950207.1  RSL1_ORF331 hypothetical protein
+         34   -1.1   0.0         98   -2.6   0.0    1.3  1  YP_001950214.1  RSL1_ORF336 hypothetical protein
+         34   -1.1   0.0    1.3e+02   -3.0   0.0    1.3  1  YP_001950158.1  RSL1_ORF281 hypothetical protein
+         34   -1.1   0.0      1e+02   -2.7   0.0    1.3  1  YP_001949962.1  RSL1_ORF086 hypothetical protein
+         34   -1.1   0.0         71   -2.2   0.0    1.2  1  YP_001949970.1  RSL1_ORF095 hypothetical protein
+         34   -1.1   0.0      1e+02   -2.7   0.0    1.3  1  YP_001950204.2  RSL1_ORF327 hypothetical protein
+         34   -1.2   0.0         74   -2.2   0.0    1.3  1  YP_001949991.1  RSL1_ORF116 hypothetical protein
+         35   -1.2   0.0    2.8e+02   -4.1   0.0    1.3  0  YP_001950055.1  RSL1_ORF177 5'-3' exonuclease
+         35   -1.2   0.0         82   -2.4   0.0    1.3  1  YP_001949934.1  RSL1_ORF058 hypothetical protein
+         35   -1.2   0.0    1.2e+02   -2.9   0.0    1.3  1  YP_001949894.1  RSL1_ORF019 hypothetical protein
+         35   -1.2   0.0         59   -1.9   0.0    1.2  1  YP_001950133.1  RSL1_ORF255 hypothetical protein
+         35   -1.2   0.0    1.8e+02   -3.4   0.0    1.3  0  YP_001950034.1  RSL1_ORF158 hypothetical protein
+         36   -1.2   0.0    1.2e+02   -2.9   0.0    1.2  1  YP_001950141.1  RSL1_ORF264 hypothetical protein
+         36   -1.2   0.0         48   -1.6   0.0    1.2  1  YP_001949960.1  RSL1_ORF084 hypothetical protein
+         36   -1.2   0.0         62   -2.0   0.0    1.2  1  YP_001949888.1  RSL1_ORF013 hypothetical protein
+         36   -1.2   0.0    1.2e+02   -2.9   0.0    1.3  1  YP_001950023.1  RSL1_ORF147 hypothetical protein
+         36   -1.2   0.0         32   -1.0   0.0    1.2  1  YP_001949911.1  RSL1_ORF036 hypothetical protein
+         36   -1.2   0.0         94   -2.6   0.0    1.3  1  YP_001950150.1  RSL1_ORF273 hypothetical protein
+         37   -1.2   0.0    1.3e+02   -3.0   0.0    1.3  1  YP_001950102.1  RSL1_ORF222 single strand DNA binding protein
+         37   -1.3   0.0    1.6e+02   -3.3   0.0    1.3  0  YP_001950007.1  RSL1_ORF132 head maturation protease
+         37   -1.3   0.0    1.1e+02   -2.7   0.0    1.3  1  YP_001950012.1  RSL1_ORF137 hypothetical protein
+         37   -1.3   0.0         70   -2.1   0.0    1.2  1  YP_001950124.1  RSL1_ORF246 hypothetical protein
+         38   -1.3   0.1         62   -2.0   0.1    1.3  1  YP_001949890.1  RSL1_ORF015 hypothetical protein
+         38   -1.3   0.0         35   -1.2   0.0    1.2  1  YP_001949959.1  RSL1_ORF083 acyl carrier protein
+         38   -1.3   0.0         40   -1.4   0.0    1.2  1  YP_001950081.1  RSL1_ORF202 tail sheath
+         38   -1.3   0.0    1.2e+02   -2.9   0.0    1.3  1  YP_001949929.1  RSL1_ORF053 hypothetical protein
+         38   -1.3   0.0    1.9e+02   -3.5   0.0    1.3  0  YP_001949949.1  RSL1_ORF073 hypothetical protein
+         39   -1.3   0.2    3.4e+02   -4.6   0.2    1.4  0  YP_001950009.1  RSL1_ORF134 ATPase
+         39   -1.3   0.0         70   -2.1   0.0    1.2  1  YP_001950078.1  RSL1_ORF199 baseplate assembly protein W-like
+         39   -1.3   0.0    2.3e+02   -3.8   0.0    1.3  0  YP_001950082.1  RSL1_ORF203 PmgG-like head morphogenesis
+         39   -1.3   0.0    1.9e+02   -3.5   0.0    1.3  0  YP_001949953.1  RSL1_ORF077 hypothetical protein
+         40   -1.3   0.0         43   -1.5   0.0    1.2  1  YP_001950045.1  RSL1_ORF168 hypothetical protein
+         40   -1.4   0.1    1.7e+02   -3.4   0.1    1.3  0  YP_001950127.1  RSL1_ORF249 hypothetical protein
+         41   -1.4   0.0    3.4e+02   -4.7   0.0    1.3  0  YP_001949984.1  RSL1_ORF110 homospermidine synthase
+         41   -1.4   0.0    1.2e+02   -2.9   0.0    1.2  1  YP_001950028.1  RSL1_ORF152 hypothetical protein
+         41   -1.4   0.0    2.8e+02   -4.1   0.0    1.3  0  YP_001950047.1  RSL1_ORF170 CRISPR/Cas system associated
+         42   -1.4   0.0    3.4e+02   -4.5   0.0    1.3  0  YP_001950170.1  RSL1_ORF294 hypothetical protein
+         42   -1.4   0.0         34   -1.1   0.0    1.2  1  YP_001949939.1  RSL1_ORF063 hypothetical protein
+         42   -1.4   0.0         50   -1.7   0.0    1.1  1  YP_001949972.1  RSL1_ORF097 hypothetical protein
+         42   -1.4   0.0         47   -1.6   0.0    1.2  1  YP_001949926.1  RSL1_ORF050 hypothetical protein
+         43   -1.5   0.0    1.1e+02   -2.8   0.0    1.2  1  YP_001950097.1  RSL1_ORF218 hypothetical protein
+         43   -1.5   0.0         65   -2.0   0.0    1.2  1  YP_001950120.1  RSL1_ORF241 hypothetical protein
+         43   -1.5   0.0    1.5e+02   -3.2   0.0    1.2  1  YP_001950121.1  RSL1_ORF242 hypothetical protein
+         43   -1.5   0.0    1.7e+02   -3.4   0.0    1.2  0  YP_001949999.1  RSL1_ORF124 hypothetical protein
+         44   -1.5   0.0    1.5e+02   -3.2   0.0    1.2  0  YP_001950145.1  RSL1_ORF268 hypothetical protein
+         44   -1.5   0.0    2.2e+02   -3.7   0.0    1.3  0  YP_001949919.1  RSL1_ORF044 hypothetical protein
+         45   -1.5   0.0    2.2e+02   -3.8   0.0    1.3  0  YP_001949967.1  RSL1_ORF092 hypothetical protein
+         45   -1.5   0.0    1.1e+02   -2.7   0.0    1.2  1  YP_001949914.1  RSL1_ORF039 hypothetical protein
+         45   -1.5   0.0    2.4e+02   -3.9   0.0    1.3  0  YP_001950033.1  RSL1_ORF157 beta clamp domain-like protein
+         45   -1.5   0.0         84   -2.4   0.0    1.2  1  YP_001949903.1  RSL1_ORF028 hypothetical protein
+         45   -1.5   0.0         75   -2.2   0.0    1.2  1  YP_001950215.1  RSL1_ORF337 hypothetical protein
+         46   -1.5   0.0         85   -2.4   0.0    1.2  1  YP_001950106.1  RSL1_ORF226 hypothetical protein
+         46   -1.5   0.0    1.9e+02   -3.6   0.0    1.3  0  YP_001950003.1  RSL1_ORF128 hypothetical protein
+         46   -1.5   0.0    1.4e+02   -3.1   0.0    1.2  1  YP_001949884.1  RSL1_ORF009 hypothetical protein
+         46   -1.5   0.0         81   -2.3   0.0    1.2  1  YP_001950181.1  RSL1_ORF305 hypothetical protein
+         46   -1.5   0.0         61   -1.9   0.0    1.2  1  YP_001950002.1  RSL1_ORF127 hypothetical protein
+         47   -1.6   0.0    1.9e+02   -3.5   0.0    1.3  0  YP_001949885.1  RSL1_ORF010 DNA topoisomerase
+         47   -1.6   0.0    1.7e+02   -3.4   0.0    1.2  0  YP_001949882.1  RSL1_ORF007 hypothetical protein
+         48   -1.6   0.0    1.3e+02   -3.0   0.0    1.2  1  YP_003199408.1  RSL1_ORF087 hypothetical protein
+         51   -1.7   0.0         43   -1.5   0.0    1.1  1  YP_001949892.1  RSL1_ORF017 hypothetical protein
+         52   -1.7   0.0    1.9e+02   -3.5   0.0    1.2  0  YP_001950032.1  RSL1_ORF156 hypothetical protein
+         52   -1.7   0.0         72   -2.2   0.0    1.2  1  YP_001950190.1  RSL1_ORF313 hypothetical protein
+         52   -1.7   0.0      2e+02   -3.6   0.0    1.2  0  YP_001950184.2  RSL1_ORF308 hypothetical protein
+         53   -1.8   0.0         46   -1.6   0.0    1.2  1  YP_001949955.1  RSL1_ORF079 hypothetical protein
+         53   -1.8   0.0    1.9e+02   -3.5   0.0    1.2  0  YP_001950153.1  RSL1_ORF276 hypothetical protein
+         54   -1.8   0.0    1.8e+02   -3.4   0.0    1.2  0  YP_001950149.1  RSL1_ORF272 hypothetical protein
+         54   -1.8   0.0         54   -1.8   0.0    1.1  1  YP_001949906.1  RSL1_ORF031 hypothetical protein
+         54   -1.8   0.0      3e+02   -4.2   0.0    1.2  0  YP_001950108.1  RSL1_ORF229 hypothetical protein
+         54   -1.8   0.0    3.4e+02   -4.5   0.0    1.2  0  YP_001950027.1  RSL1_ORF151 DNA polymerase
+         55   -1.8   0.0    3.4e+02   -4.5   0.0    1.2  0  YP_001950094.1  RSL1_ORF215 Holliday junction resolvase
+         55   -1.8   0.0         53   -1.8   0.0    1.1  1  YP_001950201.1  RSL1_ORF324 hypothetical protein
+         55   -1.8   0.0         51   -1.7   0.0    1.1  1  YP_001950193.1  RSL1_ORF316 hypothetical protein
+         55   -1.8   0.0    1.2e+02   -2.9   0.0    1.2  1  YP_001950017.1  RSL1_ORF142 tail tube protein
+         55   -1.8   0.0    1.4e+02   -3.1   0.0    1.2  1  YP_001950174.1  RSL1_ORF298 hypothetical protein
+         56   -1.8   0.0    2.7e+02   -4.0   0.0    1.2  0  YP_001950079.1  RSL1_ORF200 hypothetical protein
+         57   -1.8   0.1    3.1e+02   -4.2   0.0    1.2  0  YP_001949893.1  RSL1_ORF018 hypothetical protein
+         57   -1.8   0.0    3.4e+02   -5.1   0.0    1.2  0  YP_001949990.1  RSL1_ORF115 hypothetical protein
+         57   -1.9   0.0    2.7e+02   -4.0   0.0    1.2  0  YP_001950217.2  RSL1_ORF339 hypothetical protein
+         58   -1.9   0.0         47   -1.6   0.0    1.1  1  YP_001949881.1  RSL1_ORF006 hypothetical protein
+         58   -1.9   0.1    1.9e+02   -3.5   0.0    1.2  0  YP_001949973.1  RSL1_ORF098 hypothetical protein
+         59   -1.9   0.0    3.4e+02   -4.6   0.0    1.2  0  YP_001949921.1  RSL1_ORF046 hypothetical protein
+         59   -1.9   0.0      1e+02   -2.7   0.0    1.2  1  YP_001950066.1  RSL1_ORF187 DksA-like zinc-finger protein
+         59   -1.9   0.0    1.6e+02   -3.3   0.0    1.2  0  YP_001949930.1  RSL1_ORF054 appr-1-pase family/phage tail ass
+         59   -1.9   0.0         45   -1.5   0.0    1.1  1  YP_001950180.1  RSL1_ORF304 hypothetical protein
+         60   -1.9   0.0         93   -2.5   0.0    1.2  1  YP_001950198.2  RSL1_ORF320 hypothetical protein
+         60   -1.9   0.0    1.6e+02   -3.3   0.0    1.2  0  YP_003199413.1  RSL1_ORF260 hypothetical protein
+         60   -1.9   0.0         52   -1.7   0.0    1.1  1  YP_003199409.1  RSL1_ORF103 hypothetical protein
+         60   -1.9   0.0    2.4e+02   -3.9   0.0    1.2  0  YP_001949948.1  RSL1_ORF072 hypothetical protein
+         61   -2.0   0.0         53   -1.8   0.0    1.1  1  YP_001950024.1  RSL1_ORF148 hypothetical protein
+         61   -2.0   0.0      1e+02   -2.7   0.0    1.2  1  YP_001950199.1  RSL1_ORF322 hypothetical protein
+         61   -2.0   0.0         57   -1.9   0.0    1.1  1  YP_001949975.1  RSL1_ORF100 hypothetical protein
+         61   -2.0   0.0    1.2e+02   -2.9   0.0    1.2  1  YP_001950041.1  RSL1_ORF164 hypothetical protein
+         61   -2.0   0.0      2e+02   -3.6   0.0    1.2  0  YP_001950220.1  RSL1_ORF342 hypothetical protein
+         62   -2.0   0.0    2.9e+02   -4.1   0.0    1.2  0  YP_001950132.1  RSL1_ORF254 hypothetical protein
+         62   -2.0   0.0    3.4e+02   -4.8   0.0    1.2  0  YP_001950050.1  RSL1_ORF172 hypothetical protein
+         62   -2.0   0.0      1e+02   -2.7   0.0    1.2  1  YP_001949950.1  RSL1_ORF074 hypothetical protein
+         63   -2.0   0.0    1.3e+02   -3.0   0.0    1.2  1  YP_001950146.1  RSL1_ORF269 hypothetical protein
+         63   -2.0   0.0    2.2e+02   -3.8   0.0    1.2  0  YP_001950216.1  RSL1_ORF338 hypothetical protein
+         63   -2.0   0.0         87   -2.4   0.0    1.1  1  YP_003199411.1  RSL1_ORF227 hypothetical protein
+         63   -2.0   0.0    2.3e+02   -3.8   0.0    1.2  0  YP_001950169.1  RSL1_ORF293 hypothetical protein
+         63   -2.0   0.0    1.7e+02   -3.4   0.0    1.2  0  YP_001950128.1  RSL1_ORF250 hypothetical protein
+         64   -2.0   0.0    1.1e+02   -2.8   0.0    1.2  1  YP_001950173.1  RSL1_ORF297 hypothetical protein
+         64   -2.0   0.0      1e+02   -2.7   0.0    1.2  1  YP_001950211.1  RSL1_ORF334 hypothetical protein
+         65   -2.0   0.0         73   -2.2   0.0    1.1  1  YP_001950157.1  RSL1_ORF280 hypothetical protein
+         65   -2.0   0.0         47   -1.6   0.0    1.1  1  YP_001950118.1  RSL1_ORF239 hypothetical protein
+         65   -2.0   0.0    1.3e+02   -3.0   0.0    1.1  1  YP_001950196.1  RSL1_ORF319 portal protein
+         66   -2.1   0.0         50   -1.7   0.0    1.1  1  YP_001950085.1  RSL1_ORF206 hypothetical protein
+         67   -2.1   0.0    1.3e+02   -3.0   0.0    1.1  1  YP_001950026.1  RSL1_ORF150 hypothetical protein
+         68   -2.1   0.0         74   -2.2   0.0    1.2  1  YP_001949942.1  RSL1_ORF066 hypothetical protein
+         69   -2.1   0.0    3.4e+02   -4.9   0.0    1.2  0  YP_001950088.1  RSL1_ORF209 hypothetical protein
+         70   -2.2   0.0    2.3e+02   -3.8   0.0    1.2  0  YP_001950135.1  RSL1_ORF257 hypothetical protein
+         70   -2.2   0.0    1.7e+02   -3.4   0.0    1.2  0  YP_001949877.1  RSL1_ORF002 hypothetical protein
+         71   -2.2   0.0    3.4e+02   -4.5   0.0    1.2  0  YP_001950140.1  RSL1_ORF263 hypothetical protein
+         71   -2.2   0.0    1.8e+02   -3.4   0.0    1.2  0  YP_001949907.1  RSL1_ORF032 hypothetical protein
+         71   -2.2   0.0      3e+02   -4.2   0.0    1.2  0  YP_001949944.1  RSL1_ORF068 hypothetical protein
+         72   -2.2   0.0    3.3e+02   -4.3   0.0    1.2  0  YP_001950053.1  RSL1_ORF175 hypothetical protein
+         73   -2.2   0.0    3.4e+02   -4.5   0.0    1.2  0  YP_001949976.1  RSL1_ORF101 TRAP transporter solute receptor 
+         73   -2.2   0.0    1.6e+02   -3.3   0.0    1.1  0  YP_001950006.1  RSL1_ORF131 hypothetical protein
+         73   -2.2   0.0      3e+02   -4.2   0.0    1.2  0  YP_001950036.1  RSL1_ORF159 hypothetical protein
+         74   -2.2   0.0    2.4e+02   -3.9   0.0    1.2  0  YP_001949931.1  RSL1_ORF055 hypothetical protein
+         74   -2.2   0.0    1.9e+02   -3.5   0.0    1.1  0  YP_001950042.1  RSL1_ORF165 hypothetical protein
+         74   -2.2   0.0    1.6e+02   -3.3   0.0    1.1  0  YP_001950051.1  RSL1_ORF173 hypothetical protein
+         75   -2.2   0.0    2.1e+02   -3.7   0.0    1.2  0  YP_001950200.1  RSL1_ORF323 hypothetical protein
+         75   -2.2   0.0    3.4e+02   -4.4   0.0    1.2  0  YP_001950069.1  RSL1_ORF190 hypothetical protein
+         76   -2.3   0.0    3.4e+02   -4.5   0.0    1.2  0  YP_003199414.1  RSL1_ORF287 hypothetical protein
+         76   -2.3   0.0    1.4e+02   -3.1   0.0    1.1  1  YP_001950064.1  RSL1_ORF185 hypothetical protein
+         78   -2.3   0.0    2.6e+02   -4.0   0.0    1.2  0  YP_001949988.2  RSL1_ORF113 dCMP deaminase
+         78   -2.3   0.0         71   -2.2   0.0    1.1  1  YP_001949880.1  RSL1_ORF005 hypothetical protein
+         78   -2.3   0.0    3.2e+02   -4.3   0.0    1.2  0  YP_001950089.1  RSL1_ORF210 hypothetical protein
+         79   -2.3   0.0    2.9e+02   -4.1   0.0    1.2  0  YP_001950142.1  RSL1_ORF265 hypothetical protein
+         80   -2.3   0.0    1.2e+02   -2.9   0.0    1.1  1  YP_001949876.1  RSL1_ORF001 hypothetical protein
+         83   -2.4   0.0    1.7e+02   -3.4   0.0    1.1  0  YP_001950195.1  RSL1_ORF318 hypothetical protein
+         83   -2.4   0.0    2.6e+02   -4.0   0.0    1.2  0  YP_001950052.1  RSL1_ORF174 hypothetical protein
+         86   -2.4   0.0    2.5e+02   -3.9   0.0    1.1  0  YP_001949936.1  RSL1_ORF060 hypothetical protein
+         87   -2.4   0.0    1.4e+02   -3.1   0.0    1.1  1  YP_001949965.1  RSL1_ORF090 hypothetical protein
+         88   -2.5   0.0         99   -2.6   0.0    1.1  1  YP_001950191.2  RSL1_ORF314 hypothetical protein
+         90   -2.5   0.0    1.9e+02   -3.5   0.0    1.1  0  YP_001950070.1  RSL1_ORF191 hypothetical protein
+         91   -2.5   0.0    3.4e+02   -5.3   0.0    1.1  0  YP_001949918.1  RSL1_ORF043 hypothetical protein
+
+
+Domain annotation for each sequence (and alignments):
+>> YP_001949902.1  RSL1_ORF027 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.1   0.0     0.016     0.023      20      76 ..      52     108 ..      34     124 .] 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 9.1 bits;  conditional E-value: 0.016
+       core_cg14  20 dldfrqvlvmhlellkaaalks.tidiPle..rayeedGdfyglcrvllleysvPyhmhw 76 
+                     +ld   v++  ++ l+a+a       +P+e   +ye+  df    +vl le ++ +   w
+  YP_001949902.1  52 NLDIEAVVNAWFHQLNADARHAiGYMLPPEvrETYEFTKDFIFRYKVLKLEWGQQF---W 108
+                     5777888888888888877654145567763248*******9999******99984...4 PP
+
+>> YP_001950161.1  RSL1_ORF284 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.5   0.0      0.86       1.3      73      95 ..      21      44 ..      13      49 .. 0.80
+   2 ?   -3.2   0.0        99   1.5e+02      54      61 ..     100     107 ..      90     112 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 3.5 bits;  conditional E-value: 0.86
+       core_cg14 73 hmhwltlr.lnnirdPtkytadvl 95
+                    ++hwlt r ++++ + ++y++ vl
+  YP_001950161.1 21 NLHWLTARqIDEMAHAVDYVSVVL 44
+                    68****986788888899976665 PP
+
+  == domain 2  score: -3.2 bits;  conditional E-value: 99
+       core_cg14  54 dGdfyglc 61 
+                      G+f gl 
+  YP_001950161.1 100 SGNFMGLQ 107
+                     57887775 PP
+
+>> YP_001950175.1  RSL1_ORF299 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.2   0.0       2.2       3.2      36      57 ..      16      37 ..       2      98 .. 0.75
+   2 ?   -0.5   0.0        15        22      13      31 ..      67      85 ..      56     113 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 2.2 bits;  conditional E-value: 2.2
+       core_cg14 36 aaalkstidiPlerayeedGdf 57
+                    + + +   ++  e +ye +G+ 
+  YP_001950175.1 16 ERGSVWVLNTAQESQYELKGEI 37
+                    5677788888899999999986 PP
+
+  == domain 2  score: -0.5 bits;  conditional E-value: 15
+       core_cg14 13 ntddliqdldfrqvlvmhl 31
+                    +   l++  dfr  +v  l
+  YP_001950175.1 67 PKTRLLDSTDFRSAVVNGL 85
+                    6667888899998777655 PP
+
+>> YP_001950090.1  RSL1_ORF211 portal protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.4   0.0       1.8       2.7      11      42 ..     489     518 ..     484     539 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 2.4 bits;  conditional E-value: 1.8
+       core_cg14  11 ktntddliqdldfrqvlvmhlellkaaalkst 42 
+                     k ++d li+dl+   vl ++le +  +    t
+  YP_001950090.1 489 KIDPDALIRDLEEDAVLRKKLEKYTGKD--TT 518
+                     789******************9765443..33 PP
+
+>> YP_001949947.1  RSL1_ORF071 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.0   0.0       1.2       1.8      50      81 ..      70     101 ..      43     113 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 3.0 bits;  conditional E-value: 1.2
+       core_cg14  50 ayeedGdfyglcrvllleysvPyhmhwltlrl 81 
+                      y+++  f      +l e + P +m ++  rl
+  YP_001949947.1  70 FYKNRSVFRIEGSQVLIETASPLKMFFIVRRL 101
+                     57777777666777899**********99988 PP
+
+>> YP_001949964.1  RSL1_ORF089 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.3   0.0      0.98       1.5      43      62 ..       6      23 ..       2      50 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 3.3 bits;  conditional E-value: 0.98
+       core_cg14 43 idiPlerayeedGdfyglcr 62
+                    idi le aye d  f+ lc 
+  YP_001949964.1  6 IDIELE-AYELDQ-FFQLCE 23
+                    899999.9**985.669995 PP
+
+>> YP_001949900.1  RSL1_ORF025 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.6   0.0       3.4         5      43      80 ..      85     121 ..      76     150 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 1.6 bits;  conditional E-value: 3.4
+       core_cg14  43 idiPlerayeedGdfyglcrvllleysvPyhmhwltlr 80 
+                     +d   +r+ +e  dfyg+ r +    + P    w+ + 
+  YP_001949900.1  85 PDAFYDRKAQEGVDFYGVLRRI-ERSTIPGARDWVKMV 121
+                     55666788888899***99965.455677777787775 PP
+
+>> YP_001949901.1  RSL1_ORF026 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.2   0.0       2.1       3.1      29      53 ..      20      44 ..       9      56 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 2.2 bits;  conditional E-value: 2.1
+       core_cg14 29 mhlellkaaalkstidiPlerayee 53
+                      +++l++++ ++t  +P   a++e
+  YP_001949901.1 20 LQMDILNEQGKRFTHTVPEGIAHQE 44
+                    568999999999*999998766655 PP
+
+>> YP_001949883.1  RSL1_ORF008 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.0        70     1e+02      73      83 ..      58      68 ..      50      82 .. 0.70
+   2 ?    0.9   0.0       5.3       7.9      73     103 ..      86     116 ..      71     135 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 70
+       core_cg14 73 hmhwltlrlnn 83
+                    ++h ++lrl +
+  YP_001949883.1 58 KLHKIALRLKS 68
+                    57888888765 PP
+
+  == domain 2  score: 0.9 bits;  conditional E-value: 5.3
+       core_cg14  73 hmhwltlrlnnirdPtkytadvlttdildid 103
+                     ++ wl++r+ +  + tk   +  ++ il +d
+  YP_001949883.1  86 KLLWLAIRVHEAFNLTKDDPNKKALAILTLD 116
+                     5789999998776655543333333333333 PP
+
+>> YP_001949998.1  RSL1_ORF123 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.6   0.0       6.6       9.9      45      56 ..      57      68 ..      13      90 .. 0.55
+   2 ?    1.0   0.0         5       7.5      24      55 ..      68     100 ..      47     103 .] 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 0.6 bits;  conditional E-value: 6.6
+       core_cg14 45 iPlerayeedGd 56
+                     P +   e +G 
+  YP_001949998.1 57 APKDAFVEVRGS 68
+                    444433444443 PP
+
+  == domain 2  score: 1.0 bits;  conditional E-value: 5
+       core_cg14  24 rqvlvmhlellkaaalk.stidiPlerayeedG 55 
+                      +++ +hle +++ ++   +i++     ye + 
+  YP_001949998.1  68 SHIVPKHLEHMHDLGIEiVSIEVLGSAHYELQV 100
+                     467888888888887751356666666666665 PP
+
+>> YP_001949996.1  RSL1_ORF121 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.7   0.0         6         9      38      73 ..     121     153 ..     117     157 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 0.7 bits;  conditional E-value: 6
+       core_cg14  38 alkstidiPlerayeedGdfyglcrvllleysvPyh 73 
+                     ++ st   P +++y   G +    +v +  ++vP h
+  YP_001949996.1 121 TTTSTATGPANHTYATAGSY--TPKVTVTVGGVP-H 153
+                     67899999***********9..778888888888.3 PP
+
+>> YP_001949981.1  RSL1_ORF107 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.3   0.0        25        38      66      89 ..      69      93 ..      58     110 .. 0.71
+   2 ?   -2.2   0.0        49        72      33      45 ..     163     175 ..     127     192 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: -1.3 bits;  conditional E-value: 25
+       core_cg14 66 leysvPyhm.hwltlrlnnirdPtk 89
+                     e  + y +   l++rln i  Pt 
+  YP_001949981.1 69 DEVDEGYEIaAALAVRLNVIESPTS 93
+                    5556666551358899999999985 PP
+
+  == domain 2  score: -2.2 bits;  conditional E-value: 49
+       core_cg14  33 llkaaalkstidi 45 
+                     +++++alk+ i++
+  YP_001949981.1 163 YVRSEALKFGIPV 175
+                     5566677776665 PP
+
+>> YP_001950029.1  RSL1_ORF153 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.9   0.0        20        29      42      59 ..     110     127 ..      87     130 .. 0.84
+   2 ?   -3.0   0.0        86   1.3e+02      88     116 ..     212     240 ..     207     242 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: -0.9 bits;  conditional E-value: 20
+       core_cg14  42 tidiPlerayeedGdfyg 59 
+                      +d+P+er+  + G + g
+  YP_001950029.1 110 FPDVPMERRIRFTGRYKG 127
+                     5899****9999999876 PP
+
+  == domain 2  score: -3.0 bits;  conditional E-value: 86
+       core_cg14  88 tkytadvlttdildideisslkssirdly 116
+                      ky   ++t++    ++ + l++ +rd++
+  YP_001950029.1 212 EKYDICLVTVQTFYSEAGQKLLRAVRDMF 240
+                     57777788999999999999999999987 PP
+
+>> YP_001950054.1  RSL1_ORF176 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.0   0.1       5.1       7.6      25      47 ..      21      43 ..      11      70 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 1.0 bits;  conditional E-value: 5.1
+       core_cg14 25 qvlvmhlellkaaalkstidiPl 47
+                     v + hl l ++  +  t  +P+
+  YP_001950054.1 21 TVHQEHLRLNRKLVTLVTEALPP 43
+                    34444555555555555555555 PP
+
+>> YP_001950046.1  RSL1_ORF169 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.0   0.1       4.9       7.3       7      23 ..       4      19 ..       1      50 [. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 1.0 bits;  conditional E-value: 4.9
+       core_cg14  7 sdelktntddliqdldf 23
+                    +d+lk+++ +l +d++f
+  YP_001950046.1  4 KDFLKEKAQEL-EDFEF 19
+                    55666555554.44444 PP
+
+>> YP_001950107.1  RSL1_ORF228 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   0.0        11        16      71      89 ..     106     124 ..      96     133 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 11
+       core_cg14  71 PyhmhwltlrlnnirdPtk 89 
+                       h h l +r  ++ +P +
+  YP_001950107.1 106 DIHDHQLLMRTKDYIEPNR 124
+                     568999999*999999975 PP
+
+>> YP_001950112.1  RSL1_ORF233 beta-glucosyl-HMC-alpha-glucosyltransferase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.3   0.0        12        18      69      96 ..     132     166 ..     127     185 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: -0.3 bits;  conditional E-value: 12
+       core_cg14  69 svPyhmh......wltlrlnn.irdPtkytadvlt 96 
+                     + Py+mh      w + r+n    +   y +dvl 
+  YP_001950112.1 132 AGPYFMHknvmarWGAQRINHkCTNVAGYDVDVLL 166
+                     56888885555557777888624677778888774 PP
+
+>> YP_001950099.1  RSL1_ORF220 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   0.0        18        27      77      88 ..      22      33 ..       9      53 .. 0.75
+   2 ?   -2.0   0.0        42        62      64      74 ..     103     113 ..      88     118 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 18
+       core_cg14 77 ltlrlnnirdPt 88
+                    + +r+n++ dP 
+  YP_001950099.1 22 FQVRVNGVVDPR 33
+                    568999999994 PP
+
+  == domain 2  score: -2.0 bits;  conditional E-value: 42
+       core_cg14  64 llleysvPyhm 74 
+                     l++  s+P hm
+  YP_001950099.1 103 LFGAESEPLHM 113
+                     77888999888 PP
+
+>> YP_001950030.1  RSL1_ORF154 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   0.1        11        16      87     103 ..     108     124 ..      59     142 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 11
+       core_cg14  87 Ptkytadvlttdildid 103
+                      t+ +++v+  d l+i+
+  YP_001950030.1 108 ATETSTNVMGFDKLLIQ 124
+                     33333444444444443 PP
+
+>> YP_001950154.1  RSL1_ORF277 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.6   0.0       6.7        10      69      87 ..      56      73 ..      14      74 .] 0.55
+
+  Alignments for each domain:
+  == domain 1  score: 0.6 bits;  conditional E-value: 6.7
+       core_cg14 69 svPyhmhwltlrlnnirdP 87
+                      P +++w+ + l  i dP
+  YP_001950154.1 56 VMP-RVKWFGVLLKTIADP 73
+                    334.566666666666666 PP
+
+>> YP_001949954.1  RSL1_ORF078 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.1   0.0        23        34      11      39 ..     105     135 ..      95     141 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: -1.1 bits;  conditional E-value: 23
+       core_cg14  11 ktntddliqdldfrqvlv..mhlellkaaal 39 
+                     k +t + +q +d  +v +   h+++ +++++
+  YP_001949954.1 105 KSPTWKKVQQYDHADVWQffAHIDYDHKKGT 135
+                     6778888888888888652258888766665 PP
+
+>> YP_001949971.1  RSL1_ORF096 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.1   0.0        23        34      31      57 ..     117     143 ..     104     157 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: -1.1 bits;  conditional E-value: 23
+       core_cg14  31 lellkaaalkstidiPlerayeedGdf 57 
+                     +e ++++a k t+d+ +e   +++ d 
+  YP_001949971.1 117 IENVQSKAKKLTVDLKPEDLQQFQDDI 143
+                     677788899999999999776666665 PP
+
+>> YP_001950095.1  RSL1_ORF216 terminase large subunit
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.4   0.0        27        41      10      28 ..     175     193 ..     172     207 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -1.4 bits;  conditional E-value: 27
+       core_cg14  10 lktntddliqdldfrqvlv 28 
+                      k+n  +liq +++r+ ++
+  YP_001950095.1 175 CKRNKWELIQKHGLRNYIQ 193
+                     5889999********9876 PP
+
+>> YP_001949989.1  RSL1_ORF114 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   0.1        18        27      64      88 ..       8      33 ..       2      67 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 18
+       core_cg14 64 llleysvPyhmhwlt.lrlnnirdPt 88
+                    +l   +    mh  t l++ n+++ t
+  YP_001949989.1  8 ILTSNTDTMGMHHTTaLKMQNWQERT 33
+                    55555555566665435666665544 PP
+
+>> YP_001950165.1  RSL1_ORF289 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.2   0.0        11        17      30      66 ..       4      38 ..       1      64 [. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: -0.2 bits;  conditional E-value: 11
+       core_cg14 30 hlellkaaalkstidiPlerayeedGdfyglcrvlll 66
+                    hl+   +a+l  t ++      e +G+ +    +l l
+  YP_001950165.1  4 HLKKSTNASLANTSPVGDG--QEPHGEIHEQLSMLDL 38
+                    6666666666666665544..5666666555555544 PP
+
+>> YP_001950171.1  RSL1_ORF295 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.1        50        75      21      36 ..      65      80 ..      49      91 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 50
+       core_cg14 21 ldfrqvlvmhlellka 36
+                     df++v  +h +  k+
+  YP_001950171.1 65 EDFKKVFMHHHKNTKN 80
+                    6999999999887776 PP
+
+>> YP_001950068.1  RSL1_ORF189 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.5   0.0        60        90      79      98 ..     892     909 ..     869     927 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: -2.5 bits;  conditional E-value: 60
+       core_cg14  79 lrlnnirdPtkytadvlttd 98 
+                      +ln +r+ + +  dv++++
+  YP_001950068.1 892 QQLNTLRNQYTF--DVIALN 909
+                     456666665444..777655 PP
+
+>> YP_001950056.1  RSL1_ORF178 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6   0.0        16        24      69      84 ..      18      33 ..       6      56 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: -0.6 bits;  conditional E-value: 16
+       core_cg14 69 svPyhmhwltlrlnni 84
+                      P  + wl  r+ n 
+  YP_001950056.1 18 DRPQVIGWLERRIKNS 33
+                    5677778888888764 PP
+
+>> YP_001950014.1  RSL1_ORF139 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.1   0.0        23        34      28      45 ..      33      50 ..      16      56 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: -1.1 bits;  conditional E-value: 23
+       core_cg14 28 vmhlellkaaalkstidi 45
+                      h+ ++++++ k ti +
+  YP_001950014.1 33 PLHVGIIQEDGSKTTIRV 50
+                    347788888888888876 PP
+
+>> YP_001949925.1  RSL1_ORF049 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.1   0.0        23        34      22      36 ..     104     118 ..      93     134 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: -1.1 bits;  conditional E-value: 23
+       core_cg14  22 dfrqvlvmhlellka 36 
+                       r+v v hl+ l a
+  YP_001949925.1 104 AVRRVTVLHLNTLVA 118
+                     468899999988765 PP
+
+>> YP_001950123.1  RSL1_ORF245 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.1   0.0        23        34      74      83 ..      75      84 ..      60     116 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: -1.1 bits;  conditional E-value: 23
+       core_cg14 74 mhwltlrlnn 83
+                    +h+++lr+ +
+  YP_001950123.1 75 LHFMALRIGD 84
+                    6777777754 PP
+
+>> YP_001950116.1  RSL1_ORF237 beta-glucosyl-HMC-alpha-glucosyltransferase
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950013.1  RSL1_ORF138 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.8   0.0        77   1.2e+02      84      98 ..     184     196 ..     176     203 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: -2.8 bits;  conditional E-value: 77
+       core_cg14  84 irdPtkytadvlttd 98 
+                         tky  dv+tt 
+  YP_001950013.1 184 TETETKY--DVVTTI 196
+                     4456788..999875 PP
+
+>> YP_001949905.1  RSL1_ORF030 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.0        21        31      74      86 ..     100     115 ..      75     141 .. 0.48
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 21
+       core_cg14  74 mhwlt...lrlnnird 86 
+                     + w+t   lr++   +
+  YP_001949905.1 100 LRWVTseeLRMEYAVH 115
+                     3444333334443333 PP
+
+>> YP_001950188.1  RSL1_ORF311 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.2   0.0        25        37      73      98 ..      22      33 ..       8      56 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: -1.2 bits;  conditional E-value: 25
+       core_cg14 73 hmhwltlrlnnirdPtkytadvlttd 98
+                    hm w  l              vl t 
+  YP_001950188.1 22 HMTWAGL--------------VLLTI 33
+                    4555444..............33333 PP
+
+>> YP_001950136.1  RSL1_ORF258 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.3   0.0        53        79      65      97 ..      47      79 ..      34      99 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: -2.3 bits;  conditional E-value: 53
+       core_cg14 65 lleysvPyhmhwltlrlnnirdPtkytadvltt 97
+                    l++ +vP ++  +      +r+ + + a+v+ +
+  YP_001950136.1 47 LMQHGVPVKLVHVQDNSTIYREAMAFQAEVVIV 79
+                    556667755555555555577777777777655 PP
+
+>> YP_001949917.1  RSL1_ORF042 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.9   0.1        40        59      71      84 ..      43      57 ..      38      89 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: -1.9 bits;  conditional E-value: 40
+       core_cg14 71 Pyhmhw.ltlrlnni 84
+                    P+hm w  t+ l  i
+  YP_001949917.1 43 PHHMRWwCTVALKAI 57
+                    678875256666555 PP
+
+>> YP_001950059.1  RSL1_ORF181 endolysin
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.0   0.0        87   1.3e+02      96     113 ..      33      50 ..       7      57 .. 0.57
+   2 ?   -2.5   0.0        59        88      75      94 ..     181     200 ..     172     221 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: -3.0 bits;  conditional E-value: 87
+       core_cg14  96 ttdildideisslkssir 113
+                     +  i +  +  s+ +s+r
+  YP_001950059.1  33 AASINEAAARFSIDQSLR 50 
+                     333444444444555555 PP
+
+  == domain 2  score: -2.5 bits;  conditional E-value: 59
+       core_cg14  75 hwltlrlnnirdPtkytadv 94 
+                      w t  ln++ d   yt   
+  YP_001950059.1 181 FWQTRGLNQLADQDAYTKAT 200
+                     57788888888887776433 PP
+
+>> YP_001950031.1  RSL1_ORF155 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.3   0.0        54        80      56      56 ..     148     148 ..     107     175 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: -2.3 bits;  conditional E-value: 54
+       core_cg14  56 d 56 
+                     d
+  YP_001950031.1 148 D 148
+                     2 PP
+
+>> YP_001949886.1  RSL1_ORF011 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.3   0.0        54        81      56      56 ..     155     155 ..     106     201 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: -2.3 bits;  conditional E-value: 54
+       core_cg14  56 d 56 
+                      
+  YP_001949886.1 155 T 155
+                     3 PP
+
+>> YP_001950096.1  RSL1_ORF217 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.2   0.1        24        36      26      44 ..      39      57 ..      25      77 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: -1.2 bits;  conditional E-value: 24
+       core_cg14 26 vlvmhlellkaaalkstid 44
+                    v    +el ka+a   t+ 
+  YP_001950096.1 39 VHRLSVELSKANARAHTMH 57
+                    3344466777777766654 PP
+
+>> YP_001949895.1  RSL1_ORF021 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.6   0.0        32        48      12      42 ..      12      41 ..       7      53 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: -1.6 bits;  conditional E-value: 32
+       core_cg14 12 tntddliqdldfrqvlvmhlellkaaalkst 42
+                    ++  +li+ ++  +v    ++ lk a l  t
+  YP_001949895.1 12 QQLKKLIDQHGAANVA-LAFDALKPAVLTHT 41
+                    4556788888887765.45677777666665 PP
+
+>> YP_001949961.1  RSL1_ORF085 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.0        20        30      10      23 ..      40      55 ..      33      73 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 20
+       core_cg14 10 lktntddliq..dldf 23
+                    ++ + d+l+   d df
+  YP_001949961.1 40 IQVQIDKLVArlDADF 55
+                    5555555554223333 PP
+
+>> YP_001949913.1  RSL1_ORF038 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.8   0.0        73   1.1e+02      50      72 ..      28      51 ..      14      61 .. 0.73
+   2 ?   -2.8   0.0        74   1.1e+02     105     118 ..     106     119 ..      96     122 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: -2.8 bits;  conditional E-value: 73
+       core_cg14 50 ayeedGdfygl.crvllleysvPy 72
+                    a+ e+  f gl +r ll ++s  y
+  YP_001949913.1 28 AFHERLGFKGLyVRDLLRDGSRGY 51
+                    566666777764688888888766 PP
+
+  == domain 2  score: -2.8 bits;  conditional E-value: 74
+       core_cg14 105 isslkssirdlyys 118
+                      + l+++ r +y  
+  YP_001949913.1 106 RNDLLQEQRAIYTD 119
+                     57899999999975 PP
+
+>> YP_001950218.1  RSL1_ORF340 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.6   0.0        33        49      30      56 ..      76     107 ..      65     129 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: -1.6 bits;  conditional E-value: 33
+       core_cg14  30 hlellkaaalkstidiPle.....rayeedGd 56 
+                     hl l  a+al+ t   P       r+++ dG+
+  YP_001950218.1  76 HLSLSLAEALVPTDSQPAPrvlmwRQFDADGN 107
+                     67777777777776655431111156666665 PP
+
+>> YP_001949887.1  RSL1_ORF012 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.4   0.0        27        41      27      27 ..      52      52 ..      27      80 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: -1.4 bits;  conditional E-value: 27
+       core_cg14 27 l 27
+                    +
+  YP_001949887.1 52 I 52
+                    1 PP
+
+>> YP_001949912.1  RSL1_ORF037 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.2   0.0        24        36      26      54 ..      41      69 ..      21      81 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: -1.2 bits;  conditional E-value: 24
+       core_cg14 26 vlvmhle.llkaaalkstidiPlerayeed 54
+                    v v  l  ++ a+ +kst    l ++y+e+
+  YP_001949912.1 41 VAVENLSqFFPASRIKSTE-RWLRKQYDEQ 69
+                    4444443144444445443.4455566665 PP
+
+>> YP_001950025.1  RSL1_ORF149 replicative DNA helicase
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950179.1  RSL1_ORF303 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.3   0.0        26        39      68      68 ..      89      89 ..      43     108 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: -1.3 bits;  conditional E-value: 26
+       core_cg14 68 y 68
+                     
+  YP_001950179.1 89 K 89
+                    1 PP
+
+>> YP_001950134.1  RSL1_ORF256 DNA polymerase I
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950077.1  RSL1_ORF198 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.5   0.0        62        92      41      65 ..     104     128 ..      97     139 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: -2.5 bits;  conditional E-value: 62
+       core_cg14  41 stidiPlerayeedGdfyglcrvll 65 
+                     s + iP+  ++   G+++   + l 
+  YP_001950077.1 104 SVVSIPPLTQFSCAGNYFFNRQQLT 128
+                     6678999999*****9875555454 PP
+
+>> YP_001950143.1  RSL1_ORF266 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.7   0.0        17        25      51      51 ..      42      42 ..       5      66 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: -0.7 bits;  conditional E-value: 17
+       core_cg14 51 y 51
+                    y
+  YP_001950143.1 42 Y 42
+                    2 PP
+
+>> YP_001950122.1  RSL1_ORF243 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.4   0.0        27        41      48      69 ..      91     112 ..      66     125 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: -1.4 bits;  conditional E-value: 27
+       core_cg14  48 erayeedGdfyglcrvllleys 69 
+                     e + +++G  y l  +l  e  
+  YP_001950122.1  91 EVTLDFEGRSYTLYNLLPTENK 112
+                     5556677777777777766654 PP
+
+>> YP_001950147.1  RSL1_ORF270 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.2   0.0        98   1.5e+02      92     109 ..     187     204 ..     174     214 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: -3.2 bits;  conditional E-value: 98
+       core_cg14  92 advlttdildideisslk 109
+                      +v t +++ +  i+++ 
+  YP_001950147.1 187 KEVTTDKVVGTFTINTVS 204
+                     567777777777777765 PP
+
+>> YP_001950151.1  RSL1_ORF274 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.3   0.0        52        77      62      88 ..     102     128 ..      78     134 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: -2.3 bits;  conditional E-value: 52
+       core_cg14  62 rvllleysvPyhmhwltlrlnnirdPt 88 
+                      +   ++  P    w t r    r Pt
+  YP_001950151.1 102 EMKDPKGERPNWFEWHTPRKYAQRGPT 128
+                     444445566667777777766666666 PP
+
+>> YP_001950148.1  RSL1_ORF271 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.3   0.0        25        38      44      71 ..      39      66 ..      15      73 .. 0.57
+
+  Alignments for each domain:
+  == domain 1  score: -1.3 bits;  conditional E-value: 25
+       core_cg14 44 diPlerayeedGdfyglcrvllleysvP 71
+                      P+ +   + G + ++   ll +y + 
+  YP_001950148.1 39 AYPVSHHTTKAGAYRAMRIKLLADYEEH 66
+                    4555544445555544444455556555 PP
+
+>> YP_001950073.1  RSL1_ORF194 tail fiber protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.0   0.0        85   1.3e+02      13      42 ..      92     122 ..      81     127 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: -3.0 bits;  conditional E-value: 85
+       core_cg14  13 ntddliqdldfrqvlvmhlellk.aaalkst 42 
+                     n   liqd ++  v  +  +++k a+++  t
+  YP_001950073.1  92 NQVALIQDGQWTVVSDYRGQMFKlADGTITT 122
+                     5566888888877777777777733455555 PP
+
+>> YP_001950168.1  RSL1_ORF292 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.9   0.1        19        28      75      84 ..      16      25 ..       4      36 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: -0.9 bits;  conditional E-value: 19
+       core_cg14 75 hwltlrlnni 84
+                    +w+ +r  n+
+  YP_001950168.1 16 KWVGIRWQNY 25
+                    5788887777 PP
+
+>> YP_001950187.1  RSL1_ORF310 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.8   0.0        38        56      35      56 ..      93     113 ..      63     137 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: -1.8 bits;  conditional E-value: 38
+       core_cg14  35 kaaalkstidiPlerayeedGd 56 
+                     +++ ++st   Pl+ ++e+  +
+  YP_001950187.1  93 RTDRTRSTELPPLD-QWENTTN 113
+                     33444444444444.6666555 PP
+
+>> YP_001949940.1  RSL1_ORF064 DNA binding protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.3   0.0        51        76      41      64 ..     143     166 ..     120     177 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: -2.3 bits;  conditional E-value: 51
+       core_cg14  41 stidiPlerayeedGdfyglcrvl 64 
+                         +P e +y   Gd     r +
+  YP_001949940.1 143 PPLYMPDEFKYRLVGDTQRRLRAV 166
+                     444466677777777765555554 PP
+
+>> YP_001950138.1  RSL1_ORF261 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6   0.0        15        22      59      66 ..      24      31 ..       2      53 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: -0.6 bits;  conditional E-value: 15
+       core_cg14 59 glcrvlll 66
+                    gl+r  l+
+  YP_001950138.1 24 GLTRQRLG 31
+                    34444443 PP
+
+>> YP_001950129.1  RSL1_ORF251 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.4   0.0        57        85      23      48 ..     117     142 ..      96     151 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: -2.4 bits;  conditional E-value: 57
+       core_cg14  23 frqvlvmhlellkaaalkstidiPle 48 
+                     f   +   ++ l +a+ ++ ++ P+ 
+  YP_001950129.1 117 FDTSMADAINQLLDASPVFGPQAPPL 142
+                     44444455555556666666666665 PP
+
+>> YP_001950162.1  RSL1_ORF285 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950130.1  RSL1_ORF252 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.9   0.0        39        58      47      57 ..      45      55 ..      29      75 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: -1.9 bits;  conditional E-value: 39
+       core_cg14 47 lerayeedGdf 57
+                    +er y  +Gd 
+  YP_001950130.1 45 MERFYILRGDH 55
+                    56666666665 PP
+
+>> YP_001949978.1  RSL1_ORF104 cytidyltransferase
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949920.1  RSL1_ORF045 phosphohydrolase
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950119.1  RSL1_ORF240 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949963.1  RSL1_ORF088 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.6   0.0        32        48      13      27 ..      26      40 ..      11      51 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: -1.6 bits;  conditional E-value: 32
+       core_cg14 13 ntddliqdldfrqvl 27
+                    n+  ++++ ++r+v 
+  YP_001949963.1 26 NPRTIYREAGMRNVR 40
+                    555566666666665 PP
+
+>> YP_001950103.1  RSL1_ORF223 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   0.0        34        51      45      45 ..      89      89 ..      55     126 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 34
+       core_cg14 45 i 45
+                    +
+  YP_001950103.1 89 L 89
+                    1 PP
+
+>> YP_001950091.1  RSL1_ORF212 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.0   0.0        43        64       9      30 ..      52      73 ..      44      89 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: -2.0 bits;  conditional E-value: 43
+       core_cg14  9 elktntddliqdldfrqvlvmh 30
+                    e k    d+++d  +++ l + 
+  YP_001950091.1 52 ETKSCKQDFVRDTKWQEYLDHC 73
+                    5667777777887777777653 PP
+
+>> YP_001950015.1  RSL1_ORF140 tail sheath
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950019.2  RSL1_ORF144 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.9   0.1        20        29      93      97 ..      34      38 ..      10      54 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: -0.9 bits;  conditional E-value: 20
+       core_cg14 93 dvltt 97
+                    d lt+
+  YP_001950019.2 34 DTLTV 38
+                    22222 PP
+
+>> YP_001950018.1  RSL1_ORF143 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.1   0.0        22        32      34      42 ..      40      48 ..       8      68 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: -1.1 bits;  conditional E-value: 22
+       core_cg14 34 lkaaalkst 42
+                    + a a+  t
+  YP_001950018.1 40 VVAVATTDT 48
+                    333344444 PP
+
+>> YP_001949889.1  RSL1_ORF014 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.5   0.0        60        90      94      96 ..      35      37 ..      10      59 .. 0.55
+
+  Alignments for each domain:
+  == domain 1  score: -2.5 bits;  conditional E-value: 60
+       core_cg14 94 vlt 96
+                    ++t
+  YP_001949889.1 35 IMT 37
+                    333 PP
+
+>> YP_003199410.1  RSL1_ORF120 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.4   0.0        55        82      15      34 ..      54      73 ..      45      82 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: -2.4 bits;  conditional E-value: 55
+       core_cg14 15 ddliqdldfrqvlvmhlell 34
+                     +l++  + r+v +  + +l
+  YP_003199410.1 54 YHLYHKTNQREVAEELMTVL 73
+                    55677777777766655555 PP
+
+>> YP_001950189.1  RSL1_ORF312 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.9   0.0        39        58      96     117 ..      27      49 ..      21      54 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: -1.9 bits;  conditional E-value: 39
+       core_cg14  96 ttdildid.eisslkssirdlyy 117
+                     t+ +ld + + +sl +  rd++ 
+  YP_001950189.1  27 TLTLLDKKyDGESLYDVARDVHE 49 
+                     55555543134677777777776 PP
+
+>> YP_001950117.1  RSL1_ORF238 adenosine 5'-phosphosulfate kinase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.0   0.0        88   1.3e+02      21      33 ..     178     190 ..     165     207 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: -3.0 bits;  conditional E-value: 88
+       core_cg14  21 ldfrqvlvmhlel 33 
+                       + +vlv h++l
+  YP_001950117.1 178 GTMNEVLVDHFDL 190
+                     5566788888776 PP
+
+>> YP_001950022.1  RSL1_ORF146 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9   0.0        81   1.2e+02      96     116 ..     153     173 ..     142     187 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 81
+       core_cg14  96 ttdildideisslkssirdly 116
+                        i+  +e +  k+ + +ly
+  YP_001950022.1 153 KAGIISAEEKAKSKEYYEKLY 173
+                     444555555555555554444 PP
+
+>> YP_001949968.1  RSL1_ORF093 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.1   0.0        23        34      50      59 ..      50      59 ..      12      89 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: -1.1 bits;  conditional E-value: 23
+       core_cg14 50 ayeedGdfyg 59
+                    ay+   +f+g
+  YP_001949968.1 50 AYQVSEQFFG 59
+                    4555555554 PP
+
+>> YP_001949938.1  RSL1_ORF062 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.6   0.0        32        48      53      64 ..       8      19 ..       2      66 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: -1.6 bits;  conditional E-value: 32
+       core_cg14 53 edGdfyglcrvl 64
+                     +G  y l ++l
+  YP_001949938.1  8 VRGTNYTLRQIL 19
+                    555555554333 PP
+
+>> YP_001950183.1  RSL1_ORF307 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.6   0.0        66        98      16      23 ..      60      67 ..      46      73 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: -2.6 bits;  conditional E-value: 66
+       core_cg14 16 dliqdldf 23
+                     l++dl+f
+  YP_001950183.1 60 MLLKDLGF 67
+                    35555555 PP
+
+>> YP_001949986.1  RSL1_ORF112 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.6   0.0        64        96      85     101 ..     134     150 ..     124     155 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: -2.6 bits;  conditional E-value: 64
+       core_cg14  85 rdPtkytadvlttdild 101
+                      dP +++a  +  d++d
+  YP_001949986.1 134 EDPEEWSAADMPEDVMD 150
+                     57888888777777666 PP
+
+>> YP_001950219.1  RSL1_ORF341 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.0   0.0        87   1.3e+02      28      44 ..     305     321 ..     288     327 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: -3.0 bits;  conditional E-value: 87
+       core_cg14  28 vmhlellkaaalkstid 44 
+                     v+h+++ k++a++  i+
+  YP_001950219.1 305 VHHVKVSKSNAIRAVIE 321
+                     58888888888877665 PP
+
+>> YP_001949994.1  RSL1_ORF119 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   0.0        34        51      72      79 ..      43      50 ..      30      87 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 34
+       core_cg14 72 yhmhwltl 79
+                    y + wl l
+  YP_001949994.1 43 YDLRWLIL 50
+                    44444444 PP
+
+>> YP_001949916.1  RSL1_ORF041 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.0   0.0        43        64      32      50 ..      13      31 ..       6      54 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: -2.0 bits;  conditional E-value: 43
+       core_cg14 32 ellkaaalkstidiPlera 50
+                    + ++a +  +  +i   r+
+  YP_001949916.1 13 DAFRAFTGAFDTPIARRRQ 31
+                    5555555555555554444 PP
+
+>> YP_001950044.1  RSL1_ORF167 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.8   0.0        37        55      27      38 ..      54      65 ..      48      79 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: -1.8 bits;  conditional E-value: 37
+       core_cg14 27 lvmhlellkaaa 38
+                    ++ hle+ +a +
+  YP_001950044.1 54 VKAHLEVHRAVS 65
+                    567888888754 PP
+
+>> YP_001949977.1  RSL1_ORF102 plasmid maintenance system antidote protein like protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.9   0.1        20        30      24      24 ..      29      29 ..       6      50 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: -0.9 bits;  conditional E-value: 20
+       core_cg14 24 r 24
+                    r
+  YP_001949977.1 29 R 29
+                    2 PP
+
+>> YP_001949982.1  RSL1_ORF108 topoisomerase IB
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950164.1  RSL1_ORF288 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.4   0.0        28        42      98     104 ..      43      49 ..      13      63 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: -1.4 bits;  conditional E-value: 28
+       core_cg14  98 dildide 104
+                      i++ d+
+  YP_001950164.1  43 GIINADD 49 
+                     3444444 PP
+
+>> YP_001949922.1  RSL1_ORF047 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   0.0        34        51      35      44 ..      56      65 ..      29     114 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 34
+       core_cg14 35 kaaalkstid 44
+                    +++a++ t+ 
+  YP_001949922.1 56 RTEATQATVL 65
+                    4444444433 PP
+
+>> YP_001949935.1  RSL1_ORF059 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.9   0.0        38        57      59      64 ..      39      44 ..      16      70 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: -1.9 bits;  conditional E-value: 38
+       core_cg14 59 glcrvl 64
+                    g c  l
+  YP_001949935.1 39 GACHKL 44
+                    333332 PP
+
+>> YP_001950072.1  RSL1_ORF193 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.0        49        73      94      99 ..      69      74 ..      33      96 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 49
+       core_cg14 94 vlttdi 99
+                    v t  i
+  YP_001950072.1 69 VSTSSI 74
+                    333333 PP
+
+>> YP_001950207.1  RSL1_ORF331 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950214.1  RSL1_ORF336 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.6   0.0        65        98      61      61 ..     213     213 ..     168     255 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: -2.6 bits;  conditional E-value: 65
+       core_cg14  61 c 61 
+                     c
+  YP_001950214.1 213 C 213
+                     2 PP
+
+>> YP_001950158.1  RSL1_ORF281 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.0   0.0        87   1.3e+02      96     107 ..      46      57 ..      28      71 .. 0.54
+
+  Alignments for each domain:
+  == domain 1  score: -3.0 bits;  conditional E-value: 87
+       core_cg14  96 ttdildideiss 107
+                     +t +  id+ ++
+  YP_001950158.1  46 STRLNRIDDLKT 57 
+                     444433443333 PP
+
+>> YP_001949962.1  RSL1_ORF086 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.0        70     1e+02      30      43 ..     125     138 ..     122     161 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 70
+       core_cg14  30 hlellkaaalksti 43 
+                     hl+++ a  + + +
+  YP_001949962.1 125 HLDYVAARKTIYIP 138
+                     66666555444333 PP
+
+>> YP_001949970.1  RSL1_ORF095 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.0        48        71      48      64 ..      16      31 ..       6      41 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 48
+       core_cg14 48 erayeedGdfyglcrvl 64
+                    e a e++G+ y   r +
+  YP_001949970.1 16 E-AVEMRGQQYISLRQM 31
+                    4.556666665554444 PP
+
+>> YP_001950204.2  RSL1_ORF327 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.0        68     1e+02      25      47 ..      31      53 ..      18      67 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 68
+       core_cg14 25 qvlvmhlellkaaalkstidiPl 47
+                    +vl  h+ l +++ + s i  P 
+  YP_001950204.2 31 RVLGDHIILSRNSITASCISQPE 53
+                    56777777788887777777765 PP
+
+>> YP_001949991.1  RSL1_ORF116 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.0        50        74      27      34 ..      97     104 ..      53     130 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 50
+       core_cg14  27 lvmhlell 34 
+                     l+mhl  l
+  YP_001949991.1  97 LQMHLTAL 104
+                     34444444 PP
+
+>> YP_001950055.1  RSL1_ORF177 5'-3' exonuclease
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949934.1  RSL1_ORF058 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.4   0.0        55        82      32      44 ..      62      74 ..      43      93 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: -2.4 bits;  conditional E-value: 55
+       core_cg14 32 ellkaaalkstid 44
+                     ++ + a+  t d
+  YP_001949934.1 62 SFVSNVATSHTYD 74
+                    4444444444433 PP
+
+>> YP_001949894.1  RSL1_ORF019 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9   0.0        81   1.2e+02      58      69 ..      53      64 ..      42      80 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 81
+       core_cg14 58 yglcrvllleys 69
+                    yg+cr+ + e s
+  YP_001949894.1 53 YGFCRLRVNELS 64
+                    577887776655 PP
+
+>> YP_001950133.1  RSL1_ORF255 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.9   0.0        40        59      86      96 ..      84      94 ..      52     113 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: -1.9 bits;  conditional E-value: 40
+       core_cg14 86 dPtkytadvlt 96
+                      t++ +  +t
+  YP_001950133.1 84 RATNWIVSYIT 94
+                    34445444333 PP
+
+>> YP_001950034.1  RSL1_ORF158 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950141.1  RSL1_ORF264 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9   0.0        80   1.2e+02      27      37 ..      41      51 ..      28      64 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 80
+       core_cg14 27 lvmhlellkaa 37
+                    +  +++++ ++
+  YP_001950141.1 41 IDEKIDFYGDD 51
+                    44444444333 PP
+
+>> YP_001949960.1  RSL1_ORF084 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.6   0.0        32        48      94      94 ..      52      52 ..      29      75 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: -1.6 bits;  conditional E-value: 32
+       core_cg14 94 v 94
+                    v
+  YP_001949960.1 52 V 52
+                    2 PP
+
+>> YP_001949888.1  RSL1_ORF013 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.0   0.0        41        62      22      35 ..      34      47 ..      24      65 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: -2.0 bits;  conditional E-value: 41
+       core_cg14 22 dfrqvlvmhlellk 35
+                    df +v ++ ++ + 
+  YP_001949888.1 34 DFTKVKNHPIQSFA 47
+                    44444444444444 PP
+
+>> YP_001950023.1  RSL1_ORF147 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9   0.0        79   1.2e+02      32      47 ..      41      56 ..      23      62 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 79
+       core_cg14 32 ellkaaalkstidiPl 47
+                     llka + k t ++P 
+  YP_001950023.1 41 LLLKALGKKPTDPLPH 56
+                    3567777777777775 PP
+
+>> YP_001949911.1  RSL1_ORF036 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.0        21        32      87      87 ..      29      29 ..       3      59 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 21
+       core_cg14 87 P 87
+                    P
+  YP_001949911.1 29 P 29
+                    2 PP
+
+>> YP_001950150.1  RSL1_ORF273 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.6   0.0        63        94      26      26 ..      98      98 ..      66     133 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: -2.6 bits;  conditional E-value: 63
+       core_cg14 26 v 26
+                    v
+  YP_001950150.1 98 V 98
+                    2 PP
+
+>> YP_001950102.1  RSL1_ORF222 single strand DNA binding protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.0   0.0        87   1.3e+02      75      83 ..      36      44 ..      30      55 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -3.0 bits;  conditional E-value: 87
+       core_cg14 75 hwltlrlnn 83
+                    +w+tlrl +
+  YP_001950102.1 36 KWVTLRLFG 44
+                    7*****965 PP
+
+>> YP_001950007.1  RSL1_ORF132 head maturation protease
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950012.1  RSL1_ORF137 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.0        71   1.1e+02      31      46 ..       7      22 ..       4      54 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 71
+       core_cg14 31 lellkaaalkstidiP 46
+                    l++l +aa+k++   P
+  YP_001950012.1  7 LDFLMTAAVKYAQGKP 22
+                    6666666666655444 PP
+
+>> YP_001950124.1  RSL1_ORF246 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.1   0.0        47        70      30      38 ..      85      93 ..      65     114 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: -2.1 bits;  conditional E-value: 47
+       core_cg14 30 hlellkaaa 38
+                     le+l++++
+  YP_001950124.1 85 QLEVLRNNC 93
+                    566666664 PP
+
+>> YP_001949890.1  RSL1_ORF015 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.0   0.1        42        62      39      39 ..      65      65 ..      22      88 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: -2.0 bits;  conditional E-value: 42
+       core_cg14 39 l 39
+                    l
+  YP_001949890.1 65 L 65
+                    1 PP
+
+>> YP_001949959.1  RSL1_ORF083 acyl carrier protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.2   0.0        23        35      34      34 ..      47      47 ..       5      79 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: -1.2 bits;  conditional E-value: 23
+       core_cg14 34 l 34
+                    +
+  YP_001949959.1 47 V 47
+                    1 PP
+
+>> YP_001950081.1  RSL1_ORF202 tail sheath
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.4   0.0        27        40      79      87 ..      71      79 ..      23     108 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: -1.4 bits;  conditional E-value: 27
+       core_cg14 79 lrlnnirdP 87
+                    l  n++ dP
+  YP_001950081.1 71 LSYNGLSDP 79
+                    334444454 PP
+
+>> YP_001949929.1  RSL1_ORF053 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9   0.0        79   1.2e+02      29      40 ..      31      42 ..       8      59 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 79
+       core_cg14 29 mhlellkaaalk 40
+                    mh   + ++ l 
+  YP_001949929.1 31 MHRYKMLEQELC 42
+                    333333333344 PP
+
+>> YP_001949949.1  RSL1_ORF073 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950009.1  RSL1_ORF134 ATPase
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950078.1  RSL1_ORF199 baseplate assembly protein W-like protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.1   0.0        47        70      57      57 ..     111     111 ..      78     147 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: -2.1 bits;  conditional E-value: 47
+       core_cg14  57 f 57 
+                      
+  YP_001950078.1 111 I 111
+                     2 PP
+
+>> YP_001950082.1  RSL1_ORF203 PmgG-like head morphogenesis
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949953.1  RSL1_ORF077 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950045.1  RSL1_ORF168 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.5   0.0        29        43      19      25 ..      25      31 ..       9      57 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: -1.5 bits;  conditional E-value: 29
+       core_cg14 19 qdldfrq 25
+                     d d rq
+  YP_001950045.1 25 PDDDARQ 31
+                    4444444 PP
+
+>> YP_001950127.1  RSL1_ORF249 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949984.1  RSL1_ORF110 homospermidine synthase
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950028.1  RSL1_ORF152 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9   0.0        82   1.2e+02      78      85 ..       4      11 ..       3      20 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 82
+       core_cg14 78 tlrlnnir 85
+                    tl++nn++
+  YP_001950028.1  4 TLKINNFQ 11
+                    67777764 PP
+
+>> YP_001950047.1  RSL1_ORF170 CRISPR/Cas system associated
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950170.1  RSL1_ORF294 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949939.1  RSL1_ORF063 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.1   0.0        23        34      69      69 ..      52      52 ..       7      88 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: -1.1 bits;  conditional E-value: 23
+       core_cg14 69 s 69
+                     
+  YP_001949939.1 52 R 52
+                    1 PP
+
+>> YP_001949972.1  RSL1_ORF097 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   0.0        33        50      86      95 ..       9      18 ..       5      39 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 33
+       core_cg14 86 dPtkytadvl 95
+                    dP k+   v+
+  YP_001949972.1  9 DPPKWYERVI 18
+                    5555554444 PP
+
+>> YP_001949926.1  RSL1_ORF050 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.6   0.0        32        47      13      13 ..      64      64 ..      27      94 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: -1.6 bits;  conditional E-value: 32
+       core_cg14 13 n 13
+                     
+  YP_001949926.1 64 V 64
+                    1 PP
+
+>> YP_001950097.1  RSL1_ORF218 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.8   0.0        73   1.1e+02      92      92 ..     103     103 ..      67     122 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: -2.8 bits;  conditional E-value: 73
+       core_cg14  92 a 92 
+                      
+  YP_001950097.1 103 L 103
+                     2 PP
+
+>> YP_001950120.1  RSL1_ORF241 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.0   0.0        44        65      35      35 ..      51      51 ..      15      78 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: -2.0 bits;  conditional E-value: 44
+       core_cg14 35 k 35
+                    +
+  YP_001950120.1 51 R 51
+                    2 PP
+
+>> YP_001950121.1  RSL1_ORF242 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.2   0.0        99   1.5e+02      93     103 ..      18      28 ..      12      39 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: -3.2 bits;  conditional E-value: 99
+       core_cg14  93 dvlttdildid 103
+                     d lt di+ ++
+  YP_001950121.1  18 DPLTSDIIALS 28 
+                     66777777655 PP
+
+>> YP_001949999.1  RSL1_ORF124 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950145.1  RSL1_ORF268 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949919.1  RSL1_ORF044 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949967.1  RSL1_ORF092 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949914.1  RSL1_ORF039 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.0        71   1.1e+02      88      97 ..      64      73 ..      51      94 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 71
+       core_cg14 88 tkytadvltt 97
+                       t +vl  
+  YP_001949914.1 64 EAPTREVLVF 73
+                    4444444433 PP
+
+>> YP_001950033.1  RSL1_ORF157 beta clamp domain-like protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949903.1  RSL1_ORF028 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.4   0.0        56        84      25      30 ..      52      57 ..      32      83 .. 0.57
+
+  Alignments for each domain:
+  == domain 1  score: -2.4 bits;  conditional E-value: 56
+       core_cg14 25 qvlvmh 30
+                    + +v+ 
+  YP_001949903.1 52 ERVVQG 57
+                    333333 PP
+
+>> YP_001950215.1  RSL1_ORF337 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.0        50        75      46      50 ..      33      37 ..       5      60 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 50
+       core_cg14 46 Plera 50
+                      er+
+  YP_001950215.1 33 ETERS 37
+                    33333 PP
+
+>> YP_001950106.1  RSL1_ORF226 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.4   0.0        57        85      86      96 ..      61      70 ..      26      87 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: -2.4 bits;  conditional E-value: 57
+       core_cg14 86 dPtkytadvlt 96
+                    +P ky + v+t
+  YP_001950106.1 61 NPHKY-VTVIT 70
+                    56666.44555 PP
+
+>> YP_001950003.1  RSL1_ORF128 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949884.1  RSL1_ORF009 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.1   0.0        96   1.4e+02      96     104 ..      16      24 ..       6      38 .. 0.55
+
+  Alignments for each domain:
+  == domain 1  score: -3.1 bits;  conditional E-value: 96
+       core_cg14  96 ttdildide 104
+                      t i  i+e
+  YP_001949884.1  16 LTRITAINE 24 
+                     333333333 PP
+
+>> YP_001950181.1  RSL1_ORF305 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.3   0.0        54        81      51      57 ..      27      33 ..      10      59 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: -2.3 bits;  conditional E-value: 54
+       core_cg14 51 yeedGdf 57
+                    y ++G f
+  YP_001950181.1 27 YRHEGRF 33
+                    4444444 PP
+
+>> YP_001950002.1  RSL1_ORF127 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.9   0.0        41        61      53      53 ..      57      57 ..      28      95 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: -1.9 bits;  conditional E-value: 41
+       core_cg14 53 e 53
+                     
+  YP_001950002.1 57 I 57
+                    1 PP
+
+>> YP_001949885.1  RSL1_ORF010 DNA topoisomerase
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949882.1  RSL1_ORF007 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_003199408.1  RSL1_ORF087 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.0   0.0        86   1.3e+02      61      74 ..      90     103 ..      66     107 .. 0.57
+
+  Alignments for each domain:
+  == domain 1  score: -3.0 bits;  conditional E-value: 86
+       core_cg14  61 crvllleysvPyhm 74 
+                        +  ey  P + 
+  YP_003199408.1  90 GECMAHEYQHPARF 103
+                     33345566666555 PP
+
+>> YP_001949892.1  RSL1_ORF017 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.5   0.0        29        43      23      24 ..      24      25 ..       5      60 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: -1.5 bits;  conditional E-value: 29
+       core_cg14 23 fr 24
+                    f 
+  YP_001949892.1 24 FN 25
+                    32 PP
+
+>> YP_001950032.1  RSL1_ORF156 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950190.1  RSL1_ORF313 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.0        48        72      64      75 ..      14      25 ..       4      43 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 48
+       core_cg14 64 llleysvPyhmh 75
+                    ll e   P +m 
+  YP_001950190.1 14 LLYEAVTPNNME 25
+                    566666666663 PP
+
+>> YP_001950184.2  RSL1_ORF308 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949955.1  RSL1_ORF079 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.6   0.0        31        46      54      54 ..      31      31 ..       2      67 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: -1.6 bits;  conditional E-value: 31
+       core_cg14 54 d 54
+                     
+  YP_001949955.1 31 A 31
+                    1 PP
+
+>> YP_001950153.1  RSL1_ORF276 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950149.1  RSL1_ORF272 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949906.1  RSL1_ORF031 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.8   0.0        36        54      91      91 ..      25      25 ..       9      39 .. 0.57
+
+  Alignments for each domain:
+  == domain 1  score: -1.8 bits;  conditional E-value: 36
+       core_cg14 91 t 91
+                     
+  YP_001949906.1 25 M 25
+                    1 PP
+
+>> YP_001950108.1  RSL1_ORF229 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950027.1  RSL1_ORF151 DNA polymerase
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950094.1  RSL1_ORF215 Holliday junction resolvase
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950201.1  RSL1_ORF324 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.8   0.0        36        53      55      55 ..      27      27 ..       2      52 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: -1.8 bits;  conditional E-value: 36
+       core_cg14 55 G 55
+                    G
+  YP_001950201.1 27 G 27
+                    1 PP
+
+>> YP_001950193.1  RSL1_ORF316 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   0.0        34        51      70      75 ..      27      32 ..       9      45 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 34
+       core_cg14 70 vPyhmh 75
+                    v yh h
+  YP_001950193.1 27 VSYHEH 32
+                    334444 PP
+
+>> YP_001950017.1  RSL1_ORF142 tail tube protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9   0.0        83   1.2e+02      33      43 ..     101     111 ..      84     129 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 83
+       core_cg14  33 llkaaalksti 43 
+                     ++++a++ st 
+  YP_001950017.1 101 WVRNAGTESTT 111
+                     56777776664 PP
+
+>> YP_001950174.1  RSL1_ORF298 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.1   0.0        92   1.4e+02      30      30 ..      30      30 ..       6      61 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: -3.1 bits;  conditional E-value: 92
+       core_cg14 30 h 30
+                    h
+  YP_001950174.1 30 H 30
+                    2 PP
+
+>> YP_001950079.1  RSL1_ORF200 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949893.1  RSL1_ORF018 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949990.1  RSL1_ORF115 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950217.2  RSL1_ORF339 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949881.1  RSL1_ORF006 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.6   0.0        32        47      87      87 ..      21      21 ..       5      42 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: -1.6 bits;  conditional E-value: 32
+       core_cg14 87 P 87
+                    P
+  YP_001949881.1 21 P 21
+                    1 PP
+
+>> YP_001949973.1  RSL1_ORF098 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949921.1  RSL1_ORF046 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950066.1  RSL1_ORF187 DksA-like zinc-finger protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.0        69     1e+02      27      27 ..      19      19 ..       3      35 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 69
+       core_cg14 27 l 27
+                    +
+  YP_001950066.1 19 I 19
+                    1 PP
+
+>> YP_001949930.1  RSL1_ORF054 appr-1-pase family/phage tail assembly-like protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950180.1  RSL1_ORF304 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.5   0.0        30        45      37      37 ..      18      18 ..       2      38 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: -1.5 bits;  conditional E-value: 30
+       core_cg14 37 a 37
+                     
+  YP_001950180.1 18 I 18
+                    0 PP
+
+>> YP_001950198.2  RSL1_ORF320 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.5   0.0        62        93      93      93 ..      62      62 ..      30      86 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: -2.5 bits;  conditional E-value: 62
+       core_cg14 93 d 93
+                    d
+  YP_001950198.2 62 D 62
+                    2 PP
+
+>> YP_003199413.1  RSL1_ORF260 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_003199409.1  RSL1_ORF103 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   0.0        35        52      80      81 ..      20      21 ..       2      42 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 35
+       core_cg14 80 rl 81
+                    r+
+  YP_003199409.1 20 RM 21
+                    33 PP
+
+>> YP_001949948.1  RSL1_ORF072 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950024.1  RSL1_ORF148 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.8   0.0        36        53      59      59 ..      33      33 ..       3      60 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: -1.8 bits;  conditional E-value: 36
+       core_cg14 59 g 59
+                    g
+  YP_001950024.1 33 G 33
+                    3 PP
+
+>> YP_001950199.1  RSL1_ORF322 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.0        68     1e+02      22      22 ..      42      42 ..       5      62 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 68
+       core_cg14 22 d 22
+                     
+  YP_001950199.1 42 S 42
+                    1 PP
+
+>> YP_001949975.1  RSL1_ORF100 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.9   0.0        38        57      34      34 ..      22      22 ..       2      45 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: -1.9 bits;  conditional E-value: 38
+       core_cg14 34 l 34
+                    +
+  YP_001949975.1 22 F 22
+                    1 PP
+
+>> YP_001950041.1  RSL1_ORF164 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9   0.0        78   1.2e+02      99     110 ..      25      36 ..      15      51 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 78
+       core_cg14  99 ildideisslks 110
+                     +l  d+ ++l +
+  YP_001950041.1  25 LLSRDACNTLVD 36 
+                     444455555544 PP
+
+>> YP_001950220.1  RSL1_ORF342 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950132.1  RSL1_ORF254 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950050.1  RSL1_ORF172 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949950.1  RSL1_ORF074 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.0        70     1e+02      99     107 ..      17      25 ..       4      39 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 70
+       core_cg14  99 ildideiss 107
+                     ++d + is 
+  YP_001949950.1  17 VIDRSRISQ 25 
+                     334444444 PP
+
+>> YP_001950146.1  RSL1_ORF269 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.0   0.0        88   1.3e+02      20      20 ..      36      36 ..      16      56 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: -3.0 bits;  conditional E-value: 88
+       core_cg14 20 d 20
+                    d
+  YP_001950146.1 36 D 36
+                    1 PP
+
+>> YP_001950216.1  RSL1_ORF338 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_003199411.1  RSL1_ORF227 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.4   0.0        58        87      41      50 ..      35      44 ..      21      64 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: -2.4 bits;  conditional E-value: 58
+       core_cg14 41 stidiPlera 50
+                     t d Pl r+
+  YP_003199411.1 35 ATSDPPLFRS 44
+                    4455554444 PP
+
+>> YP_001950169.1  RSL1_ORF293 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950128.1  RSL1_ORF250 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950173.1  RSL1_ORF297 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.8   0.0        77   1.1e+02      17      17 ..      32      32 ..       7      49 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: -2.8 bits;  conditional E-value: 77
+       core_cg14 17 l 17
+                    l
+  YP_001950173.1 32 L 32
+                    1 PP
+
+>> YP_001950211.1  RSL1_ORF334 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.0        68     1e+02     105     105 ..      46      46 ..      18      75 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 68
+       core_cg14 105 i 105
+                     i
+  YP_001950211.1  46 I 46 
+                     2 PP
+
+>> YP_001950157.1  RSL1_ORF280 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.0        49        73      52      52 ..      40      40 ..      18      59 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 49
+       core_cg14 52 e 52
+                    +
+  YP_001950157.1 40 D 40
+                    1 PP
+
+>> YP_001950118.1  RSL1_ORF239 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.6   0.0        31        47      64      64 ..      13      13 ..       1      37 [. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: -1.6 bits;  conditional E-value: 31
+       core_cg14 64 l 64
+                    +
+  YP_001950118.1 13 I 13
+                    2 PP
+
+>> YP_001950196.1  RSL1_ORF319 portal protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.0   0.0        85   1.3e+02       7       7 ..      42      42 ..      23      60 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: -3.0 bits;  conditional E-value: 85
+       core_cg14  7 s 7 
+                    +
+  YP_001950196.1 42 N 42
+                    2 PP
+
+>> YP_001950085.1  RSL1_ORF206 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   0.0        33        50      51      51 ..      24      24 ..       3      47 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 33
+       core_cg14 51 y 51
+                    +
+  YP_001950085.1 24 F 24
+                    1 PP
+
+>> YP_001950026.1  RSL1_ORF150 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.0   0.0        88   1.3e+02      12      19 ..      35      42 ..      21      48 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: -3.0 bits;  conditional E-value: 88
+       core_cg14 12 tntddliq 19
+                    t+  +liq
+  YP_001950026.1 35 TPNGELIQ 42
+                    44445555 PP
+
+>> YP_001949942.1  RSL1_ORF066 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.0        50        74      61      61 ..      41      41 ..      11      75 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 50
+       core_cg14 61 c 61
+                    +
+  YP_001949942.1 41 A 41
+                    1 PP
+
+>> YP_001950088.1  RSL1_ORF209 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950135.1  RSL1_ORF257 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949877.1  RSL1_ORF002 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950140.1  RSL1_ORF263 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949907.1  RSL1_ORF032 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949944.1  RSL1_ORF068 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950053.1  RSL1_ORF175 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949976.1  RSL1_ORF101 TRAP transporter solute receptor like protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950006.1  RSL1_ORF131 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950036.1  RSL1_ORF159 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949931.1  RSL1_ORF055 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950042.1  RSL1_ORF165 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950051.1  RSL1_ORF173 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950200.1  RSL1_ORF323 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950069.1  RSL1_ORF190 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_003199414.1  RSL1_ORF287 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950064.1  RSL1_ORF185 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.1   0.0        93   1.4e+02      99      99 ..      29      29 ..       8      48 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: -3.1 bits;  conditional E-value: 93
+       core_cg14 99 i 99
+                    i
+  YP_001950064.1 29 I 29
+                    1 PP
+
+>> YP_001949988.2  RSL1_ORF113 dCMP deaminase
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949880.1  RSL1_ORF005 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.0        48        71      19      19 ..      46      46 ..      17      71 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 48
+       core_cg14 19 q 19
+                    +
+  YP_001949880.1 46 H 46
+                    0 PP
+
+>> YP_001950089.1  RSL1_ORF210 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950142.1  RSL1_ORF265 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949876.1  RSL1_ORF001 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9   0.0        81   1.2e+02      81      88 ..      13      20 ..       3      29 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 81
+       core_cg14 81 lnnirdPt 88
+                    l + r Pt
+  YP_001949876.1 13 LAGKRGPT 20
+                    44444444 PP
+
+>> YP_001950195.1  RSL1_ORF318 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001950052.1  RSL1_ORF174 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949936.1  RSL1_ORF060 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949965.1  RSL1_ORF090 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.1   0.0        91   1.4e+02      99      99 ..      36      36 ..      17      58 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: -3.1 bits;  conditional E-value: 91
+       core_cg14 99 i 99
+                    +
+  YP_001949965.1 36 L 36
+                    1 PP
+
+>> YP_001950191.2  RSL1_ORF314 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.6   0.0        66        99      32      34 ..      34      36 ..      16      49 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: -2.6 bits;  conditional E-value: 66
+       core_cg14 32 ell 34
+                    +++
+  YP_001950191.2 34 DVV 36
+                    333 PP
+
+>> YP_001950070.1  RSL1_ORF191 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> YP_001949918.1  RSL1_ORF043 hypothetical protein
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (121 nodes)
+Target sequences:                        343  (74095 residues searched)
+Passed MSV filter:                       343  (1); expected 343.0 (1)
+Passed bias filter:                      343  (1); expected 343.0 (1)
+Passed Vit filter:                       343  (1); expected 343.0 (1)
+Passed Fwd filter:                       343  (1); expected 343.0 (1)
+Initial search space (Z):                343  [actual number of targets]
+Domain search space  (domZ):             230  [number of targets reported over threshold]
+# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.09
+# Mc/sec: 92.16
+//
+[ok]

@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  inputs/loo_5.hmm
+# target sequence database:        work/holdout_5.faa
+# per-seq hits tabular output:     results/loo_5.tbl
+# per-dom hits tabular output:     results/loo_5.domtbl
+# sequence reporting threshold:    E-value <= 100
+# domain reporting threshold:      E-value <= 100
+# Max sensitivity mode:            on [all heuristic filters off]
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       loo_5  [M=625]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.8e-24   72.0   0.0    4.5e-24   70.6   0.0    1.5  1  QFP93061.1  hypothetical protein [Serratia phage PCH45]
+
+
+Domain annotation for each sequence (and alignments):
+>> QFP93061.1  hypothetical protein [Serratia phage PCH45]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   70.6   0.0   4.5e-24   4.5e-24      90     595 ..     109     639 ..      89     651 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 70.6 bits;  conditional E-value: 4.5e-24
+       loo_5  90 drdqaqvgysgLvvvkva.kingstkivvrtLvLentgielpkrklkiengltgeiieekvlvgdvftaqywnrvaelvrnrvgksnaevlsAGpavvt 187
+                   +q++v +++ + + +  k + +++ +v+tL L+  ++++ ++ +++e g  g  +  ++   d +++ +   v +++++   ++ + +++ G+  v+
+  QFP93061.1 109 GTEQTRVRIESVIFLATReKAGAKPETLVYTLFLPT-SSNIGTQYTEGERGRSG--LGYSAVASDAYDGHFKRNVEAFIKKDSRNNAGDIIHIGAGTVP 204
+                 45799999999887655549999***********95.68999998999999877..6667778********************9999************ PP
+
+       loo_5 188 adlklkdelalkqLLiksvNaied................alakrsgeppFniamlvdseqetlaaklnfngqplkdvvGnPiRsDivvtls..rvkkq 268
+                   ++l  e  ++ L+  +vN+                      kr+g+           ++ +l  ++ f++    dv   P   Di +++s  r++++
+  QFP93061.1 205 STFDLSKEEKVRGLIQYAVNVLWYqfadmydnindfalvdLFPKRNGDDEDDRRGRRRDDEVILNSNVVFKPEESLDVFEMPHEHDIQIEVSlgRRRRD 303
+                 ********************9866333344555555444444556666555555555566778999999*****************9877762244444 PP
+
+       loo_5 269 aq.q.enefydtdeklnqvslfvdLeytPqaq.......qqalfgvlqqgaqlpaqftpriviTdvrkaeelqAntpelyllaLsnaarltagqaWars 358
+                    + +    + ++ l ++   vdL y   ++         +  g   +     + +  ++ +T++ +        + ++l aL n  +l + +   ++
+  QFP93061.1 304 KDrPrNALSLEENQTLAKIGANVDLVYLGEEDnggrrsgRNKFRGRRRDEESAVPLYGLALNVTEITTE---GRDVMAMQLTALANIPLLIKESILTQA 399
+                 3313134478999**************998887788776666667754444444488889999999887...4567899********9999999***** PP
+
+       loo_5 359 llpklakgvdmrdiGAlgyvsklevkietktetftdeqlakllykvvqp.slviqiDieemGensaiesllldAaggvng..qravkaiiralnnltgg 454
+                 llp + ++  +rd+ Al+ +      +++ +e   +e+ a+l+  v+++ s  i    +++G +s++   l+dA          +++ + r ln lt+ 
+  QFP93061.1 400 LLPSADEV-RLRDPRALALEQPESFPADLIAEHPSEEEWANLMEAVLHEdSTYIFLHAPRTGVHSQLLTYLVDACDEESDtsDDSYEIVTRVLNALTNN 497
+                 ***98887.*************9************************97478899*******************8776554499*************** PP
+
+       loo_5 455 eFskffdhatqpiivrtgtridlGhYvdkdgeksDrRdlDvLaalNis..dgnev.ewksiygtqvdmslhpkrrarrskkldrvyLgesvtytgraeR 550
+                 e+++   +  +   + + ++   G+++d+      rRdl  ++ +N+    g++  e+ +iy+   d++   +  ++r+++l   y g+ +t   r   
+  QFP93061.1 498 EYRQLGGED-MEFGTLEIRQSFAGYWNDDR--SGERRDLAPIGYFNMLtrFGQQHpEYLDIYTRCFDNDSDTDDINARNEELISAYTGKGYTIVDRNDV 593
+                 ***998777.5565666666678***9876..678899999999999866577778******99999999999999999999999************** PP
+
+       loo_5 551 vtfnpkfieALdkaiaaaGltvrmeNiqvlfgaqrfagnaai.gnm 595
+                 v  np+ +  +  a+ + G+ +  e i++  g  r ++n    g+m
+  QFP93061.1 594 VRLNPAWLATIADALRDSGVSIDAEGIHTERGRRRPMSNQYAtGDM 639
+                 *********************************9988876552554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (625 nodes)
+Target sequences:                          1  (659 residues searched)
+Passed MSV filter:                         1  (1); expected 1.0 (1)
+Passed bias filter:                        1  (1); expected 1.0 (1)
+Passed Vit filter:                         1  (1); expected 1.0 (1)
+Passed Fwd filter:                         1  (1); expected 1.0 (1)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 36.01
+//
+[ok]

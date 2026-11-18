@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  inputs/loo_3.hmm
+# target sequence database:        work/holdout_3.faa
+# per-seq hits tabular output:     results/loo_3.tbl
+# per-dom hits tabular output:     results/loo_3.domtbl
+# sequence reporting threshold:    E-value <= 100
+# domain reporting threshold:      E-value <= 100
+# Max sensitivity mode:            on [all heuristic filters off]
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       loo_3  [M=635]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+   9.4e-156  505.7   2.5   1.2e-155  505.3   2.5    1.0  1  NP_803620.1  
+
+
+Domain annotation for each sequence (and alignments):
+>> NP_803620.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  505.3   2.5  1.2e-155  1.2e-155      22     629 ..      13     611 ..       3     620 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 505.3 bits;  conditional E-value: 1.2e-155
+        loo_3  22 qqlkdfapQkkeerttqsqntpreedtgginnqlsrsgrvqGgdarasealekfkrlkeealedqdfaddFlilrvdrdqarvrysslvvasrak.vg 118
+                   q++  apQ+  + ++ +++t   + t gin    rsgr +G dar ++al++f+++keea+  qd+ ddF+i r+drd ++v++ +l++++ ak ++
+  NP_803620.1  13 TQATAPAPQPTAQ-RQAQRPTGAPGSTTGINHLMRRSGRLDGSDARSADALQVFTKVKEEAIRHQDLPDDFDIHRFDRDAQQVGMAGLLIVKLAKdIN 109
+                  3455568998755.5599***********************************************************************9998755** PP
+
+        loo_3 119 gkpkilvytLvLpns.siel.pkrkteienGlsgevleveavvgdvydgtyinrvaalvkkavgksnaevidaGaavvpaeldlkdeekvkqLlikav 214
+                  g+ k++v+tLvL n  +  + p r  +i+nGl+ +++e +    dv++++y+ ++ ++++++   ++ ev+ aG+  v a++d+kde++vk+Ll ++v
+  NP_803620.1 110 GSMKAFVRTLVLDNLpGTRIrP-RTHKINNGLTDDIIEEKVLPRDVFTAQYWSKIGEFLRNRYNIPGLEVLSAGPRAVYADFDFKDELAVKNLLVESV 206
+                  *************952667855.5559*********************************************************************** PP
+
+        loo_3 215 NalddllakrsGeppfniaglkgddeeilaakvnfkpqplldvvgnPirsDievtlsrrrrdgqqanesyeteqkLakvagyvdLvytpqeqagnqrs 312
+                  N+++d++a r+ e pf+ia   + ++e l+ +++ ++ p  d+ gnPirsD+++++sr ++ +  +ne+y+t+ +L++v+ +vdL  tp      q++
+  NP_803620.1 207 NICEDAIARRNNETPFSIATHIKAENEQLTCNLDYNGIPVKDSCGNPIRSDMVISTSRGKKTNVPENEFYDTDSQLNQVSLFVDLHWTPTTG---QQQ 301
+                  **********************************************************9999889***********************9764...559 PP
+
+        loo_3 313 vlvg.npqqeeqavplqpalviTdvrtae.lkantpelyllaLsnialltknsawarallpkagkgvdlrdigAlalelklelridlkaetf..tdeq 406
+                  +++g     ++ +++++p +viTdvr+a  ++a t e++l+aL n+ + t+ +awar l+pk++   ++rdigAl++ ++l+  i++ +e f  +d +
+  NP_803620.1 302 GMFGvTLPGAALPPQFTPYIVITDVRKASwIQAWTLEMWLFALGNAYRATASQAWARTLMPKIA-TSKMRDIGALGYYSELGKAIETRTEAFmaDDSN 398
+                  99996555677779**************************************************.899********************999865899* PP
+
+        loo_3 407 laqLleavlheslviaidlnrtGersqllsllldAageendesqeaykaiiralnnltngeFeklfd.edtlpiveregtriqlGyyndkdgekrDir 503
+                  +  L++++++ ++ ++id++ +G++s++++++ldAag++n  + +a+  i +al nl +  F+++++  +  pi+  + ++++lG+y d+ ge  D+r
+  NP_803620.1 399 FVMLMNKMVNQNPAFQIDIDPMGDNSAIEQVILDAAGGVN--QARAVSLIFQALTNLYGTDFRQFYNlAEAGPIIFDNHHEVDLGHYTDEHGELSDRR 494
+                  ****************************************..************************943558************************** PP
+
+        loo_3 504 dldlLamLnatdpnivEaleiytsqt.nmslskdvraRqeeldrqylgesvtltgraervrlnpaflealdkaladaGltirpeniqtlagaqrfmgn 600
+                  dld+L+++n++++n +E+  +y +q+ n+ +  ++++  + +d+ ylg+ vt+tgra r ++np+f+ a+d a+a+aG+t+++en  t +g+qrf g 
+  NP_803620.1 495 DLDVLGAMNMSEGNDQEWKTWYATQVgNDHIVRRMNNS-KGFDKMYLGN-VTYTGRARRLTFNPKFITAMDAAAAAAGVTVTMENLITNFGQQRFAGY 590
+                  **************************999999998874.58999***98.9********************************************655 PP
+
+        loo_3 601 qairaygtgnissglyarqgrnpnvg.dtg 629
+                        g+gn+  +  a+    + ++  +g
+  NP_803620.1 591 T-----GMGNMAVSGSAQ----VGMAgSMG 611
+                  4.....777766542233....22222333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (635 nodes)
+Target sequences:                          1  (626 residues searched)
+Passed MSV filter:                         1  (1); expected 1.0 (1)
+Passed bias filter:                        1  (1); expected 1.0 (1)
+Passed Vit filter:                         1  (1); expected 1.0 (1)
+Passed Fwd filter:                         1  (1); expected 1.0 (1)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 54.88
+//
+[ok]

@@ -1,0 +1,19 @@
+#                                                                                  --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name                 accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----       -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+B3FIW8               -            631 chma_characterized_control -            636  2.9e-283  929.6  12.1   1   1  3.2e-283  3.2e-283  929.5  12.1     1   636     1   631     1   631 1.00 -
+NP_803620.1          -            626 chma_characterized_control -            636  1.3e-278  914.2   3.0   1   1  1.5e-278  1.5e-278  914.0   3.0     1   636     1   626     1   626 0.99 -
+F8SJT5               -            602 chma_characterized_control -            636  1.9e-277  910.4   3.8   1   1  2.1e-277  2.1e-277  910.2   3.8    34   636     6   602     1   602 0.98 -
+ANH52002.1           -            711 chma_characterized_control -            636    1e-243  799.0  20.2   1   1  1.5e-243  1.5e-243  798.4  20.2     1   636     1   709     1   709 0.98 -
+A0A482GDX1           -            631 chma_characterized_control -            636    5e-233  763.7   0.0   1   1  5.5e-233  5.5e-233  763.5   0.0     1   636     1   631     1   631 0.98 -
+QFP93061.1           -            659 chma_characterized_control -            636  8.4e-225  736.5   0.0   1   1  9.3e-225  9.3e-225  736.3   0.0     4   636     4   659     1   659 0.98 hypothetical protein [Serratia phage PCH45]
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      inputs/chma_characterized_control.hmm
+# Target file:     inputs/chma_characterized.faa
+# Option settings: hmmsearch --tblout results/chma_characterized_control.tbl --domtblout results/chma_characterized_control.domtbl -E 100 --domE 100 --max --cpu 4 inputs/chma_characterized_control.hmm inputs/chma_characterized.faa 
+# Current dir:     <ANALYSIS_ROOT>
+# Date:            Wed Nov  4 13:01:41 2026
+# [ok]

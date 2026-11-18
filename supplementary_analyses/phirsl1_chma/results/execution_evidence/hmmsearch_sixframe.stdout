@@ -1,0 +1,1038 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  inputs/chma68.hmm
+# target sequence database:        inputs/phiRSL1_sixframe_min30.faa
+# per-seq hits tabular output:     results/chma68_sixframe.tbl
+# per-dom hits tabular output:     results/chma68_sixframe.domtbl
+# sequence reporting threshold:    E-value <= 100
+# domain reporting threshold:      E-value <= 100
+# Max sensitivity mode:            on [all heuristic filters off]
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       chma68  [M=618]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+  ------ inclusion threshold ------
+       0.27    7.6   2.3       0.17    8.2   0.4    1.6  2  strand-_frame2_nt189695_190534  stop-delimited; no start-codon r
+        1.6    5.0   0.5        1.6    5.1   0.5    1.0  1  strand-_frame0_nt1363_1485      stop-delimited; no start-codon r
+        2.4    4.5   0.0        2.7    4.3   0.0    1.1  1  strand+_frame2_nt5976_6587      stop-delimited; no start-codon r
+        7.8    2.8   0.0        8.2    2.7   0.0    1.1  1  strand-_frame1_nt110193_110507  stop-delimited; no start-codon r
+        8.2    2.7   0.0        8.4    2.6   0.0    1.0  1  strand+_frame2_nt73464_73673    stop-delimited; no start-codon r
+        9.7    2.4   0.0         13    2.0   0.0    1.1  1  strand+_frame1_nt329_886        stop-delimited; no start-codon r
+         12    2.2   0.1         15    1.8   0.1    1.0  1  strand-_frame2_nt161564_161827  stop-delimited; no start-codon r
+         13    2.1   0.1         15    1.8   0.1    1.1  1  strand+_frame2_nt219690_220550  stop-delimited; no start-codon r
+         13    2.0   0.4         27    1.0   0.4    1.5  1  strand+_frame2_nt111441_112124  stop-delimited; no start-codon r
+         14    2.0   0.0         16    1.8   0.0    1.1  1  strand+_frame2_nt86133_86657    stop-delimited; no start-codon r
+         17    1.7   0.5         22    1.3   0.5    1.1  1  strand+_frame0_nt206935_207681  stop-delimited; no start-codon r
+         20    1.4   1.7         22    1.3   1.7    1.2  1  strand+_frame0_nt22768_23016    stop-delimited; no start-codon r
+         26    1.0   0.3         25    1.1   0.3    1.2  1  strand-_frame1_nt159351_159797  stop-delimited; no start-codon r
+         27    1.0   0.2         23    1.2   0.2    1.0  1  strand+_frame0_nt214288_214488  stop-delimited; no start-codon r
+         28    0.9   0.5         27    1.0   0.5    1.0  1  strand+_frame0_nt111529_111639  stop-delimited; no start-codon r
+         28    0.9   0.8         81   -0.6   0.8    1.6  1  strand+_frame0_nt122695_125997  stop-delimited; no start-codon r
+         29    0.9   0.0         27    1.0   0.0    1.0  1  strand+_frame2_nt171936_172091  stop-delimited; no start-codon r
+         29    0.9   0.0         30    0.8   0.0    1.0  1  strand-_frame2_nt1391_1501      stop-delimited; no start-codon r
+         30    0.8   0.3         30    0.8   0.3    1.0  1  strand+_frame1_nt59147_59338    stop-delimited; no start-codon r
+         31    0.8   0.1         28    0.9   0.1    1.0  1  strand-_frame0_nt36010_36204    stop-delimited; no start-codon r
+         33    0.7   0.0         28    0.9   0.0    1.0  1  strand-_frame0_nt173323_173454  stop-delimited; no start-codon r
+         33    0.7   0.0         52    0.0   0.0    1.2  1  strand+_frame2_nt226791_227633  stop-delimited; no start-codon r
+         34    0.6   7.0         36    0.6   7.0    1.0  1  strand+_frame0_nt219733_219999  stop-delimited; no start-codon r
+         34    0.6   0.0         39    0.5   0.0    1.0  1  strand+_frame0_nt153799_154074  stop-delimited; no start-codon r
+         35    0.6   0.1         34    0.6   0.1    1.0  1  strand-_frame1_nt212637_212837  stop-delimited; no start-codon r
+         40    0.4   0.0         55   -0.1   0.0    1.1  1  strand+_frame2_nt170055_170810  stop-delimited; no start-codon r
+         40    0.4   0.0         36    0.6   0.0    1.1  1  strand+_frame2_nt10182_10382    stop-delimited; no start-codon r
+         43    0.3   0.0         39    0.4   0.0    1.0  1  strand+_frame2_nt87384_87626    stop-delimited; no start-codon r
+         43    0.3   0.0         41    0.4   0.0    1.0  1  strand+_frame2_nt14730_14918    stop-delimited; no start-codon r
+         46    0.2   0.0         96   -0.8   0.0    1.3  1  strand-_frame1_nt89034_90389    stop-delimited; no start-codon r
+         48    0.1   0.0         48    0.1   0.0    1.0  1  strand+_frame0_nt122344_122514  stop-delimited; no start-codon r
+         49    0.1   0.0         44    0.3   0.0    1.0  1  strand+_frame0_nt11488_11808    stop-delimited; no start-codon r
+         49    0.1   0.0         53   -0.0   0.0    1.0  1  strand+_frame1_nt202946_203287  stop-delimited; no start-codon r
+         50    0.1   0.3         46    0.2   0.3    1.0  1  strand-_frame1_nt154695_154811  stop-delimited; no start-codon r
+         54   -0.0   0.0         70   -0.4   0.0    1.1  1  strand+_frame2_nt198462_199115  stop-delimited; no start-codon r
+         55   -0.0   0.0         72   -0.4   0.0    1.1  1  strand+_frame1_nt148730_149008  stop-delimited; no start-codon r
+         57   -0.1   0.1         53    0.0   0.1    1.1  1  strand-_frame1_nt1404_1664      stop-delimited; no start-codon r
+         62   -0.2   0.0         59   -0.2   0.0    1.0  1  strand-_frame0_nt111046_111159  stop-delimited; no start-codon r
+         64   -0.3   0.2         70   -0.4   0.2    1.0  1  strand+_frame1_nt123134_123325  stop-delimited; no start-codon r
+         65   -0.3   0.4         51    0.0   0.4    1.0  1  strand-_frame0_nt141520_141687  stop-delimited; no start-codon r
+         67   -0.3   0.0         59   -0.1   0.0    1.0  1  strand-_frame0_nt101527_101631  stop-delimited; no start-codon r
+         69   -0.4   0.0         60   -0.2   0.0    1.0  1  strand+_frame1_nt222422_222562  stop-delimited; no start-codon r
+         70   -0.4   0.3         64   -0.3   0.3    1.0  1  strand-_frame2_nt89990_90160    stop-delimited; no start-codon r
+         70   -0.4   0.0         63   -0.2   0.0    1.0  1  strand-_frame2_nt218828_218923  stop-delimited; no start-codon r
+         73   -0.5   0.0         83   -0.6   0.0    1.1  1  strand-_frame0_nt188422_188862  stop-delimited; no start-codon r
+         73   -0.5   0.1         69   -0.4   0.1    1.1  1  strand+_frame2_nt227997_228377  stop-delimited; no start-codon r
+         74   -0.5   0.0         74   -0.5   0.0    1.0  1  strand-_frame0_nt7546_7728      stop-delimited; no start-codon r
+         75   -0.5   0.0         88   -0.7   0.0    1.0  1  strand+_frame0_nt30517_30846    stop-delimited; no start-codon r
+         75   -0.5   0.0         69   -0.4   0.0    1.0  1  strand+_frame0_nt169954_170097  stop-delimited; no start-codon r
+         76   -0.5   0.4         79   -0.6   0.4    1.1  1  strand+_frame1_nt46580_46990    stop-delimited; no start-codon r
+         78   -0.6   0.7         71   -0.4   0.7    1.0  1  strand-_frame0_nt98662_98847    stop-delimited; no start-codon r
+         80   -0.6   0.1         97   -0.9   0.1    1.1  1  strand-_frame1_nt200886_201218  stop-delimited; no start-codon r
+         81   -0.6   0.0    2.4e+02   -2.1   0.0    1.3  2  strand+_frame0_nt27427_29502    stop-delimited; no start-codon r
+         82   -0.6   0.0         78   -0.5   0.0    1.1  1  strand+_frame2_nt173223_173564  stop-delimited; no start-codon r
+         84   -0.6   0.0         90   -0.7   0.0    1.0  1  strand+_frame2_nt184731_185138  stop-delimited; no start-codon r
+         85   -0.7   0.1         72   -0.4   0.1    1.0  1  strand+_frame2_nt83052_83168    stop-delimited; no start-codon r
+         86   -0.7   0.4         83   -0.6   0.4    1.0  1  strand+_frame2_nt78168_78347    stop-delimited; no start-codon r
+         87   -0.7   0.8         71   -0.4   0.8    1.0  1  strand-_frame1_nt158250_158339  stop-delimited; no start-codon r
+         88   -0.7   0.0    1.3e+02   -1.2   0.0    1.2  1  strand+_frame0_nt177079_177531  stop-delimited; no start-codon r
+         88   -0.7   1.3         83   -0.6   1.3    1.0  1  strand+_frame1_nt36404_36559    stop-delimited; no start-codon r
+         92   -0.8   0.0         99   -0.9   0.0    1.1  1  strand+_frame1_nt185066_185386  stop-delimited; no start-codon r
+         92   -0.8   0.2         85   -0.7   0.2    1.0  1  strand-_frame0_nt99610_99708    stop-delimited; no start-codon r
+         93   -0.8   0.4         85   -0.7   0.4    1.0  1  strand+_frame2_nt88269_88430    stop-delimited; no start-codon r
+         94   -0.8   0.4    2.4e+02   -2.2   0.1    1.2  1  strand-_frame2_nt96953_97693    stop-delimited; no start-codon r
+         95   -0.8   0.0         93   -0.8   0.0    1.0  1  strand-_frame0_nt183811_183909  stop-delimited; no start-codon r
+         95   -0.8   0.2         84   -0.7   0.2    1.0  1  strand-_frame1_nt183471_183635  stop-delimited; no start-codon r
+         97   -0.9   0.6         87   -0.7   0.6    1.0  1  strand+_frame1_nt59342_59473    stop-delimited; no start-codon r
+         98   -0.9   0.0         91   -0.8   0.0    1.0  1  strand+_frame1_nt190526_190654  stop-delimited; no start-codon r
+         98   -0.9   1.0         91   -0.8   1.0    1.1  1  strand-_frame1_nt158388_158612  stop-delimited; no start-codon r
+         98   -0.9   0.0    1.3e+02   -1.3   0.0    1.1  1  strand+_frame0_nt215833_216156  stop-delimited; no start-codon r
+         98   -0.9   0.1         84   -0.7   0.1    1.0  1  strand+_frame0_nt53434_53556    stop-delimited; no start-codon r
+         99   -0.9   0.1         86   -0.7   0.1    1.0  1  strand+_frame0_nt108784_108891  stop-delimited; no start-codon r
+         99   -0.9   0.1         81   -0.6   0.1    1.0  1  strand+_frame2_nt133392_133481  stop-delimited; no start-codon r
+
+
+Domain annotation for each sequence (and alignments):
+>> strand-_frame2_nt189695_190534  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.6   0.1       5.8   3.4e+02     434     453 ..      22      44 ..       9      58 .. 0.72
+   2 ?    8.2   0.4     0.003      0.17      18      94 ..     171     263 ..     153     269 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: -2.6 bits;  conditional E-value: 5.8
+                          chma68 434 sqkalkaliaaldnLtgg...eF 453
+                                        a k++i+a d+Lt +   +F
+  strand-_frame2_nt189695_190534  22 ILAAEKTVINARDQLTADtqnKF 44 
+                                     56788999999999998744333 PP
+
+  == domain 2  score: 8.2 bits;  conditional E-value: 0.003
+                          chma68  18 aaqqpqaqqqa..............skpataaq.sttglnnllaragrldgsssrss....eelakfvealeealkeqd 77 
+                                     +a qpq+++ +              + pa+ +  +t +++ + +  + ++g++  ++    ++la + e++ e +++ +
+  strand-_frame2_nt189695_190534 171 RATQPQVATKTekvmtpvvlyeatdKHPAQVKEvTTDKVVGT-FTINTVSGAT--TAlqkaQALAIIDELIVETKAART 246
+                                     245566666554455555555432222333322322222222.2222222333..3366899***************** PP
+
+                          chma68  78 kadpfdvirvdgispqv 94 
+                                      a++ +v++vd+i +++
+  strand-_frame2_nt189695_190534 247 RANSVQVETVDNIGQRL 263
+                                     ************99884 PP
+
+>> strand-_frame0_nt1363_1485  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.1   0.5     0.027       1.6     474     497 ..       6      29 ..       2      37 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 5.1 bits;  conditional E-value: 0.027
+                      chma68 474 lGyYtdkdGekrdlrdiDylalln 497
+                                 +GyY +kdG+   + di + a++n
+  strand-_frame0_nt1363_1485   6 GGYYGHKDGQDQARTDIQLSAVMN 29 
+                                 6*****************999998 PP
+
+>> strand+_frame2_nt5976_6587  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.3   0.0     0.046       2.7      27      99 ..      79     145 ..      59     180 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 4.3 bits;  conditional E-value: 0.046
+                      chma68  27 qaskpataaqsttglnnllaragrldgsssrsseelakfvealeealkeqdkadpfdvirvdgispqvglpai 99 
+                                 ++s+p++   +tt++n  +++++r++       + ++k +++++e ++  + +++  + r+++ ++++ ++++
+  strand+_frame2_nt5976_6587  79 TQSQPTEVHMTTTNINEKFSALFRAEV------KRVRKARRLKQEDVARMGGLSREAYLRFENGTSDMRISSL 145
+                                 4688888878*************4444......5889999999999999999888888888888888888776 PP
+
+>> strand-_frame1_nt110193_110507  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.7   0.0      0.14       8.2     153     191 ..      49      87 ..      23     101 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 2.7 bits;  conditional E-value: 0.14
+                          chma68 153 k..dvlakveeslkerhglpnaevvlaganvvplefdlkde 191
+                                     +  + +++v  slk ++g p+ e  +++a   p++  ++de
+  strand-_frame1_nt110193_110507  49 DadQWIERVDRSLKTKFG-PQYEARIMNAALLPAD-EWDDE 87 
+                                     4447899**********9.7777777779999999.77776 PP
+
+>> strand+_frame2_nt73464_73673  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.6   0.0      0.14       8.4     384     423 ..      16      55 ..       4      64 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 2.6 bits;  conditional E-value: 0.14
+                        chma68 384 tkdadfsdealaqllrtfvapsavlviDvpeaGnnsalsn 423
+                                   +k+ ++s  +  +++rt v  sa  +  +  a n+s+ ++
+  strand+_frame2_nt73464_73673  16 WKPRTKSKTNATMWMRTLVKISAPCSTRISHASNSSWWHR 55 
+                                   6677788888889*******99999999999999999886 PP
+
+>> strand+_frame1_nt329_886  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.0   0.0      0.22        13     156     219 ..      22      89 ..      19     115 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 2.0 bits;  conditional E-value: 0.22
+                    chma68 156 lakveeslkerhgl.pnaevvla..ganvvplefdl...kdewavkgLlgnavnaiktalarasletpfs 219
+                               ++kv+ ++++ +++ ++ +vv +    +++  +++l   ++e  v ++ + +v+a+++++++a  etp +
+  strand+_frame1_nt329_886  22 IKKVKVAVANGYPQgTKRHVVAClnELTTIREGVYLkeaSKEDVVLDVAVRSVAALQQMVQKA--ETPKT 89 
+                               678888888888652456666543378888888887333458888899999999999999887..44433 PP
+
+>> strand-_frame2_nt161564_161827  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.8   0.1      0.26        15     286     317 ..      57      86 ..      50      87 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 1.8 bits;  conditional E-value: 0.26
+                          chma68 286 dlrytgqkpqqqqrfgrrrqgvqdlkpyqpvl 317
+                                     d++ t+++  + +r++r +q+  + ++++p +
+  strand-_frame2_nt161564_161827  57 DMIMTPEQRRVARRMRRIAQR--AFPQFSPSF 86 
+                                     999*******99999988755..899999976 PP
+
+>> strand+_frame2_nt219690_220550  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.8   0.1      0.26        15       6      49 ..      19      95 ..      15     184 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 1.8 bits;  conditional E-value: 0.26
+                          chma68  6 dennnqnaqataaaqq.pqaqqqa................................skpataaqsttglnnllarag 49
+                                    d n +q+ q+++++++ +++ +++                                s++++++++ t  +++l+r  
+  strand+_frame2_nt219690_220550 19 DGNPTQQGQDRRRQETrRSPPRRQpqpratrrwlrprtrrhappsklrpprrlrlvSRSKSSNSRRTPRRQQLRRPS 95
+                                    56777777775554222222222211222235566665555555554444444444222222223333444555543 PP
+
+>> strand+_frame2_nt111441_112124  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.0   0.4      0.47        27     545     595 ..     162     213 ..     131     226 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 1.0 bits;  conditional E-value: 0.47
+                          chma68 545 rrvvinpaFleaLakAvaaagltvtgenlsteagtqrfynn.gaenfalsga 595
+                                     +r+v np+++   ++A  +ag+  ++ +l++ a+++++    ++ n   s+ 
+  strand+_frame2_nt111441_112124 162 LRIVDNPDLVAEPTDAFMSAGWFWQTRGLNQLADQDAYTKAtVVINGSASTV 213
+                                     68889999999999***************99999999987755555555554 PP
+
+>> strand+_frame2_nt86133_86657  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.8   0.0      0.27        16     533     590 ..      63     124 ..      55     153 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 1.8 bits;  conditional E-value: 0.27
+                        chma68 533 lflg.svtitge.arrvvinpaFleaLakAvaaa..gltvtgenlsteagtqrfynngaenf 590
+                                   ++ g ++++ g+ +  + +n+ Flea++ A ++a   ++ +g + +++agt++    ++++ 
+  strand+_frame2_nt86133_86657  63 QLHGvQLVYMGRrNWSHSFNSTFLEAIDWATRDAfvAWMEAGRSWVRNAGTESTTYKVNGQL 124
+                                   5566666666654557899**************96666667777777777766555555554 PP
+
+>> strand+_frame0_nt206935_207681  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.3   0.5      0.38        22      23      80 ..     162     220 ..     139     247 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 1.3 bits;  conditional E-value: 0.38
+                          chma68  23 qaqqqa...skpataaqsttglnnllaragrldgsssrsseelakfvealeealkeqdkad 80 
+                                       ++++    + a+a + t+g++ ++ +++  + +++ ++ +l+ ++++ +   ke++++ 
+  strand+_frame0_nt206935_207681 162 GGREETvaaLAKAGA-KATNGMKPQFMAFFEKTKMQADTE-ALNSIRNRGKMSRKELRYLR 220
+                                     222222221222233.267888889999998888886666.99999999999999988874 PP
+
+>> strand+_frame0_nt22768_23016  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.3   1.7      0.37        22     262     280 ..      26      46 ..       2      82 .. 0.46
+
+  Alignments for each domain:
+  == domain 1  score: 1.3 bits;  conditional E-value: 0.37
+                        chma68 262 pknnqqenplynt..dtplsq 280
+                                    + + ++ p+y+t  + p+++
+  strand+_frame0_nt22768_23016  26 AASRSSQRPTYRTanSKPRNR 46 
+                                   333333333333322222222 PP
+
+>> strand-_frame1_nt159351_159797  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.1   0.3      0.42        25     117     164 ..      66     113 ..      15     144 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 1.1 bits;  conditional E-value: 0.42
+                          chma68 117 llffnkgqslrpeeiqinngledkyeikatpsdlfdkdvlakveeslk 164
+                                     ll ++  q+   + ++ +n  ++ +++ +t+ ++ d++v+a+v + ++
+  strand-_frame1_nt159351_159797  66 LLIEQMDQRSSERSVHQQNLIQNTVTLLTTALSYDDAQVRATVVKVVQ 113
+                                     444444444444443333333355555555555555566665555554 PP
+
+>> strand+_frame0_nt214288_214488  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.2   0.2       0.4        23      16      30 ..      27      41 ..       4      64 .. 0.55
+
+  Alignments for each domain:
+  == domain 1  score: 1.2 bits;  conditional E-value: 0.4
+                          chma68 16 taaaqqpqaqqqask 30
+                                    +aa+q+++a+ +  +
+  strand+_frame0_nt214288_214488 27 QAAQQKQEARDTSVQ 41
+                                    111222222222222 PP
+
+>> strand+_frame0_nt111529_111639  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.0   0.5      0.47        27      26      59 ..       3      35 ..       1      37 [] 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 1.0 bits;  conditional E-value: 0.47
+                          chma68 26 qqaskpataaq..sttglnnllaragrldgsssrss 59
+                                    q++s+p+++     ++++n+ +  a    +++srss
+  strand+_frame0_nt111529_111639  3 QRTSRPQSTRPlrASRSTNHFVGCAT---SWRSRSS 35
+                                    56788885542334555555544455...9999998 PP
+
+>> strand+_frame0_nt122695_125997  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6   0.8       1.4        81     555     602 ..     990    1038 ..     980    1052 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -0.6 bits;  conditional E-value: 1.4
+                          chma68  555 eaLakAvaaagltvtgenlsteagtqrfynn.gaenfalsgagqsgaag 602 
+                                       aLa+Av   g++ + +  +t+ +t++f n+  + + +   +g+s++++
+  strand+_frame0_nt122695_125997  990 VALARAVVTLGNLTASQVSNTDLSTVGFTNQtQVVSLVRVDTGASDQYQ 1038
+                                      58********9999999999********999877777777778888884 PP
+
+>> strand+_frame2_nt171936_172091  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.0   0.0      0.47        27     249     278 ..       5      34 ..       2      51 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 1.0 bits;  conditional E-value: 0.47
+                          chma68 249 PiraDlavtlstapknnq......qenplyntdtpl 278
+                                     P r D  v+ s++p+++       +      t++++
+  strand+_frame2_nt171936_172091   5 PRRIDALVSRSATPAQQSgprssaS------TSESR 34 
+                                     6666777777777776654332111......22222 PP
+
+>> strand-_frame2_nt1391_1501  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.8   0.0      0.51        30     456     481 ..       4      29 ..       2      35 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 0.8 bits;  conditional E-value: 0.51
+                      chma68 456 llaentkpilvatavriplGyYtdkd 481
+                                 ++a++  + + +t++r  +G+Y +++
+  strand-_frame2_nt1391_1501   4 VIARTGRRWILRTQRRSGSGTYRHPA 29 
+                                 56777778899999999999999973 PP
+
+>> strand+_frame1_nt59147_59338  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.8   0.3      0.52        30      22      54 ..      23      54 ..       8      62 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 0.8 bits;  conditional E-value: 0.52
+                        chma68 22 pqaqqq.askpataaqsttglnnllaragrldgs 54
+                                  +q+q+q ++++++  ++++g+++ l +ag ++ s
+  strand+_frame1_nt59147_59338 23 WQQQGQgDGRRHQ--RRESGSRHVLHQAGTVQPS 54
+                                  2222220222222..2667777777777755544 PP
+
+>> strand-_frame0_nt36010_36204  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.9   0.1      0.48        28     144     183 ..      19      59 ..       3      65 .] 0.45
+
+  Alignments for each domain:
+  == domain 1  score: 0.9 bits;  conditional E-value: 0.48
+                        chma68 144 katpsdlfdkdvlakveeslkerhglpn.aevvlaganvvp 183
+                                   +a +    d+d +a+v+ +   +h +++ ++ v  +a+vv+
+  strand-_frame0_nt36010_36204  19 AAHAHTNTDADTRATVTRAPLTAHTASAtVTAVASSATVVH 59 
+                                   34444444444444443332222222211333333444444 PP
+
+>> strand-_frame0_nt173323_173454  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.9   0.0      0.49        28     464     488 ..       4      28 ..       2      41 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 0.9 bits;  conditional E-value: 0.49
+                          chma68 464 ilvatavriplGyYtdkdGekrdlr 488
+                                     + v+  ++ p+G Y   +G +r  r
+  strand-_frame0_nt173323_173454   4 HGVRWSRPNPSGAYRLRNGARRRVR 28 
+                                     5677788999********9999766 PP
+
+>> strand+_frame2_nt226791_227633  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.0   0.0      0.89        52     391     414 ..     217     243 ..     191     249 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 0.0 bits;  conditional E-value: 0.89
+                          chma68 391 d.ealaqllrtfvapsa..vlviDvpe 414
+                                       + l ++ + +++psa  ++v+Dv e
+  strand+_frame2_nt226791_227633 217 LkADLRDYFQSVCHPSAprAYVMDVGE 243
+                                     257889999***************987 PP
+
+>> strand+_frame0_nt219733_219999  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.6   7.0      0.62        36       1      62 [.       5      63 ..       5      82 .. 0.47
+
+  Alignments for each domain:
+  == domain 1  score: 0.6 bits;  conditional E-value: 0.62
+                          chma68  1 Mslnvdennnqnaqataaaqqpqaqqqaskpataaqsttglnnllaragrldgsssrsseel 62
+                                    M+++ ++ ++++ ++++ + q+  +  ++++++ +++++   + +a++gr +gs s++  e+
+  strand+_frame0_nt219733_219999  5 MAIPRNKGKTAAGKKREGRRQEGSRS-QGQQEGGSGREQEGTHRQASSGRQEGSGSSA--EA 63
+                                    78888888888777655543322221.2111222222233333445555444444222..22 PP
+
+>> strand+_frame0_nt153799_154074  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.5   0.0      0.67        39     399     424 ..      42      67 ..      29      68 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 0.5 bits;  conditional E-value: 0.67
+                          chma68 399 rtfvapsavlviDvpeaGnnsalsnl 424
+                                     +++++p a+++ D  +  ++s+  ++
+  strand+_frame0_nt153799_154074  42 QRACHPAALYSWDRTDRSEGSWCRTM 67 
+                                     899*******************8765 PP
+
+>> strand-_frame1_nt212637_212837  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.6   0.1      0.59        34     292     322 ..      23      53 ..      11      64 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 0.6 bits;  conditional E-value: 0.59
+                          chma68 292 qkpqqqqrfgrrrqgvqdlkpyqpvlvitdv 322
+                                     +++++q++ +++r+    ++py++  + t  
+  strand-_frame1_nt212637_212837  23 MMDASQMMVSSTRPAHVMCQPYHAPYSATRN 53 
+                                     4556777778888887778888887777655 PP
+
+>> strand+_frame2_nt170055_170810  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   0.0      0.95        55      59     122 ..      33     103 ..      16     118 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 0.95
+                          chma68  59 seelakfvealeeal..ke...qdkadpfdvirvdgispqvglpaivvagel..vggsktvfvytllffnk 122
+                                     s++++  ve+l e++  +    +++ +p   + v g s++++++a +v+ ++      ++++v++l++ + 
+  strand+_frame2_nt170055_170810  33 SQQVQRHVEVLAEFHfvESdavLEQCAPIVADCVHGASHHLEVAAHIVVHQAagDARVDYALVHHLILDEV 103
+                                     466777777777777543311222225777777889999******99999985444456999999999885 PP
+
+>> strand+_frame2_nt10182_10382  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.6   0.0      0.61        36     239     257 ..      43      61 ..      14      66 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 0.6 bits;  conditional E-value: 0.61
+                        chma68 239 ggpvvdidgnPiraDlavt 257
+                                   +g+    +g+P+r Dl++t
+  strand+_frame2_nt10182_10382  43 QGNSRRHCGRPSRLDLTIT 61 
+                                   5666778999*****9997 PP
+
+>> strand+_frame2_nt87384_87626  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.4   0.0      0.67        39     128     164 ..      28      64 ..       8      80 .. 0.47
+
+  Alignments for each domain:
+  == domain 1  score: 0.4 bits;  conditional E-value: 0.67
+                        chma68 128 peeiqinngle.dkyeikatpsdlfdkdvlakveeslk 164
+                                   + +i i++ ++ +k+ +++++  +  +  ++ v++ ++
+  strand+_frame2_nt87384_87626  28 TNTISITDYQMvNKR-LARVVVAFTGNMQKEEVRDRIA 64 
+                                   333333333333332.3333333333333444444444 PP
+
+>> strand+_frame2_nt14730_14918  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.4   0.0      0.71        41     307     331 ..      20      43 ..       1      48 [. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 0.4 bits;  conditional E-value: 0.71
+                        chma68 307 vqdlkpyqpvlvitdvdsgeegnaa 331
+                                    ++++ +qp++v  + ds+ + +++
+  strand+_frame2_nt14730_14918  20 LHEYGGIQPRVVTQTQDSS-QRHKC 43 
+                                   4789999999999888885.45554 PP
+
+>> strand-_frame1_nt89034_90389  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   0.0       1.7        96     207     246 ..     383     422 ..     337     428 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 1.7
+                        chma68 207 talarasletpfslakellskndrltarvefnggpvvdid 246
+                                   +  ++ ++ tp    k  +s++  +t+r+++ + +v+d+ 
+  strand-_frame1_nt89034_90389 383 SKESKETGITPIEQPKSRNSQSYPFTVRIDYATMRVYDVS 422
+                                   33333378889999999999999***********999986 PP
+
+>> strand+_frame0_nt122344_122514  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.1   0.0      0.83        48     178     213 ..      14      47 ..       6      53 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 0.1 bits;  conditional E-value: 0.83
+                          chma68 178 ganvvple.fdlkdewavkgLlgnavnaiktalaras 213
+                                     g+ v++ +  d++++w   +L++   +a+ t ++r s
+  strand+_frame0_nt122344_122514  14 GTAVIYSScIDWDSKWT--TLIAS-KTATITSINRLS 47 
+                                     56788866689999999..44444.477777777765 PP
+
+>> strand+_frame0_nt11488_11808  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.3   0.0      0.75        44      57      93 ..      17      51 ..       2     105 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 0.3 bits;  conditional E-value: 0.75
+                        chma68 57 rsseelakfvealeealkeqdka.dpfdvirvdgispq 93
+                                   +s++l++  ++++e+l++ +++  ++ v+r++   + 
+  strand+_frame0_nt11488_11808 17 ARSTYLENCQRQADEHLEKIGQLiEKLSVDRLT---TA 51
+                                  334477777777777777766663244443333...23 PP
+
+>> strand+_frame1_nt202946_203287  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.0   0.0      0.92        53      81     123 ..      56      95 ..      29     103 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: -0.0 bits;  conditional E-value: 0.92
+                          chma68  81 pfdvirvdgispqvglpaivvagelvggsktvfvytllffnkg 123
+                                       +v++v+++ +++gl   +v+++   g   v+v + l+++ +
+  strand+_frame1_nt202946_203287  56 LIRVEPVTHEGQEFGLGTAAVVAQH-FG--IVLVLGELVVEHH 95 
+                                     5679999999999999866666554.45..6777776666655 PP
+
+>> strand-_frame1_nt154695_154811  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.2   0.3       0.8        46     521     535 ..      11      25 ..       2      37 .. 0.43
+
+  Alignments for each domain:
+  == domain 1  score: 0.2 bits;  conditional E-value: 0.8
+                          chma68 521 errlklrkelqklfl 535
+                                     e  + +r+e+++++ 
+  strand-_frame1_nt154695_154811  11 EEGQEKRQEADQQIA 25 
+                                     222333333333332 PP
+
+>> strand+_frame2_nt198462_199115  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.0       1.2        70     367     413 ..       7      55 ..       1      57 [. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 1.2
+                          chma68 367 rdigalgyeldlgkri..dtkdadfsdealaqllrtfvapsavlviDvp 413
+                                     r+i ++  + d+ +r+   t   + s+  +++ll+++v++ ++l +Dv+
+  strand+_frame2_nt198462_199115   7 RQIQHRKLLVDFAMRFlaVTDRGRVSEGRIGRLLQMVVHDCSLLLVDVV 55 
+                                     88888888999998887555556679999**************999985 PP
+
+>> strand+_frame1_nt148730_149008  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.0       1.2        72     427     456 ..      56      85 ..      50      87 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 1.2
+                          chma68 427 eaaggpnsqkalkaliaaldnLtggeFskl 456
+                                     ++a  p++q++ + l ++++ L g  ++++
+  strand+_frame1_nt148730_149008  56 AIAPFPSQQRNTRVLNQIANGLRGERATAY 85 
+                                     788899999999999999999988877665 PP
+
+>> strand-_frame1_nt1404_1664  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.0   0.1      0.91        53     205     250 ..      31      81 ..       3      83 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 0.0 bits;  conditional E-value: 0.91
+                      chma68 205 iktal.arasletpfslak...ellsk.ndrltarvefnggpvvdidgnPi 250
+                                 ++t++  ra+++ p ++ +    ++ k +++  a v++ ++  v i ++P+
+  strand-_frame1_nt1404_1664  31 MWTTIqRRAAITAPIADRTlcgIVKEKgHSENRAAVDTTDTKTVRIRHVPT 81 
+                                 455552444677777777755455666688888888887777777777776 PP
+
+>> strand-_frame0_nt111046_111159  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.2   0.0         1        59     280     302 ..       5      27 ..       2      37 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: -0.2 bits;  conditional E-value: 1
+                          chma68 280 qvtgyvdlrytgqkpqqqqrfgr 302
+                                      v g+v+ ++  + p++  r++ 
+  strand-_frame0_nt111046_111159   5 AVGGFVNTQLRATAPMSGTRAND 27 
+                                     56677777776666655433332 PP
+
+>> strand+_frame1_nt123134_123325  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.2       1.2        70      17      48 ..      33      51 ..      20      60 .. 0.42
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 1.2
+                          chma68 17 aaaqqpqaqqqaskpataaqsttglnnllara 48
+                                    ++a++p+               t+ +++++r+
+  strand+_frame1_nt123134_123325 33 RRAATPTS-------------RTSRRSQQRRS 51
+                                    22222222.............22222222222 PP
+
+>> strand-_frame0_nt141520_141687  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.0   0.4      0.89        51      19      36 ..      15      27 ..       1      54 [. 0.47
+
+  Alignments for each domain:
+  == domain 1  score: 0.0 bits;  conditional E-value: 0.89
+                          chma68 19 aqqpqaqqqaskpataaq 36
+                                    ++ +q  ++a +p    +
+  strand-_frame0_nt141520_141687 15 QH-QQGKRTAHQP----R 27
+                                    11.1222222222....2 PP
+
+>> strand-_frame0_nt101527_101631  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   0.0         1        59     273     296 ..       5      28 ..       1      34 [. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 1
+                          chma68 273 ntdtplsqvtgyvdlrytgqkpqq 296
+                                      ++tpls + + + +++t+++   
+  strand-_frame0_nt101527_101631   5 ASNTPLSNAHCSTSVILTPSSRSA 28 
+                                     568999999999999999998754 PP
+
+>> strand+_frame1_nt222422_222562  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.2   0.0         1        60     320     344 ..       6      30 ..       1      41 [. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -0.2 bits;  conditional E-value: 1
+                          chma68 320 tdvdsgeegnaatletqllgLaaaa 344
+                                     t++ ++++ na+t+ +  l+L+aa+
+  strand+_frame1_nt222422_222562   6 TTAPTSSWRNATTPCSCTLTLMAAT 30 
+                                     5666778999999999999999886 PP
+
+>> strand-_frame2_nt89990_90160  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.3   0.3       1.1        64      37      59 ..      31      53 ..       3      57 .] 0.41
+
+  Alignments for each domain:
+  == domain 1  score: -0.3 bits;  conditional E-value: 1.1
+                        chma68 37 sttglnnllaragrldgsssrss 59
+                                  s +  +++ +r  +++ s+sr+s
+  strand-_frame2_nt89990_90160 31 SGRVAASTTSRPTSTRNSRSRRS 53
+                                  22223445555666666666655 PP
+
+>> strand-_frame2_nt218828_218923  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.2   0.0       1.1        63     344     359 ..       4      19 ..       2      29 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: -0.2 bits;  conditional E-value: 1.1
+                          chma68 344 aalaagqawaealrps 359
+                                     + +++g+++++ lr++
+  strand-_frame2_nt218828_218923   4 MVANRGAVFTRLLRQK 19 
+                                     6788899999999884 PP
+
+>> strand-_frame0_nt188422_188862  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6   0.0       1.4        83      42      69 ..      43      70 ..      19      99 .. 0.52
+
+  Alignments for each domain:
+  == domain 1  score: -0.6 bits;  conditional E-value: 1.4
+                          chma68 42 nnllar.agrldgsssrsseelakfveal 69
+                                       +++ +g+l+ +++ +  ++ k++ea+
+  strand-_frame0_nt188422_188862 43 TAAMKNvLGNLQTMQEAND-AIPKLREAF 70
+                                    2222221222223332222.333333333 PP
+
+>> strand+_frame2_nt227997_228377  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.1       1.2        69      28      73 ..      56     108 ..       8     126 .. 0.54
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 1.2
+                          chma68  28 a...skpataaqsttglnnllaragrldgsssrss....eelakfvealeeal 73 
+                                     +   s++++ ++s t+   l+ar+   + +s+++     ++++++   l+ al
+  strand+_frame2_nt227997_228377  56 TktySAQQRYSRSDTSRMRLFARFCYHRLQSELNKcrdlQQVQELSASLNAAL 108
+                                     12234444444455555555555542222233333666666666666666665 PP
+
+>> strand-_frame0_nt7546_7728  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.5   0.0       1.3        74     509     536 ..      18      47 ..       9      56 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: -0.5 bits;  conditional E-value: 1.3
+                      chma68 509 ylaaqsgsnr.deerrlkl.rkelqklflg 536
+                                 ++++  +s + +++rrl++ r++l +l+ +
+  strand-_frame0_nt7546_7728  18 WFSSAVDSTDlSHARRLRMvRRRLRRLVAN 47 
+                                 455544444448889999866667776665 PP
+
+>> strand+_frame0_nt30517_30846  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.7   0.0       1.5        88     492     528 ..      54      91 ..      43      99 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: -0.7 bits;  conditional E-value: 1.5
+                        chma68 492 ylallnalgdneqevveylaa.qsgsnrdeerrlklrk 528
+                                   + a+++ +++++++ +ey+++ ++   r ++ r+ +rk
+  strand+_frame0_nt30517_30846  54 EQAMSRTVKGSKAPGYEYWSRrPNKGARGGVGRFTKRK 91 
+                                   6788999999999999***8856655445577777765 PP
+
+>> strand+_frame0_nt169954_170097  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.0       1.2        69     340     356 ..      11      27 ..       4      41 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 1.2
+                          chma68 340 Laaaaalaagqawaeal 356
+                                     L++++++ +++ w++a 
+  strand+_frame0_nt169954_170097  11 LYSLSTTLTNGSWMDAS 27 
+                                     77788888888888774 PP
+
+>> strand+_frame1_nt46580_46990  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6   0.4       1.4        79      28      45 ..      50      69 ..      12     109 .. 0.48
+
+  Alignments for each domain:
+  == domain 1  score: -0.6 bits;  conditional E-value: 1.4
+                        chma68 28 a..skpataaqsttglnnll 45
+                                  +  s+++++++++ + + l+
+  strand+_frame1_nt46580_46990 50 TtmSRRTRTVRKMVMGSRLV 69
+                                  12233333332222222222 PP
+
+>> strand-_frame0_nt98662_98847  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.7       1.2        71      36      59 ..      30      53 ..       3      61 .. 0.48
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 1.2
+                        chma68 36 qsttglnnllaragrldgsssrss 59
+                                  ++ +g++++  +agr +g++++ss
+  strand-_frame0_nt98662_98847 30 RQDQGSRSSAPEAGRGQGQAASSS 53
+                                  233333333333333333333333 PP
+
+>> strand-_frame1_nt200886_201218  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.9   0.1       1.7        97     351     373 ..      39      58 ..      32      76 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -0.9 bits;  conditional E-value: 1.7
+                          chma68 351 awaealrpsldkgkdlrdigalg 373
+                                     +w++ +r+ ++   + rd ga+g
+  strand-_frame1_nt200886_201218  39 VWVRRYRQEHA---GARDCGARG 58 
+                                     79999999777...579999999 PP
+
+>> strand+_frame0_nt27427_29502  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.1   0.0       4.1   2.4e+02      48      79 ..     401     433 ..     394     472 .. 0.72
+   2 ?   -3.7   0.0        12   7.2e+02     568     596 ..     455     480 ..     449     492 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -2.1 bits;  conditional E-value: 4.1
+                        chma68  48 agrldgsssrss.eelakfvealeealkeqdka 79 
+                                   +g+l  +++  s  ++ +++  ++e +k+ +  
+  strand+_frame0_nt27427_29502 401 SGNLFKWNNNFSwAYAGEVADSIKERVKKAGGR 433
+                                   566679999999999999999999999886554 PP
+
+  == domain 2  score: -3.7 bits;  conditional E-value: 12
+                        chma68 568 vtgenlsteagtqrfynngaenfalsgag 596
+                                    +++ +s++++t+ fy+n   + +lsg+g
+  strand+_frame0_nt27427_29502 455 FEPDDGSSSRDTHVFYGN---RGMLSGNG 480
+                                   5678888999******99...99999986 PP
+
+>> strand+_frame2_nt173223_173564  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.5   0.0       1.3        78     215     246 ..      28      61 ..      13     104 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: -0.5 bits;  conditional E-value: 1.3
+                          chma68 215 etpfslakellskndrltarvefn.ggpv.vdid 246
+                                      t f+++ +l++ +++++++v ++  g++ +++d
+  strand+_frame2_nt173223_173564  28 RTTFKVKRHLRPTHSTAIVQVPIElYGELrFVVD 61 
+                                     6778888888888888888887665444434444 PP
+
+>> strand+_frame2_nt184731_185138  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.7   0.0       1.5        90     376     410 ..      61      96 ..      41     128 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: -0.7 bits;  conditional E-value: 1.5
+                          chma68 376 ldlgkridtkdadfsdealaqllrtfvapsa.vlvi 410
+                                     + l + +d +++++  +a ++ll  +vap   v+v+
+  strand+_frame2_nt184731_185138  61 AVLHQHVDNHASAIEQAAAQRLLAVAVAPAIdVVVV 96 
+                                     333344588888888899999999999987754444 PP
+
+>> strand+_frame2_nt83052_83168  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.1       1.2        72     242     268 ..       6      32 ..       1      39 [] 0.58
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 1.2
+                        chma68 242 vvdidgnPiraDlavtlstapknnqqe 268
+                                    ++   +P+r+ l v+  ++++++ ++
+  strand+_frame2_nt83052_83168   6 RQTFRRKPTRSKLWVRFPRTNRQRSSS 32 
+                                   455666677777777766666666533 PP
+
+>> strand+_frame2_nt78168_78347  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6   0.4       1.4        83      21      36 ..      14      29 ..       5      58 .. 0.43
+
+  Alignments for each domain:
+  == domain 1  score: -0.6 bits;  conditional E-value: 1.4
+                        chma68 21 qpqaqqqaskpataaq 36
+                                  q+q+ +q  +++++++
+  strand+_frame2_nt78168_78347 14 QRQVEGQSRNRQGRQD 29
+                                  3333333333332222 PP
+
+>> strand-_frame1_nt158250_158339  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.8       1.2        71     292     303 ..       7      19 ..       1      30 [] 0.34
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 1.2
+                          chma68 292 qkpqqq.qrfgrr 303
+                                     q++  q q +grr
+  strand-_frame1_nt158250_158339   7 QEGSRQvQAQGRR 19 
+                                     2222222222222 PP
+
+>> strand+_frame0_nt177079_177531  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.2   0.0       2.2   1.3e+02     154     188 ..     112     147 ..      80     150 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: -1.2 bits;  conditional E-value: 2.2
+                          chma68 154 dvlakveeslkerhglpn.aevvlaganvvplefdl 188
+                                     +v  +v+e +k  h +++  ++ +a +n vp+ f l
+  strand+_frame0_nt177079_177531 112 HVGGRVKELMKLIHAERDqCQYASAKPNEVPVHFHL 147
+                                     455688888888887544488888888888887766 PP
+
+>> strand+_frame1_nt36404_36559  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6   1.3       1.4        83      15      32 ..       5      31 ..       1      49 [. 0.42
+
+  Alignments for each domain:
+  == domain 1  score: -0.6 bits;  conditional E-value: 1.4
+                        chma68 15 ataaaqqpqaqqqa.........skpa 32
+                                  +t++++ p+a+++          ++p+
+  strand+_frame1_nt36404_36559  5 TTTSRPRPTATRTPrraapvatpATPT 31
+                                  344456666665543322332221122 PP
+
+>> strand+_frame1_nt185066_185386  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.9   0.0       1.7        99     296     334 ..      61     101 ..      33     104 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: -0.9 bits;  conditional E-value: 1.7
+                          chma68 296 qqqrfgrrrqg.vqdlkpyqpvlvitdvdsgee.gnaatle 334
+                                     +q+  +++ ++  ++l +++pv+ ++ v ++++ + aa+le
+  strand+_frame1_nt185066_185386  61 VQHERRVQSDDvFHGLVQLTPVVELEVVHTHAQhITAANLE 101
+                                     44444444444357788888888888888888777777766 PP
+
+>> strand-_frame0_nt99610_99708  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.7   0.2       1.5        85      19      31 ..      12      17 ..       2      31 .. 0.40
+
+  Alignments for each domain:
+  == domain 1  score: -0.7 bits;  conditional E-value: 1.5
+                        chma68 19 aqqpqaqqqaskp 31
+                                  + q      a + 
+  strand-_frame0_nt99610_99708 12 QRQ------A-AD 17
+                                  111......1.11 PP
+
+>> strand+_frame2_nt88269_88430  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.7   0.4       1.5        85      29      55 ..      19      46 ..       5      54 .] 0.38
+
+  Alignments for each domain:
+  == domain 1  score: -0.7 bits;  conditional E-value: 1.5
+                        chma68 29 skpataaq....sttglnnllaragrldgss 55
+                                  ++p++ +     s +++n ++ ++   ++ss
+  strand+_frame2_nt88269_88430 19 QAPQSPQMgplcS-SSSNVEITSMT--SSSS 46
+                                  3333222223322.22222222222..1222 PP
+
+>> strand-_frame2_nt96953_97693  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.1       4.1   2.4e+02     499     533 ..     127     163 ..     124     167 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 4.1
+                        chma68 499 lgdneqevveylaaqsgsnr..deerrlklrkelqkl 533
+                                   +++n++ +++y ++    +   d + +l+++k++q++
+  strand-_frame2_nt96953_97693 127 YKKNDPSIMDYVNSATKPSWlnDLQTQLYRLKNYQQQ 163
+                                   6789999999998855344444559999999999986 PP
+
+>> strand-_frame0_nt183811_183909  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   0.0       1.6        93     204     219 ..      16      31 ..       7      32 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 1.6
+                          chma68 204 aiktalarasletpfs 219
+                                     ++++++a ++le+pfs
+  strand-_frame0_nt183811_183909  16 ITTSTVAPRTLESPFS 31 
+                                     6778889999999997 PP
+
+>> strand-_frame1_nt183471_183635  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.7   0.2       1.5        84     589     605 ..       9      25 ..       1      51 [. 0.40
+
+  Alignments for each domain:
+  == domain 1  score: -0.7 bits;  conditional E-value: 1.5
+                          chma68 589 nfalsgagqsgaagsqg 605
+                                      f+ sgag++g   s++
+  strand-_frame1_nt183471_183635   9 EFGASGAGHQGHPLSNT 25 
+                                     33444443333332222 PP
+
+>> strand+_frame1_nt59342_59473  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.7   0.6       1.5        87      15      30 ..      21      37 ..       3      43 .. 0.44
+
+  Alignments for each domain:
+  == domain 1  score: -0.7 bits;  conditional E-value: 1.5
+                        chma68 15 ataaa.qqpqaqqqask 30
+                                  +++a+ + pqa+q +++
+  strand+_frame1_nt59342_59473 21 DRRARhADPQAAQGTQR 37
+                                  22222122444443333 PP
+
+>> strand+_frame1_nt190526_190654  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   0.0       1.6        91      19      34 ..      19      31 ..       4      42 .. 0.48
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 1.6
+                          chma68 19 aqqpqaqqqaskpata 34
+                                    aqqp+++   s+++t+
+  strand+_frame1_nt190526_190654 19 AQQPTPA---SRSSTQ 31
+                                    3333332...222222 PP
+
+>> strand-_frame1_nt158388_158612  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   1.0       1.6        91      20      30 ..      35      45 ..       7      73 .. 0.48
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 1.6
+                          chma68 20 qqpqaqqqask 30
+                                    +q++ +q+a++
+  strand-_frame1_nt158388_158612 35 HQAEGRQEAQR 45
+                                    11111111111 PP
+
+>> strand+_frame0_nt215833_216156  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.3   0.0       2.2   1.3e+02     503     531 ..      76     105 ..      73     107 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -1.3 bits;  conditional E-value: 2.2
+                          chma68 503 eqevveylaaqsgsnr.deerrlklrkelq 531
+                                     +q++ve l++ s+ ++ d   r++ +k+++
+  strand+_frame0_nt215833_216156  76 KQAIVETLSLLSYEHQdDRRARIDAYKKAS 105
+                                     58899999****999955599*99999986 PP
+
+>> strand+_frame0_nt53434_53556  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.7   0.1       1.4        84      20      29 ..      21      30 ..       5      41 .] 0.41
+
+  Alignments for each domain:
+  == domain 1  score: -0.7 bits;  conditional E-value: 1.4
+                        chma68 20 qqpqaqqqas 29
+                                  +q q +++ +
+  strand+_frame0_nt53434_53556 21 AQSQGRRRSG 30
+                                  1111111111 PP
+
+>> strand+_frame0_nt108784_108891  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.7   0.1       1.5        86      48      54 ..      14      20 ..       1      35 [. 0.36
+
+  Alignments for each domain:
+  == domain 1  score: -0.7 bits;  conditional E-value: 1.5
+                          chma68 48 agrldgs 54
+                                    ++++d++
+  strand+_frame0_nt108784_108891 14 LNSTDQL 20
+                                    1111111 PP
+
+>> strand+_frame2_nt133392_133481  stop-delimited; no start-codon requirement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6   0.1       1.4        81      40     522 ..      15      20 ..       3      30 .] 0.42
+
+  Alignments for each domain:
+  == domain 1  score: -0.6 bits;  conditional E-value: 1.4
+                          chma68  40 glnnllaragrldgsssrsseelakfvealeealkeqdkadpfdvirvdgispqvglpaivvagelvggsktvfvytll 118
+                                     g+n+                                                                           
+  strand+_frame2_nt133392_133481  15 GNNH--------------------------------------------------------------------------- 18 
+                                     1111........................................................................... PP
+
+                          chma68 119 ffnkgqslrpeeiqinngledkyeikatpsdlfdkdvlakveeslkerhglpnaevvlaganvvplefdlkdewavkgL 197
+                                                                                                                    
+  strand+_frame2_nt133392_133481   - -------------------------------------------------------------------------------   -
+                                     ............................................................................... PP
+
+                          chma68 198 lgnavnaiktalarasletpfslakellskndrltarvefnggpvvdidgnPiraDlavtlstapknnqqenplyntdt 276
+                                                                                                                    
+  strand+_frame2_nt133392_133481   - -------------------------------------------------------------------------------   -
+                                     ............................................................................... PP
+
+                          chma68 277 plsqvtgyvdlrytgqkpqqqqrfgrrrqgvqdlkpyqpvlvitdvdsgeegnaatletqllgLaaaaalaagqawaea 355
+                                                                                                                    
+  strand+_frame2_nt133392_133481   - -------------------------------------------------------------------------------   -
+                                     ............................................................................... PP
+
+                          chma68 356 lrpsldkgkdlrdigalgyeldlgkridtkdadfsdealaqllrtfvapsavlviDvpeaGnnsalsnllleaaggpns 434
+                                                                                                                    
+  strand+_frame2_nt133392_133481   - -------------------------------------------------------------------------------   -
+                                     ............................................................................... PP
+
+                          chma68 435 qkalkaliaaldnLtggeFskllaentkpilvatavriplGyYtdkdGekrdlrdiDylallnalgdneqevveylaaq 513
+                                                                                                                    
+  strand+_frame2_nt133392_133481   - -------------------------------------------------------------------------------   -
+                                     ............................................................................... PP
+
+                          chma68 514 sgsnrdeer 522
+                                            ++
+  strand+_frame2_nt133392_133481  19 -------QQ 20 
+                                     .......11 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (618 nodes)
+Target sequences:                       4234  (362827 residues searched)
+Passed MSV filter:                      4234  (1); expected 4234.0 (1)
+Passed bias filter:                     4234  (1); expected 4234.0 (1)
+Passed Vit filter:                      4234  (1); expected 4234.0 (1)
+Passed Fwd filter:                      4234  (1); expected 4234.0 (1)
+Initial search space (Z):               4234  [actual number of targets]
+Domain search space  (domZ):              73  [number of targets reported over threshold]
+# CPU time: 3.62u 0.26s 00:00:03.88 Elapsed: 00:00:01.13
+# Mc/sec: 197.08
+//
+[ok]

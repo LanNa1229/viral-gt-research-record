@@ -1,0 +1,29 @@
+createdb inputs/7SQR.pdb inputs/7SQV.pdb inputs/8FNE.pdb work/refs --threads 4 
+
+MMseqs Version:             	755d3fa84b8259d4d30aa92782f0bfc2bfc3363f
+Use GPU                     	0
+Path to ProstT5             	
+Chain name mode             	0
+Model name mode             	0
+Createdb extraction mode    	0
+Interface distance threshold	10
+Write mapping file          	0
+Write Foldcomp              	0
+Mask b-factor threshold     	0
+Coord store mode            	2
+Write lookup file           	1
+Input format                	0
+File Inclusion Regex        	.*
+File Exclusion Regex        	^$
+Threads                     	4
+Verbosity                   	3
+
+Output file: work/refs
+[=================================================================] 3 0s 4ms
+Time for merging to refs_ss: 0h 0m 0s 1ms
+Time for merging to refs_h: 0h 0m 0s 0ms
+Time for merging to refs_ca: 0h 0m 0s 0ms
+Time for merging to refs: 0h 0m 0s 0ms
+Ignore 0 out of 3.
+Too short: 0, incorrect: 0, not proteins: 0.
+Time for processing: 0h 0m 0s 50ms

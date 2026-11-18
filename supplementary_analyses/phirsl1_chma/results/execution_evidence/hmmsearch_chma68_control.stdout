@@ -1,0 +1,307 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  inputs/chma68_control.hmm
+# target sequence database:        inputs/chma_characterized.faa
+# per-seq hits tabular output:     results/chma68_control.tbl
+# per-dom hits tabular output:     results/chma68_control.domtbl
+# sequence reporting threshold:    E-value <= 100
+# domain reporting threshold:      E-value <= 100
+# Max sensitivity mode:            on [all heuristic filters off]
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       chma68_control  [M=618]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+   6.8e-221  723.5   8.5   7.6e-221  723.4   8.5    1.0  1  NP_803620.1  
+   1.3e-200  656.5   8.1   1.5e-200  656.4   8.1    1.0  1  F8SJT5       
+   3.4e-185  605.6  18.9   3.8e-185  605.4  18.9    1.0  1  B3FIW8       
+     1e-170  557.8  50.6   2.2e-169  553.4  50.6    2.0  1  ANH52002.1   
+   1.3e-125  408.8   1.6   1.6e-125  408.5   1.6    1.0  1  A0A482GDX1   
+   4.7e-110  357.4   0.0   5.2e-110  357.3   0.0    1.0  1  QFP93061.1   hypothetical protein [Serratia phage PCH45]
+
+
+Domain annotation for each sequence (and alignments):
+>> NP_803620.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  723.4   8.5  7.6e-221  7.6e-221       1     618 []       1     626 []       1     626 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 723.4 bits;  conditional E-value: 7.6e-221
+  chma68_control   1 Mslnvdennnqnaqataaaqqpqaqqqaskpataaqsttglnnllaragrldgsssrsseelakfvealeealkeqdkadpfdvirvdgispqvg 95 
+                     M++n++e +++++qata+a+qp+aq+qa++p++a++sttg+n+l++r+grldgs++rs+++l++f++++eea+++qd +d+fd++r+d++++qvg
+     NP_803620.1   1 MAVNENEIGTVQTQATAPAPQPTAQRQAQRPTGAPGSTTGINHLMRRSGRLDGSDARSADALQVFTKVKEEAIRHQDLPDDFDIHRFDRDAQQVG 95 
+                     9********************************************************************************************** PP
+
+  chma68_control  96 lpaivvagel..vggsktvfvytllffnk.gqslrpeeiqinngle.dkyeikatpsdlfdkdvlakveeslkerhglpnaevvlaganvvplef 186
+                     ++++++++ +  ++gs+++fv+tl++ n  g+++rp++++inngl+ d +e k+ p+d+f++++++k+ e+l++r+++p+ ev++ag+++v+++f
+     NP_803620.1  96 MAGLLIVKLAkdINGSMKAFVRTLVLDNLpGTRIRPRTHKINNGLTdDIIEEKVLPRDVFTAQYWSKIGEFLRNRYNIPGLEVLSAGPRAVYADF 190
+                     *********************************************************************************************** PP
+
+  chma68_control 187 dlkdewavkgLlgnavnaiktalarasletpfslakellskndrltarvefnggpvvdidgnPiraDlavtlstapknnqqenplyntdtplsqv 281
+                     d+kde avk+Ll+++vn++++a+ar+++etpfs+a++++++n++lt+++++ng pv+d++gnPir+D+++++s+++k+n +en++y+td++l+qv
+     NP_803620.1 191 DFKDELAVKNLLVESVNICEDAIARRNNETPFSIATHIKAENEQLTCNLDYNGIPVKDSCGNPIRSDMVISTSRGKKTNVPENEFYDTDSQLNQV 285
+                     *********************************************************************************************** PP
+
+  chma68_control 282 tgyvdlrytgqkpqqqqrfgrrrqgvqdlkpyqpvlvitdvdsgeegnaatletqllgLaaaaalaagqawaealrpsldkgkdlrdigalgyel 376
+                     + +vdl++t++++qqq +fg++ +g+  +++++p++vitdv+++++++a+tle++l++L++a++++a+qawa+ l+p+++++ ++rdigalgy++
+     NP_803620.1 286 SLFVDLHWTPTTGQQQGMFGVTLPGAALPPQFTPYIVITDVRKASWIQAWTLEMWLFALGNAYRATASQAWARTLMPKIATS-KMRDIGALGYYS 379
+                     ********************************************************************************86.************ PP
+
+  chma68_control 377 dlgkridtkdadf..sdealaqllrtfvapsavlviDvpeaGnnsalsnllleaaggpnsqkalkaliaaldnLtggeFskllaent.kpilvat 468
+                     +lgk i+t++++f  +d+++ +l++++v+++++++iD++ +G+nsa+++++l+aagg+n+++a+  +++al nL+g  F+++++ ++  pi+ ++
+     NP_803620.1 380 ELGKAIETRTEAFmaDDSNFVMLMNKMVNQNPAFQIDIDPMGDNSAIEQVILDAAGGVNQARAVSLIFQALTNLYGTDFRQFYNLAEaGPIIFDN 474
+                     *************7666********************************************************************8878****** PP
+
+  chma68_control 469 avriplGyYtdkdGekrdlrdiDylallnalgdneqevveylaaqsgsnrdeerrlklrkelqklflgsvtitgearrvvinpaFleaLakAvaa 563
+                     ++++ lG+Ytd++Ge +d+rd+D l ++n++++n+qe+ +++a+q   n++ +rr++++k ++k++lg+vt+tg+arr+++np+F+ a+++A+aa
+     NP_803620.1 475 HHEVDLGHYTDEHGELSDRRDLDVLGAMNMSEGNDQEWKTWYATQV-GNDHIVRRMNNSKGFDKMYLGNVTYTGRARRLTFNPKFITAMDAAAAA 568
+                     ********************************************99.66699******************************************* PP
+
+  chma68_control 564 agltvtgenlsteagtqrfynn.gaenfalsgagqsgaagsqgggfg..lvggggfry 618
+                     ag+tvt+enl+t++g+qrf ++ g++n+a+sg++q+g+ags+g+++g  +++++g++y
+     NP_803620.1 569 AGVTVTMENLITNFGQQRFAGYtGMGNMAVSGSAQVGMAGSMGQTYGapSYNAPGTWY 626
+                     ***********************************************75488888776 PP
+
+>> F8SJT5  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  656.4   8.1  1.5e-200  1.5e-200      22     615 ..       3     599 ..       1     602 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 656.4 bits;  conditional E-value: 1.5e-200
+  chma68_control  22 pqaqqqaskpataaqsttglnnllaragrldgsssrsseelakfvealeealkeqdkadpfdvirvdgispqvglpaivvagel.vggsktvfvy 115
+                     +++q+ + + +t +++ ++ln+ ++r+gr+dg ++r+se+la+f++++eea+++qd  d+f v+r+d+++++vg++a++v++++ ++g+++++ +
+          F8SJT5   3 QTQQGPKVQTQTLQGGAGNLNSIFQRSGRTDGGDARASEALAVFNKLKEEAIAQQDLHDDFLVFRFDRDQNRVGYSALLVVKRAaINGQQVIVTR 97 
+                     33333345555666699****************************************************************************** PP
+
+  chma68_control 116 tllffnkgqslrpeeiqinngle.dkyeikatpsdlfdkdvlakveeslkerhglpnaevvlaganvvplefdlkdewavkgLlgnavnaiktal 209
+                     +l+++n +++l++++ +i+ng++ + +e +a+++d+f++++++++++s+++++g+ +a v++ag++v+p++fdlkde  +k+Ll+++vn+++++l
+          F8SJT5  98 PLVMPNDQITLPTKKLTIQNGMHqETIEAEADVQDVFTTQYWNRICDSIRQQTGKHDAMVINAGPTVIPADFDLKDELVLKQLLIKSVNLCDDML 192
+                     ************************9********************************************************************** PP
+
+  chma68_control 210 arasletpfslakellskndrltarvefnggpvvdidgnPiraDlavtlstapknnqqenplyntdtplsqvtgyvdlrytgqkpqqqqrfgrrr 304
+                     a++s+e+pfs+a+ l++ +++l+ar++f g+p++d+ g Pir+D+ v+l++++k +qqen++y+++ +l+qv+++v+l+yt+q++  q+ +g  +
+          F8SJT5 193 AKRSGEQPFSVAM-LKGTDETLAARLNFTGKPMHDSLGYPIRSDILVSLNRVKKPGQQENEFYEAEDKLNQVSCFVNLEYTPQPQ--QAIYGAPQ 284
+                     ************8.***********************************************************************..67899998 PP
+
+  chma68_control 305 qgvqdlkpyqpvlvitdvdsgeegnaatletqllgLaaaaalaagqawaealrpsldkgkdlrdigalgyeldlgkridtkdadfsdealaqllr 399
+                     q  q+l+p++p++vitdv+++e+ +a+t+e++l++L++a++++a+q wa++l+p+l+k kd+rdiga+gy++ l +r++tk+++f+d+++a+ll+
+          F8SJT5 285 QT-QQLPPLTPAIVITDVRQAEWLKANTMELYLFALSNAFRVTANQSWARSLLPQLGKVKDMRDIGAIGYLSRLAARVETKTETFTDQNFAELLY 378
+                     78.*******************************************************9************************************ PP
+
+  chma68_control 400 tfvapsavlviDvpeaGnnsalsnllleaaggpnsqkalkaliaaldnLtggeFskllaentkpilvatavriplGyYtdkdGekrdlrdiDyla 494
+                     ++v+ps+v++ D++++G+n+a++n++ +a gg+n+q+a++a+ia ++nL gg F+k++++nt pi++++++ i+lGyY d++Gek d+rd+D l 
+          F8SJT5 379 NMVRPSPVFMSDLNRFGDNAAIENVFIDALGGVNQQRAVAAIIAGVNNLIGGGFEKFFDHNTMPIIQPYGTDIQLGYYLDGEGEKQDRRDLDVLG 473
+                     *********************************************************************************************** PP
+
+  chma68_control 495 llnalgdneqevveylaaqsgsnrdeerrlklrkelqklflg.svtitgearrvvinpaFleaLakAvaaagltvtgenlsteagtqrfynn.ga 587
+                     +lna+ +n qe+++++++q++   ++e r +++k++++++lg svt+t++a+r ++np+F+eaL+kA+a+ gltv+++n+ +++g qrf++n ++
+          F8SJT5 474 ALNASDGNIQEWMSWYGTQCNVAVHPELRARQSKNFDRQYLGnSVTYTTRAHRGIWNPKFIEALDKAIASVGLTVAMDNVAQVFGAQRFSGNlAI 568
+                     *********************************************************************************************** PP
+
+  chma68_control 588 enfalsgagqsgaagsqgggfg.l..vgggg 615
+                     +++a++g++q++++ +++gg++ +  vg g+
+          F8SJT5 569 ADYAVTGTAQVSSGLVSNGGYNpQfgVGQGS 599
+                     **************99999999633544444 PP
+
+>> B3FIW8  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  605.4  18.9  3.8e-185  3.8e-185       1     616 [.       1     629 [.       1     631 [] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 605.4 bits;  conditional E-value: 3.8e-185
+  chma68_control   1 Mslnvdennnqnaqa..taaaqq.pqaqqqa......skpataaqsttglnnllaragrldgsssrsseelakfvealeealkeqdkadpfdvir 86 
+                     M+ ++ +n++q ++a  +a+aqq +qa q++      s+p+++ ++t+g+n+++ r+g+++g ++r+se+l++f++++e a+++qd ad+f + r
+          B3FIW8   1 MIRDTATNTTQTQAApqQAPAQQfTQAPQEKpmqstqSQPTPSYAGTGGINSQFTRSGNVQGGDARASEALTVFTRLKEQAVAQQDLADDFSILR 95 
+                     889999999985554657777777666664455553355666666************************************************** PP
+
+  chma68_control  87 vdgispqvglpaivvagel.vggsktvfvytllffnkgqslrpeeiqinngle.dkyeikatpsdlfdkdvlakveeslkerhglpnaevvlaga 179
+                     +d++++qvg++++v+a+++  +g++++ v++l+++n++++l++++++i+ng++ d +e +++++ +f+++++++++ ++++++g+p+a+vvlag+
+          B3FIW8  96 FDRDQHQVGWSSLVIAKQIsLNGQPVIAVRPLILPNNSIELPKRKTNIVNGMQtDVIESDIDVGTVFSAQYFNRLSTYVQNTLGKPGAKVVLAGP 190
+                     *********************************************************************************************** PP
+
+  chma68_control 180 nvvplefdlkd.ewavkgLlgnavnaiktalarasletpfslakellsk.ndrltarvefnggpvvdidgnPiraDlavtlstapknnqqenply 272
+                      ++p++  lkd e ++++Ll+++vna++++la +s+e+pf++a  l+++  ++l+a+v+++++p++d+ gnPiraD++vt++++++n+qqen++y
+          B3FIW8 191 FPIPADLVLKDsELQLRNLLIKSVNACDDILALHSGERPFTIAG-LKGQqGETLAAKVDIRTQPLHDTVGNPIRADIVVTTQRVRRNGQQENEFY 284
+                     *********866*******************************9.8887599******************************************* PP
+
+  chma68_control 273 ntdtplsqvtgyvdlrytgqkpqqqqrfgrrrqgvqdlkpyqpvlvitdvdsgeegnaatletqllgLaaaaalaagqawaealrpsldkgkdlr 367
+                     +td +l+qv+++++l+ t+q ++q    + + q+v  ++p+++ +vitdv++++ ++a+t+e+++++L++a++ ++g+awa++++p  ++ kd++
+          B3FIW8 285 ETDVKLNQVAMFTNLERTPQAQAQTLFPN-Q-QQVATPAPWVASVVITDVRNADGIQANTPEMYWFALSNAFRSTHGHAWARPFLPMTGVAKDMK 377
+                     **********************9984445.4.478******************************************************99**** PP
+
+  chma68_control 368 digalgyeldlgkridtkdadfsdealaqllrtfvapsavlviDvpeaGnnsalsnllleaaggpnsqkalkaliaaldnLtggeFskllaentk 462
+                     digalg+ + l++ridtk+a+f+d++++ql+   v+p++v++iD++++G+++++++l l+aaggpn qka +++i+ ++nL gg F+++++++t+
+          B3FIW8 378 DIGALGWMSALRNRIDTKAANFDDAQFGQLMLSQVQPNPVFQIDLNRMGETAQMDSLQLDAAGGPNAQKAAATIIRQINNLGGGGFERFFDHTTQ 472
+                     *********************************************************************************************** PP
+
+  chma68_control 463 pilvatavriplGyYtdkdGekrdlrdiDylallnalgdneqevveylaaqsgsnrdeerrlklrkelqklflg.svtitgearrvvinpaFlea 556
+                     pil +t++ i lG + d+d ekrd+rd+D la+lna ++ne+e++ +++aq + n ++  r+++++++++++lg +vt+tg a+r+++n +F+ea
+          B3FIW8 473 PILERTGQVIDLGNWFDGD-EKRDRRDLDNLAALNAAEGNENEFWGFYGAQLNPNLHPDLRNRQSRNYDRQYLGsTVTYTGKAERCTYNAKFIEA 566
+                     ******************9.*************************************************************************** PP
+
+  chma68_control 557 LakAvaaagltvtgenlsteagtqrfynn.gaenfalsgagqsgaagsqgggfg.l.vggggf 616
+                     L++ +a+agl++t++n+s  ++ qrf++n +++n+++sg++q+++a   ++gf+ + ++g+++
+          B3FIW8 567 LDRYLAEAGLQITMDNTSVLNSGQRFMGNsVIGNNMVSGQAQVHSAYAGTQGFNtQyQTGPSS 629
+                     **********************************************88889999534666555 PP
+
+>> ANH52002.1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  553.4  50.6  2.2e-169  2.2e-169      21     613 ..      38     692 ..       1     708 [. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 553.4 bits;  conditional E-value: 2.2e-169
+  chma68_control  21 qpqaqqqa..................skpataaq..............sttglnn..llaragrldgsssrss.........eelakfvealeea 72 
+                     ++q+qqq+                  +++++++q              ++t+  +  ++ r  r++g+++r+s         e+++   ea++e+
+      ANH52002.1  38 SQQPQQQQtppqqapqsapqpvqaatQQQQHTPQfhqtagnstvnnttNNTN--TeqQQPRQSRIYGMNERRSrifdatafgENFKIALEATKEV 130
+                     1222222223444455555555554433333333444444444443333344..2559999********************************** PP
+
+  chma68_control  73 l...keqdkadpfdvirvdgispqvglpaivvagel.vggsktvfvytllffnkgqslrpeeiqinngle.dkyeikatpsdlfdkdvlakvees 162
+                     l   ++++++++f++  v+  ++ ++++++++a+++ +ggs++++vytl+++n+g++l+p++  +n+ l+ +++ei++++++++d++++a+v + 
+      ANH52002.1 131 LegyEDKGFNKSFFL--VPVADATLHCNGLAYASVFnFGGSTKAIVYTLMLENTGSPLKPQR--GNDPLTgEPFEIPRMTGSQYDNTYWARVAQL 221
+                     *77778999999988..666678899***********************************9..*******99********************** PP
+
+  chma68_control 163 lkerhglpnaevvlaganvvplefdlkdewavkgLlgnavnaiktalara...sletpfslakellskndrltarvefnggpvvdidgnPiraDl 254
+                     +++r+g +naev++aga+vv++e++++d++a+k+Ll+na+na+++++++    ++e+pf++a+e++++ dr+ta+++fn++p++++dg+Pir+D+
+      ANH52002.1 222 VAHRVG-NNAEVLDAGACVVHAEMKWDDKSAIKQLLNNAENATMAYANSLsgyRIEPPFNIAQEVDPNIDRITAGFNFNPQPLFTVDGQPIRNDV 315
+                     *****9.99***************************************9977778**************************************** PP
+
+  chma68_control 255 avtlstapknnqqenplyntdtplsqvtgyvdlrytgqkpq...qqqrfgrr.rqgvqdlkpyqpvlvitdvdsgeegnaatletqllgLaaaaa 345
+                     +v+ls+  +++ q     +t++++++v+gyv+l+ ++q+++   qq+++g++ +q +q +++++p+++it++ +g ++na+++e+qll+L+aa+ 
+      ANH52002.1 316 EVKLSAYAEGAGQ----VQTTEAITTVNGYVELIAAPQQQMgyqQQMMMGMNpQQAMQFYRRFYPQFTITSTGTG-ISNAQGPEFQLLALFAASL 405
+                     ***********98....499*********************8845588899987789****************98.9****************** PP
+
+  chma68_control 346 laagqawaealrpsldkgkdlrdigalgyeldlg........kridtkdadfsdealaqllrtfvapsavlviDvpeaGnnsalsnllleaaggp 432
+                     + ++++w++a++p++ +g+d++diga++yel++g        k+i tkd++f+++al+qll+t++++s++++iD++e+G +++++++ll a g+p
+      ANH52002.1 406 IGENSNWHHAFAPKMVNGVDINDIGAINYELKMGlespddrpKKIITKDHSFTTQALHQLLYTACHESMSIAIDIEETGTRTWVNSMLLLAGGQP 500
+                     **********************************99****9****************************************************** PP
+
+  chma68_control 433 n.........sqkalkaliaaldnLtggeFskllaentkpilvatavriplGyYtdk.dGekrdlrdiDylallnalgdneqevveylaa.qs.g 515
+                     n         +q+a+ka+i+a++nLt+geFsk+++++++ i+v++++ri++G+Y++k +++k+d+r++D+la+ln++g+ ++++ve+++   s +
+      ANH52002.1 501 NgnaaalspqGQQAHKAIIQAANNLTNGEFSKHFTDQNQLIAVRDGTRIQGGFYVSKdNHQKMDIRNVDLLAVLNFVGETDPRIVEEWKIiTSsT 595
+                     ********************************************************9899*****************************997769 PP
+
+  chma68_control 516 snrdeerrlklrkelqklflg.svtitgearrvvinpaFleaLakAvaaagltvtgenlsteagtqrfynngaenfalsgagqsgaagsqgggfg 609
+                     s++++ +r++lr++  +++lg s++++ +++rvvin+aF++aL+kA++aagl v++en++++++ q++++++a+ +++ ++ +s+ +   +g+++
+      ANH52002.1 596 SGMSTPKRVALRQQKLQQLLGeSFVLKAYYERVVINWAFMDALRKAITAAGLIVRPENTNMQYNVQSYGTPMAQLYGMPTNIGSSLQ---QGAYA 687
+                     999***********99999999**********************************************999**********655555...34444 PP
+
+  chma68_control 610 l.vgg 613
+                       ++g
+      ANH52002.1 688 TdNQG 692
+                     22222 PP
+
+>> A0A482GDX1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  408.5   1.6  1.6e-125  1.6e-125       1     614 [.       1     625 [.       1     630 [. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 408.5 bits;  conditional E-value: 1.6e-125
+  chma68_control   1 Mslnvdennnqnaqataaaqqpqaqqqa......skpataaq...sttglnnllaragrldgsssrsseelakfvealeealkeqdkadpfdvir 86 
+                     M l+v +n+n n++ +aa ++++aq+++      ++ a++++   +++++n +l+r      s+++ se++ ++++++e++l++ +++d+f + +
+      A0A482GDX1   1 MGLDVRNNGNDNVEIRAA-ETRTAQRADealetaADFAGQPKvthTMRTINRTLSRRI----SRNTGSEQVLNLRRLMEKYLEDTRFKDDFIFVA 90 
+                     99999*****98876554.344444433233333445555534458888888888886....999****************************** PP
+
+  chma68_control  87 vdgispqvglpaivvagel.vggsktvfvytllffnkgqslrpeeiqinngledkyeikatpsdlfdkdvlakveeslkerhg.lpnaevvlaga 179
+                     vd ++++v++p +vv++ + vg+++++f y l ++    +l+ +e+q+  g  + + +++t+ d  + ++++ v++++ +++g ++n +  +ag 
+      A0A482GDX1  91 VDPNQYSVPYPTLVVMSGAkVGDHNHFFGYVLPLVAGLAPLPRREEQGPHG--N-ILVPRTWVDNLNGTFINEVMAAMYAAIGgKSNGTARIAGL 182
+                     ************************************99******9666554..4.78*************************84678******** PP
+
+  chma68_control 180 nvvplefdlkdewavkgLlgnavnaiktalara....sletpfslakellskndrltarvefnggpvvdidgnPiraDlavtlstapknnqqenp 270
+                      vv++e   ++ + +++Ll+ a nai+ta+  +     + ++f+l++ + s++   +++++++g + +di gnP+r+D++vt+s + ++++++  
+      A0A482GDX1 183 AVVTNEITAESAHLATTLLSAADNAIQTAIEIRlgdkLGLPQFNLGM-MASDQPISSVQYNTSGMQDSDIVGNPVRSDITVTISNRIRQAMSD-- 274
+                     *********999988***************7776887889******8.*******************************************98.. PP
+
+  chma68_control 271 lyntdtplsqvtgyvdlrytgqkpqqq.qrfgrrrqgvqdlkpyqpvlvitdvdsgeegnaatletqllgLa.aaaalaagqawaealrpsldkg 363
+                      y+++++l+ +tgy+dl y +q+p  +     +++++v ++ +yqp+ v+t++++  e +a+t+ t++lgL  ++a+l++g awa++l++++++g
+      A0A482GDX1 275 -YDSQQRLVATTGYIDLTYSPQNPTFNqGPVLVNGYPVPPTVQYQPRYVMTSAYPL-ELDAFTPNTFVLGLIgTIATLNSGMAWAQSLISNAARG 367
+                     .***********************96624556779********************7.5*************99********************** PP
+
+  chma68_control 364 kdlrdigalgyeldlgkridtkdadfsdealaqllrtfvapsavlviDvpeaGnnsalsnllleaaggpn.........sqkalkaliaaldnLt 449
+                      +++++gal++ ld++  + +  ++ ++e++ ++l+++ +ps++++iDvpe G++s+l +++ +a +  +          ++ +kal++a+d  t
+      A0A482GDX1 368 IGPHNPGALAMVLDPEVTAPLDLSTQTNEQIYKFLQQVLYPSLLISIDVPEEGEYSWLLRMIPAAEKIYTgkvegevreISEGYKALYRAFDDVT 462
+                     ****************99999999*******************************************9888999***9999************** PP
+
+  chma68_control 450 ggeFskllaentkpilvatavriplGyYtdkdGekrdlrdiDylallnalgdneqevveylaaqsgsnrdeerrlklrkelqklflg.svtitge 543
+                      g+Fsk ++    p+++at++riplG+Y+++dG+++d+rd+D l+++n +++++ e   + ++++ +++   +r+  r+e++ ++l+ s+++tg+
+      A0A482GDX1 463 LGCFSKKYQYG-LPLVYATGNRIPLGHYNHQDGHRHDIRDMDDLYMMNITNPDTVEA--WEDSFDRTDMTMSQRVVARHEIIDRVLSgSWEQTGW 554
+                     **********9.6***************************************99995..6677**99999977777777755555555******* PP
+
+  chma68_control 544 arrvvinpaFleaLakAvaaagltvtgenlsteagtqrfynn.gaenfalsgagqsgaagsqgggfglvggg 614
+                     a+r+ ++p  l+aL++A+a+ag+t+++en+++ agt    +n +a+  +l +  ++ +a+s++ + g++++g
+      A0A482GDX1 555 AMRYDFDPLALQALIEAAADAGFTIRPENIQHLAGTAVR-GNmAARARGLGNISGNIYARSDRPNVGVNNMG 625
+                     ******************************888888655.56366666666655555566666777754433 PP
+
+>> QFP93061.1  hypothetical protein [Serratia phage PCH45]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  357.3   0.0  5.2e-110  5.2e-110       1     616 [.       1     657 [.       1     659 [] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 357.3 bits;  conditional E-value: 5.2e-110
+  chma68_control   1 Mslnvdennnqnaqataaaqq.pqaqqqaskpataaqsttglnn................llaragrldgsssrsseelakfvealeealke... 75 
+                     Ms+n++e+++ +++++  ++q +++++++s+++ ++   +g +n                ++ ++g +   ss+++ +l+kf   ++++l+    
+      QFP93061.1   1 MSFNDKEKQTPAQDMKDFKNQkREERRTESRNDDREEDRGGRRNrrddasdkkpgndpwgMMTKFG-API-SSINGSALEKFSTPAKDFLEFyga 93 
+                     ***********8888777766477777777655433322222222234445555556886666666.665.558889*************99887 PP
+
+  chma68_control  76 ...qdkadpfdvirvdgispqvglpaivvagel..vggsktvfvytllffnkgqslrpeeiqinngledkyeikatpsdlfdkdvlakveeslke 165
+                        +++  ++d+ ++ +++++v + ++++ ++   +g+++ ++vytl ++  ++++ ++ +++++g +   +++a++sd++d +++++ve+++k+
+      QFP93061.1  94 tfaDKFGLKLDILLAGTEQTRVRIESVIFLATRekAGAKPETLVYTLFLPT-SSNIGTQYTEGERGRS-GLGYSAVASDAYDGHFKRNVEAFIKK 186
+                     7777888899**************99887776669****************.9999999988988877.89************************ PP
+
+  chma68_control 166 rhglpnaevvlaganvvplefdlkdewavkgLlgnavnaiktalara.sletpfslakel...............lskndrltarvefnggpvvd 244
+                     + ++++ +++++ga +vp +fdl++e++v+gL++ avn++++ +a++ ++ + f+l +++               + ++  l+ +v f++++ +d
+      QFP93061.1 187 DSRNNAGDIIHIGAGTVPSTFDLSKEEKVRGLIQYAVNVLWYQFADMyDNINDFALVDLFpkrngddeddrrgrrRDDEVILNSNVVFKPEESLD 281
+                     *99999*****************************************88*********55999**********988899999************* PP
+
+  chma68_control 245 idgnPiraDlavtlstapknnq...qenpl.yntdtplsqvtgyvdlrytgqkpqqqqrfgrr......rqgvqdlkpyqpvlvitdvdsgeegn 329
+                     ++++P+ +D+++++s ++++++   ++n+l ++++++l+++ ++vdl+y g++++  +r+gr+      r+++ ++++y  +l++t++++     
+      QFP93061.1 282 VFEMPHEHDIQIEVSLGRRRRDkdrPRNALsLEENQTLAKIGANVDLVYLGEEDNGGRRSGRNkfrgrrRDEESAVPLYGLALNVTEITT---EG 373
+                     *******************98877789***88**********************97777776677777688899**************98...59 PP
+
+  chma68_control 330 aatletqllgLaaaaalaagqawaealrpsldkgkdlrdigalgyeldlgkridtkdadfsdealaqllrtfvapsa.vlviDvpeaGnnsalsn 423
+                     +  +++ql +La+++ l +++ +++al+ps+d+ + lrd++al+ e+     +d+ +++ s+e++a+l++++ ++++ +++++ p++G +s+l +
+      QFP93061.1 374 RDVMAMQLTALANIPLLIKESILTQALLPSADE-VRLRDPRALALEQPESFPADLIAEHPSEEEWANLMEAVLHEDStYIFLHAPRTGVHSQLLT 467
+                     ********************************7.6**************8999*********************999899*************** PP
+
+  chma68_control 424 llleaagg..pnsqkalkaliaaldnLtggeFskllaentkpilvatavriplGyYtdk.dGekrdlrdiDylallnalgdneqevveylaaqsg 515
+                     +l++a+++  ++s+++++ + ++l++Lt++e+++l +e + ++   + ++  +Gy++d   Ge+rdl+ i+y+ +l+ +g++++e+++ + ++ +
+      QFP93061.1 468 YLVDACDEesDTSDDSYEIVTRVLNALTNNEYRQLGGEDM-EFGTLEIRQSFAGYWNDDrSGERRDLAPIGYFNMLTRFGQQHPEYLDIYTRCFD 561
+                     *******9778899*************************5.*****************879*****************************99775 PP
+
+  chma68_control 516 snrdeerrlklrkelqklflg.svtitgearrvvinpaFleaLakAvaaagltvtgenlsteagtqrfynngaenfalsgagqsgaagsqgggfg 609
+                     ++ d+   +++ +el+++++g  +ti ++++ v +npa+l ++a+A++++g+++++e+++te+g++r + n   ++a +g++ sg  ++  g+++
+      QFP93061.1 562 NDSDTDDINARNEELISAYTGkGYTIVDRNDVVRLNPAWLATIADALRDSGVSIDAEGIHTERGRRRPMSN---QYA-TGDMKSGLFRR--GRGR 650
+                     666999999999********************************************************999...666.57788888854..6666 PP
+
+  chma68_control 610 lvggggf 616
+                      +gg g 
+      QFP93061.1 651 DRGGRGG 657
+                     4444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (618 nodes)
+Target sequences:                          6  (3860 residues searched)
+Passed MSV filter:                         6  (1); expected 6.0 (1)
+Passed bias filter:                        6  (1); expected 6.0 (1)
+Passed Vit filter:                         6  (1); expected 6.0 (1)
+Passed Fwd filter:                         6  (1); expected 6.0 (1)
+Initial search space (Z):                  6  [actual number of targets]
+Domain search space  (domZ):               6  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 67.26
+//
+[ok]

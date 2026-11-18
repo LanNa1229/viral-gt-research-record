@@ -1,0 +1,14 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+NP_803620.1          -          loo_3                -           9.4e-156  505.7   2.5  1.2e-155  505.3   2.5   1.0   1   0   0   1   1   1   1 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      inputs/loo_3.hmm
+# Target file:     work/holdout_3.faa
+# Option settings: hmmsearch --tblout results/loo_3.tbl --domtblout results/loo_3.domtbl -E 100 --domE 100 --max --cpu 4 inputs/loo_3.hmm work/holdout_3.faa 
+# Current dir:     <ANALYSIS_ROOT>
+# Date:            Wed Nov  4 13:01:43 2026
+# [ok]

@@ -1,0 +1,14 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+F8SJT5               -            602 loo_2                -            635  1.5e-198  647.2   2.9   1   1  1.7e-198  1.7e-198  647.1   2.9    33   626     1   592     1   602 0.95 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      inputs/loo_2.hmm
+# Target file:     work/holdout_2.faa
+# Option settings: hmmsearch --tblout results/loo_2.tbl --domtblout results/loo_2.domtbl -E 100 --domE 100 --max --cpu 4 inputs/loo_2.hmm work/holdout_2.faa 
+# Current dir:     <ANALYSIS_ROOT>
+# Date:            Wed Nov  4 13:01:43 2026
+# [ok]

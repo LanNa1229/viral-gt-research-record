@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  inputs/loo_2.hmm
+# target sequence database:        work/holdout_2.faa
+# per-seq hits tabular output:     results/loo_2.tbl
+# per-dom hits tabular output:     results/loo_2.domtbl
+# sequence reporting threshold:    E-value <= 100
+# domain reporting threshold:      E-value <= 100
+# Max sensitivity mode:            on [all heuristic filters off]
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       loo_2  [M=635]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+   1.5e-198  647.2   2.9   1.7e-198  647.1   2.9    1.0  1  F8SJT5    
+
+
+Domain annotation for each sequence (and alignments):
+>> F8SJT5  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  647.1   2.9  1.7e-198  1.7e-198      33     626 ..       1     592 [.       1     602 [] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 647.1 bits;  conditional E-value: 1.7e-198
+   loo_2  33 aartasqptpaeedtggi....nrqlrRssrvdgsdarasealevfkrlkeealedqdfaddfdilrvdrdqaqvgieslviakrekvggspkalvytLvLen 131
+             +++t++ p+++ +  +g     n+ ++Rs+r dg+daraseal vf++lkeea+++qd++ddf + r+drdq++vg+++l+++kr+ ++g+++++ ++Lv++n
+  F8SJT5   1 MQQTQQGPKVQTQTLQGGagnlNSIFQRSGRTDGGDARASEALAVFNKLKEEAIAQQDLHDDFLVFRFDRDQNRVGYSALLVVKRAAINGQQVIVTRPLVMPN 103
+             5778888888777655545668********************************************************************************* PP
+
+   loo_2 132 sgselkprktrgenGltgdilevprvagdvydatyinrveafvkkrvgkpnaevlsaGaavvpaeldlkdeeavknLLseavNaledalakrngeppfniage 234
+               + l+++k  ++nG++ + +e +++++dv++ +y+nr+   ++++ gk  a v++aG+ v+pa++dlkde+ +k+LL+++vN ++d+lakr+ge+pf++a+ 
+  F8SJT5 104 DQITLPTKKLTIQNGMHQETIEAEADVQDVFTTQYWNRICDSIRQQTGKHDAMVINAGPTVIPADFDLKDELVLKQLLIKSVNLCDDMLAKRSGEQPFSVAML 206
+             ******************************************************************************************************* PP
+
+   loo_2 235 kksdeeiltanvdfkgqplldvvgnPirsDivvtvsrgrrrarpenesyetdqkLnqvagyvdLvytpqeqtgnqqqglvgrreqsavplaqyvpalviTdvr 337
+             k    e+l+a+++f g+p++d+ g PirsDi v++ r+++ +++ene+ye + kLnqv+ +v+L+ytpq q     q + g  +q+  +l++ +pa+viTdvr
+  F8SJT5 207 K-GTDETLAARLNFTGKPMHDSLGYPIRSDILVSLNRVKKPGQQENEFYEAEDKLNQVSCFVNLEYTPQPQ-----QAIYGA-PQQTQQLPPLTPAIVITDVR 302
+             5.55689**************************************************************99.....566654.3444444469********** PP
+
+   loo_2 338 ta.eiqaqtpemqllaLanaalltkesawarallpkaaegvdlrdigALayeleleleidlkaesftdeqlaqLlekvlheslliqidipetGersqllslll 439
+             +a +++a+t+e++l+aL+na+++t+++ war+llp+ ++ +d+rdigA++y + l  ++++k+e+ftd+++a+Ll++++ +s+++  d+++ G++++++++ +
+  F8SJT5 303 QAeWLKANTMELYLFALSNAFRVTANQSWARSLLPQLGKVKDMRDIGAIGYLSRLAARVETKTETFTDQNFAELLYNMVRPSPVFMSDLNRFGDNAAIENVFI 405
+             ******************************************************************************************************* PP
+
+   loo_2 440 dAageengesqeaykaiiralnnltngeFrkfyqedaqpivvregrridlGhyndedgeksdrRdlddLaalNmlepnevEaweiytsqldnnshpdrvnars 542
+             dA g++n+  q+a++aii  +nnl +g+F+kf++++++pi+   g+ i+lG+y d++gek+drRdld+L+alN++++n++E++ +y++q +   hp+ ++++s
+  F8SJT5 406 DALGGVNQ--QRAVAAIIAGVNNLIGGGFEKFFDHNTMPIIQPYGTDIQLGYYLDGEGEKQDRRDLDVLGALNASDGNIQEWMSWYGTQCNVAVHPELRARQS 506
+             ********..********************************************************************************************* PP
+
+   loo_2 543 eeldrvylGesvtltgraervtlnpaflealdealadaGltirpenisteagrqrfmanayglgnmvSglaqvg.yats.qgvnar 626
+             +++dr+ylG+svt+t ra+r   np+f+eald+a+a  Glt+ ++n+   +g qrf +n  +   +v g aqv  +  s  g+n +
+  F8SJT5 507 KNFDRQYLGNSVTYTTRAHRGIWNPKFIEALDKAIASVGLTVAMDNVAQVFGAQRFSGNLAIADYAVTGTAQVSsGLVSnGGYNPQ 592
+             ************************************************************************99633441447743 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (635 nodes)
+Target sequences:                          1  (602 residues searched)
+Passed MSV filter:                         1  (1); expected 1.0 (1)
+Passed bias filter:                        1  (1); expected 1.0 (1)
+Passed Vit filter:                         1  (1); expected 1.0 (1)
+Passed Fwd filter:                         1  (1); expected 1.0 (1)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 59.79
+//
+[ok]

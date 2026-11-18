@@ -1,0 +1,14 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+QFP93061.1           -          loo_5                -            1.8e-24   72.0   0.0   4.5e-24   70.6   0.0   1.5   1   1   0   1   1   1   1 hypothetical protein [Serratia phage PCH45]
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      inputs/loo_5.hmm
+# Target file:     work/holdout_5.faa
+# Option settings: hmmsearch --tblout results/loo_5.tbl --domtblout results/loo_5.domtbl -E 100 --domE 100 --max --cpu 4 inputs/loo_5.hmm work/holdout_5.faa 
+# Current dir:     <ANALYSIS_ROOT>
+# Date:            Wed Nov  4 13:01:44 2026
+# [ok]
