@@ -28,7 +28,7 @@ The later 143-protein merge and PDB-format normalization scripts are separate wo
 
 - Filename: `C7_structure_download_pipeline.zip`
 - SHA-256: `01114ede891b016db381e3059576a0a4a72efd161a38ebdc6e8a289188447ebd`
-- Size: 26,679 bytes (check archive on upload)
+- Size: 26,677 bytes (verified against the archived ZIP)
 
 ## Recommended archive path
 
