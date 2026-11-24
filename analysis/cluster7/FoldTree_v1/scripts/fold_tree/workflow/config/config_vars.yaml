@@ -1,0 +1,42 @@
+#Plddt filetering parameters for models
+filter: True
+filter_min: 10
+filter_avg: 50
+
+
+#Path to the foldseek executable is set to the local folder with a precompiled version of foldseek
+#If you want to use the foldseek api, you need to provide the path to the foldseek executable
+#use 'foldseek' to use the latest one installed by conda in the pipeline
+#use 'provided' to use the one provided in the repository
+
+astral_path: /REDACTED/astral-pro
+foldseek_path: foldseek
+foldseek_cores: 1
+
+#If set to True then use a folder of structures that is provided by the user. This will skip the structure downloading step
+#when using the fold_tree workflow. If all of your structures are in the AFDB then just use an identifier file.
+#If you have a mix of structures in the AFDB and some that are not then use the folder option.
+#Place structures in a folder called structs within the working directory.
+# e.g. myfamily/structs/
+
+custom_structs: False
+cath: False
+iqtree_redo : False
+iqtree_cores : 1
+
+#if you need to use the foldseek api to retrieve the structures
+
+prob_threshold : "0.9"
+qcov_threshold : "70"
+scov_threshold : "0"
+evalue_threshold : "1e-05"
+
+
+#Path to the 3di submat from the root of the workflow repository
+#normally this is set to the default location of the 3di submat file
+submat3di: 3diphy/3DI_substmat/3di_substmat.txt
+mafft_submat3di: mafftmat/3diHEXmat.txt
+
+#clean all the previous results before running
+clean_folder: False
+fam_limit: 10000

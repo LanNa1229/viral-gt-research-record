@@ -1,0 +1,507 @@
+Assuming unrestricted shared filesystem usage.
+host: REDACTED_HOST
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job                   count
+------------------  -------
+all                       1
+dl_ids_sequences          1
+dl_ids_structs            1
+foldseek2distmat          1
+foldseek_allvall_1        1
+mad_root_post             3
+plddt                     1
+postprocess               3
+quicktree                 3
+total                    15
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Aug  3 06:54:43 2026]
+localrule dl_ids_sequences:
+    input: C7_gated143_foldtree_run/identifiers.txt
+    output: C7_gated143_foldtree_run/sequence_dataset.csv
+    log: C7_gated143_foldtree_run/logs/dlsequences.log
+    jobid: 3
+    reason: Missing output files: C7_gated143_foldtree_run/sequence_dataset.csv
+    wildcards: folder=C7_gated143_foldtree_run
+    resources: tmpdir=/tmp
+Shell command: None
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+custom_structs:  True
+clean:  False
+custom structures, skipping download of sequences
+[Mon Aug  3 06:54:50 2026]
+Finished jobid: 3 (Rule: dl_ids_sequences)
+1 of 15 steps (7%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Aug  3 06:54:50 2026]
+localrule dl_ids_structs:
+    input: C7_gated143_foldtree_run/sequence_dataset.csv
+    output: C7_gated143_foldtree_run/finalset.csv
+    log: C7_gated143_foldtree_run/logs/dlstructs.log
+    jobid: 2
+    reason: Missing output files: C7_gated143_foldtree_run/finalset.csv; Input files updated by another job: C7_gated143_foldtree_run/sequence_dataset.csv
+    wildcards: folder=C7_gated143_foldtree_run
+    resources: tmpdir=/tmp
+Shell command: None
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+custom structures, skipping download of structures
+[Mon Aug  3 06:54:59 2026]
+Finished jobid: 2 (Rule: dl_ids_structs)
+2 of 15 steps (13%) done
+Select jobs to execute...
+Execute 2 jobs...
+
+[Mon Aug  3 06:54:59 2026]
+localrule foldseek_allvall_1:
+    input: C7_gated143_foldtree_run/finalset.csv
+    output: C7_gated143_foldtree_run/allvall_1.csv
+    log: C7_gated143_foldtree_run/logs/foldseekallvall.log
+    jobid: 8
+    reason: Missing output files: C7_gated143_foldtree_run/allvall_1.csv; Input files updated by another job: C7_gated143_foldtree_run/finalset.csv
+    wildcards: folder=C7_gated143_foldtree_run
+    resources: tmpdir=/tmp
+Shell command: foldseek easy-search C7_gated143_foldtree_run/structs/ C7_gated143_foldtree_run/structs/ C7_gated143_foldtree_run/allvall_1.csv C7_gated143_foldtree_run/tmp --format-output 'query,target,fident,alnlen,mismatch,gapopen,qstart,qend,tstart,tend,evalue,bits,lddt,lddtfull,alntmscore' --exhaustive-search --alignment-type 2 -e inf --threads 1
+Activating conda environment: foldtree
+
+[Mon Aug  3 06:54:59 2026]
+localrule plddt:
+    input: C7_gated143_foldtree_run/finalset.csv
+    output: C7_gated143_foldtree_run/plddt.json
+    log: C7_gated143_foldtree_run/logs/plddt.log
+    jobid: 1
+    reason: Missing output files: C7_gated143_foldtree_run/plddt.json; Input files updated by another job: C7_gated143_foldtree_run/finalset.csv
+    wildcards: folder=C7_gated143_foldtree_run
+    resources: tmpdir=/tmp
+Shell command: None
+Activating conda environment: foldtree
+Create directory C7_gated143_foldtree_run/tmp
+easy-search C7_gated143_foldtree_run/structs/ C7_gated143_foldtree_run/structs/ C7_gated143_foldtree_run/allvall_1.csv C7_gated143_foldtree_run/tmp --format-output query,target,fident,alnlen,mismatch,gapopen,qstart,qend,tstart,tend,evalue,bits,lddt,lddtfull,alntmscore --exhaustive-search --alignment-type 2 -e inf --threads 1 
+
+MMseqs Version:                    	755d3fa84b8259d4d30aa92782f0bfc2bfc3363f
+TMscore threshold                  	0
+TMscore threshold mode             	0
+LDDT threshold                     	0
+Sort by structure bit score        	1
+Alignment type                     	2
+Exact TMscore                      	0
+Substitution matrix                	aa:3di.out,nucl:3di.out
+Add backtrace                      	false
+Alignment mode                     	3
+Alignment mode                     	0
+E-value threshold                  	inf
+Seq. id. threshold                 	0
+Min alignment length               	0
+Seq. id. mode                      	0
+Alternative alignments             	0
+Coverage threshold                 	0
+Coverage mode                      	0
+Max sequence length                	65535
+Compositional bias                 	1
+Compositional bias scale           	1
+Max reject                         	2147483647
+Max accept                         	2147483647
+Preload mode                       	0
+Gap open cost                      	aa:10,nucl:10
+Gap extension cost                 	aa:1,nucl:1
+Threads                            	1
+Compressed                         	0
+Verbosity                          	3
+Seed substitution matrix           	aa:3di.out,nucl:3di.out
+Sensitivity                        	9.5
+k-mer length                       	6
+Target search mode                 	0
+k-score                            	seq:2147483647,prof:2147483647
+Max results per query              	1000
+Split database                     	0
+Split mode                         	2
+Split memory limit                 	0
+Diagonal scoring                   	true
+Exact k-mer matching               	0
+Mask residues                      	0
+Mask residues probability          	0.999995
+Mask lower case residues           	1
+Mask lower letter repeating N times	6
+Minimum diagonal score             	30
+Selected taxa                      	
+Spaced k-mers                      	1
+Spaced k-mer pattern               	
+Local temporary path               	
+Use GPU                            	0
+Use GPU server                     	0
+Wait for GPU server                	600
+Prefilter mode                     	0
+TMalign hit order                  	0
+TMalign fast                       	1
+MultiDomain Mode                   	1
+Mask profile                       	1
+Profile E-value threshold          	0.1
+Global sequence weighting          	false
+Allow deletions                    	false
+Filter MSA                         	1
+Use filter only at N seqs          	0
+Maximum seq. id. threshold         	0.9
+Minimum seq. id.                   	0.0
+Minimum score per column           	-20
+Minimum coverage                   	0
+Select N most diverse seqs         	1000
+Pseudo count mode                  	0
+Profile output mode                	0
+Cluster search                     	0
+Exhaustive search mode             	true
+Search iterations                  	1
+Remove temporary files             	true
+Force restart with latest tmp      	false
+MPI runner                         	
+Path to ProstT5                    	
+Chain name mode                    	0
+Model name mode                    	0
+Createdb extraction mode           	0
+Interface distance threshold       	10
+Write mapping file                 	0
+Write Foldcomp                     	0
+Mask b-factor threshold            	0
+Coord store mode                   	2
+Write lookup file                  	1
+Input format                       	0
+File Inclusion Regex               	.*
+File Exclusion Regex               	^$
+Alignment format                   	0
+Format alignment output            	query,target,fident,alnlen,mismatch,gapopen,qstart,qend,tstart,tend,evalue,bits,lddt,lddtfull,alntmscore
+Database output                    	false
+Report mode                        	2
+Greedy best hits                   	false
+
+Alignment backtraces will be computed, since they were requested by output format.
+Activating conda environment: foldtree
+createdb C7_gated143_foldtree_run/structs/ C7_gated143_foldtree_run/tmp/13087566299965885210/query --gpu 0 --chain-name-mode 0 --model-name-mode 0 --db-extraction-mode 0 --distance-threshold 10 --write-mapping 0 --write-foldcomp 0 --mask-bfactor-threshold 0 --coord-store-mode 2 --write-lookup 1 --input-format 0 --file-include '.*' --file-exclude '^$' --threads 1 -v 3 
+
+Output file: C7_gated143_foldtree_run/tmp/13087566299965885210/query
+[======================[Mon Aug  3 06:55:05 2026]
+Finished jobid: 1 (Rule: plddt)
+3 of 15 steps (20%) done
+===========================================] 143 24s 142ms
+Time for merging to query_ss: 0h 0m 0s 71ms
+Time for merging to query_h: 0h 0m 0s 61ms
+Time for merging to query_ca: 0h 0m 0s 56ms
+Time for merging to query: 0h 0m 0s 75ms
+Ignore 0 out of 143.
+Too short: 0, incorrect: 0, not proteins: 0.
+Time for processing: 0h 0m 25s 245ms
+createdb C7_gated143_foldtree_run/structs/ C7_gated143_foldtree_run/tmp/13087566299965885210/target --gpu 0 --chain-name-mode 0 --model-name-mode 0 --db-extraction-mode 0 --distance-threshold 10 --write-mapping 0 --write-foldcomp 0 --mask-bfactor-threshold 0 --coord-store-mode 2 --write-lookup 1 --input-format 0 --file-include '.*' --file-exclude '^$' --threads 1 -v 3 
+
+Output file: C7_gated143_foldtree_run/tmp/13087566299965885210/target
+[=================================================================] 143 21s 287ms
+Time for merging to target_ss: 0h 0m 0s 83ms
+Time for merging to target_h: 0h 0m 0s 42ms
+Time for merging to target_ca: 0h 0m 0s 64ms
+Time for merging to target: 0h 0m 0s 61ms
+Ignore 0 out of 143.
+Too short: 0, incorrect: 0, not proteins: 0.
+Time for processing: 0h 0m 22s 452ms
+Create directory C7_gated143_foldtree_run/tmp/13087566299965885210/search_tmp
+search C7_gated143_foldtree_run/tmp/13087566299965885210/query C7_gated143_foldtree_run/tmp/13087566299965885210/target C7_gated143_foldtree_run/tmp/13087566299965885210/result C7_gated143_foldtree_run/tmp/13087566299965885210/search_tmp --alignment-type 2 -a 1 --alignment-mode 3 -e inf --threads 1 -s 9.5 -k 6 --exhaustive-search 1 --remove-tmp-files 1 
+
+structurealign C7_gated143_foldtree_run/tmp/13087566299965885210/query C7_gated143_foldtree_run/tmp/13087566299965885210/target C7_gated143_foldtree_run/tmp/13087566299965885210/search_tmp/17579034102038847690/pref C7_gated143_foldtree_run/tmp/13087566299965885210/search_tmp/17579034102038847690/strualn --tmscore-threshold 0 --tmscore-threshold-mode 0 --lddt-threshold 0 --sort-by-structure-bits 1 --alignment-type 2 --exact-tmscore 0 --sub-mat 'aa:3di.out,nucl:3di.out' -a 1 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e inf --min-seq-id 0 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0 --cov-mode 0 --max-seq-len 65535 --comp-bias-corr 1 --comp-bias-corr-scale 0.5 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:10,nucl:10 --gap-extend aa:1,nucl:1 --zdrop 40 --threads 1 --compressed 0 -v 3 
+
+[=================================================================] 143 9s 540ms
+Time for merging to strualn: 0h 0m 0s 47ms
+Time for processing: 0h 0m 9s 968ms
+mvdb C7_gated143_foldtree_run/tmp/13087566299965885210/search_tmp/17579034102038847690/strualn C7_gated143_foldtree_run/tmp/13087566299965885210/search_tmp/17579034102038847690/aln -v 3 
+
+Time for processing: 0h 0m 0s 48ms
+mvdb C7_gated143_foldtree_run/tmp/13087566299965885210/search_tmp/17579034102038847690/aln C7_gated143_foldtree_run/tmp/13087566299965885210/result -v 3 
+
+Time for processing: 0h 0m 0s 39ms
+Removing temporary files
+rmdb C7_gated143_foldtree_run/tmp/13087566299965885210/search_tmp/17579034102038847690/pref -v 3 
+
+Time for processing: 0h 0m 0s 20ms
+convertalis C7_gated143_foldtree_run/tmp/13087566299965885210/query C7_gated143_foldtree_run/tmp/13087566299965885210/target C7_gated143_foldtree_run/tmp/13087566299965885210/result C7_gated143_foldtree_run/allvall_1.csv --sub-mat 'aa:3di.out,nucl:3di.out' --format-mode 0 --format-output query,target,fident,alnlen,mismatch,gapopen,qstart,qend,tstart,tend,evalue,bits,lddt,lddtfull,alntmscore --translation-table 1 --gap-open aa:10,nucl:10 --gap-extend aa:1,nucl:1 --db-output 0 --db-load-mode 0 --search-type 0 --threads 1 --compressed 0 -v 3 --exact-tmscore 0 
+
+[=================================================================] 143 5s 754ms
+Time for merging to allvall_1.csv: 0h 0m 0s 42ms
+Time for processing: 0h 0m 6s 197ms
+rmdb C7_gated143_foldtree_run/tmp/13087566299965885210/result -v 3 
+
+Time for processing: 0h 0m 0s 9ms
+rmdb C7_gated143_foldtree_run/tmp/13087566299965885210/target -v 3 
+
+Time for processing: 0h 0m 0s 24ms
+rmdb C7_gated143_foldtree_run/tmp/13087566299965885210/target_h -v 3 
+
+Time for processing: 0h 0m 0s 15ms
+rmdb C7_gated143_foldtree_run/tmp/13087566299965885210/target_ca -v 3 
+
+Time for processing: 0h 0m 0s 13ms
+rmdb C7_gated143_foldtree_run/tmp/13087566299965885210/target_ss -v 3 
+
+Time for processing: 0h 0m 0s 11ms
+rmdb C7_gated143_foldtree_run/tmp/13087566299965885210/query -v 3 
+
+Time for processing: 0h 0m 0s 15ms
+rmdb C7_gated143_foldtree_run/tmp/13087566299965885210/query_h -v 3 
+
+Time for processing: 0h 0m 0s 11ms
+rmdb C7_gated143_foldtree_run/tmp/13087566299965885210/query_ca -v 3 
+
+Time for processing: 0h 0m 0s 12ms
+rmdb C7_gated143_foldtree_run/tmp/13087566299965885210/query_ss -v 3 
+
+Time for processing: 0h 0m 0s 12ms
+[Mon Aug  3 06:56:03 2026]
+Finished jobid: 8 (Rule: foldseek_allvall_1)
+4 of 15 steps (27%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Aug  3 06:56:03 2026]
+localrule foldseek2distmat:
+    input: C7_gated143_foldtree_run/allvall_1.csv
+    output: C7_gated143_foldtree_run/foldtree_fastmemat.txt, C7_gated143_foldtree_run/alntmscore_fastmemat.txt, C7_gated143_foldtree_run/lddt_fastmemat.txt
+    log: C7_gated143_foldtree_run/logs/foldseek2distmat.log
+    jobid: 7
+    reason: Missing output files: C7_gated143_foldtree_run/alntmscore_fastmemat.txt, C7_gated143_foldtree_run/foldtree_fastmemat.txt, C7_gated143_foldtree_run/lddt_fastmemat.txt; Input files updated by another job: C7_gated143_foldtree_run/allvall_1.csv
+    wildcards: folder=C7_gated143_foldtree_run
+    resources: tmpdir=/tmp
+Shell command: None
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+     0           1   ...                                                 13      14
+0  2C0N        2C0N  ...  1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.00...  1.0050
+1  2C0N  A0A516LSB6  ...  0.488,0.565,0.647,0.759,0.743,0.865,0.838,0.80...  0.8278
+2  2C0N  A0A346LU90  ...  0.694,0.771,0.774,0.754,0.681,0.681,0.358,0.33...  0.7893
+3  2C0N      S5WBW8  ...  0.665,0.738,0.763,0.828,0.805,0.826,0.762,0.75...  0.8172
+4  2C0N  A0A6J5QMH6  ...  0.457,0.655,0.759,0.806,0.753,0.792,0.819,0.76...  0.7612
+
+[5 rows x 15 columns]
+            query  ... alntmscore
+0            2C0N  ...     1.0050
+1            2C0N  ...     0.8278
+2            2C0N  ...     0.7893
+3            2C0N  ...     0.8172
+4            2C0N  ...     0.7612
+...           ...  ...        ...
+20444  xxh05721.1  ...     0.3660
+20445  xxh05721.1  ...     0.3154
+20446  xxh05721.1  ...     0.3687
+20447  xxh05721.1  ...     0.3636
+20448  xxh05721.1  ...     0.5157
+
+[20449 rows x 15 columns]
+[[0.     0.873  0.9175 ... 0.936  0.829  0.895 ]
+ [0.873  0.     0.91   ... 0.94   0.894  0.849 ]
+ [0.9175 0.91   0.     ... 0.922  0.899  0.8775]
+ ...
+ [0.936  0.94   0.922  ... 0.     0.8965 0.8975]
+ [0.829  0.894  0.899  ... 0.8965 0.     0.91  ]
+ [0.895  0.849  0.8775 ... 0.8975 0.91   0.    ]] 0.9635 0.0
+[[-0.002    0.48565  0.64745 ...  0.6765   0.2293   0.51805]
+ [ 0.48565 -0.004    0.4811  ...  0.7036   0.451    0.4121 ]
+ [ 0.64745  0.4811  -0.004   ...  0.59045  0.6373   0.52985]
+ ...
+ [ 0.6765   0.7036   0.59045 ... -0.004    0.5443   0.6812 ]
+ [ 0.2293   0.451    0.6373  ...  0.5443  -0.004    0.4935 ]
+ [ 0.51805  0.4121   0.52985 ...  0.6812   0.4935  -0.003  ]] 0.8053 -0.006000000000000005
+[[0.      0.6378  0.70115 ... 0.7057  0.3983  0.63665]
+ [0.6378  0.      0.63175 ... 0.74545 0.595   0.558  ]
+ [0.70115 0.63175 0.      ... 0.64295 0.699   0.64545]
+ ...
+ [0.7057  0.74545 0.64295 ... 0.      0.6661  0.71585]
+ [0.3983  0.595   0.699   ... 0.6661  0.      0.6364 ]
+ [0.63665 0.558   0.64545 ... 0.71585 0.6364  0.     ]] 0.88785 0.0
+[Mon Aug  3 06:56:08 2026]
+Finished jobid: 7 (Rule: foldseek2distmat)
+5 of 15 steps (33%) done
+Select jobs to execute...
+Execute 3 jobs...
+
+[Mon Aug  3 06:56:08 2026]
+localrule quicktree:
+    input: C7_gated143_foldtree_run/foldtree_fastmemat.txt
+    output: C7_gated143_foldtree_run/foldtree_struct_tree.nwk
+    log: C7_gated143_foldtree_run/logs/foldtree_quicktree.log
+    jobid: 6
+    reason: Missing output files: C7_gated143_foldtree_run/foldtree_struct_tree.nwk; Input files updated by another job: C7_gated143_foldtree_run/foldtree_fastmemat.txt
+    wildcards: folder=C7_gated143_foldtree_run, mattype=foldtree
+    resources: tmpdir=/tmp
+Shell command: quicktree -i m C7_gated143_foldtree_run/foldtree_fastmemat.txt > C7_gated143_foldtree_run/foldtree_struct_tree.nwk 
+Activating conda environment: foldtree
+
+[Mon Aug  3 06:56:09 2026]
+localrule quicktree:
+    input: C7_gated143_foldtree_run/alntmscore_fastmemat.txt
+    output: C7_gated143_foldtree_run/alntmscore_struct_tree.nwk
+    log: C7_gated143_foldtree_run/logs/alntmscore_quicktree.log
+    jobid: 11
+    reason: Missing output files: C7_gated143_foldtree_run/alntmscore_struct_tree.nwk; Input files updated by another job: C7_gated143_foldtree_run/alntmscore_fastmemat.txt
+    wildcards: folder=C7_gated143_foldtree_run, mattype=alntmscore
+    resources: tmpdir=/tmp
+Shell command: quicktree -i m C7_gated143_foldtree_run/alntmscore_fastmemat.txt > C7_gated143_foldtree_run/alntmscore_struct_tree.nwk 
+Activating conda environment: foldtree
+
+[Mon Aug  3 06:56:09 2026]
+localrule quicktree:
+    input: C7_gated143_foldtree_run/lddt_fastmemat.txt
+    output: C7_gated143_foldtree_run/lddt_struct_tree.nwk
+    log: C7_gated143_foldtree_run/logs/lddt_quicktree.log
+    jobid: 14
+    reason: Missing output files: C7_gated143_foldtree_run/lddt_struct_tree.nwk; Input files updated by another job: C7_gated143_foldtree_run/lddt_fastmemat.txt
+    wildcards: folder=C7_gated143_foldtree_run, mattype=lddt
+    resources: tmpdir=/tmp
+Shell command: quicktree -i m C7_gated143_foldtree_run/lddt_fastmemat.txt > C7_gated143_foldtree_run/lddt_struct_tree.nwk 
+Activating conda environment: foldtree
+[Mon Aug  3 06:56:09 2026]
+Finished jobid: 6 (Rule: quicktree)
+6 of 15 steps (40%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Aug  3 06:56:09 2026]
+localrule postprocess:
+    input: C7_gated143_foldtree_run/foldtree_struct_tree.nwk
+    output: C7_gated143_foldtree_run/foldtree_struct_tree.PP.nwk
+    log: C7_gated143_foldtree_run/logs/foldtree_struct_postprocess.log
+    jobid: 5
+    reason: Missing output files: C7_gated143_foldtree_run/foldtree_struct_tree.PP.nwk; Input files updated by another job: C7_gated143_foldtree_run/foldtree_struct_tree.nwk
+    wildcards: folder=C7_gated143_foldtree_run, mattype=foldtree
+    resources: tmpdir=/tmp
+Shell command: None
+Activating conda environment: foldtree
+[Mon Aug  3 06:56:09 2026]
+Finished jobid: 11 (Rule: quicktree)
+7 of 15 steps (47%) done
+[Mon Aug  3 06:56:09 2026]
+Finished jobid: 14 (Rule: quicktree)
+8 of 15 steps (53%) done
+Select jobs to execute...
+Execute 2 jobs...
+
+[Mon Aug  3 06:56:09 2026]
+localrule postprocess:
+    input: C7_gated143_foldtree_run/alntmscore_struct_tree.nwk
+    output: C7_gated143_foldtree_run/alntmscore_struct_tree.PP.nwk
+    log: C7_gated143_foldtree_run/logs/alntmscore_struct_postprocess.log
+    jobid: 10
+    reason: Missing output files: C7_gated143_foldtree_run/alntmscore_struct_tree.PP.nwk; Input files updated by another job: C7_gated143_foldtree_run/alntmscore_struct_tree.nwk
+    wildcards: folder=C7_gated143_foldtree_run, mattype=alntmscore
+    resources: tmpdir=/tmp
+Shell command: None
+
+[Mon Aug  3 06:56:09 2026]
+localrule postprocess:
+    input: C7_gated143_foldtree_run/lddt_struct_tree.nwk
+    output: C7_gated143_foldtree_run/lddt_struct_tree.PP.nwk
+    log: C7_gated143_foldtree_run/logs/lddt_struct_postprocess.log
+    jobid: 13
+    reason: Missing output files: C7_gated143_foldtree_run/lddt_struct_tree.PP.nwk; Input files updated by another job: C7_gated143_foldtree_run/lddt_struct_tree.nwk
+    wildcards: folder=C7_gated143_foldtree_run, mattype=lddt
+    resources: tmpdir=/tmp
+Shell command: None
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+⚠️ toytree | writer:write | Deprecated args to write(): ['tree_format']. See docs.
+<toytree.ToyTree at 0x7fb9c07037a0>
+C7_gated143_foldtree_run/foldtree_struct_tree.PP.nwk done
+⚠️ toytree | writer:write | Deprecated args to write(): ['tree_format']. See docs.
+⚠️ toytree | writer:write | Deprecated args to write(): ['tree_format']. See docs.
+<toytree.ToyTree at 0x7f406bb8b500>
+C7_gated143_foldtree_run/alntmscore_struct_tree.PP.nwk done
+<toytree.ToyTree at 0x7fc18ea0b170>
+C7_gated143_foldtree_run/lddt_struct_tree.PP.nwk done
+[Mon Aug  3 06:56:11 2026]
+Finished jobid: 5 (Rule: postprocess)
+9 of 15 steps (60%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Aug  3 06:56:11 2026]
+localrule mad_root_post:
+    input: C7_gated143_foldtree_run/foldtree_struct_tree.PP.nwk
+    output: C7_gated143_foldtree_run/foldtree_struct_tree.PP.nwk.rooted.final
+    log: C7_gated143_foldtree_run/logs/foldtree_struct_madroot_post.log
+    jobid: 4
+    reason: Missing output files: C7_gated143_foldtree_run/foldtree_struct_tree.PP.nwk.rooted.final; Input files updated by another job: C7_gated143_foldtree_run/foldtree_struct_tree.PP.nwk
+    wildcards: folder=C7_gated143_foldtree_run, mattype=foldtree
+    resources: tmpdir=/tmp
+Shell command: None
+Activating conda environment: foldtree
+[Mon Aug  3 06:56:11 2026]
+Finished jobid: 10 (Rule: postprocess)
+10 of 15 steps (67%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Aug  3 06:56:11 2026]
+localrule mad_root_post:
+    input: C7_gated143_foldtree_run/alntmscore_struct_tree.PP.nwk
+    output: C7_gated143_foldtree_run/alntmscore_struct_tree.PP.nwk.rooted.final
+    log: C7_gated143_foldtree_run/logs/alntmscore_struct_madroot_post.log
+    jobid: 9
+    reason: Missing output files: C7_gated143_foldtree_run/alntmscore_struct_tree.PP.nwk.rooted.final; Input files updated by another job: C7_gated143_foldtree_run/alntmscore_struct_tree.PP.nwk
+    wildcards: folder=C7_gated143_foldtree_run, mattype=alntmscore
+    resources: tmpdir=/tmp
+Shell command: None
+Activating conda environment: foldtree
+[Mon Aug  3 06:56:11 2026]
+Finished jobid: 13 (Rule: postprocess)
+11 of 15 steps (73%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Aug  3 06:56:11 2026]
+localrule mad_root_post:
+    input: C7_gated143_foldtree_run/lddt_struct_tree.PP.nwk
+    output: C7_gated143_foldtree_run/lddt_struct_tree.PP.nwk.rooted.final
+    log: C7_gated143_foldtree_run/logs/lddt_struct_madroot_post.log
+    jobid: 12
+    reason: Missing output files: C7_gated143_foldtree_run/lddt_struct_tree.PP.nwk.rooted.final; Input files updated by another job: C7_gated143_foldtree_run/lddt_struct_tree.PP.nwk
+    wildcards: folder=C7_gated143_foldtree_run, mattype=lddt
+    resources: tmpdir=/tmp
+Shell command: None
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+⚠️ toytree | writer:write | Deprecated args to write(): ['tree_format']. See docs.
+postprocessing MAD-root done
+⚠️ toytree | writer:write | Deprecated args to write(): ['tree_format']. See docs.
+postprocessing MAD-root done
+⚠️ toytree | writer:write | Deprecated args to write(): ['tree_format']. See docs.
+postprocessing MAD-root done
+[Mon Aug  3 06:56:13 2026]
+Finished jobid: 4 (Rule: mad_root_post)
+12 of 15 steps (80%) done
+[Mon Aug  3 06:56:13 2026]
+Finished jobid: 9 (Rule: mad_root_post)
+13 of 15 steps (87%) done
+[Mon Aug  3 06:56:13 2026]
+Finished jobid: 12 (Rule: mad_root_post)
+14 of 15 steps (93%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Mon Aug  3 06:56:13 2026]
+localrule all:
+    input: C7_gated143_foldtree_run/plddt.json, C7_gated143_foldtree_run/foldtree_struct_tree.PP.nwk.rooted.final, C7_gated143_foldtree_run/alntmscore_struct_tree.PP.nwk.rooted.final, C7_gated143_foldtree_run/lddt_struct_tree.PP.nwk.rooted.final
+    jobid: 0
+    reason: Input files updated by another job: C7_gated143_foldtree_run/lddt_struct_tree.PP.nwk.rooted.final, C7_gated143_foldtree_run/foldtree_struct_tree.PP.nwk.rooted.final, C7_gated143_foldtree_run/plddt.json, C7_gated143_foldtree_run/alntmscore_struct_tree.PP.nwk.rooted.final
+    resources: tmpdir=/tmp
+Shell command: None
+[Mon Aug  3 06:56:13 2026]
+Finished jobid: 0 (Rule: all)
+15 of 15 steps (100%) done
+Complete log(s): /mnt/d/FoldTree/.snakemake/log/2026-08-03T065442.501978.snakemake.log
+/mnt/d/FoldTree/fold_tree/
