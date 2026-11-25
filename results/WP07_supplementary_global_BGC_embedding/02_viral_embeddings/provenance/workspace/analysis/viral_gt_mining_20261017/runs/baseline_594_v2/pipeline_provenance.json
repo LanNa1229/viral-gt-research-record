@@ -1,0 +1,90 @@
+{
+  "stage": "complete",
+  "status": "PASS",
+  "run": "/home/archival-user/260908_MiBG/analysis/viral_gt_mining_20261017/runs/baseline_594_v2",
+  "extraction": {
+    "status": "PASS",
+    "input_path": "/home/archival-user/260908_MiBG/analysis/viral_gt_mining_20261017/inputs/baseline_594_anchors.txt",
+    "input_sha256": "b1d316856a7e60dab0aa6e2414b829e90647f63d316104d2b8cef332e765d928",
+    "input_rows": 594,
+    "unique_accessions": 594,
+    "duplicate_rows": 0,
+    "successful_input_rows": 593,
+    "unresolved_input_rows": 1,
+    "mapping_occurrence_rows": 757,
+    "windows": 757,
+    "gene_rows": 10688,
+    "complete_windows": 616,
+    "eligible_windows": 737,
+    "source_files": 517,
+    "source_errors": 0,
+    "wall_seconds": 19.37628443200083,
+    "python": "3.12.11",
+    "script_sha256": "9880dab746f4762ba4f7d8aacacb452feec3c0fc2384fcd71f84d42f8d3768e9",
+    "software_version": "0.1.0",
+    "parser_policy": "all_CDS_partial_translation_v2",
+    "parameters": {
+      "upstream": 7,
+      "downstream": 7,
+      "order": "ascending_coordinates",
+      "circular_policy": "no_wrap",
+      "CDS_policy": "all_annotated_CDS",
+      "duplicates": "retain_input_rows_share_identical_window"
+    }
+  },
+  "inference_success": 737,
+  "inference_excluded": 20,
+  "taxonomy": {
+    "requested_taxids": 220,
+    "resolved": 220,
+    "errors": 0
+  },
+  "analysis": {
+    "status": "PASS",
+    "window_n": 757,
+    "analyzed_window_n": 737,
+    "locus_n": 565,
+    "genome_n": 466,
+    "source_genome_accession_n": 515,
+    "counterpart_aliases_collapsed": 49,
+    "unknown_window_n": 20,
+    "taxonomy_rank_source": "/home/archival-user/260908_MiBG/analysis/viral_gt_mining_20261017/runs/baseline_594_v2/taxonomy_cache.tsv",
+    "taxonomy_rank_cache_sha256": "93a5a697a4d654fc8cdcbdb3d0422eca395a743b8e4b21a5b9bb5ac155fc3c23",
+    "population_scope": "selected structure/GT-associated viral candidate cohort; not prevalence among all viruses or taxonomic enrichment",
+    "uncertainty_note": "95% Wilson intervals are descriptive; selected and overlapping observations violate independent random-sampling assumptions",
+    "input_checksums": {
+      "viral_gt_windows.tsv": "adcc1405af0e4fa5c80e4a505cf6a2ebd61bf12a27c7a779f58d8c87ad53e003",
+      "viral_gt_window_genes.tsv": "1fec7664c284378d44430c609d4bd1c146abab08059304c65df44633d152d105",
+      "viral_bgc_predictions.tsv": "1132e85695341ddceb172f4cf07f312c5b77aaa7c7b744c8d9fde45cdccc2436",
+      "embedding_manifest.tsv": "97c73e8ed32c95ddf4a084ad617c3d141d2ae8b3974a8feaf7b9b40a47fd4b1b",
+      "viral_bgc_embeddings.npy": "fabc70d82eca9f56e7fedaa8c71d6aca839e8b6ef0635657966fa879a24e2595"
+    },
+    "plots": null,
+    "elapsed_seconds": 0.15251001899014227,
+    "definitions": {
+      "genome": "exact whole-genome nucleotide SHA256 + source taxid; missing taxid or nucleotide hash keeps accession-specific units",
+      "locus": "connected overlapping inclusive nucleotide window segments within a genome unit; source origin-spanning CDS gaps excluded; adjacency alone does not merge",
+      "counterpart_alias_count": "number of additional distinct source accessions beyond the first representative; requires whole-genome sequence identity and same nonempty source taxid",
+      "gene_indices": "retained as within-record annotation coordinates only; blank for multi-accession loci because annotation indices may differ",
+      "negative": "every constituent window has a prediction and none meets original Saccharide threshold",
+      "positive": "at least one constituent window meets original frozen classifier threshold",
+      "unknown": "no observed positive and at least one window has no prediction",
+      "retrieval": "P@k is separate and descriptive; no retrieval-positive cutoff declared"
+    },
+    "output_checksums": {
+      "candidate_loci.tsv": "3a8922c591b49217413edc77f35cce3a2eae828c9b7a8f8a66f4a875c8c694d3",
+      "genome_units.tsv": "8027d5f8614dc4cc02e9678fdd464b250958ff630d45493db73a1ddd9d34751a",
+      "three_level_summary.tsv": "d12becee06f4fe199b2307cdbbf2a942b7e6365b178a64e2da1e3410ce52837e",
+      "viral_taxonomy_summary.tsv": "7f4449a2804c368164ea06cd6c9174c21f045cc1c77e90607edf512511690d1d"
+    }
+  },
+  "validation": {
+    "status": "PASS",
+    "checks": 17029,
+    "windows": 757,
+    "inferred": 737,
+    "historical_artifacts_unchanged": 380
+  },
+  "elapsed_seconds": 68.17282670098939,
+  "peak_process_rss_kib": 817068
+}

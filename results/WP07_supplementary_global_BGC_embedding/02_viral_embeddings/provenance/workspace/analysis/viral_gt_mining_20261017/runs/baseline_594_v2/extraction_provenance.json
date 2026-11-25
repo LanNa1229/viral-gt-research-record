@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "input_path": "/home/archival-user/260908_MiBG/analysis/viral_gt_mining_20261017/inputs/baseline_594_anchors.txt",
+  "input_sha256": "b1d316856a7e60dab0aa6e2414b829e90647f63d316104d2b8cef332e765d928",
+  "input_rows": 594,
+  "unique_accessions": 594,
+  "duplicate_rows": 0,
+  "successful_input_rows": 593,
+  "unresolved_input_rows": 1,
+  "mapping_occurrence_rows": 757,
+  "windows": 757,
+  "gene_rows": 10688,
+  "complete_windows": 616,
+  "eligible_windows": 737,
+  "source_files": 517,
+  "source_errors": 0,
+  "wall_seconds": 19.37628443200083,
+  "python": "3.12.11",
+  "script_sha256": "9880dab746f4762ba4f7d8aacacb452feec3c0fc2384fcd71f84d42f8d3768e9",
+  "software_version": "0.1.0",
+  "parser_policy": "all_CDS_partial_translation_v2",
+  "parameters": {
+    "upstream": 7,
+    "downstream": 7,
+    "order": "ascending_coordinates",
+    "circular_policy": "no_wrap",
+    "CDS_policy": "all_annotated_CDS",
+    "duplicates": "retain_input_rows_share_identical_window"
+  }
+}

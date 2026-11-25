@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "independent_checks": 181614,
+  "score_head_checks": 2292,
+  "max_score_head_abs_error": 9.430364378282263e-08,
+  "source_annotation_files_reverified": 515,
+  "paired_occurrences": 737,
+  "baseline_occurrences": 757,
+  "window11_inferred": 740,
+  "control11_inferred": 1552,
+  "compatibility_regression": {
+    "status": "PASS",
+    "reference": {
+      "status": "PASS",
+      "fixed_artifact_sha256": {
+        "mibig_CORE_ONLY_embeddings.npy": "78036e1636eaeeab90f4d157794c868d9b57033195939d83960d8e70bb831e22",
+        "mibig_matched_reference_metadata.tsv": "5184f8f3199da2d1fac90e85ff11e2a30b443b70aac60992136718856c18ba4c",
+        "reference_validation.json": "a75043f212d4df3297e2dfa37145127f5e890f866d4c36cc6284eeed1780306e",
+        "mibig_original_regression.tsv": "4622855130a83bb97c51f1680aa7d423b0cdba2482236cc5ac341c735b7d6cef",
+        "pilot_validation.json": "8ca48c1c1cf2e587aaed694dd66f62811f7d811f3f0432387348a3e2110c01b7",
+        "esm_provenance.json": "f1d149751ff26261b97251d99f4a8b0a9b98351a2713104923a41a968c715fb7",
+        "scripts/benchmark.py": "d0b7608341ef31ad29bae58b147804c7a6a0ecddcbc6b8b43801e255ed4b9233"
+      },
+      "classifier_sha256": "f45ca298980d4740dd43131a7e69c99cb233368c815470572cfc46f33abf4eb5",
+      "esm_sha256": "46f002a9870c9bdecd0ea887acb1f9a38a6b561e8f8bf8a6990b679b9d31b928",
+      "classifier_source_sha256": "fa4e1d045ac2c94559a9ab41054fd6b28d991d82be63e98585d7bc014564dca8",
+      "encoder_source_sha256": "fa4ad0c224707ee316b3ab3f37c102796ac176b7203fad357b99c331178a65f0",
+      "pooling": "actual isolated core genes; original all-position mean; all-one additive membership",
+      "reference_rows": 2502
+    },
+    "baseline_regression_windows": 4,
+    "model_weights_unchanged": true,
+    "regression_tolerance": 1e-06,
+    "all_scores_and_vector_coordinates_checked": true
+  },
+  "frozen_inputs_verified_before": {
+    "baseline_594_v2": 676,
+    "viral_gt_interpretation_20261017": 97,
+    "viral_gt_retrieval_rescue_20261017": 47
+  },
+  "frozen_inputs_verified_after": {
+    "baseline_594_v2": 676,
+    "viral_gt_interpretation_20261017": 97,
+    "viral_gt_retrieval_rescue_20261017": 47
+  },
+  "elapsed_seconds": 4.045919458003482
+}

@@ -1,0 +1,28 @@
+{
+  "model": "esm2_t6_8M_UR50D",
+  "model_source": "https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t6_8M_UR50D.pt",
+  "layer": 6,
+  "pooling": "mean residue tokens excluding BOS/EOS",
+  "truncation": 1022,
+  "device": "cpu",
+  "dtype": "float32",
+  "torch": "2.5.1+cpu",
+  "esm": "2.0.0",
+  "sample_size": 50,
+  "passed": 0,
+  "full_sequence_passed": 0,
+  "threads": 4,
+  "model_files": [
+    {
+      "path": "/home/archival-user/260908_MiBG/analysis/bgcprophet_sequence_recovery_20260912/model_cache/hub/checkpoints/esm2_t6_8M_UR50D-contact-regression.pt",
+      "bytes": 1511,
+      "sha256": "8f7a4557d57713b97ba0e484303007efb7230d25299c0ac47a0a1b12a87bbb9d"
+    },
+    {
+      "path": "/home/archival-user/260908_MiBG/analysis/bgcprophet_sequence_recovery_20260912/model_cache/hub/checkpoints/esm2_t6_8M_UR50D.pt",
+      "bytes": 30099493,
+      "sha256": "46f002a9870c9bdecd0ea887acb1f9a38a6b561e8f8bf8a6990b679b9d31b928"
+    }
+  ],
+  "LMDB_unchanged": true
+}

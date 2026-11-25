@@ -1,0 +1,15 @@
+resource	status	path
+classifier.pt	available; downloaded copy matches historical HPC SHA256	sources/classifier.pt
+ESM2-8M checkpoint	available; existing local checkpoint	/home/archival-user/260908_MiBG/analysis/bgcprophet_sequence_recovery_20260912/model_cache/hub/checkpoints/esm2_t6_8M_UR50D.pt
+ESM2 environment	available; existing CPU torch 2.5.1 and fair-esm 2.0.0	/home/archival-user/260908_MiBG/analysis/bgcprophet_sequence_recovery_20260912/.venv
+viral core definition	available; user explicitly specified inclusive 20-protein range	viral_bgc_manifest.tsv
+viral genome annotation and sequences	available; downloaded NCBI MK016663.1 partial genome	sources/MK016663.1.gb
+validated extractor	available; verified historical SHA256	/home/archival-user/260908_MiBG/recovered_historical_scripts/extract_bgc_embeddings.py
+12510-row MIBiG embeddings	available; verified historical SHA256	/home/archival-user/260908_MiBG/analysis/bgcprophet_reference/data/mibig_12510_embeddings.npy
+2502-BGC original consensus and labels	available; independently reproduced consensus arithmetic	/home/archival-user/260908_MiBG/analysis/bgcprophet_reference/results
+published model and loader	available; classifier SHA matches validated HPC installation	/home/archival-user/260908_MiBG/sources/upstream/bgc_prophet
+original published protein LMDB	available; restored snapshot hash matches historical original	/home/archival-user/260908_MiBG/analysis/bgcprophet_sequence_recovery_20260912/lmdb_snapshot
+Sapelo2 live access	unavailable; noninteractive connection closed; no remote execution	/scratch/ln72030/BGC_Prophet
+historical Catovirus regression artifacts	not located in inspected project resources; not run	
+complete S-H68 genome with >=128 annotated genes	not available in the source accession; REAL_128 unavailable	
+additional confirmed viral loci and negative controls	not supplied; candidate FASTAs not promoted to curated truth	

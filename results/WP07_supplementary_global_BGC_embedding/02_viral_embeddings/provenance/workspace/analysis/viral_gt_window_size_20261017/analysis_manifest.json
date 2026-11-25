@@ -1,0 +1,49 @@
+{
+  "status": "COMPLETE",
+  "data_point1": "/home/archival-user/260908_MiBG/analysis/viral_gt_mining_20261017/runs/baseline_594_v2",
+  "data_point2": "/home/archival-user/260908_MiBG/analysis/viral_gt_mining_20261017/runs/window11_594_v1",
+  "control_run": "/home/archival-user/260908_MiBG/analysis/viral_gt_mining_20261017/runs/controls11_existing_v1",
+  "all_mapped_occurrences": 757,
+  "paired_inference_occurrences": 737,
+  "newly_eligible_11": 3,
+  "excluded_both": 17,
+  "independent_checks": 181614,
+  "new_target_protein_encodings": 33,
+  "new_control_protein_encodings": 0,
+  "scripts": [
+    {
+      "path": "scripts/background_dilution.py",
+      "sha256": "b803d2fa079c9f80f7d0ed092122dd2ff6b28c3fa331af41576d31ace02aced4"
+    },
+    {
+      "path": "scripts/common.py",
+      "sha256": "e99b3d6c52332329bdf909727e7f616fa2df8d7af5470071b04c6a1611da8d31"
+    },
+    {
+      "path": "scripts/experiment.py",
+      "sha256": "8d6fc8848b720de15b859699bbe4685506d56bdabcce00a3fdf73201a6e182a8"
+    },
+    {
+      "path": "scripts/figures.py",
+      "sha256": "21268a091633f87dec11c85bebe7f7e864b55075c49027cd3df74fbec7ca54f7"
+    },
+    {
+      "path": "scripts/finalize.py",
+      "sha256": "e9618da02bdaf7cba1a03abec579ab1d50eb80228487b4c5b5c38453f83119ed"
+    },
+    {
+      "path": "scripts/paired.py",
+      "sha256": "b0f2058c6e011d5b1f0a3cf6f6100ba25b46f0ceebd4c01940870af6c6fb6682"
+    },
+    {
+      "path": "scripts/report.py",
+      "sha256": "81a279c8ef8adababc46a2fc2e84d084652741572580a514fc050f28717c530d"
+    },
+    {
+      "path": "scripts/validate.py",
+      "sha256": "d6c940d3acf370f3cbd2e2346e4a869623775af1a39126ca20ef84ea84506638"
+    }
+  ],
+  "hypothesis_status": "context-sensitive candidate recovery; no demonstrated optimal length or biological specificity gain",
+  "published": false
+}

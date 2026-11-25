@@ -1,0 +1,11 @@
+stage	status	note
+frozen_sources	PASS	676 baseline files, 97 prior interpretation artifacts and 47 prior retrieval-rescue artifacts unchanged; Windows manifest separators normalized for WSL reads.
+extraction	PASS	757 stable occurrence pairs verified against the original CDS indexes and archived sequences; 658 complete 11-gene windows.
+compatibility_gate	PASS	Four baseline inputs reproduced within 1e-6 for all seven scores and all 320 embedding coordinates before full inference.
+primary_inference	PASS	740 inferred, 17 excluded, three eligibility rescues; 33 new required protein encodings, all other required proteins reused.
+control_inference	PASS	1552 existing controls shortened and inferred; no new protein encodings; 26 strict pairs revalidated at 11 genes.
+paired_analysis	PASS	737 properly matched observations; newly eligible inputs kept separate; fixed baseline locus identities used for primary recovery counts.
+table_interoperability	RESOLVED	Seven probability columns renamed unambiguously to avoid case-insensitive header collisions; statistical tables refreshed without rerunning model inference.
+independent_audit	PASS	181614 checks; 2292 independent saved-vector/linear-head checks; maximum head discrepancy 9.43e-8.
+figure_review	PASS	Six PNG exports visually inspected; candidate-axis labels, forest ordering and caption spacing corrected without any model/statistical rerun.
+publication	NOT_PERFORMED	No push or external publication.

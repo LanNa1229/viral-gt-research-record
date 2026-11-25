@@ -1,0 +1,195 @@
+{
+  "status": "PASS",
+  "finished_utc": "2026-10-28T02:02:50.008885+00:00",
+  "checks": [
+    {
+      "check": "population_and_exact_ID_sets",
+      "status": "PASS",
+      "evidence": "All 2502 references and all 287 selected viral IDs retained; original projection has 3058 samples; 269 unselected loci remain omitted"
+    },
+    {
+      "check": "all_original_scientific_source_fields",
+      "status": "PASS",
+      "evidence": {
+        "unchanged_columns": [
+          "sample_id",
+          "sample_type",
+          "global_leiden_community",
+          "UMAP1",
+          "UMAP2",
+          "reference_class_original",
+          "reference_class_labels_json",
+          "n_reference_class_labels",
+          "is_hybrid_reference",
+          "viral_locus_id",
+          "genome_unit_id",
+          "representative_window_id"
+        ],
+        "rendering_only_changes": [
+          "plot_marker",
+          "rendering_group",
+          "plot_edge_or_fill_hex",
+          "plot_facecolor"
+        ]
+      }
+    },
+    {
+      "check": "saved_coordinates_unchanged",
+      "status": "PASS",
+      "evidence": "5578 coordinate strings exactly match the original saved joint UMAP; no refit or jitter"
+    },
+    {
+      "check": "original_Leiden_assignments",
+      "status": "PASS",
+      "evidence": "All ten baseline GC IDs unchanged; original-space k=20, resolution=1.0, seed=42"
+    },
+    {
+      "check": "reference_classes_and_multilabel_memberships",
+      "status": "PASS",
+      "evidence": "All original class strings and JSON memberships retained; neutral hybrid display does not replace scientific annotations"
+    },
+    {
+      "check": "hollow_rendering_categories",
+      "status": "PASS",
+      "evidence": "467 neutral open circles and 287 neutral open triangles; single-label references use their original class colors"
+    },
+    {
+      "check": "rendered_sample_receipts",
+      "status": "PASS",
+      "evidence": "One plotted glyph per biological sample; 2789 unique render receipts"
+    },
+    {
+      "check": "actual_SVG_point_counts_and_open_fills",
+      "status": "PASS",
+      "evidence": {
+        "samples_Alkaloid": 53,
+        "samples_Terpene": 150,
+        "samples_NRP": 468,
+        "samples_Polyketide": 606,
+        "samples_RiPP": 330,
+        "samples_Saccharide": 130,
+        "samples_Other": 298,
+        "samples_Hybrid": 467,
+        "samples_SelectedViral": 287
+      }
+    },
+    {
+      "check": "no_community_labels_statistics_or_notes",
+      "status": "PASS",
+      "evidence": "Artwork contains only numeric axes, UMAP titles, reference legend and selected-viral entry; no GC labels, leaders, table or detailed statistics"
+    },
+    {
+      "check": "simple_legend_labels",
+      "status": "PASS",
+      "evidence": "Seven original single-label color entries plus Hybrid (multiple labels) and Selected viral GT-associated loci (287), wrapped for readability"
+    },
+    {
+      "check": "full_cartesian_axes_and_numerical_ticks",
+      "status": "PASS",
+      "evidence": "Full rectangular black frame, numerical x/y ticks and visible UMAP 1 / UMAP 2 titles; no grid"
+    },
+    {
+      "check": "plot_dominates_width",
+      "status": "PASS",
+      "evidence": {
+        "plot_width_percent": 75.0,
+        "plot_size_mm": [
+          137.25,
+          80.55978260869566
+        ],
+        "equal_units": true
+      }
+    },
+    {
+      "check": "no_sample_clipped_by_axis_limits",
+      "status": "PASS",
+      "evidence": {
+        "UMAP1": [
+          -6.5,
+          16.5
+        ],
+        "UMAP2": [
+          -1.5,
+          12.0
+        ]
+      }
+    },
+    {
+      "check": "readable_requested_typography",
+      "status": "PASS",
+      "evidence": "Arial: axis titles 9 pt, ticks 8 pt, legend/title 8.5 pt; current user-specified targets control this revision"
+    },
+    {
+      "check": "text_bounds_and_overlap",
+      "status": "PASS",
+      "evidence": "All final-size text bounds fit the canvas with no nontrivial overlaps"
+    },
+    {
+      "check": "fixed_size_editable_vector_PDF",
+      "status": "PASS",
+      "evidence": {
+        "dimensions_mm": [
+          182.9999999999947,
+          109.99999999998333
+        ],
+        "fonts": [
+          {
+            "base_font": "/DJWLEY+ArialMT",
+            "descendant_type": "/CIDFontType2",
+            "TrueType_embedded": true
+          }
+        ],
+        "raster_images": 0
+      }
+    },
+    {
+      "check": "editable_vector_SVG",
+      "status": "PASS",
+      "evidence": "SVG text remains text; all point and frame marks are vector; no embedded raster images or publisher artwork"
+    },
+    {
+      "check": "600dpi_PNG",
+      "status": "PASS",
+      "evidence": {
+        "pixels": [
+          4322,
+          2598
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      }
+    },
+    {
+      "check": "community_statistics_preserved_outside_artwork",
+      "status": "PASS",
+      "evidence": "All ten assignment records and all 70 marginal class counts/fractions preserved; GC08 100/105 Saccharide, GC05 24/53"
+    },
+    {
+      "check": "inputs_and_previous_figure_preserved",
+      "status": "PASS",
+      "evidence": {
+        "frozen_input_records": 34,
+        "previous_package_files_unchanged": 81,
+        "previous_PDF_unchanged": true
+      }
+    },
+    {
+      "check": "published_style_reference_and_accessibility_views",
+      "status": "PASS",
+      "evidence": "Full-resolution publisher Figure 3 retrieved and visually inspected; Figure 3a crop compared directly; normal, three CVD and grayscale views inspected"
+    },
+    {
+      "check": "independent_Poppler_PDF_render",
+      "status": "PASS",
+      "evidence": "Final PDF independently rendered at 300 dpi for visual review"
+    }
+  ],
+  "models_run": false,
+  "clustering_run": false,
+  "coordinates_changed": false,
+  "previous_figure_overwritten": false,
+  "committed": false,
+  "pushed": false
+}

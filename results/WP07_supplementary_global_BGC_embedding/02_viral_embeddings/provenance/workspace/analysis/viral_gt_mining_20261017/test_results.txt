@@ -1,0 +1,30 @@
+test_alias_genome_version_exact (test_extract.ExtractionTests.test_alias_genome_version_exact) ... ok
+test_boundaries_no_compensation (test_extract.ExtractionTests.test_boundaries_no_compensation) ... ok
+test_circular_no_wrap (test_extract.ExtractionTests.test_circular_no_wrap) ... ok
+test_duplicate_accessions_versions_multiple_occurrences (test_extract.ExtractionTests.test_duplicate_accessions_versions_multiple_occurrences) ... ok
+test_mismatch_ineligible (test_extract.ExtractionTests.test_mismatch_ineligible) ... ok
+test_missing_translation_not_skipped (test_extract.ExtractionTests.test_missing_translation_not_skipped) ... ok
+test_multiple_contigs_never_cross (test_extract.ExtractionTests.test_multiple_contigs_never_cross) ... ok
+test_negative_strand_keeps_coordinate_order (test_extract.ExtractionTests.test_negative_strand_keeps_coordinate_order) ... ok
+test_overlapping_anchors_separate (test_extract.ExtractionTests.test_overlapping_anchors_separate) ... ok
+test_partial_3prime_uses_only_complete_codons (test_extract.ExtractionTests.test_partial_3prime_uses_only_complete_codons) ... ok
+test_partial_5prime_does_not_invent_methionine (test_extract.ExtractionTests.test_partial_5prime_does_not_invent_methionine) ... ok
+test_partial_reverse_strand_biological_end (test_extract.ExtractionTests.test_partial_reverse_strand_biological_end) ... ok
+test_partial_translation_mismatch_still_excluded (test_extract.ExtractionTests.test_partial_translation_mismatch_still_excluded) ... ok
+test_symmetric_window (test_extract.ExtractionTests.test_symmetric_window) ... ok
+test_identical_genbank_refseq_counterparts_collapse_despite_annotation_index_changes (test_inference_analysis.AnalysisTests.test_identical_genbank_refseq_counterparts_collapse_despite_annotation_index_changes) ... ok
+test_loci_merge_only_connected_overlap_on_same_genome_identity (test_inference_analysis.AnalysisTests.test_loci_merge_only_connected_overlap_on_same_genome_identity) ... ok
+test_missing_taxid_retains_accession_specific_units (test_inference_analysis.AnalysisTests.test_missing_taxid_retains_accession_specific_units) ... ok
+test_origin_spanning_CDS_does_not_merge_middle_genome (test_inference_analysis.AnalysisTests.test_origin_spanning_CDS_does_not_merge_middle_genome) ... ok
+test_partial_inference_is_unknown_unless_observed_positive (test_inference_analysis.AnalysisTests.test_partial_inference_is_unknown_unless_observed_positive) ... ok
+test_same_protein_different_whole_genomes_or_taxids_remain_distinct (test_inference_analysis.AnalysisTests.test_same_protein_different_whole_genomes_or_taxids_remain_distinct) ... ok
+test_species_is_unresolved_without_rank_cache (test_inference_analysis.AnalysisTests.test_species_is_unresolved_without_rank_cache) ... ok
+test_resume_preserves_vectors_and_rejects_wrong_identity (test_inference_analysis.ResumeTests.test_resume_preserves_vectors_and_rejects_wrong_identity) ... ok
+test_resume_rejects_nonfinite_and_wrong_pooling (test_inference_analysis.ResumeTests.test_resume_rejects_nonfinite_and_wrong_pooling) ... ok
+test_archived_SH68_real_record (test_retrieve.RetrievalTests.test_archived_SH68_real_record) ... ok
+test_current_mapping_preserves_all_genomic_crosslinks (test_retrieve.RetrievalTests.test_current_mapping_preserves_all_genomic_crosslinks) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.120s
+
+OK

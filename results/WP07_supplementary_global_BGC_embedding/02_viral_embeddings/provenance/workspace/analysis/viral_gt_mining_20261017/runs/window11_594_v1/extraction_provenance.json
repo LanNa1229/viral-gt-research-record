@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "parameters": {
+    "upstream": 5,
+    "downstream": 5,
+    "CDS_policy": "all annotated CDS sorted by coordinates/source index",
+    "circular_policy": "no wrap, same as baseline",
+    "no_padding": true,
+    "no_repetition": true,
+    "no_overlap_merge_before_inference": true
+  },
+  "original_anchors": 594,
+  "occurrences": 757,
+  "complete_windows": 658,
+  "eligible_windows": 740,
+  "n_gene_rows": 7967,
+  "removed_gene_rows": 2721,
+  "baseline_files_verified": {
+    "baseline_594_v2": 676,
+    "viral_gt_interpretation_20261017": 97,
+    "viral_gt_retrieval_rescue_20261017": 47
+  },
+  "source_files": 515,
+  "baseline_inputs": {
+    "viral_gt_windows.tsv": "adcc1405af0e4fa5c80e4a505cf6a2ebd61bf12a27c7a779f58d8c87ad53e003",
+    "viral_gt_window_genes.tsv": "1fec7664c284378d44430c609d4bd1c146abab08059304c65df44633d152d105",
+    "input_snapshot/baseline_594_anchors.tsv": "db46efba53ae4374883139862059c0f11c7c168d3afe38f55e3dc58461dc68ab"
+  },
+  "extraction_script_sha256": "8d6fc8848b720de15b859699bbe4685506d56bdabcce00a3fdf73201a6e182a8",
+  "elapsed_seconds": 12.266355917003239
+}

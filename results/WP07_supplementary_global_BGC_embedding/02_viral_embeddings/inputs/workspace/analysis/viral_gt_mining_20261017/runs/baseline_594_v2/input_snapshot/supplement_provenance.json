@@ -1,0 +1,77 @@
+{
+  "failures": [],
+  "genome_records": 4,
+  "original_cohort_preserved": 594,
+  "output_sha256": {
+    "supplement_aliases.tsv": "0baa5707502045a61f9969067df1bd82cc3f1afa2ea12cd7cee21f2ac56bf8ca",
+    "supplement_anchor_sequences.faa": "3e74f4f5e4cfa64f6664595741c0ee34ff56a96f33adc17eb53c0ee6f8b0faf6",
+    "supplement_genbanks.tsv": "eb0a44fbc746973bc5581045fd7c8100dbe10e3426efe471b1534ffc70b3a146",
+    "supplement_status.tsv": "235825a9e46256ea0a5b99b343c02f20a8ac6b9d128487d917736ec377598eee"
+  },
+  "policy": "Only exact original requested sequence and source CDS translation with matching protein coded_by, archived genome version and source taxid accepted. Baseline files/runs/caches unchanged.",
+  "recovered_aliases": 9,
+  "recovered_inputs": 8,
+  "requested_inputs": [
+    "A0A6N1NGR4",
+    "A0A6N1NK79",
+    "A0A6N1NM99",
+    "A0A6N1NPT3",
+    "A0A6N1NQZ0",
+    "A0A6N1NUE9",
+    "A0A6N1NUS0",
+    "UPI001E761E12",
+    "UPI001FBC14AE"
+  ],
+  "retrievals": [
+    {
+      "bytes": 1728,
+      "path": "/home/archival-user/260908_MiBG/analysis/viral_gt_mining_20261017/cache/uniparc_supplement/UPI001E761E12.json",
+      "reused": true,
+      "sha256": "61eb12be0b243b4c8c81e8c4ed81c3c1392e92bb0546c500c0a4629bf61aa9e0",
+      "url": "https://rest.uniprot.org/uniparc/UPI001E761E12.json"
+    },
+    {
+      "bytes": 2200,
+      "path": "/home/archival-user/260908_MiBG/analysis/viral_gt_mining_20261017/cache/uniparc_supplement/UPI001FBC14AE.json",
+      "reused": true,
+      "sha256": "4455ebcd32bd80c061c9de0874017f733f473ef288905086a934b6cc99451ff5",
+      "url": "https://rest.uniprot.org/uniparc/UPI001FBC14AE.json"
+    },
+    {
+      "bytes": 24616,
+      "path": "/home/archival-user/260908_MiBG/analysis/viral_gt_mining_20261017/cache/uniparc_supplement/supplement_proteins.gb",
+      "reused": false,
+      "sha256": "b903155f5a5257544a20a9596b894dbd2387bfe25f4e999d559b7b0c7d4e4301",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=QKU33950.1%2CQKU33958.1%2CQKU34316.1%2CQKU35149.1%2CQKU35150.1%2CQKU35153.1%2CQKU35166.1%2CQZE56890.1%2CYP_010300794.1&rettype=gb&retmode=text"
+    },
+    {
+      "bytes": 2834715,
+      "path": "/home/archival-user/260908_MiBG/analysis/viral_gt_mining_20261017/cache/uniparc_supplement/KY523104.2.gb",
+      "reused": false,
+      "sha256": "b3ed5761f7d41f3bddf230dcee814cddf75072b13eb9251ff711502ee3dc875f",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KY523104.2&rettype=gbwithparts&retmode=text"
+    },
+    {
+      "bytes": 2738618,
+      "path": "/home/archival-user/260908_MiBG/analysis/viral_gt_mining_20261017/cache/uniparc_supplement/MF405918.2.gb",
+      "reused": false,
+      "sha256": "3ba636c10e6c78df416ed7541fd821c1c8833c49b1f0907ee3657bb3f5645709",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=MF405918.2&rettype=gbwithparts&retmode=text"
+    },
+    {
+      "bytes": 586375,
+      "path": "/home/archival-user/260908_MiBG/analysis/viral_gt_mining_20261017/cache/uniparc_supplement/MZ443774.1.gb",
+      "reused": false,
+      "sha256": "3f2a9b4f35658e07ff6a036820671af58e402abe92180690035fce5155a5eca3",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=MZ443774.1&rettype=gbwithparts&retmode=text"
+    },
+    {
+      "bytes": 654008,
+      "path": "/home/archival-user/260908_MiBG/analysis/viral_gt_mining_20261017/cache/uniparc_supplement/NC_061444.1.gb",
+      "reused": false,
+      "sha256": "6fe392ffb1438ea4dfd5291ccaa46e125c9064c22bf4e2f72bd817603632d4de",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_061444.1&rettype=gbwithparts&retmode=text"
+    }
+  ],
+  "status": "completed"
+}

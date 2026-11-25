@@ -1,0 +1,17 @@
+{
+  "required_unique_sequences": 16973,
+  "unique_existing_cache_hits": 16857,
+  "source_directories": [
+    {
+      "source": "/home/archival-user/260908_MiBG/analysis/viral_gt_mining_20261017/cache/esm/f4e951b9c37bf0d05e6aeeaf0379503a1d5603ab3b7f5366c05aef21e1ec6390",
+      "settings_sha256": "df3050a63b3769d3a730296980b72b8f11f432ccf353ec39ce22e6d23e27c07e",
+      "matching_required_proteins": 5767
+    },
+    {
+      "source": "/home/archival-user/260908_MiBG/analysis/viral_gt_interpretation_20261017/cache/esm/f4e951b9c37bf0d05e6aeeaf0379503a1d5603ab3b7f5366c05aef21e1ec6390",
+      "settings_sha256": "df3050a63b3769d3a730296980b72b8f11f432ccf353ec39ce22e6d23e27c07e",
+      "matching_required_proteins": 16857
+    }
+  ],
+  "policy": "read old caches, validate vector/settings identity, copy required vectors only into new downstream cache; historical pilot caches additionally seeded by frozen inference"
+}

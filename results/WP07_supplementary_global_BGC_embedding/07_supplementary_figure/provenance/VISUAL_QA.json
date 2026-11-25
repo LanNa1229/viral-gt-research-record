@@ -1,0 +1,55 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_COLOR_LIMITATIONS",
+  "previous_figure_preserved": true,
+  "counts": {
+    "displayed_samples": 2789,
+    "references": 2502,
+    "selected_viral_loci": 287,
+    "hybrid_references": 467
+  },
+  "assessment": "Full rectangular numeric axes and readable 9/8/8.5 pt typography; dominant 75-percent-width UMAP; compact vertical legend; no GC labels, leaders, community statistics or table in artwork",
+  "recorded_utc": "2026-10-28T02:04:22.1112895Z",
+  "inspected_outputs": [
+    {
+      "sha256": "1af65c74cd89f60164e5b4e14cec159ed7082fe224f199a75efc7e156a9f44f2",
+      "relative_path": "qc/preview_183mm_150dpi.png"
+    },
+    {
+      "sha256": "22940191b35048f02e7757676a46925fee0e97ca597f90d96185693218e38161",
+      "relative_path": "qc/preview_183mm_96dpi.png"
+    },
+    {
+      "sha256": "2b035363d635948efc57efa16a52250d1a7585eaefa0d5b9c1fccca1ef11f935",
+      "relative_path": "qc/PDF_render_300dpi.png"
+    },
+    {
+      "sha256": "c74b25c989263daef3bb33e0281f88181e14fab999b94e5f27c9c75470ed7f93",
+      "relative_path": "qc/protanopia_preview.png"
+    },
+    {
+      "sha256": "fdfd1a13246b28cc4bd550cb82e63b5ca154f07fd58574a039659e4f297501f5",
+      "relative_path": "qc/deuteranopia_preview.png"
+    },
+    {
+      "sha256": "06e173989ad0af2049249e4c01cd37cb50ec8a0803680960b414df18b567c1bc",
+      "relative_path": "qc/tritanopia_preview.png"
+    },
+    {
+      "sha256": "41243fffd8323c12982bfdd286090126a4e9ba9588a08cc2726cd241a50c66b8",
+      "relative_path": "qc/grayscale_preview.png"
+    },
+    {
+      "sha256": "54015fdf847f77c51438a55f9d702c43c581ac7f9b8e3f11d703a3cba952052a",
+      "relative_path": "qc/Flamholz_2024_Figure3a_style_crop.png"
+    }
+  ],
+  "scientific_data_changed": false,
+  "limitations": [
+    "Exact and near point overlap remains; no jitter was applied",
+    "Neutral hollow hybrids intentionally do not display individual component class colors; all original memberships remain in source data",
+    "Some original class colors are harder to distinguish under severe CVD and grayscale; sample types remain differentiated by fill and shape",
+    "The point-cloud shape and equal-axis-unit geometry remain specific to the original saved projection"
+  ],
+  "models_rerun": false,
+  "method": "Assistant visual inspection of final-size normal previews, independent Poppler PDF render, three CVD simulations and grayscale using tools.view_image; full-resolution publisher reference inspected in browser and panel 3a crop compared directly"
+}
