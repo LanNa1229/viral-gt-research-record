@@ -1,0 +1,366 @@
+{
+  "mibig_accession": {
+    "definition": "Original biological reference accession; unique primary key.",
+    "source": "frozen CORE_ONLY metadata:BGC"
+  },
+  "original_embedding_row": {
+    "definition": "Original zero-based CORE_ONLY row, retained exactly; augmentation rows are not observations.",
+    "source": "frozen metadata:embedding_row"
+  },
+  "original_bgcprophet_class": {
+    "definition": "Original label string used in clustering; never replaced by source chemotypes.",
+    "source": "frozen metadata:label"
+  },
+  "original_class_multilabel": {
+    "definition": "Original class tokens in original order as a JSON list; overlapping hybrid classes retained.",
+    "source": "frozen metadata:label"
+  },
+  "original_is_hybrid": {
+    "definition": "More than one original class token.",
+    "source": "original label tokens"
+  },
+  "global_leiden_community": {
+    "definition": "Existing global joint baseline, k20_r1_s42; no recomputation.",
+    "source": "global_joint_leiden_grid.csv:k20_r1_s42"
+  },
+  "is_saccharide_reference": {
+    "definition": "Any Saccharide token in original labels, including hybrids.",
+    "source": "original labels and saved global assignment"
+  },
+  "is_GC08": {
+    "definition": "GC08 membership of the reference.",
+    "source": "original labels and saved global assignment"
+  },
+  "is_GC05": {
+    "definition": "GC05 membership of the reference.",
+    "source": "original labels and saved global assignment"
+  },
+  "is_saccharide_outside_GC08": {
+    "definition": "Original Saccharide reference outside GC08.",
+    "source": "original labels and saved global assignment"
+  },
+  "reference_core_gene_count": {
+    "definition": "Frozen CORE_ONLY reference gene count; distinct from all annotated CDS count.",
+    "source": "frozen metadata:core_gene_count"
+  },
+  "is_priority_curation_reference": {
+    "definition": "Union of all Saccharide references and all GC08/GC05 references; 229 unique BGCs.",
+    "source": "original labels and saved assignments"
+  },
+  "organism_name": {
+    "definition": "Original MIBiG organism string; no current taxonomy substitution.",
+    "source": "JSON:/cluster/organism_name"
+  },
+  "ncbi_taxid": {
+    "definition": "Recorded taxon ID kept as text.",
+    "source": "JSON:/cluster/ncbi_tax_id"
+  },
+  "genus": {
+    "definition": "Lexical genus component of recorded organism name where unambiguous; not a new taxonomic determination.",
+    "source": "recorded organism string; conservative lexical parsing"
+  },
+  "species": {
+    "definition": "Recorded binomial component where unambiguous; strain text omitted without taxonomy lookup.",
+    "source": "recorded organism string; conservative lexical parsing"
+  },
+  "broader_taxonomy": {
+    "definition": "Documented GenBank lineage, retained separately from JSON organism.",
+    "source": "frozen GBK:ORGANISM continuation"
+  },
+  "taxonomy_provenance": {
+    "definition": "Distinguishes recorded taxonomy and derived name components from new retrievals.",
+    "source": "curation method"
+  },
+  "genbank_organism_name": {
+    "definition": "Frozen GenBank organism qualifier, including any disagreement with JSON.",
+    "source": "GBK:source/organism"
+  },
+  "genbank_ncbi_taxid": {
+    "definition": "Taxon cross-references in GenBank source qualifier.",
+    "source": "GBK:source/db_xref"
+  },
+  "source_record_accession": {
+    "definition": "Original nucleotide record accession/version, not the BGC accession.",
+    "source": "JSON:/cluster/loci/accession"
+  },
+  "bgc_start": {
+    "definition": "Original JSON BGC start coordinate; no coordinate-system conversion or inferred default.",
+    "source": "JSON:/cluster/loci/start_coord"
+  },
+  "bgc_end": {
+    "definition": "Original JSON BGC end coordinate; no inferred default.",
+    "source": "JSON:/cluster/loci/end_coord"
+  },
+  "bgc_completeness": {
+    "definition": "Original locus completeness, retaining Unknown separately from missing.",
+    "source": "JSON:/cluster/loci/completeness"
+  },
+  "genbank_definition": {
+    "definition": "Frozen sequence description, retained for source conflict audit.",
+    "source": "GBK:DEFINITION"
+  },
+  "genbank_comment": {
+    "definition": "Original sequence warnings/comments; sequence replacement warnings are retained.",
+    "source": "GBK:COMMENT"
+  },
+  "compound_names_original": {
+    "definition": "All original compound names, ordered JSON list; no synonym merging.",
+    "source": "JSON:/cluster/compounds/*/compound"
+  },
+  "normalized_product_names": {
+    "definition": "Unicode NFC plus whitespace normalization only; no chemical name reassignment.",
+    "source": "original compound names"
+  },
+  "number_of_annotated_compounds": {
+    "definition": "Number of source BGC-compound relationship records, including all congeners.",
+    "source": "JSON:/cluster/compounds"
+  },
+  "chemical_formula": {
+    "definition": "Original formula per source compound.",
+    "source": "JSON:/cluster/compounds/*/molecular_formula"
+  },
+  "molecular_mass": {
+    "definition": "Original source mol_mass values; no mass computation or unit reinterpretation.",
+    "source": "JSON:/cluster/compounds/*/mol_mass"
+  },
+  "SMILES": {
+    "definition": "Original source chemical structure strings; no structure generation.",
+    "source": "JSON:/cluster/compounds/*/chem_struct"
+  },
+  "chemical_structure_availability": {
+    "definition": "Availability of recorded structures, not new predictions.",
+    "source": "source chem_struct presence"
+  },
+  "source_mibig_biosynthetic_classes": {
+    "definition": "MIBiG 3.1 classes retained independently of frozen training labels.",
+    "source": "JSON:/cluster/biosyn_class"
+  },
+  "source_saccharide_subclass": {
+    "definition": "Exact structured source Saccharide subclass; not replaced by curated primary category.",
+    "source": "JSON:/cluster/saccharide/subclass"
+  },
+  "product_architecture": {
+    "definition": "Source-supported gross architecture; NOT_REVIEWED is not a negative call.",
+    "source": "curation decisions"
+  },
+  "primary_chemotype": {
+    "definition": "Mutually exclusive curated category; independent from original model classes.",
+    "source": "CURATION_DECISIONS.json"
+  },
+  "secondary_chemotype_tags": {
+    "definition": "Overlapping descriptors and ambiguity flags; do not add category counts as independent observations.",
+    "source": "curation decisions"
+  },
+  "product_glycan_or_glycosylated_metabolite": {
+    "definition": "Distinguishes assembled glycan, glycometabolite, sugar precursor and non-glycosylated final product.",
+    "source": "source-supported curation"
+  },
+  "polymeric_or_nonpolymeric": {
+    "definition": "Gross source-supported architecture, not a computed molecular descriptor.",
+    "source": "source-supported curation"
+  },
+  "glycan_association_type": {
+    "definition": "Scope-specific relation; final-product chemistry and biosynthetic glycosylation are separate.",
+    "source": "curation decisions and cited sources"
+  },
+  "biological_localization_or_target": {
+    "definition": "Only documented glycan location scope; not inferred from a generic biosynthetic label.",
+    "source": "curation decisions"
+  },
+  "bacterial_surface_glycan_related": {
+    "definition": "Explicit source-supported curation descriptor. True/False apply to documented product scope; NOT_DETERMINED and NOT_REVIEWED are not biological negatives.",
+    "source": "CURATION_DECISIONS.json"
+  },
+  "bacterial_extracellular_glycan_related": {
+    "definition": "Explicit source-supported curation descriptor. True/False apply to documented product scope; NOT_DETERMINED and NOT_REVIEWED are not biological negatives.",
+    "source": "CURATION_DECISIONS.json"
+  },
+  "surface_or_extracellular_glycan_combined": {
+    "definition": "Explicit source-supported curation descriptor. True/False apply to documented product scope; NOT_DETERMINED and NOT_REVIEWED are not biological negatives.",
+    "source": "CURATION_DECISIONS.json"
+  },
+  "LPS_LOS_O_antigen_combined": {
+    "definition": "Explicit source-supported curation descriptor. True/False apply to documented product scope; NOT_DETERMINED and NOT_REVIEWED are not biological negatives.",
+    "source": "CURATION_DECISIONS.json"
+  },
+  "chemotype_annotation_confidence": {
+    "definition": "Explicit source-supported curation descriptor. True/False apply to documented product scope; NOT_DETERMINED and NOT_REVIEWED are not biological negatives.",
+    "source": "CURATION_DECISIONS.json"
+  },
+  "chemotype_evidence_source": {
+    "definition": "Explicit source-supported curation descriptor. True/False apply to documented product scope; NOT_DETERMINED and NOT_REVIEWED are not biological negatives.",
+    "source": "CURATION_DECISIONS.json"
+  },
+  "known_monosaccharide_identities": {
+    "definition": "Only explicit curated source claims; missing means not reported/reviewed in inspected sources, not chemical absence. See long evidence table for scope, level and source.",
+    "source": "reference_chemical_features.tsv"
+  },
+  "unusual_or_rare_monosaccharides": {
+    "definition": "Only explicit curated source claims; missing means not reported/reviewed in inspected sources, not chemical absence. See long evidence table for scope, level and source.",
+    "source": "reference_chemical_features.tsv"
+  },
+  "amino_sugars": {
+    "definition": "Only explicit curated source claims; missing means not reported/reviewed in inspected sources, not chemical absence. See long evidence table for scope, level and source.",
+    "source": "reference_chemical_features.tsv"
+  },
+  "deoxy_sugars": {
+    "definition": "Only explicit curated source claims; missing means not reported/reviewed in inspected sources, not chemical absence. See long evidence table for scope, level and source.",
+    "source": "reference_chemical_features.tsv"
+  },
+  "sugar_nucleotide_precursors": {
+    "definition": "Only explicit curated source claims; missing means not reported/reviewed in inspected sources, not chemical absence. See long evidence table for scope, level and source.",
+    "source": "reference_chemical_features.tsv"
+  },
+  "reported_glycosidic_linkages": {
+    "definition": "Only explicit curated source claims; missing means not reported/reviewed in inspected sources, not chemical absence. See long evidence table for scope, level and source.",
+    "source": "reference_chemical_features.tsv"
+  },
+  "branching_or_polymeric_architecture": {
+    "definition": "Only explicit curated source claims; missing means not reported/reviewed in inspected sources, not chemical absence. See long evidence table for scope, level and source.",
+    "source": "reference_chemical_features.tsv"
+  },
+  "methylation": {
+    "definition": "Only explicit curated source claims; missing means not reported/reviewed in inspected sources, not chemical absence. See long evidence table for scope, level and source.",
+    "source": "reference_chemical_features.tsv"
+  },
+  "acetylation": {
+    "definition": "Only explicit curated source claims; missing means not reported/reviewed in inspected sources, not chemical absence. See long evidence table for scope, level and source.",
+    "source": "reference_chemical_features.tsv"
+  },
+  "sulfation": {
+    "definition": "Only explicit curated source claims; missing means not reported/reviewed in inspected sources, not chemical absence. See long evidence table for scope, level and source.",
+    "source": "reference_chemical_features.tsv"
+  },
+  "phosphorylation": {
+    "definition": "Only explicit curated source claims; missing means not reported/reviewed in inspected sources, not chemical absence. See long evidence table for scope, level and source.",
+    "source": "reference_chemical_features.tsv"
+  },
+  "other_glycan_tailoring_modifications": {
+    "definition": "Only explicit curated source claims; missing means not reported/reviewed in inspected sources, not chemical absence. See long evidence table for scope, level and source.",
+    "source": "reference_chemical_features.tsv"
+  },
+  "chemical_composition_evidence_level": {
+    "definition": "Chemical evidence levels distinguish primary experimental chemistry, literature annotation and review claims.",
+    "source": "curated chemical features"
+  },
+  "sugar_specificity_annotations": {
+    "definition": "Recorded enzyme substrate specificities and evidence; not silently treated as demonstrated product composition.",
+    "source": "JSON:/cluster/saccharide/glycosyltransferases"
+  },
+  "number_of_annotated_genes": {
+    "definition": "Number of CDS source annotations in the frozen GenBank BGC record; not the count of experimentally characterized enzymes.",
+    "source": "frozen GBK:CDS features"
+  },
+  "number_of_explicit_MIBiG_gene_annotations": {
+    "definition": "Number of explicitly curated JSON gene annotations; distinguish from all CDS.",
+    "source": "JSON:/cluster/genes/annotations"
+  },
+  "glycosyltransferase_genes": {
+    "definition": "Index of explicit source function descriptions. Roles may overlap; no sequence-based annotation and no absence claim.",
+    "source": "reference_biosynthetic_genes.tsv"
+  },
+  "nucleotide_sugar_biosynthesis_genes": {
+    "definition": "Index of explicit source function descriptions. Roles may overlap; no sequence-based annotation and no absence claim.",
+    "source": "reference_biosynthetic_genes.tsv"
+  },
+  "sugar_modification_genes": {
+    "definition": "Index of explicit source function descriptions. Roles may overlap; no sequence-based annotation and no absence claim.",
+    "source": "reference_biosynthetic_genes.tsv"
+  },
+  "glycan_polymerization_or_assembly_genes": {
+    "definition": "Index of explicit source function descriptions. Roles may overlap; no sequence-based annotation and no absence claim.",
+    "source": "reference_biosynthetic_genes.tsv"
+  },
+  "glycan_export_or_transport_genes": {
+    "definition": "Index of explicit source function descriptions. Roles may overlap; no sequence-based annotation and no absence claim.",
+    "source": "reference_biosynthetic_genes.tsv"
+  },
+  "other_biosynthetic_genes": {
+    "definition": "Index of explicit source function descriptions. Roles may overlap; no sequence-based annotation and no absence claim.",
+    "source": "reference_biosynthetic_genes.tsv"
+  },
+  "experimentally_characterized_enzymes": {
+    "definition": "Only genes with explicit source Activity assay evidence; knock-outs alone are not direct catalytic characterization.",
+    "source": "MIBiG gene-level evidence"
+  },
+  "pathway_description": {
+    "definition": "Source descriptions only; no new pathway reconstruction.",
+    "source": "frozen JSON and GBK"
+  },
+  "pathway_evidence_level": {
+    "definition": "Exact locus/BGC evidence list; not transferred to every enzyme or product claim.",
+    "source": "JSON:/cluster/loci/evidence"
+  },
+  "pathway_source_annotations_json": {
+    "definition": "Lossless source pathway-class annotations including predictions; not newly calculated chemistry.",
+    "source": "MIBiG 3.1 class-specific sections"
+  },
+  "mibig_record_status": {
+    "definition": "Original record status.",
+    "source": "JSON:/cluster/status"
+  },
+  "mibig_minimal_record": {
+    "definition": "Original minimal-record flag.",
+    "source": "JSON:/cluster/minimal"
+  },
+  "experimental_evidence_types": {
+    "definition": "Explicit source experimental/genetic/chemical evidence labels, excluding prediction, homology and inference. Aggregate labels do not imply every enzyme is characterized.",
+    "source": "explicit JSON evidence arrays, experimental terms only"
+  },
+  "source_evidence_types_all": {
+    "definition": "Complete original source evidence vocabulary, retaining predictions/inferences separately from experimental_evidence_types.",
+    "source": "all explicit JSON evidence arrays"
+  },
+  "publication_PMIDs": {
+    "definition": "Original source PubMed IDs; no replacement by retrieved identifiers.",
+    "source": "JSON:/cluster/publications"
+  },
+  "publication_DOIs": {
+    "definition": "Original source DOI strings.",
+    "source": "JSON:/cluster/publications"
+  },
+  "publication_identifiers_original": {
+    "definition": "All original publication identifier strings, unchanged.",
+    "source": "JSON:/cluster/publications"
+  },
+  "retrieved_publication_DOIs": {
+    "definition": "Supplemental PubMed metadata, kept separate from original DOI annotations.",
+    "source": "473-record PubMed retrieval"
+  },
+  "source_record_URL": {
+    "definition": "Pinned official snapshot URL with archive member; current live records are not substituted.",
+    "source": "frozen official MIBiG 3.1"
+  },
+  "source_record_SHA256": {
+    "definition": "SHA-256 of exact raw JSON record bytes.",
+    "source": "raw snapshot member"
+  },
+  "source_version": {
+    "definition": "Single release used across all reference annotations.",
+    "source": "frozen source manifest"
+  },
+  "curated_chemotype_status": {
+    "definition": "Rule-based or evidence-guided status is explicit; no human manual verification is claimed.",
+    "source": "curation decision method"
+  },
+  "manual_review_required": {
+    "definition": "Records needing further human/scientific review, including unreviewed background entries.",
+    "source": "curation decisions"
+  },
+  "curation_notes": {
+    "definition": "Accession-specific reasoning and unresolved evidence limits.",
+    "source": "curation decisions"
+  },
+  "original_vs_mibig_class_disagreement": {
+    "definition": "Exact original/source class token-set disagreement; both remain unchanged.",
+    "source": "frozen metadata versus MIBiG 3.1"
+  },
+  "JSON_GBK_organism_disagreement": {
+    "definition": "Exact source organism string disagreement; may reflect nomenclature or strain differences.",
+    "source": "JSON organism versus GBK source organism"
+  },
+  "annotation_conflict_flag": {
+    "definition": "Recorded source or chemical-scope conflict; inspect notes and retained source values.",
+    "source": "source cross-checks"
+  }
+}

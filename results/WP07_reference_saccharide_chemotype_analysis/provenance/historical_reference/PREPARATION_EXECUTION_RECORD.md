@@ -1,0 +1,10 @@
+# Preparation execution record
+
+Preparation commands actually executed in this task used the same bundled Python executable recorded in SOFTWARE_VERSIONS.json and -B (no bytecode cache). All source-preparation scripts are retained unchanged after their successful execution. Preparation stdout was displayed in the chat tool records rather than redirected contemporaneously; this note does not fabricate missing raw stdout or start/finish timestamps. Later integrated pipeline executions retain complete command/stdout/stderr/exit-code records.
+
+- prepare_sources.py: verified consumed private Git blobs, all reference rows, NPY shape/header and subgroup counts; reused/captured the local MIBiG 3.1 JSON/GBK snapshots. Successful result is SOURCE_PREFLIGHT.json. Observed counts: 2,502 matches, 229 priority records.
+- extract_gbk_annotations.py: parsed all 2,502 frozen GenBank records and 41,002 CDS annotations. Outputs include raw-member SHA-256 manifest, parsed annotation cache and priority evidence cards.
+- retrieve_publications.py: read-only NCBI EFetch retrieval, five batches; 473 cited PMID records requested and 473 returned. Original raw XML and exact request/hash/timestamp receipts are preserved.
+- curate_priority_records.py: initial rule screen left 14 unresolved; evidence review reduced this to four. Earlier source/decision versions are in review_history/. Subsequent scoped refinements separate extracellular from explicitly cell-surface localization and experimental from predicted evidence.
+- Initial sandboxed NCBI lookup failed DNS resolution; the approved read-only retry succeeded. An initial pipeline startup was denied permission to create its execution directory; the approved local retry succeeded. These were access/startup failures, not failed scientific models. No scientific models were executed.
+- run_curation.py: each successful run retains exact executed code snapshots, hashes, commands, start/end UTC timestamps, stdout/stderr and exit codes under executions/. No failed or earlier scientific outputs were overwritten or removed from prior research archives.

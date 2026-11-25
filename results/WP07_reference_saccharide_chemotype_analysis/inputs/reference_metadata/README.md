@@ -1,0 +1,3 @@
+# Reference metadata
+
+The exact matched reference metadata and original 320-dimensional reference embeddings are reused from the immutable public files listed in [PUBLIC_DEPENDENCIES.tsv](../../provenance/PUBLIC_DEPENDENCIES.tsv). The metadata contains the 2,502 biological accessions, class labels, zero-based row order and original core gene counts. The embeddings establish the upstream representation and are not required to rerun the plotting code. The [reference community crosswalk](../community_assignments/REFERENCE_COMMUNITY_CROSSWALK.tsv) provides the accession-level projection used to audit the joins.

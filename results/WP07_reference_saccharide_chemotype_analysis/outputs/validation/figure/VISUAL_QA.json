@@ -1,0 +1,66 @@
+{
+  "recorded_utc": "2026-10-28T02:43:29.7034588Z",
+  "pushed": false,
+  "models_or_enrichment_tests_run": false,
+  "status": "PASS_WITH_DOCUMENTED_GRAYSCALE_LIMITATIONS",
+  "inspected_outputs": [
+    {
+      "sha256": "1860ba4c90a6a8f6b75fe606fc780ee5690981ce75bdf38a24c5b83f86d7d938",
+      "relative_path": "qc/preview_183mm_150dpi.png"
+    },
+    {
+      "sha256": "37f63f0e12a15c3b4ad1680fc0d405eab464a4f7564d8dc013f3c0ea35b02b4e",
+      "relative_path": "qc/preview_183mm_96dpi.png"
+    },
+    {
+      "sha256": "9ffe36311540b08d132be4b5eb5920db61649e1e6517c8ad085d2b7a7c900951",
+      "relative_path": "qc/PDF_render_300dpi.png"
+    },
+    {
+      "sha256": "8bb0a0c577e6ac96a6875e7c021af16935d2f72c4d370f0ad45fcb37170635c2",
+      "relative_path": "qc/protanopia_preview.png"
+    },
+    {
+      "sha256": "180e93b28f0878c1122f1a2b7eed0db967a6e4a31e2fba7ded6dc021e593c624",
+      "relative_path": "qc/deuteranopia_preview.png"
+    },
+    {
+      "sha256": "ac6bfb1debc665e49707143fa39f5e381f8623308f5f0df56164a6958994f415",
+      "relative_path": "qc/tritanopia_preview.png"
+    },
+    {
+      "sha256": "7d1ccdabe3d787d5bd10b4025b34ce7f3cf90277897f0faaa15b6d6aecb8d9d0",
+      "relative_path": "qc/grayscale_preview.png"
+    }
+  ],
+  "dimensions_mm": [
+    183,
+    95
+  ],
+  "committed": false,
+  "source_annotations_changed": false,
+  "method": "Assistant visual inspection of the final normal 150/96-dpi previews, independent Poppler PDF render, protanopia, deuteranopia, tritanopia and grayscale views using tools.view_image",
+  "font_sizes_pt": [
+    8,
+    8.5
+  ],
+  "counts": {
+    "hybrid_Saccharide_BGCs": 65,
+    "surface_counts": [
+      72,
+      9,
+      3
+    ],
+    "GC08": 100,
+    "GC05": 24,
+    "Other_GCs": 71,
+    "Saccharide_BGCs": 195
+  },
+  "assessment": "Three populations immediately comparable; GC08 warm-category dominance and Other-GC purple dominance clear; final color palette separable in inspected normal/CVD views; narrow positive segments remain visible at true widths; no text clipping or overlap",
+  "limitations": [
+    "Source-based proposed chemotypes have not all undergone independent human verification",
+    "BGC0000262 and BGC0000727 remain unresolved; BGC0001765 remains provisional",
+    "Some categories are less distinguishable in grayscale; fixed order and white boundaries remain visible",
+    "Zero-count categories remain zero-width; no minimum-width inflation"
+  ]
+}

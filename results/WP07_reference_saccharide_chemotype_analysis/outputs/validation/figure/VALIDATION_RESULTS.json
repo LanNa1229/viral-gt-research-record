@@ -1,0 +1,167 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "exact_195_unique_original_Saccharide_BGCs",
+      "status": "PASS",
+      "evidence": "All and only original Saccharide members, including hybrids; no duplicate accessions"
+    },
+    {
+      "check": "all_91_original_fields_preserved",
+      "status": "PASS",
+      "evidence": "Every copied field remains exact, including detailed chemistry, confidence, source URLs/hashes and review notes"
+    },
+    {
+      "check": "mutually_exclusive_exhaustive_populations",
+      "status": "PASS",
+      "evidence": "100 GC08 + 24 GC05 + 71 other GCs = 195; GC05 is excluded from Other GCs"
+    },
+    {
+      "check": "original_communities_and_labels_unchanged",
+      "status": "PASS",
+      "evidence": "Exact archived k20_r1_s42 communities and original broad class strings/memberships"
+    },
+    {
+      "check": "hybrids_and_unresolved_retained",
+      "status": "PASS",
+      "evidence": "65 hybrid records, two unresolved and one provisional source assignment retained; unresolved is not a negative"
+    },
+    {
+      "check": "primary_chemotypes_not_reassigned",
+      "status": "PASS",
+      "evidence": "Primary chemistry and confidence match frozen curation decisions; no new annotation"
+    },
+    {
+      "check": "exactly_one_display_group_per_BGC",
+      "status": "PASS",
+      "evidence": "Explicit total mapping of 15 detailed source categories to seven mutually exclusive display groups; no fuzzy classification or missing-value imputation"
+    },
+    {
+      "check": "historical_expectations_independently_reproduced",
+      "status": "PASS",
+      "evidence": {
+        "GC08": [
+          31,
+          19,
+          18,
+          4,
+          20,
+          4,
+          4
+        ],
+        "GC05": [
+          4,
+          2,
+          3,
+          0,
+          7,
+          5,
+          3
+        ],
+        "Other GCs": [
+          1,
+          1,
+          1,
+          0,
+          7,
+          51,
+          10
+        ]
+      }
+    },
+    {
+      "check": "all_21_source_cells_and_100_percent_totals",
+      "status": "PASS",
+      "evidence": "Accession-derived numerators, Saccharide-only denominators and exact rational cumulative widths checked; structural zeros retained"
+    },
+    {
+      "check": "surface_operational_definition_consistent",
+      "status": "PASS",
+      "evidence": "Categories 1-4: 72/100, 9/24, 3/71. GC08 phosphonoglycans remain in Other/unresolved; broader source flags are preserved but not counted"
+    },
+    {
+      "check": "plotted_segment_values_match_source",
+      "status": "PASS",
+      "evidence": "All 21 segment records, including two zeros, match exported source data in stable category order"
+    },
+    {
+      "check": "actual_SVG_segment_geometry",
+      "status": "PASS",
+      "evidence": "Each SVG rectangle width independently matches its percentage; zero segments stay zero; smallest positive segment is 1/71 = 1.40845% (~2.04 mm)"
+    },
+    {
+      "check": "axis_labels_scale_and_order",
+      "status": "PASS",
+      "evidence": "GC08, GC05, Other GCs top-to-bottom; x axis 0-100% at 25-point intervals"
+    },
+    {
+      "check": "typography_and_text_layout",
+      "status": "PASS",
+      "evidence": "Arial 8-8.5 pt; no clipping/overlapping labels and no crowded in-bar text"
+    },
+    {
+      "check": "seven_category_legend_and_fixed_colors",
+      "status": "PASS",
+      "evidence": "Seven solid, distinct HEX colors; four warm surface groups remain consecutive; UMAP Saccharide gold retained for EPS"
+    },
+    {
+      "check": "editable_vector_exports_and_dimensions",
+      "status": "PASS",
+      "evidence": {
+        "dimensions_mm": [
+          182.9999999999947,
+          95.00000000000804
+        ],
+        "fonts": [
+          {
+            "base_font": "/RDHMQP+ArialMT",
+            "type": "/CIDFontType2",
+            "TrueType_embedded": true
+          }
+        ],
+        "SVG_text_nodes": 16
+      }
+    },
+    {
+      "check": "600dpi_PNG",
+      "status": "PASS",
+      "evidence": {
+        "pixels": [
+          4322,
+          2244
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      }
+    },
+    {
+      "check": "all_frozen_inputs_unchanged",
+      "status": "PASS",
+      "evidence": {
+        "inputs_rehashed": 18,
+        "original_master_SHA256": "5f86b03ff3e071eec4fcafa02eac36c981f1561777a1d1acbe6f69e51315cbc9"
+      }
+    },
+    {
+      "check": "color_vision_and_grayscale_previews",
+      "status": "PASS",
+      "evidence": "Three CVD and grayscale views generated and inspected; exact display simulation matrices and pairwise diagnostics preserved"
+    },
+    {
+      "check": "independent_PDF_render",
+      "status": "PASS",
+      "evidence": "Poppler independently rendered the final vector PDF for final-size visual review"
+    }
+  ],
+  "finished_utc": "2026-10-28T02:42:00.865190+00:00",
+  "n_BGCs": 195,
+  "counts_match_historical": true,
+  "chemical_annotations_changed": false,
+  "community_assignments_changed": false,
+  "models_rerun": false,
+  "enrichment_tests": false,
+  "committed": false,
+  "pushed": false
+}

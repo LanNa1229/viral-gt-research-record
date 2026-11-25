@@ -1,0 +1,139 @@
+{
+  "inputs": {
+    "chemotype_master": "/redacted-home/260908_MiBG\\analysis\\viral_gt_reference_chemotype_curation_20261027\\reference_2502_chemotype_master.tsv",
+    "chemotype_dictionary": "/redacted-home/260908_MiBG\\analysis\\viral_gt_reference_chemotype_curation_20261027\\CHEMOTYPE_DATA_DICTIONARY.md",
+    "curation_methods": "/redacted-home/260908_MiBG\\analysis\\viral_gt_reference_chemotype_curation_20261027\\CURATION_METHODS.md",
+    "reference_QC": "/redacted-home/260908_MiBG\\analysis\\viral_gt_reference_chemotype_curation_20261027\\REFERENCE_QC.md",
+    "prior_validation": "/redacted-home/260908_MiBG\\analysis\\viral_gt_reference_chemotype_curation_20261027\\validation_results.json",
+    "curation_decisions": "/redacted-home/260908_MiBG\\analysis\\viral_gt_reference_chemotype_curation_20261027\\CURATION_DECISIONS.json",
+    "curation_completion": "/redacted-home/260908_MiBG\\analysis\\viral_gt_reference_chemotype_curation_20261027\\COMPLETION_RECEIPT.json",
+    "curation_output_manifest": "/redacted-home/260908_MiBG\\analysis\\viral_gt_reference_chemotype_curation_20261027\\OUTPUT_MANIFEST_SHA256.tsv",
+    "curation_output_manifest_hash": "/redacted-home/260908_MiBG\\analysis\\viral_gt_reference_chemotype_curation_20261027\\OUTPUT_MANIFEST_SHA256.tsv.sha256",
+    "curation_source_preflight": "/redacted-home/260908_MiBG\\analysis\\viral_gt_reference_chemotype_curation_20261027\\SOURCE_PREFLIGHT.json",
+    "archive_manifest": "/redacted-home/260908_MiBG\\analysis\\viral_gt_clustering_20261024_packaging\\archive\\ARCHIVE_SHA256.tsv",
+    "archive_pins": "/redacted-home/260908_MiBG\\analysis\\viral_gt_community_data_integration_20261027\\INPUT_SHA256.tsv",
+    "global_assignments": "/redacted-home/260908_MiBG\\analysis\\viral_gt_clustering_20261024_packaging\\archive\\assignments\\global_joint_leiden_grid.csv",
+    "original_reference_labels": "/redacted-home/260908_MiBG\\analysis\\viral_gt_clustering_20261024_packaging\\archive\\inputs\\workspace\\analysis\\viral_gt_umap_20261024\\joint_umap_samples.csv",
+    "UMAP_palette": "/redacted-home/260908_MiBG\\analysis\\viral_gt_suppfig_global_leiden_redesign_20261027\\COLOR_PALETTE.tsv",
+    "UMAP_plot_script": "/redacted-home/260908_MiBG\\analysis\\viral_gt_suppfig_global_leiden_redesign_20261027\\plot_integrated_umap.py",
+    "UMAP_config": "/redacted-home/260908_MiBG\\analysis\\viral_gt_suppfig_global_leiden_redesign_20261027\\config.json",
+    "Arial_font": "C:\\Windows\\Fonts\\arial.ttf"
+  },
+  "populations": [
+    "GC08",
+    "GC05",
+    "Other GCs"
+  ],
+  "categories": [
+    {
+      "name": "Capsular polysaccharide",
+      "short_label": "Capsule",
+      "source_primaries": [
+        "Capsular polysaccharide"
+      ],
+      "HEX": "#805A12",
+      "order": 1
+    },
+    {
+      "name": "Extracellular/matrix polysaccharide",
+      "short_label": "EPS/matrix polysaccharide",
+      "source_primaries": [
+        "Extracellular/matrix polysaccharide"
+      ],
+      "HEX": "#C8A44C",
+      "order": 2
+    },
+    {
+      "name": "LPS/LOS/O-antigen",
+      "short_label": "LPS/LOS/O-antigen",
+      "source_primaries": [
+        "Lipopolysaccharide (LPS)",
+        "Lipooligosaccharide (LOS)",
+        "O-antigen"
+      ],
+      "HEX": "#D55E00",
+      "order": 3
+    },
+    {
+      "name": "S-layer/other surface glycan",
+      "short_label": "S-layer/other surface glycan",
+      "source_primaries": [
+        "S-layer glycan",
+        "Other cell-surface glycan"
+      ],
+      "HEX": "#F3D7A5",
+      "order": 4
+    },
+    {
+      "name": "Aminoglycoside/aminocyclitol",
+      "short_label": "Aminoglycoside/aminocyclitol",
+      "source_primaries": [
+        "Aminoglycoside / aminocyclitol-related metabolite"
+      ],
+      "HEX": "#0072B2",
+      "order": 5
+    },
+    {
+      "name": "Glycosylated specialized metabolite",
+      "short_label": "Glycosylated specialized metabolite",
+      "source_primaries": [
+        "Glycosylated specialized metabolite"
+      ],
+      "HEX": "#AA4499",
+      "order": 6
+    },
+    {
+      "name": "Other/unresolved",
+      "short_label": "Other/unresolved",
+      "source_primaries": [
+        "Glycopeptidolipid",
+        "Teichuronic acid",
+        "Phosphonoglycan",
+        "Other carbohydrate-related product",
+        "Non-carbohydrate-associated product",
+        "Unresolved"
+      ],
+      "HEX": "#A8A8A8",
+      "order": 7
+    }
+  ],
+  "width_mm": 183,
+  "height_mm": 95,
+  "dpi": 600,
+  "font_path": "C:\\Windows\\Fonts\\arial.ttf",
+  "axis_title_pt": 8.5,
+  "tick_pt": 8,
+  "bar_label_pt": 8.5,
+  "legend_pt": 8,
+  "bar_height": 0.56,
+  "separator_linewidth_pt": 0.35,
+  "axes_bounds_mm": [
+    32,
+    42,
+    145,
+    43
+  ],
+  "x_limits": [
+    0,
+    100
+  ],
+  "x_ticks": [
+    0,
+    25,
+    50,
+    75,
+    100
+  ],
+  "x_title": "Saccharide reference BGCs (%)",
+  "surface_operational_definition": "categories 1-4 only; phosphonoglycans remain category 7",
+  "reference_release": "MIBiG 3.1",
+  "Leiden_baseline": {
+    "k": 20,
+    "resolution": 1.0,
+    "seed": 42
+  },
+  "Leiden_archival_commit": "284d4f1655cf036c1890bdffcb4aa2dc93f6e41e",
+  "no_new_clustering": true,
+  "no_new_annotation": true,
+  "no_enrichment_testing": true
+}

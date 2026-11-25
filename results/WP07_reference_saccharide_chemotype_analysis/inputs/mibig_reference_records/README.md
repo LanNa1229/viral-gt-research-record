@@ -1,0 +1,3 @@
+# Original MIBiG 3.1 source records
+
+Use the official frozen JSON and GenBank tarballs listed in [EXTERNAL_DEPENDENCIES.tsv](../../provenance/EXTERNAL_DEPENDENCIES.tsv). They retain original annotations and source submitter contact fields. The archival verification and replay scripts retrieve the files and require the historical sizes and SHA-256 checksums. The [GenBank record manifest](../../provenance/historical_reference/GBK_RECORD_MANIFEST.tsv) gives the member identity and digest for each matched accession. The master records the JSON member digest for each accession. [MIBiG 3.1 data deposit](https://zenodo.org/records/13367811) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).

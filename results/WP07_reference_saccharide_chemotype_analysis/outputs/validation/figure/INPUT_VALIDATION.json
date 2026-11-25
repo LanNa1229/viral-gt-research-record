@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "master_rows": 2502,
+  "master_columns": 91,
+  "unique_saccharide_BGCs": 195,
+  "population_sizes": {
+    "GC05": 24,
+    "Other GCs": 71,
+    "GC08": 100
+  },
+  "seven_group_counts": {
+    "GC08": [
+      31,
+      19,
+      18,
+      4,
+      20,
+      4,
+      4
+    ],
+    "GC05": [
+      4,
+      2,
+      3,
+      0,
+      7,
+      5,
+      3
+    ],
+    "Other GCs": [
+      1,
+      1,
+      1,
+      0,
+      7,
+      51,
+      10
+    ]
+  },
+  "counts_match_brief": true,
+  "hybrid_saccharide_references": 65,
+  "nonoverlapping_populations": true,
+  "surface_summary": [
+    {
+      "population": "GC08",
+      "n_four_category_surface": 72,
+      "denominator": 100,
+      "percentage": 72.0,
+      "definition": "display categories 1-4 only; excludes phosphonoglycan and broader source flags"
+    },
+    {
+      "population": "GC05",
+      "n_four_category_surface": 9,
+      "denominator": 24,
+      "percentage": 37.5,
+      "definition": "display categories 1-4 only; excludes phosphonoglycan and broader source flags"
+    },
+    {
+      "population": "Other GCs",
+      "n_four_category_surface": 3,
+      "denominator": 71,
+      "percentage": 4.225352112676056,
+      "definition": "display categories 1-4 only; excludes phosphonoglycan and broader source flags"
+    }
+  ],
+  "annotation_confidence_counts": {
+    "SOURCE_ANNOTATION_SUPPORTED": 168,
+    "UNRESOLVED": 2,
+    "LITERATURE_SUPPORTED": 24,
+    "PROVISIONAL_RECORD_LEVEL": 1
+  },
+  "unresolved_or_provisional_accessions": [
+    "BGC0000262",
+    "BGC0000727",
+    "BGC0001765"
+  ],
+  "new_models": false,
+  "new_annotations": false
+}

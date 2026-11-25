@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "snapshot": "MIBiG 3.1",
+  "mibig_json_url": "https://dl.secondarymetabolites.org/mibig/mibig_json_3.1.tar.gz",
+  "json_original_retrieval_utc": "2026-09-08T05:00:37.926106+00:00",
+  "json_sha256": "87221d7ead87709fbcfe81176d4f1684520017e1d30d5f1f24ef7a39310d1e94",
+  "gbk_url": "https://dl.secondarymetabolites.org/mibig/mibig_gbk_3.1.tar.gz",
+  "gbk_sha256": "db3cb48d74c3143f38f9628f9e2abbfa994bfcff74d60b59a88ffe20ec3fa796",
+  "gbk_original_retrieval_utc": "NOT_RECORDED_IN_INSPECTED_MANIFEST",
+  "json_records_in_snapshot": 2502,
+  "reference_matches": 2502,
+  "priority_records": 229,
+  "snapshot_reused_utc": "2026-10-27T21:16:41.555900+00:00",
+  "source_files": [
+    {
+      "path": "WP07_viral_gt_figure3C_clustering_20261024/assignments/global_joint_leiden_grid.csv",
+      "sha256": "153cb34f81914c6ac493fe296a1dade0eaa3abd51c203b43c7632a4aaafcc27b",
+      "size_bytes": 1166291,
+      "git_blob_sha": "db3718b03b9c0ce202632500d1f7faea32766287"
+    },
+    {
+      "path": "WP07_viral_gt_figure3C_clustering_20261024/inputs/workspace/analysis/viral_glycan_benchmark_20261016/mibig_CORE_ONLY_embeddings.npy",
+      "sha256": "78036e1636eaeeab90f4d157794c868d9b57033195939d83960d8e70bb831e22",
+      "size_bytes": 3202688,
+      "git_blob_sha": "19a280efb44c2a60e5658b622d26f4439246d0f0"
+    },
+    {
+      "path": "WP07_viral_gt_figure3C_clustering_20261024/inputs/workspace/analysis/viral_glycan_benchmark_20261016/mibig_matched_reference_metadata.tsv",
+      "sha256": "5184f8f3199da2d1fac90e85ff11e2a30b443b70aac60992136718856c18ba4c",
+      "size_bytes": 95738,
+      "git_blob_sha": "5247e79c3fd79ac40875595634a7387716150382"
+    }
+  ],
+  "embedding_header": {
+    "descr": "<f4",
+    "fortran_order": false,
+    "shape": [
+      2502,
+      320
+    ]
+  },
+  "biopython_available": false
+}
