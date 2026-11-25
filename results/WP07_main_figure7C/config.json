@@ -1,0 +1,27 @@
+{
+  "workspace_root": ".",
+  "analysis_dependencies": ".",
+  "graph_runtime": ".",
+  "baseline": {
+    "k": 20,
+    "resolution": 1.0,
+    "seed": 42
+  },
+  "graph": {
+    "search": "exhaustive float64 pairwise cosine; numpy lexsort",
+    "normalization": "L2 in float64 only; no PCA or feature scaling",
+    "symmetrization": "union: retain edge if either endpoint chooses the other",
+    "weight": "max(0, cosine); zero-weight edges omitted",
+    "self_edges": "excluded",
+    "ties": "exact distance ties then lexicographic stable sample ID",
+    "duplicates": "retain every biological locus; exact duplicate vector pairs assigned cosine=1 and distance=0; collapse only in separate sensitivity"
+  },
+  "leiden": {
+    "partition": "RBConfigurationVertexPartition",
+    "initial_membership": "singletons",
+    "max_comm_size": 0,
+    "iteration_limit": 100,
+    "iterations_per_call": 1,
+    "stop_improvement_at_most": 1e-12
+  }
+}

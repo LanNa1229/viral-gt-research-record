@@ -1,0 +1,3 @@
+# Paired figure historical visual review
+
+Circle-versus-triangle identity is clear. Filled VC01-VC03 versus open VC04-VC05 supplies an additional cue; the legend reproduces that convention. Both severe red-green simulations and tritanopia preserve gross organization but reduce some palette distinctions. The smallest within-VC color difference is approximately 9.48 CIE76 units under deuteranopia (VC01 versus VC04), which also differ in fill. Grayscale cannot uniquely encode all categories. Fixed reference colors are preserved from Supplementary Figure 2, and no claim of universal CVD accessibility is made.
