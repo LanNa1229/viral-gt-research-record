@@ -1,0 +1,3 @@
+# WP01A historical record
+
+The downstream baseline is the 1,727 structures retrieved by the original 447-residue MGAT2 Foldseek search, as confirmed by the author and preserved historical records. Its structures and downstream counts are independently verified. The original web-search export was not recovered. The separate truncated-core search was performed on another computer; its unavailable files are a documented non-blocking historical limitation, outside release requirements. No search/rerun or independently verified output-equivalence claim is planned. This README is newly authored provenance documentation, not an executed historical search script.

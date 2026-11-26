@@ -1,0 +1,41 @@
+WP01B MEMBERSHIP RECONSTRUCTION VALIDATION
+validation_date	2026-07-25T04:18:44-04:00
+
+### INPUT FILE IDENTITIES
+/home/rahnn/projects/viral-gt-research-record/results/WP01B_coarse_clustering/raw/cluster_cluster.tsv	size=25507	mtime=2026-07-25 03:59:48.543161819 -0400
+96b38f5bc846d4f16071e4f7d560a33c384b4422ffa291796987b667ee566359  /home/rahnn/projects/viral-gt-research-record/results/WP01B_coarse_clustering/raw/cluster_cluster.tsv
+/home/rahnn/projects/viral-gt-research-record/results/WP01B_coarse_clustering/raw/protein_db.source	size=25338	mtime=2026-07-25 03:59:50.455330169 -0400
+7a6c9198444ae16a80b762a3118345d98f3706d7add37cd4017591ed892bb2c9  /home/rahnn/projects/viral-gt-research-record/results/WP01B_coarse_clustering/raw/protein_db.source
+/home/rahnn/projects/viral-gt-research-record/results/WP01B_coarse_clustering/canonical/cluster_membership.tsv	size=35795	mtime=2026-07-25 03:59:54.239013329 -0400
+cd731e42c1bffd7946427540d4cb61d72f706f494a93df2a8be11831f554fd2f  /home/rahnn/projects/viral-gt-research-record/results/WP01B_coarse_clustering/canonical/cluster_membership.tsv
+
+### SOURCE-MAPPING INTEGRITY
+source_rows	1727
+unique_numeric_ids	1727
+unique_accessions	1727
+duplicate_numeric_ids	0
+duplicate_accessions	0
+
+### REBUILD BIOLOGICAL MEMBERSHIP
+raw_membership_rows	1727
+rebuilt_membership_rows	1727
+canonical_membership_rows	1727
+
+### REBUILT AND CANONICAL CHECKSUMS
+cd731e42c1bffd7946427540d4cb61d72f706f494a93df2a8be11831f554fd2f  /tmp/WP01B_rebuilt_membership.rT8J47.tsv
+cd731e42c1bffd7946427540d4cb61d72f706f494a93df2a8be11831f554fd2f  /home/rahnn/projects/viral-gt-research-record/results/WP01B_coarse_clustering/canonical/cluster_membership.tsv
+
+### EXACT FILE COMPARISON
+byte_for_byte_comparison	PASS
+mismatched_rows	0
+
+### CANONICAL MEMBERSHIP INTEGRITY
+membership_rows	1727
+unique_representatives	761
+unique_members	1727
+multiple_assignments	0
+representatives_missing_as_members	0
+invalid_representative_self_assignments	0
+
+FINAL_STATUS	PASS
+CONCLUSION	raw membership plus protein_db.source reconstructs canonical biological membership exactly

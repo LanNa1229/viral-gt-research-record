@@ -1,0 +1,98 @@
+Viral Glycosyltransferase Discovery Project
+Research Data Provenance Record
+
+Researcher / Depositor: Lan Na
+Date prepared: 2026-08-13
+Institution: University of Georgia
+
+1. PURPOSE
+
+This record documents the provenance and integrity of the structural input
+dataset used in the Foldseek analysis of the Viral Glycosyltransferase
+Discovery project.
+
+The archive contains the PDB input structures used for the Foldseek workflow.
+This record is provided to preserve the relationship between the original
+research inputs, the computational analysis, and the researcher who performed
+and documented the analysis.
+
+2. INPUT DATASET
+
+Original source directory:
+  <HPC_HOME>/virus_pdb/virus_initial_hits
+
+Transferred archive:
+  virus_initial_hits_1727PDB_20260813.tar
+
+Number of PDB files:
+  1727
+
+The transfer archive contains only files with the .pdb extension.
+Other TXT, TSV, and GZ files present in the source directory were not included
+in this raw-PDB archive.
+
+3. RELATIONSHIP TO COMPUTATIONAL ANALYSIS
+
+These 1727 PDB structures were used as the structural input set for the
+Foldseek clustering workflow.
+
+The workflow included:
+
+  foldseek createdb
+
+  foldseek cluster
+    --min-seq-id 0.0
+    -c 0.05
+    --cov-mode 0
+    --threads 64
+
+  foldseek align
+    -a
+    --threads 64
+
+  foldseek convertalis
+
+The workflow generated a Foldseek structural database, cluster assignments,
+representative-versus-member alignments, and an m8-format alignment file.
+
+This archive documents the original PDB input set. Foldseek-derived outputs
+are not included in this archive unless separately identified and transferred.
+
+4. DATA INTEGRITY
+
+SHA-256 of transferred PDB archive:
+  d81a3b67c11d09c3978f5b8ca7dcbe28421f0f00249bfb38af02f49574923c13
+
+Per-file SHA-256 manifest:
+  virus_initial_hits_1727PDB_SHA256SUMS_20260813.txt
+
+SHA-256 of per-file SHA-256 manifest:
+  74e87022d7a068ad3bc59b0f59439082d1393d2715ca960337549cb34285ed04
+
+The per-file manifest contains one SHA-256 checksum for each of the 1727 PDB
+files contained in the transferred archive.
+
+5. PROVENANCE AND ATTRIBUTION
+
+This provenance record documents the research history and computational
+context of these files. The data were assembled and used as input to the
+Foldseek analysis performed and documented by Lan Na as part of the Viral
+Glycosyltransferase Discovery project.
+
+Any subsequent reuse, reanalysis, extension, or reinterpretation of these
+materials should preserve the distinction between the original analysis and
+subsequently generated analyses or interpretations by other researchers.
+
+Deposit or transfer of these research records does not alter University
+ownership of Research Data and is not intended to waive, transfer, or modify
+the scientific contribution history, provenance, attribution, or authorship
+associated with the underlying work.
+
+6. ASSOCIATED INTEGRITY FILES
+
+  virus_initial_hits_1727PDB_20260813.tar
+  virus_initial_hits_1727PDB_20260813.tar.sha256
+  virus_initial_hits_1727PDB_SHA256SUMS_20260813.txt
+  00_PROVENANCE_virus_initial_hits_1727PDB_20260813.txt
+
+END OF RECORD
