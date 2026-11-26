@@ -33,7 +33,7 @@ Figure numbers follow manuscript **v1.5 (2026-10-27)**. The index links to publi
 
 | Results section | Figure | Linked materials |
 | --- | --- | --- |
-| 1. Structure-guided discovery of viral GT candidates | **Figure 1** · Discovery and coarse clustering | [Section 1 workflow](https://github.com/LanNa1229/viral-gt-research-record/blob/c4d46eb5ece3b399225aaaee7d60ef30e506461e/workflows/WP01_section1/README.md) · [Panel-level evidence map](https://github.com/LanNa1229/viral-gt-research-record/blob/c4d46eb5ece3b399225aaaee7d60ef30e506461e/reports/section1_archive/figure_evidence_map.tsv) · [Figure source data on Zenodo](https://doi.org/10.5281/zenodo.23626546). The workflow documents the public exclusions and historical limitations. |
+| 1. Structure-guided discovery of viral GT candidates | **Figure 1** · Structure-guided discovery and clustering | [Figure folder](workflows/WP01_section1/by_figure/structure_guided_discovery_and_clustering/) · [Section 1 workflow](workflows/WP01_section1/README.md) · [Figure source data on Zenodo](https://doi.org/10.5281/zenodo.23626546) |
 | 2. Viral GTs across the GT-A structural landscape | **Figure 2A/B** · Global network and viral placement | [Network and placement workflow](https://github.com/LanNa1229/viral-gt-research-record/blob/c4d46eb5ece3b399225aaaee7d60ef30e506461e/workflows/WP02_global_SSN_leiden_viral_placement/README.md) · [Zenodo data record](https://doi.org/10.5281/zenodo.23720756). The full dataset ZIP requires access. |
 | 2. Viral GTs across the GT-A structural landscape | **Figure 2C/D** · Local networks and conservation maps | Manual analysis |
 | 3. Cluster 8 structural conservation and genomic context | **Figure 3** · Cluster 8 structures and conservation | Manual analysis |
@@ -48,7 +48,10 @@ Figure numbers follow manuscript **v1.5 (2026-10-27)**. The index links to publi
 
 | Results section | Supplementary figure | Linked materials |
 | --- | --- | --- |
-| 1. Structure-guided discovery of viral GT candidates | **Figures S1–S4** · Clustering and quality checks | [Panel-level evidence map](https://github.com/LanNa1229/viral-gt-research-record/blob/c4d46eb5ece3b399225aaaee7d60ef30e506461e/reports/section1_archive/figure_evidence_map.tsv) · [Figure source data on Zenodo](https://doi.org/10.5281/zenodo.23626546). The public release documents the limitations for the S2B model plate. |
+| 1. Structure-guided discovery of viral GT candidates | **Figure S1** · Cluster membership network | [Figure folder](workflows/WP01_section1/by_figure/cluster_membership_network/) |
+| 1. Structure-guided discovery of viral GT candidates | **Figure S2** · Positive-control benchmark | [Figure folder](workflows/WP01_section1/by_figure/positive_control_benchmark/) · [Public exclusions for the S2B model plate](PUBLIC_EXCLUSIONS.tsv) |
+| 1. Structure-guided discovery of viral GT candidates | **Figure S3** · Small-cluster distribution and coherence | [Figure folder](workflows/WP01_section1/by_figure/small_cluster_distribution_and_coherence/) |
+| 1. Structure-guided discovery of viral GT candidates | **Figure S4** · Singleton length and confidence | [Figure folder](workflows/WP01_section1/by_figure/singleton_length_and_confidence/) |
 | 2. Viral GTs across the GT-A structural landscape | **Figure S5** · CAZy-family organization | [Network and placement workflow](https://github.com/LanNa1229/viral-gt-research-record/blob/c4d46eb5ece3b399225aaaee7d60ef30e506461e/workflows/WP02_global_SSN_leiden_viral_placement/README.md) (upstream data). |
 | 2. Viral GTs across the GT-A structural landscape | **Figure S6A/B** · GT31 and R699 comparisons | [S6A GT31 core workflow](https://github.com/LanNa1229/viral-gt-research-record/blob/c4d46eb5ece3b399225aaaee7d60ef30e506461e/workflows/WP06_GT31_conservation/README.md) · [S6B R699 core-mapping archive](https://github.com/LanNa1229/viral-gt-research-record/blob/c4d46eb5ece3b399225aaaee7d60ef30e506461e/workflows/WP06_R699_dual_context/README.md). The R699 archive documents missing inputs and outputs for the core-mapping analysis. |
 | 2. Viral GTs across the GT-A structural landscape | **Figures S7–S8** · C027 and Cluster 7 phylogenies | [S8 Cluster 7 FoldTree archive](https://github.com/LanNa1229/viral-gt-research-record/blob/c4d46eb5ece3b399225aaaee7d60ef30e506461e/analysis/cluster7/FoldTree_v1/README.md) contains trees and distance matrices. |
@@ -186,6 +189,8 @@ For each externally stored dataset, create a manifest under `metadata/manifests/
 
 
 ## Section 1 reproducibility release
+
+[Browse all five figure folders](workflows/WP01_section1/by_figure/) · [Panel-level evidence map](reports/section1_archive/figure_evidence_map.tsv)
 
 The [Section 1 workflows](workflows/WP01_section1/README.md) preserve the code,
 lightweight canonical results, figure-generation utilities and validation for
