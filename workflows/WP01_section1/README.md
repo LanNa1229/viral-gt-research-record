@@ -4,6 +4,27 @@ Version section1-v1.0.0. Sole record creator: Lan Na, University of Georgia, htt
 
 This is the selected Section 1 snapshot supporting Figure 1 and Supplementary Figures 1–4, not a license or DOI assignment for the wider repository. The 1,727-structure baseline came from the original 447-residue MGAT2 Foldseek search. Missing truncated-core files are non-blocking historical provenance; no independently verified output equivalence is claimed.
 
+## Find files by figure
+
+Figure numbers follow manuscript v1.5. The [panel evidence map](../../reports/section1_archive/figure_evidence_map.tsv) documents verification and limitations for individual panels.
+
+| Figure | Materials | Location |
+| --- | --- | --- |
+| Figure 1 | Search provenance and cluster membership | [Search inventory and checksums](../../results/WP01A_initial_search/) · [Canonical membership](../../results/WP01B_coarse_clustering/canonical/cluster_membership.tsv) |
+| Supplementary Figure 1 | Network source, editable Cytoscape session and SVG | [Network tables](../../results/WP01B_coarse_clustering/figure_X-1-1/network_source/) · [Cytoscape and SVG](../../figures/WP01B_coarse_clustering/figure_X-1-1/) |
+| Supplementary Figure 2 | Positive-control inputs and results | [Control records](../../results/WP01C_positive_controls/) · [Public release exclusions](../../PUBLIC_EXCLUSIONS.tsv) |
+| Supplementary Figure 3 | Cluster sizes, annotations and structural coherence | [Clustering records](../../results/WP01B_coarse_clustering/) · [Representative annotation](../../results/WP01D_representative_annotation/) · [Coherence tables](../../results/WP01E_small_cluster_coherence/) |
+| Supplementary Figure 4 | Singleton confidence, lengths, thresholds and statistics | [Singleton QC](../../results/WP01F_singleton_qc/) |
+
+## Shared data, code and records
+
+- **Figure source data and assets.** [Frozen plotting inputs and assets](../../results/section1_source_data/) · [Source Data archive on Zenodo](https://doi.org/10.5281/zenodo.23626546).
+- **Original outputs.** [Raw clustering assignments and alignments](../../results/WP01B_coarse_clustering/raw/) · [Original results grouped by WP01A–WP01F](../../results/).
+- **Code.** [Historical scripts grouped by work package](../../scripts/archive/) · [Section 1 reconstruction and validation scripts](../../scripts/reproducible/WP01_section1/).
+- **Reproducibility records.** [Snapshot manifest](snapshot_file_manifest.tsv) · [SHA-256 checksums](snapshot_SHA256SUMS) · [Execution record](../../reports/section1_archive/execution_commands.md) · [Release validation report](../../reports/section1_archive/release_validation_report.md).
+
+## Validation and reconstruction
+
 Run from the repository root (or the root of the selected software ZIP):
 
 ```bash
