@@ -138,20 +138,6 @@ Current work packages include:
 └── scripts/
 ```
 
-## Reproduce GT31 core conservation on F2Y1U4
-
-The [GT31 conservation workflow](workflows/WP06_GT31_conservation/README.md)
-contains the essential analysis code, parameters, input structures, archived
-Foldseek/FoldMason results, and instructions for the Q18515–F2Y1U4 supplementary
-structural comparison. It reproduces representative selection, reference-only
-strict/supported core definition, query mapping, and PyMOL core coloring with
-one Python command. All inputs required for this rerun are included.
-
-The companion [F2Y1U4 comparison summary](workflows/WP06_GT31_conservation/QUERY_COMPARISON.md)
-includes the code and inputs for the three supplementary bars: 16.42% sequence
-identity, 99.25% query coverage, and 0.7996 alignment TM-score, calculated as
-the unweighted mean of four reference-subcluster medians.
-
 ## 5. What belongs in Git
 
 Track in Git:
